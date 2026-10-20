@@ -1,0 +1,10 @@
+Source: /home/misys/.ros/log/2026-10-20-17-30-41-345435-byeongsu-ubuntu-28012/launch.log
+1792485042.0816317 [speed_scaler-11] [INFO] [1792485042.081406277] [speed_scaler]: Waiting for global waypoints, global_limit=0.85
+
+Source: /home/misys/.ros/log/python3_28041_1792485042207.log
+[INFO] [1792485042.299911091] [frenet_odom_republisher]: pose source: /car_state/pose_GT
+
+Source: /home/misys/.ros/log/python3_28524_1792485054332.log
+[INFO] [1792485068.710347328] [scorer]: crossed the line — timing started
+[WARN] [1792485076.381116284] [scorer]: wall collision #1 at (11.34, 0.25) on lap 0
+

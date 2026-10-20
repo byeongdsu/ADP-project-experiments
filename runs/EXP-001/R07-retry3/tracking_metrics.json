@@ -1,0 +1,27 @@
+{
+  "window": "finish-line timing start to first collision; bag reception timestamps",
+  "samples": 385,
+  "mean_abs_d_m": 0.266477949935544,
+  "rms_d_m": 0.29820135040581947,
+  "p95_abs_d_m": 0.43722530895541756,
+  "max_abs_d_m": 0.4430862315083754,
+  "command_speed_min_mps": 4.055896759033203,
+  "command_speed_max_mps": 8.800721168518066,
+  "command_steering_max_abs_rad": 0.16509923338890076,
+  "commanded_steering_fraction_above_sim_limit": 0.0,
+  "gt_odometry_recorded": true,
+  "gt_vx_max_mps": 8.392973109729562,
+  "gt_speed_magnitude_max_mps": 8.392973109729562,
+  "last_pre_collision_gt_vx_mps": 0.0,
+  "last_pre_collision_gt_xy": [
+    11.42770992786908,
+    0.3133819689570519
+  ],
+  "last_pre_collision_d_m": 0.440472631880427,
+  "last_moving_gt_vx_mps": 5.503620122230412,
+  "last_moving_gt_time_from_start_s": 7.689300775527954,
+  "last_moving_gt_xy": [
+    11.385830368068175,
+    0.2777664458930755
+  ]
+}

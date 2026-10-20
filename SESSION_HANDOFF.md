@@ -1,27 +1,32 @@
-# 再開 / 작업 인계
+# 작업 인계 — 2026-10-20
 
-2026-10-20 중단. 사용자는 노트북 종료 예정.
+## 사용자 결정 (최우선)
+EXP-001은 현재 결과와 비교 분석까지 정리한다. EXP-002~004의 기본 결과를 먼저 확보하고 문제별 파라미터 보완은 그 뒤 수행한다. 지금 PP 튜닝이나 m_l1 변경을 진행하지 않는다. EXP-002~004의 번호별 조건은 아직 확정하지 않았으므로 실행 전에 정한다.
 
-## 목적
-PP와 TLN의 한계를 GT/PF × 장애물 없음/1·2·4개 조건에서 관찰하고 파라미터 변경으로 원인과 개선안을 검증. 사용자가 실행·관찰, 에이전트가 설정 변경·로그 분석·문서화.
+## 목표와 역할
+PP와 TLN의 한계를 GT/PF × 장애물0/1/2/4개 조건에서 관찰하고 이후 개선 가설을 검증한다. 사용자가 실행·관찰, 에이전트가 설정 변경·로그 분석·문서화를 담당한다.
 
-## 현재
-EXP-001 = PP + GT + 장애물 없음 속도 탐색 묶음. R01 0.25(재실행 대표), R02 0.35, R03 0.45, R04 0.55(5랩), R05 0.65(재실행 대표), R06 0.75 모두 무충돌 완주. 나머지는 3랩.
-R01 최초 실행 종료 조작 충돌은 평가에서 제외. R05 최초 실행은 벽에 박힌 초기 상태로 시작하여 제외. 원본 보존.
+## EXP-001 완료 범위
+PP(C++) / GT / 장애물0 / hyhall12 / seed2026 속도 탐색 및 동일 경로 구간 비교 완료. 상세 대표 결과·주의사항은 runs/EXP-001/SUMMARY.md, 분석은 analyses/EXP-001/REPORT.md, 결과표는 results.csv.
+고정출발0.75는 R06-retry4/5 두 실행에서 각각3랩 성공.0.85(R07-retry3)/0.95(R08)/1.0(R09)은 첫랩 충돌.공통s0.5~19.5m 평균|d|14.0/23.4/37.1/39.4cm. 네조건 초기GT pose/yaw/vx0 및목표경로배율 일치 확인.
+기존R06은시작로그0.65로목표0.75미적용,유효0.75결과에서제외.초기조건이상이거나종료조작충돌인기록은각README에구분하고원본보존.3연속랩은독립반복3회가아니다.
 
-현재 race_stack/stack_master/maps/hyhall12/speed_scaling.yaml global_limit=0.75.
-R05 평균 9.711초, R06 평균 9.724초로 거의 동일. 다음은 무조건 배율 증가보다 실제 속도 및 속도 제한·명령 적용을 확인할 것.
+## 현재 설정 (다음 실험에 자동 승계 금지)
+/home/misys/forza_ws/race_stack/stack_master/maps/hyhall12/speed_scaling.yaml:global_limit=1.0.
+PP m_l1=0.575 등 튜닝 파라미터는 미변경. 속도설정변경은base_system재시작필요.맵경로는소스맵을직접참조하므로배율YAML변경에빌드는불필요.
+고정시작pose:x10.832046001482436,y-0.5021100154908403,yaw0.3652437316241457. hyhall12/start_pose.yaml을gym_bridge launch가읽어자동적용한다.기존실행을모두종료후시작하고RViz에서위치를다시찍지않는다.관련패키지빌드/테스트6개완료. configs/FIXED_START.md참조.
 
-## 실행
+## 실행·기록
+터미널마다race 사용(~/forza_ws/race_stack 이동+ROS underlay/overlay source).
 1: ros2 launch stack_master base_system_launch.xml map_name:=hyhall12 pose_source:=gt
-3: ros2 launch race_manager race_manager_launch.xml map_name:=hyhall12 seed:=2026 num_obstacles:=0 plot:=true log_dir:=/home/misys/ADP-project-experiments/runs/EXP-001/RXX
+3: ros2 launch race_manager race_manager_launch.xml map_name:=hyhall12 seed:=2026 num_obstacles:=0 plot:=true log_dir:=/home/misys/ADP-project-experiments/runs/EXP-XXX/RXX
+4: ros2 bag record -o /home/misys/ADP-project-experiments/runs/EXP-XXX/RXX/telemetry /drive /car_state/odom_GT /car_state/odom /car_state/frenet/odom /global_waypoints /local_waypoints /sim/collision
 2: ros2 launch stack_master head_to_head_launch.xml ctrl_algo:=PP
-시작 1→3→2. 종료 1→2→3 (컨트롤러만 먼저 끄면 마지막 명령으로 주행 지속).
+開始1→3→4→2、終了1→2→3→4。컨트롤러만먼저끄면마지막명령으로계속주행할수있다.다음실험조건에맞춰GT/PF/장애물수/배율을명시적으로선택한다. bag경로중복시덮어쓰지않는다.
 
-## 코드 변경
-race_manager report.py에 --log-dir 옵션 추가, launch에서 log_dir 전달, colcon build 완료. 관련 소스/launch 사본은 configs/resume_snapshot에 보관. race_stack의 기존 사용자 변경은 건드리지 말 것.
+## 후속 보완 가설 — 보류
+속도비례lookahead 증가와제한적인횡오차/헤딩감속이원인후보.첫후보실험은0.85에서m_l1만0.575→0.50이나사용자결정에따라EXP-002~004이후로미룬다.실제L1/목표점미계측,설치설정과입력으로재구성한추정이며주원인확정금지.l1_distance는publisher선언만있고publish없음.
 
 ## 주의
-기록기는 벽시계로 측정. 실제 속도·추종 오차 미기록. 3랩을 독립 반복 3회로 표현하지 않는다. PP C++ 구현이 실행된다. racecar_version 기본 NUC2, SIM 파라미터가 적용된다고 단정하지 말 것.
-
-이 파일과 results.csv 및 runs의 README를 읽고 이어서 진행한다. GitHub 인증 비밀은 저장하지 않는다.
+racecar_version 기본NUC2,head_to_head는controller_cpp사용.컨트롤러설정과시뮬레이터SIM설정을혼동하지않는다.실제GT토픽은/car_state/odom_GT이며/ego_racecar/odom_GT가아니다.PF실험에서도GT를기록해위치추정오차와추종오차를분리한다.장애물실제배치/크기를보존한다.
+race_manager report.py의--log-dir 및launch log_dir지원은구현/빌드완료.고정출발점/기록정비외의기존사용자코드변경을덮어쓰지말것.큰bag은로컬보관,Git에임의추가하지않는다.영상은아직미전달.GitHub인증비밀저장금지.

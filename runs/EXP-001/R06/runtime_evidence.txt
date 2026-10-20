@@ -1,0 +1,3 @@
+Source: /home/misys/.ros/log/2026-10-20-16-05-48-889758-byeongsu-ubuntu-80744/launch.log
+1792479950.1533985 [speed_scaler-11] [INFO] [1792479950.152806036] [speed_scaler]: Waiting for global waypoints, global_limit=0.65
+1792480026.5145662 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)

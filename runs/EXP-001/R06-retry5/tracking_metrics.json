@@ -1,0 +1,60 @@
+{
+  "window": "finish-line timing start through third completed lap; bag reception timestamps",
+  "initial_gt_pose": {
+    "x": 10.832046001482436,
+    "y": -0.5021100154908403,
+    "yaw_rad": 0.3652437316241457,
+    "vx": 0.0
+  },
+  "overall": {
+    "samples": 1277,
+    "mean_abs_d_m": 0.15435719064214232,
+    "rms_d_m": 0.17855690188959586,
+    "p95_abs_d_m": 0.2926480280587988,
+    "max_abs_d_m": 0.32561238025823963,
+    "gt_vx_max_mps": 7.493876072476093,
+    "command_speed_max_mps": 7.795070171356201,
+    "command_steering_max_abs_rad": 0.16290530562400818
+  },
+  "laps": [
+    {
+      "samples": 429,
+      "mean_abs_d_m": 0.15377423452022718,
+      "rms_d_m": 0.176219331710862,
+      "p95_abs_d_m": 0.28772797985359033,
+      "max_abs_d_m": 0.2995996270969789,
+      "gt_vx_max_mps": 7.484076492635856,
+      "command_speed_max_mps": 7.795070171356201,
+      "command_steering_max_abs_rad": 0.16184993088245392
+    },
+    {
+      "samples": 424,
+      "mean_abs_d_m": 0.15241713810199106,
+      "rms_d_m": 0.17696874602587023,
+      "p95_abs_d_m": 0.28655631017200917,
+      "max_abs_d_m": 0.29886749146983704,
+      "gt_vx_max_mps": 7.493876072476093,
+      "command_speed_max_mps": 7.790422439575195,
+      "command_steering_max_abs_rad": 0.16290530562400818
+    },
+    {
+      "samples": 424,
+      "mean_abs_d_m": 0.1568870737867784,
+      "rms_d_m": 0.18244531056982818,
+      "p95_abs_d_m": 0.29394534474604417,
+      "max_abs_d_m": 0.32561238025823963,
+      "gt_vx_max_mps": 7.485036414138678,
+      "command_speed_max_mps": 7.792151927947998,
+      "command_steering_max_abs_rad": 0.16076990962028503
+    }
+  ],
+  "message_counts": {
+    "/global_waypoints": 73,
+    "/car_state/odom": 1804,
+    "/car_state/frenet/odom": 1805,
+    "/car_state/odom_GT": 3605,
+    "/sim/collision": 3605,
+    "/drive": 1211,
+    "/local_waypoints": 1212
+  }
+}

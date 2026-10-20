@@ -1,0 +1,13 @@
+{
+  "window": "finish-line timing start to first collision; bag reception timestamps",
+  "samples": 383,
+  "mean_abs_d_m": 0.2571022306934966,
+  "rms_d_m": 0.2873688089032444,
+  "p95_abs_d_m": 0.4321597804618483,
+  "max_abs_d_m": 0.44851695360801824,
+  "command_speed_min_mps": 4.065586566925049,
+  "command_speed_max_mps": 8.797786712646484,
+  "command_steering_max_abs_rad": 0.16176392138004303,
+  "commanded_steering_fraction_above_sim_limit": 0.0,
+  "gt_odometry_recorded": false
+}

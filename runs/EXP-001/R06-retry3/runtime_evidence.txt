@@ -1,0 +1,8 @@
+Source: /home/misys/.ros/log/2026-10-20-17-45-39-645424-byeongsu-ubuntu-40408/launch.log
+1792485940.4696257 [speed_scaler-11] [INFO] [1792485940.469301314] [speed_scaler]: Waiting for global waypoints, global_limit=0.75
+
+Source: /home/misys/.ros/log/python3_40982_1792485959304.log
+[INFO] [1792485959.467783205] [scorer]: seed 2026 -> /home/misys/ADP-project-experiments/runs/EXP-001/R06-retry3/race_result_20261020_174559.json
+[INFO] [1792485987.781774433] [scorer]: crossed the line — timing started
+[INFO] [1792485996.418266393] [scorer]: lap 1  8.64 s  0 hits (obstacle 0, wall 0)
+[WARN] [1792485996.428340034] [scorer]: wall collision #1 at (11.52, 0.29) on lap 1

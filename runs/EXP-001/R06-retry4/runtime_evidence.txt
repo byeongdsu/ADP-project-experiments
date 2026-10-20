@@ -1,0 +1,4 @@
+Source: /home/misys/.ros/log/2026-10-20-17-53-13-969076-byeongsu-ubuntu-46066/launch.log
+1792486394.5254312 [speed_scaler-11] [INFO] [1792486394.525073138] [speed_scaler]: Waiting for global waypoints, global_limit=0.75
+1792486439.7082698 [ERROR] [gym_bridge-2]: process has died [pid 46077, exit code 1, cmd '/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/lib/f1tenth_gym_ros/gym_bridge --ros-args -r __node:=bridge --params-file /home/misys/forza_ws/race_stack/install/stack_master/share/stack_master/config/SIM/sim.yaml --params-file /tmp/launch_params_ay5oa3e4 --params-file /tmp/launch_params_svzw4rtu --params-file /tmp/launch_params_xzkmxbe2'].
+Start pose parameter source: /tmp/launch_params_svzw4rtu (copied to runtime_start_pose.yaml)

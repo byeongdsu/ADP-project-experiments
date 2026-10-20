@@ -1,0 +1,6 @@
+Source: /home/misys/.ros/log/2026-10-20-18-05-00-598615-byeongsu-ubuntu-56849/launch.log
+1792487101.1868207 [speed_scaler-11] [INFO] [1792487101.186442138] [speed_scaler]: Waiting for global waypoints, global_limit=1.00
+
+Source: /home/misys/.ros/log/python3_57289_1792487106525.log
+[INFO] [1792487126.295871014] [scorer]: crossed the line — timing started
+[WARN] [1792487129.765204723] [scorer]: wall collision #1 at (-1.40, 6.01) on lap 0
