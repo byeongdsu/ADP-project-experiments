@@ -1,0 +1,214 @@
+diff --git a/particle_filter/launch/localize_launch.py b/particle_filter/launch/localize_launch.py
+index a7fe48a..741c321 100755
+--- a/particle_filter/launch/localize_launch.py
++++ b/particle_filter/launch/localize_launch.py
+@@ -27,6 +27,24 @@ from launch.actions import DeclareLaunchArgument, OpaqueFunction
+ from ament_index_python.packages import get_package_share_directory
+ import os
+ import yaml
++import math
++
++
++def start_pose_parameters(map_yaml, enabled):
++    """Provide the simulator's known start as a one-time PF prior when requested."""
++    if not enabled:
++        return {}
++    path = os.path.join(os.path.dirname(map_yaml), 'start_pose.yaml')
++    if not os.path.isfile(path):
++        print(f'[localize_launch] no start prior at {path}; using global initialization')
++        return {}
++    with open(path) as stream:
++        pose = yaml.safe_load(stream)
++    values = [float(pose[key]) for key in ('sx', 'sy', 'stheta')]
++    if not all(math.isfinite(value) for value in values):
++        raise ValueError(f'{path}: start pose must contain finite values')
++    return dict(initial_pose_enabled=True, initial_pose_x=values[0],
++                initial_pose_y=values[1], initial_pose_yaw=values[2])
+ 
+ 
+ def resolve_map(map_path, map_name, localize_config):
+@@ -52,6 +70,8 @@ def setup(context, *args, **kwargs):
+     get = lambda key: LaunchConfiguration(key).perform(context)
+     map_yaml = resolve_map(get('map_path'), get('map_name'), get('localize_config'))
+     print(f'[localize_launch] localising against {map_yaml}')
++    prior = start_pose_parameters(
++        map_yaml, get('initialize_from_start_pose').lower() == 'true')
+ 
+     return [
+         Node(
+@@ -77,7 +97,7 @@ def setup(context, *args, **kwargs):
+             package='particle_filter',
+             executable='particle_filter',
+             name='particle_filter',
+-            parameters=[LaunchConfiguration('localize_config')]
++            parameters=[LaunchConfiguration('localize_config'), prior]
+         ),
+     ]
+ 
+@@ -90,6 +110,8 @@ def generate_launch_description():
+     )
+ 
+     return LaunchDescription([
++        DeclareLaunchArgument('initialize_from_start_pose', default_value='false',
++                              description='Initialize PF once around the map start pose (simulation trials)'),
+         DeclareLaunchArgument('localize_config', default_value=localize_config,
+                               description='Localization configs'),
+         DeclareLaunchArgument('map_path', default_value='',
+diff --git a/particle_filter/particle_filter/particle_filter.py b/particle_filter/particle_filter/particle_filter.py
+index 1b90f17..c83d98a 100755
+--- a/particle_filter/particle_filter/particle_filter.py
++++ b/particle_filter/particle_filter/particle_filter.py
+@@ -85,6 +85,10 @@ class ParticleFiler(Node):
+         self.declare_parameter('motion_dispersion_theta')
+         self.declare_parameter('scan_topic')
+         self.declare_parameter('odometry_topic')
++        self.declare_parameter('initial_pose_enabled', False)
++        self.declare_parameter('initial_pose_x', 0.0)
++        self.declare_parameter('initial_pose_y', 0.0)
++        self.declare_parameter('initial_pose_yaw', 0.0)
+ 
+         # parameters
+         self.ANGLE_STEP           = self.get_parameter('angle_step').value
+@@ -151,7 +155,7 @@ class ParticleFiler(Node):
+         self.map_client = self.create_client(GetMap, '/map_server/map')
+         self.get_omap()
+         self.precompute_sensor_model()
+-        self.initialize_global()
++        self.initialize_startup()
+ 
+         # keep track of speed from input odom
+         self.current_speed = 0.0
+@@ -419,6 +423,25 @@ class ParticleFiler(Node):
+         self.particles[:,2] = Utils.quaternion_to_angle(pose.orientation) + np.random.normal(loc=0.0,scale=0.4,size=self.MAX_PARTICLES)
+         self.state_lock.release()
+ 
++    def initialize_startup(self):
++        """Use a known starting prior once, then localize using scan and odometry."""
++        if not self.get_parameter('initial_pose_enabled').value:
++            self.initialize_global()
++            return
++        x = float(self.get_parameter('initial_pose_x').value)
++        y = float(self.get_parameter('initial_pose_y').value)
++        yaw = float(self.get_parameter('initial_pose_yaw').value)
++        if not np.all(np.isfinite([x, y, yaw])):
++            raise ValueError('Initial PF pose must contain finite x, y and yaw')
++        pose = Pose()
++        pose.position.x = x
++        pose.position.y = y
++        pose.orientation = Utils.angle_to_quaternion(yaw)
++        self.get_logger().info(
++            f'LOCAL START PRIOR: x={x:.6f}, y={y:.6f}, yaw={yaw:.6f}; '
++            'startup only, not continuous ground-truth correction')
++        self.initialize_particles_pose(pose)
++
+     def initialize_global(self):
+         '''
+         Spread the particle distribution over the permissible region of the state space.
+@@ -776,4 +799,4 @@ if __name__ == '__main__':
+ #     # make_flamegraph(r'update')
+ 
+ #     pf = ParticleFiler()
+-#     rospy.spin()
+\ No newline at end of file
++#     rospy.spin()
+diff --git a/stack_master/launch/base_system_launch.xml b/stack_master/launch/base_system_launch.xml
+index 015c941..21e32af 100755
+--- a/stack_master/launch/base_system_launch.xml
++++ b/stack_master/launch/base_system_launch.xml
+@@ -34,6 +34,7 @@
+       <arg name="map_path" value="$(var map_path)" />
+       <arg name="map_name" value="$(var map_name)" />
+       <arg name="pose_source" value="$(var pose_source)" />
++      <arg name="initialize_from_start_pose" value="true" />
+     </include>
+   </group>
+ 
+diff --git a/utilities/nodes/frenet_odom_republisher/launch/frenet_odom_republisher_launch.xml b/utilities/nodes/frenet_odom_republisher/launch/frenet_odom_republisher_launch.xml
+index 50a8848..e970a37 100755
+--- a/utilities/nodes/frenet_odom_republisher/launch/frenet_odom_republisher_launch.xml
++++ b/utilities/nodes/frenet_odom_republisher/launch/frenet_odom_republisher_launch.xml
+@@ -2,6 +2,7 @@
+   <arg name="map_path" default="" />
+   <arg name="map_name" default="" />
+   <arg name="pose_source" default="pf" />   <!-- pf | gt: which pose the car drives on -->
++  <arg name="initialize_from_start_pose" default="false" />
+   <let name="pose_topic" value="$(eval '&quot;/car_state/pose_GT&quot; if &quot;$(var pose_source)&quot; == &quot;gt&quot; else &quot;/pf/viz/inferred_pose&quot;')" />
+ 
+   <!-- 1. EKF 필터 노드(state_estimation/ekf_launch.py) -->
+@@ -15,6 +16,7 @@
+     <arg name="use_sim_time" value="true"/> 
+     <arg name="map_path" value="$(var map_path)" />
+     <arg name="map_name" value="$(var map_name)" />
++    <arg name="initialize_from_start_pose" value="$(var initialize_from_start_pose)" />
+   </include> 
+ 
+ 
+diff --git a/particle_filter/test/test_start_prior.py b/particle_filter/test/test_start_prior.py
+new file mode 100644
+index 0000000..16f5140
+--- /dev/null
++++ b/particle_filter/test/test_start_prior.py
+@@ -0,0 +1,63 @@
++"""Known simulation starts initialize PF locally without consuming live GT."""
++import importlib.util
++from pathlib import Path
++from types import SimpleNamespace
++import math
++import pytest
++from particle_filter.particle_filter import ParticleFiler
++from particle_filter import utils
++
++
++def launch_module():
++    path = Path(__file__).parents[1] / 'launch/localize_launch.py'
++    spec = importlib.util.spec_from_file_location('localize_prior_test', path)
++    module = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(module)
++    return module
++
++
++def test_real_or_unspecified_launch_does_not_use_sim_start(tmp_path):
++    (tmp_path / 'start_pose.yaml').write_text('sx: 1\nsy: 2\nstheta: 0.3\n')
++    assert launch_module().start_pose_parameters(str(tmp_path/'map.yaml'), False) == {}
++
++
++def test_sim_prior_uses_same_map_pose_as_bridge(tmp_path):
++    (tmp_path / 'start_pose.yaml').write_text('sx: 10.8\nsy: -0.5\nstheta: 0.36\n')
++    params = launch_module().start_pose_parameters(str(tmp_path/'map_orig.yaml'), True)
++    assert params == dict(initial_pose_enabled=True, initial_pose_x=10.8,
++                          initial_pose_y=-0.5, initial_pose_yaw=0.36)
++
++
++def test_maps_without_start_file_keep_global_initialization(tmp_path):
++    assert launch_module().start_pose_parameters(str(tmp_path/'map.yaml'), True) == {}
++
++
++def test_nonfinite_start_is_rejected(tmp_path):
++    (tmp_path / 'start_pose.yaml').write_text('sx: .nan\nsy: 2\nstheta: 0.3\n')
++    with pytest.raises(ValueError):
++        launch_module().start_pose_parameters(str(tmp_path/'map.yaml'), True)
++
++
++def test_startup_selects_local_prior_once():
++    params = dict(initial_pose_enabled=True, initial_pose_x=10.8,
++                  initial_pose_y=-0.5, initial_pose_yaw=0.36)
++    calls = []
++    fake = SimpleNamespace(
++        get_parameter=lambda key: SimpleNamespace(value=params[key]),
++        get_logger=lambda: SimpleNamespace(info=lambda message: None),
++        initialize_particles_pose=lambda pose: calls.append(pose),
++        initialize_global=lambda: pytest.fail('Global init bypassed supplied prior'))
++    ParticleFiler.initialize_startup(fake)
++    assert len(calls) == 1
++    assert calls[0].position.x == 10.8
++    assert calls[0].position.y == -0.5
++    assert math.isclose(utils.quaternion_to_angle(calls[0].orientation), 0.36)
++
++
++def test_startup_keeps_global_fallback():
++    calls = []
++    fake = SimpleNamespace(
++        get_parameter=lambda key: SimpleNamespace(value=False),
++        initialize_global=lambda: calls.append('global'))
++    ParticleFiler.initialize_startup(fake)
++    assert calls == ['global']

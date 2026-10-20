@@ -1,0 +1,526 @@
+[INFO] [launch]: All log files can be found below /home/misys/.ros/log/2026-10-20-18-27-19-956961-byeongsu-ubuntu-73387
+[INFO] [launch]: Default logging verbosity is set to INFO
+[gym_bridge_launch] using simulator map /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/hyhall12_orig.yaml
+[gym_bridge_launch] fixed start pose from /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/start_pose.yaml: {'sx': 10.832046001482436, 'sy': -0.5021100154908403, 'stheta': 0.3652437316241457}
+[localize_launch] localising against /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/hyhall12_orig.yaml
+[INFO] [rviz2-1]: process started with pid [73428]
+[INFO] [gym_bridge-2]: process started with pid [73430]
+[INFO] [robot_state_publisher-3]: process started with pid [73432]
+[INFO] [ekf_node-4]: process started with pid [73434]
+[INFO] [lifecycle_manager-5]: process started with pid [73436]
+[INFO] [map_server-6]: process started with pid [73438]
+[INFO] [particle_filter-7]: process started with pid [73440]
+[INFO] [frenet_odom_republisher_node-8]: process started with pid [73442]
+[INFO] [global_parameter_node-9]: process started with pid [73444]
+[INFO] [global_trajectory_publisher-10]: process started with pid [73446]
+[INFO] [speed_scaler-11]: process started with pid [73448]
+[rviz2-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-misys'
+[lifecycle_manager-5] [INFO] [1792488440.207559360] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-5] [INFO] [1792488440.208706400] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[robot_state_publisher-3] [INFO] [1792488440.208901153] [ego_robot_state_publisher]: got segment car_state/back_left_wheel
+[robot_state_publisher-3] [INFO] [1792488440.209014145] [ego_robot_state_publisher]: got segment car_state/back_right_wheel
+[robot_state_publisher-3] [INFO] [1792488440.209027368] [ego_robot_state_publisher]: got segment car_state/base_link
+[robot_state_publisher-3] [INFO] [1792488440.209037012] [ego_robot_state_publisher]: got segment car_state/front_left_hinge
+[robot_state_publisher-3] [INFO] [1792488440.209045699] [ego_robot_state_publisher]: got segment car_state/front_left_wheel
+[robot_state_publisher-3] [INFO] [1792488440.209054329] [ego_robot_state_publisher]: got segment car_state/front_right_hinge
+[robot_state_publisher-3] [INFO] [1792488440.209062431] [ego_robot_state_publisher]: got segment car_state/front_right_wheel
+[robot_state_publisher-3] [INFO] [1792488440.209069959] [ego_robot_state_publisher]: got segment car_state/laser
+[lifecycle_manager-5] [INFO] [1792488440.223095936] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-5] [INFO] [1792488440.223135849] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[map_server-6] [INFO] [1792488440.224166032] [map_server]:
+[map_server-6] 	map_server lifecycle node launched.
+[map_server-6] 	Waiting on external lifecycle transitions to activate
+[map_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-6] [INFO] [1792488440.224321446] [map_server]: Creating
+[map_server-6] [INFO] [1792488440.224654385] [map_server]: Configuring
+[map_server-6] [INFO] [1792488440.224710071] [map_io]: Loading yaml file: /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/hyhall12_orig.yaml
+[map_server-6] [INFO] [1792488440.225088637] [map_io]: resolution: 0.05
+[map_server-6] [INFO] [1792488440.225101818] [map_io]: origin[0]: -7.28
+[map_server-6] [INFO] [1792488440.225107579] [map_io]: origin[1]: -4.08
+[map_server-6] [INFO] [1792488440.225112763] [map_io]: origin[2]: 0
+[map_server-6] [INFO] [1792488440.225118102] [map_io]: free_thresh: 0.25
+[map_server-6] [INFO] [1792488440.225123457] [map_io]: occupied_thresh: 0.65
+[map_server-6] [INFO] [1792488440.225129255] [map_io]: mode: trinary
+[map_server-6] [INFO] [1792488440.225135554] [map_io]: negate: 0
+[map_server-6] [INFO] [1792488440.225336209] [map_io]: Loading image_file: /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/hyhall12_orig.png
+[map_server-6] [INFO] [1792488440.247160951] [map_io]: Read map /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/hyhall12_orig.png: 437 X 267 map @ 0.05 m/cell
+[lifecycle_manager-5] [INFO] [1792488440.252912519] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-6] [INFO] [1792488440.253013660] [map_server]: Activating
+[map_server-6] [INFO] [1792488440.253262687] [map_server]: Creating bond (map_server) to lifecycle manager.
+[rviz2-1] [INFO] [1792488440.306378655] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-1] [INFO] [1792488440.306455533] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-1] [ERROR] [1792488440.313545461] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.313684951] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.313778916] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.313837723] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.313891220] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.313911079] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314338799] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314368951] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314395597] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314404251] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314422879] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314430363] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314481922] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314524032] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314598659] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314622660] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314659491] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314678072] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314706103] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314713738] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314741790] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314758423] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314778964] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314790983] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314811844] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314823988] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314844333] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314853259] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314873246] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314887604] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314908543] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314917060] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314943543] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314953882] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314969922] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314978670] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.314996171] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315004495] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315019269] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315027745] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315042929] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315051484] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315066095] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315076762] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315092439] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315100297] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315114691] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315122543] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315137020] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315144786] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315158929] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315167038] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315181473] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315189420] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315204023] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315211867] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315226656] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315236964] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315252532] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315260992] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315275062] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315283292] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315297554] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315305372] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315319856] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315327738] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315342257] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315350135] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315364731] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315372896] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315388337] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315396692] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315413291] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315421408] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315435379] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315443230] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315457165] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315465039] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315478832] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315486583] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315501176] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315509331] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315523633] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315531609] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315545805] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315554038] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315572354] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315580294] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315594579] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315602329] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315619351] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315627622] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315642297] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315650133] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315664769] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315672565] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315686773] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315695271] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315709446] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315719551] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315736133] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315744855] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315758870] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315767220] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315781647] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315790045] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315804717] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315819859] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315836511] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315847737] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315862506] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315870865] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315884915] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315893349] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315907625] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315917221] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315932147] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315940014] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315954513] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315963584] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315977603] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.315985277] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316000035] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316007917] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316022455] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316030531] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316045411] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316053354] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316068456] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316077958] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316093441] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316101253] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316115760] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316124046] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316138618] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316146841] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316161363] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316169148] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316185725] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316193846] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316208495] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316216837] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316231260] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316241227] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316256265] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316265066] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316279737] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316288388] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316302630] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316311386] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316326771] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316335072] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316349691] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316359370] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316374460] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316383926] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316398660] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316407610] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316424395] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316434025] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316449341] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316458225] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316473076] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316481101] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316495776] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316503907] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316518794] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316527548] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316542691] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316551053] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316565713] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316573829] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316590189] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316598260] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316613294] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316621869] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316637094] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316645369] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316660068] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316667812] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316682169] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316691413] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316705819] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316713736] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316729626] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316737810] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316754379] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316762346] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316776900] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316784601] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316799051] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316807169] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316828477] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316837345] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316852366] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316861963] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316876689] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316884980] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316899553] [rviz2]: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316908120] [rviz2]: rviz::RenderSystem: error creating render window: RenderingAPIException: Invalid parentWindowHandle (wrong server or screen) in GLXWindow::create at ./.obj-x86_64-linux-gnu/ogre-v1.12.1-prefix/src/ogre-v1.12.1/RenderSystems/GLSupport/src/GLX/OgreGLXWindow.cpp (line 257)
+[rviz2-1] [ERROR] [1792488440.316911506] [rviz2]: Unable to create the rendering window after 100 tries
+[rviz2-1] terminate called after throwing an instance of 'std::runtime_error'
+[rviz2-1]   what():  Unable to create the rendering window after 100 tries
+[lifecycle_manager-5] [INFO] [1792488440.357173730] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-5] [INFO] [1792488440.357238740] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-5] [INFO] [1792488440.357254264] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[ERROR] [rviz2-1]: process has died [pid 73428, exit code -6, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/misys/forza_ws/race_stack/forza_rviz.rviz --ros-args -r __node:=rviz'].
+[global_trajectory_publisher-10] [INFO] [1792488440.583574533] [global_republisher]: Reading parameters from /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12
+[speed_scaler-11] [INFO] [1792488440.630190498] [speed_scaler]: Waiting for global waypoints, global_limit=0.25
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'angle_step', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'max_particles', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'max_viz_particles', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'squash_factor', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'max_range', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'theta_discretization', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'range_method', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'rangelib_variant', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'fine_timing', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'publish_odom', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'viz', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'z_short', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'z_max', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'z_rand', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'z_hit', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'sigma_hit', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'motion_dispersion_x', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'motion_dispersion_y', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'motion_dispersion_theta', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'scan_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[particle_filter-7] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py:440: UserWarning: when declaring parameter named 'odometry_topic', declaring a parameter only providing its name is deprecated. You have to either:
+[particle_filter-7] 	- Pass a name and a default value different to "PARAMETER NOT SET" (and optionally a descriptor).
+[particle_filter-7] 	- Pass a name and a parameter type.
+[particle_filter-7] 	- Pass a name and a descriptor with `dynamic_typing=True
+[particle_filter-7]   warnings.warn(
+[map_server-6] [INFO] [1792488440.638754504] [map_server]: Handling GetMap request
+[frenet_odom_republisher_node-8] [INFO] [1792488440.740407367] [frenet_odom_republisher]: pose source: /pf/viz/inferred_pose
+[particle_filter-7] [INFO] [1792488440.764362031] [particle_filter]: Initializing range method: rm
+[particle_filter-7] [INFO] [1792488440.771749042] [particle_filter]: Done loading map
+[particle_filter-7] [INFO] [1792488440.772465524] [particle_filter]: Precomputing sensor model
+[gym_bridge-2] [INFO] [1792488440.882053935] [bridge]: Using simulator map: /home/misys/forza_ws/race_stack/stack_master/maps/hyhall12/hyhall12_orig.yaml
+[gym_bridge-2] /home/misys/.local/lib/python3.10/site-packages/gymnasium/envs/registration.py:481: UserWarning: [33mWARN: The environment creator metadata doesn't include `render_modes`, contains: ['render.modes'][0m
+[gym_bridge-2]   logger.warn(
+[gym_bridge-2] /home/misys/forza_ws/race_stack/base_system/f110_simulator/f1tenth_gym/gym/f110_gym/envs/base_classes.py:96: UserWarning: Chosen integrator is RK4. This is different from previous versions of the gym.
+[gym_bridge-2]   warnings.warn(f"Chosen integrator is RK4. This is different from previous versions of the gym.")
+[particle_filter-7] [INFO] [1792488441.487380574] [particle_filter]: LOCAL START PRIOR: x=10.832046, y=-0.502110, yaw=0.365244; startup only, not continuous ground-truth correction
+[particle_filter-7] [INFO] [1792488441.487691344] [particle_filter]: SETTING POSE
+[particle_filter-7] [INFO] [1792488441.487926108] [particle_filter]: [10.832046001482436, -0.5021100154908403]
+[particle_filter-7] [INFO] [1792488441.494489386] [particle_filter]: Finished initializing, waiting on messages...
+[particle_filter-7] [INFO] [1792488441.501753920] [particle_filter]: ...Received first LiDAR message
+[particle_filter-7] [INFO] [1792488441.502172781] [particle_filter]: 120
+[particle_filter-7] [INFO] [1792488443.780961323] [particle_filter]: ...Received first Odometry message
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [speed_scaler-11]: sending signal 'SIGINT' to process[speed_scaler-11]
+[INFO] [global_trajectory_publisher-10]: sending signal 'SIGINT' to process[global_trajectory_publisher-10]
+[INFO] [global_parameter_node-9]: sending signal 'SIGINT' to process[global_parameter_node-9]
+[INFO] [frenet_odom_republisher_node-8]: sending signal 'SIGINT' to process[frenet_odom_republisher_node-8]
+[INFO] [particle_filter-7]: sending signal 'SIGINT' to process[particle_filter-7]
+[INFO] [map_server-6]: sending signal 'SIGINT' to process[map_server-6]
+[ERROR] [speed_scaler-11]: process has died [pid 73448, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/speed_scaler/lib/speed_scaler/speed_scaler --ros-args -r __node:=speed_scaler --params-file /home/misys/forza_ws/race_stack/install/stack_master/../../stack_master/maps/hyhall12/speed_scaling.yaml'].
+[INFO] [lifecycle_manager-5]: sending signal 'SIGINT' to process[lifecycle_manager-5]
+[ERROR] [global_trajectory_publisher-10]: process has died [pid 73446, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/global_planner/lib/global_planner/global_trajectory_publisher --ros-args -r __node:=global_republisher --params-file /tmp/launch_params_fi2xbyfw'].
+[INFO] [ekf_node-4]: sending signal 'SIGINT' to process[ekf_node-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[ERROR] [global_parameter_node-9]: process has died [pid 73444, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/stack_master/lib/stack_master/global_parameter_node --ros-args -r __node:=global_parameters --params-file /tmp/launch_params_hqg8r3i3 --params-file /tmp/launch_params_8v8226oh --params-file /tmp/launch_params_rctc666r --params-file /tmp/launch_params_9vjz7kwt'].
+[INFO] [gym_bridge-2]: sending signal 'SIGINT' to process[gym_bridge-2]
+[map_server-6] [INFO] [1792488445.959094040] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-6] [INFO] [1792488445.959194469] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-6] [INFO] [1792488445.959259794] [map_server]: Deactivating
+[map_server-6] [INFO] [1792488445.959279204] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[ERROR] [ekf_node-4]: process has died [pid 73434, exit code -2, cmd '/opt/ros/humble/lib/robot_localization/ekf_node --ros-args -r __node:=ekf_filter_node --params-file /home/misys/forza_ws/race_stack/install/state_estimation/share/state_estimation/config/ekf_sim.yaml -r /odometry/filtered:=/early_fusion/odom'].
+[ERROR] [particle_filter-7]: process has died [pid 73440, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/particle_filter/lib/particle_filter/particle_filter --ros-args -r __node:=particle_filter --params-file /home/misys/forza_ws/race_stack/install/particle_filter/share/particle_filter/config/localize.yaml --params-file /tmp/launch_params_0je39c9l'].
+[ekf_node-4] [INFO] [1792488445.959098377] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [robot_state_publisher-3]: process has died [pid 73432, exit code -2, cmd '/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args -r __node:=ego_robot_state_publisher --params-file /tmp/launch_params_ovpmub73 -r /robot_description:=ego_robot_description'].
+[ERROR] [frenet_odom_republisher_node-8]: process has died [pid 73442, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/frenet_odom_republisher/lib/frenet_odom_republisher/frenet_odom_republisher_node --ros-args -r __node:=frenet_odom_republisher --params-file /tmp/launch_params_vdkjhp92 --params-file /tmp/launch_params_bdcjiflt'].
+[robot_state_publisher-3] [INFO] [1792488445.959130337] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[frenet_odom_republisher_node-8] Traceback (most recent call last):
+[frenet_odom_republisher_node-8]   File "/home/misys/forza_ws/race_stack/install/frenet_odom_republisher/lib/frenet_odom_republisher/frenet_odom_republisher_node", line 33, in <module>
+[frenet_odom_republisher_node-8]     sys.exit(load_entry_point('frenet-odom-republisher==0.0.0', 'console_scripts', 'frenet_odom_republisher_node')())
+[frenet_odom_republisher_node-8]   File "/home/misys/forza_ws/race_stack/install/frenet_odom_republisher/lib/python3.10/site-packages/frenet_odom_republisher/frenet_odom_republisher_node.py", line 134, in main
+[frenet_odom_republisher_node-8]     rclpy.spin(node)
+[frenet_odom_republisher_node-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[frenet_odom_republisher_node-8]     executor.spin_once()
+[frenet_odom_republisher_node-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[frenet_odom_republisher_node-8]     self._spin_once_impl(timeout_sec)
+[frenet_odom_republisher_node-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[frenet_odom_republisher_node-8]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[frenet_odom_republisher_node-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[frenet_odom_republisher_node-8]     return next(self._cb_iter)
+[frenet_odom_republisher_node-8]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[frenet_odom_republisher_node-8]     wait_set.wait(timeout_nsec)
+[frenet_odom_republisher_node-8] KeyboardInterrupt
+[global_trajectory_publisher-10] Traceback (most recent call last):
+[global_trajectory_publisher-10]   File "/home/misys/forza_ws/race_stack/install/global_planner/lib/global_planner/global_trajectory_publisher", line 33, in <module>
+[global_trajectory_publisher-10]     sys.exit(load_entry_point('global-planner==0.0.0', 'console_scripts', 'global_trajectory_publisher')())
+[global_trajectory_publisher-10]   File "/home/misys/forza_ws/race_stack/install/global_planner/lib/python3.10/site-packages/global_planner/global_trajectory_publisher.py", line 173, in main
+[global_trajectory_publisher-10]     rclpy.spin(republisher)
+[global_trajectory_publisher-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[global_trajectory_publisher-10]     executor.spin_once()
+[global_trajectory_publisher-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[global_trajectory_publisher-10]     self._spin_once_impl(timeout_sec)
+[global_trajectory_publisher-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[global_trajectory_publisher-10]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[global_trajectory_publisher-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[global_trajectory_publisher-10]     return next(self._cb_iter)
+[global_trajectory_publisher-10]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[global_trajectory_publisher-10]     wait_set.wait(timeout_nsec)
+[global_trajectory_publisher-10] KeyboardInterrupt
+[global_parameter_node-9] Traceback (most recent call last):
+[global_parameter_node-9]   File "/home/misys/forza_ws/race_stack/install/stack_master/lib/stack_master/global_parameter_node", line 33, in <module>
+[global_parameter_node-9]     sys.exit(load_entry_point('stack-master==0.0.0', 'console_scripts', 'global_parameter_node')())
+[global_parameter_node-9]   File "/home/misys/forza_ws/race_stack/install/stack_master/lib/python3.10/site-packages/stack_master/global_parameter_node.py", line 38, in main
+[global_parameter_node-9]     rclpy.spin(node)
+[global_parameter_node-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[global_parameter_node-9]     executor.spin_once()
+[global_parameter_node-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[global_parameter_node-9]     self._spin_once_impl(timeout_sec)
+[global_parameter_node-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[global_parameter_node-9]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[global_parameter_node-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[global_parameter_node-9]     return next(self._cb_iter)
+[global_parameter_node-9]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[global_parameter_node-9]     wait_set.wait(timeout_nsec)
+[global_parameter_node-9] KeyboardInterrupt
+[speed_scaler-11] Traceback (most recent call last):
+[speed_scaler-11]   File "/home/misys/forza_ws/race_stack/install/speed_scaler/lib/speed_scaler/speed_scaler", line 33, in <module>
+[speed_scaler-11]     sys.exit(load_entry_point('speed-scaler==0.0.0', 'console_scripts', 'speed_scaler')())
+[speed_scaler-11]   File "/home/misys/forza_ws/race_stack/install/speed_scaler/lib/python3.10/site-packages/speed_scaler/speed_scaler.py", line 64, in main
+[speed_scaler-11]     rclpy.spin(SpeedScaler())
+[speed_scaler-11]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[speed_scaler-11]     executor.spin_once()
+[speed_scaler-11]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[speed_scaler-11]     self._spin_once_impl(timeout_sec)
+[speed_scaler-11]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+[speed_scaler-11]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[speed_scaler-11]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[speed_scaler-11]     return next(self._cb_iter)
+[speed_scaler-11]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+[speed_scaler-11]     wait_set.wait(timeout_nsec)
+[speed_scaler-11] KeyboardInterrupt
+[particle_filter-7] Traceback (most recent call last):
+[particle_filter-7]   File "/home/misys/forza_ws/race_stack/install/particle_filter/lib/particle_filter/particle_filter", line 33, in <module>
+[particle_filter-7]     sys.exit(load_entry_point('particle-filter==0.2.0', 'console_scripts', 'particle_filter')())
+[particle_filter-7]   File "/home/misys/forza_ws/race_stack/install/particle_filter/lib/python3.10/site-packages/particle_filter/particle_filter.py", line 787, in main
+[particle_filter-7]     rclpy.spin(pf)
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[particle_filter-7]     executor.spin_once()
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[particle_filter-7]     self._spin_once_impl(timeout_sec)
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 807, in _spin_once_impl
+[particle_filter-7]     handler()
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 293, in __call__
+[particle_filter-7]     self._execute_coroutine_step(self._handler)
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[particle_filter-7]     result = coro.send(None)
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+[particle_filter-7]     await call_coroutine(entity, arg)
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 407, in _execute_subscription
+[particle_filter-7]     await await_or_execute(sub.callback, msg)
+[particle_filter-7]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+[particle_filter-7]     return callback(*args)
+[particle_filter-7]   File "/home/misys/forza_ws/race_stack/install/particle_filter/lib/python3.10/site-packages/particle_filter/particle_filter.py", line 387, in odomCB
+[particle_filter-7]     self.update()
+[particle_filter-7]   File "/home/misys/forza_ws/race_stack/install/particle_filter/lib/python3.10/site-packages/particle_filter/particle_filter.py", line 741, in update
+[particle_filter-7]     self.MCL(action, observation)
+[particle_filter-7]   File "/home/misys/forza_ws/race_stack/install/particle_filter/lib/python3.10/site-packages/particle_filter/particle_filter.py", line 673, in MCL
+[particle_filter-7]     self.sensor_model(proposal_distribution, o, self.weights)
+[particle_filter-7]   File "/home/misys/forza_ws/race_stack/install/particle_filter/lib/python3.10/site-packages/particle_filter/particle_filter.py", line 594, in sensor_model
+[particle_filter-7]     self.range_method.calc_range_repeat_angles(self.queries, self.downsampled_angles, self.ranges)
+[particle_filter-7] KeyboardInterrupt
+[lifecycle_manager-5] [INFO] [1792488445.959821586] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1792488445.959883402] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-5] [INFO] [1792488445.959907270] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[gym_bridge-2] [INFO] [1792488445.960715809] [bridge]: Exiting gym_bridge
+[gym_bridge-2] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[gym_bridge-2] Traceback (most recent call last):
+[gym_bridge-2]   File "/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/lib/f1tenth_gym_ros/gym_bridge", line 33, in <module>
+[gym_bridge-2]     sys.exit(load_entry_point('f1tenth-gym-ros==0.0.0', 'console_scripts', 'gym_bridge')())
+[gym_bridge-2]   File "/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros/gym_bridge.py", line 649, in main
+[gym_bridge-2]     rclpy.shutdown()
+[gym_bridge-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+[gym_bridge-2]     _shutdown(context=context)
+[gym_bridge-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[gym_bridge-2]     return context.shutdown()
+[gym_bridge-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[gym_bridge-2]     self.__context.shutdown()
+[gym_bridge-2] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[map_server-6] [INFO] [1792488445.969533007] [map_server]: Cleaning up
+[map_server-6] [INFO] [1792488445.969597660] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-6] [INFO] [1792488445.970231079] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-6] [INFO] [1792488445.971471705] [map_server]: Destroying
+[lifecycle_manager-5] [INFO] [1792488445.971528383] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-5] [INFO] [1792488445.971655970] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[ERROR] [gym_bridge-2]: process has died [pid 73430, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/lib/f1tenth_gym_ros/gym_bridge --ros-args -r __node:=bridge --params-file /home/misys/forza_ws/race_stack/install/stack_master/share/stack_master/config/SIM/sim.yaml --params-file /tmp/launch_params_496bli69 --params-file /tmp/launch_params_uv7xxt6b --params-file /tmp/launch_params_itaxq05n'].
+[INFO] [lifecycle_manager-5]: process has finished cleanly [pid 73436]
+[INFO] [map_server-6]: process has finished cleanly [pid 73438]

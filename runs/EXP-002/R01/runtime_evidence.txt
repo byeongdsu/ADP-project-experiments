@@ -1,0 +1,6 @@
+Source: /home/misys/.ros/log/2026-10-20-18-21-42-554354-byeongsu-ubuntu-68357/launch.log
+1792488103.0558980 [speed_scaler-11] [INFO] [1792488103.055653358] [speed_scaler]: Waiting for global waypoints, global_limit=0.25
+1792488104.6956887 [particle_filter-7] [INFO] [1792488104.695324000] [particle_filter]: GLOBAL INITIALIZATION
+
+Source: /home/misys/.ros/log/python3_68379_1792488103219.log
+[INFO] [1792488103.306122123] [frenet_odom_republisher]: pose source: /pf/viz/inferred_pose

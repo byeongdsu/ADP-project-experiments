@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/jimin1203/misys-forza-2026",
+  "base_commit": "bfba899165e4de371ac4014cad52add06f27559d",
+  "working_tree_modified": true,
+  "scope": "PF known-start initialization; source changes remain in separate race_stack working tree; patch archived here",
+  "sha256": {
+    "particle_filter/particle_filter/particle_filter.py": "5e2efe60156dc69b71df0c1aa06118b5a78c07fd705b5e92403515ab8620e1b0",
+    "particle_filter/launch/localize_launch.py": "80b8ebdbbeb09cb9f9b0b5ca3fa11ca8f382261ae3cf9bcbf7a0e0e3a86926a4",
+    "particle_filter/test/test_start_prior.py": "736f5322fcd2c22517f71edfbdf961cca3a614ef80ff5c840e0b8aedee6a95e1",
+    "utilities/nodes/frenet_odom_republisher/launch/frenet_odom_republisher_launch.xml": "e68828755410eb8e9391e3c9d3e61ba7d4c06311a0fe1bce111c1c2c5b8ee95d",
+    "stack_master/launch/base_system_launch.xml": "f0f9514cb22941170ddbba8f525e041b3060045909cb56bc480a4bf57fe1613d",
+    "stack_master/maps/hyhall12/start_pose.yaml": "9375999f5907104a468b7cfcdbd631a5d4aca6c8f2c8c74fd5fa9ad759ad15af"
+  }
+}

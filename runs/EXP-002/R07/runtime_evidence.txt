@@ -1,0 +1,10 @@
+Source: /home/misys/.ros/log/2026-10-20-20-07-03-270013-byeongsu-ubuntu-89715/launch.log
+1792494423.8745046 [speed_scaler-11] [INFO] [1792494423.874247061] [speed_scaler]: Waiting for global waypoints, global_limit=0.85
+1792494424.7093301 [particle_filter-7] [INFO] [1792494424.709027336] [particle_filter]: LOCAL START PRIOR: x=10.832046, y=-0.502110, yaw=0.365244; startup only, not continuous ground-truth correction
+
+Source: /home/misys/.ros/log/python3_90176_1792494431145.log
+[INFO] [1792494439.501581824] [scorer]: crossed the line — timing started
+[WARN] [1792494447.200582263] [scorer]: wall collision #1 at (11.44, 0.24) on lap 0
+
+Source: /home/misys/.ros/log/python3_89738_1792494423900.log
+[INFO] [1792494424.002749692] [frenet_odom_republisher]: pose source: /pf/viz/inferred_pose

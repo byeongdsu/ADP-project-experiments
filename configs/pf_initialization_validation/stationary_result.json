@@ -1,0 +1,9 @@
+{
+  "domain_id": 47,
+  "controller_started": false,
+  "samples": 751,
+  "last_position_error_m": 0.014784348264736633,
+  "last_yaw_error_deg": 0.06967308326528711,
+  "last30_mean_position_error_m": 0.015932668895604955,
+  "last30_mean_yaw_error_deg": 0.0751779836948817
+}

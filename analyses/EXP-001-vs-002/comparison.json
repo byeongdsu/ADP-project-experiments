@@ -1,0 +1,61 @@
+{
+  "method": "First traversal, GT-to-global-polyline distance, equal 0.5m spatial bins; 0.5<=s<41.5",
+  "shared_bins": 82,
+  "initial_pose": {
+    "GT-0.75": {
+      "x": 10.832046001482436,
+      "y": -0.5021100154908403,
+      "yaw": 0.3652437316241457,
+      "vx": 0.0
+    },
+    "PF-0.75": {
+      "x": 10.832046001482436,
+      "y": -0.5021100154908403,
+      "yaw": 0.3652437316241457,
+      "vx": 0.0
+    },
+    "GT-0.85": {
+      "x": 10.832046001482436,
+      "y": -0.5021100154908403,
+      "yaw": 0.3652437316241457,
+      "vx": 0.0
+    },
+    "PF-0.85": {
+      "x": 10.832046001482436,
+      "y": -0.5021100154908403,
+      "yaw": 0.3652437316241457,
+      "vx": 0.0
+    }
+  },
+  "reference_geometry_equal": true,
+  "runs": {
+    "GT-0.75": {
+      "window_start": 1792486590.7523546,
+      "window_end": 1792486599.3322756,
+      "samples": 858,
+      "spatial_mean_abs_gt_tracking_m": 0.15813079242504713,
+      "spatial_mean_gt_vx_mps": 5.078496973747417
+    },
+    "PF-0.75": {
+      "window_start": 1792494337.138502,
+      "window_end": 1792494345.709719,
+      "samples": 857,
+      "spatial_mean_abs_gt_tracking_m": 0.11942101376477177,
+      "spatial_mean_gt_vx_mps": 5.088017536488272
+    },
+    "GT-0.85": {
+      "window_start": 1792486809.0554569,
+      "window_end": 1792486816.7552633,
+      "samples": 769,
+      "spatial_mean_abs_gt_tracking_m": 0.27403741218451516,
+      "spatial_mean_gt_vx_mps": 5.713354530972369
+    },
+    "PF-0.85": {
+      "window_start": 1792494439.501582,
+      "window_end": 1792494447.2005823,
+      "samples": 769,
+      "spatial_mean_abs_gt_tracking_m": 0.2268889534495336,
+      "spatial_mean_gt_vx_mps": 5.724286370086293
+    }
+  }
+}

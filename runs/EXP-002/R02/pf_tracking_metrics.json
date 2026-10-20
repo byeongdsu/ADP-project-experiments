@@ -1,0 +1,24 @@
+{
+  "start": 1792488764.9237297,
+  "end": 1792488818.3844604,
+  "localization_samples": 1293,
+  "pf_position_error_mean_m": 0.09276086275702024,
+  "pf_position_error_max_m": 0.3046984077983124,
+  "pf_yaw_abs_error_mean_deg": 1.012596132426428,
+  "pf_yaw_abs_error_max_deg": 4.727821235031333,
+  "gt_tracking_abs_mean_m": 0.05341534949353667,
+  "gt_tracking_abs_max_m": 0.09794327971678027,
+  "gt_tracking_method": "distance to recorded global waypoint polyline segments",
+  "gt_vx_max_mps": 3.5958049575620943,
+  "initial_gt_pose": [
+    10.832046001482436,
+    -0.5021100154908403,
+    0.3652437316241457
+  ],
+  "initial_gt_vx": 0.0,
+  "start_check_file_present": false,
+  "last_pre_command_localization_error": {
+    "position_m": 0.019311096231849324,
+    "heading_deg": 0.08014542941346435
+  }
+}
