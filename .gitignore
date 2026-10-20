@@ -1,0 +1,5 @@
+*.bag
+*.db3
+*.mcap
+__pycache__/
+.DS_Store
