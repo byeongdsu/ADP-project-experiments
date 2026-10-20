@@ -1,0 +1,5 @@
+# Global racing-line waypoint 410; yaw follows the racing-line tangent.
+# Loaded on each base_system launch. Start the controller only after recording.
+sx: 10.832046001482436
+sy: -0.5021100154908403
+stheta: 0.3652437316241457

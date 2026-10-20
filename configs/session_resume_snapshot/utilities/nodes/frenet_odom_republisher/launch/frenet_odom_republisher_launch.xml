@@ -1,0 +1,43 @@
+<launch>
+  <arg name="map_path" default="" />
+  <arg name="map_name" default="" />
+  <arg name="pose_source" default="pf" />   <!-- pf | gt: which pose the car drives on -->
+  <arg name="initialize_from_start_pose" default="false" />
+  <let name="pose_topic" value="$(eval '&quot;/car_state/pose_GT&quot; if &quot;$(var pose_source)&quot; == &quot;gt&quot; else &quot;/pf/viz/inferred_pose&quot;')" />
+
+  <!-- 1. EKF 필터 노드(state_estimation/ekf_launch.py) -->
+  <include file="$(find-pkg-share state_estimation)/launch/ekf_launch.py"> 
+    <!--인자 전달 -->
+    <arg name="use_sim_time" value="true"/> 
+  </include>
+
+  <!-- 2. 파티클 필터 노드(particle_filter/localize_launch.py) -->
+  <include file="$(find-pkg-share particle_filter)/launch/localize_launch.py"> 
+    <arg name="use_sim_time" value="true"/> 
+    <arg name="map_path" value="$(var map_path)" />
+    <arg name="map_name" value="$(var map_name)" />
+    <arg name="initialize_from_start_pose" value="$(var initialize_from_start_pose)" />
+  </include> 
+
+
+  <!-- 3. Frenet Odom Republisher 본체 -->
+  <node
+      name="frenet_odom_republisher"
+      pkg="frenet_odom_republisher"
+      exec="frenet_odom_republisher_node"
+      output="screen">
+    <param name="use_sim_time" value="true"/>
+    <param name="pose_topic" value="$(var pose_topic)"/>
+  </node>  
+ 
+
+    <!-- Carstate Node -->
+  <!--
+  <node name="carstate_node" pkg="state_estimation" exec="carstate_node" args="" output='screen'>
+     <remap from="/odom_out" to="/car_state/odom" />
+     <param name="frenet_bool" value="$(var frenet_bool)" />
+     <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+  -->
+      
+</launch>
