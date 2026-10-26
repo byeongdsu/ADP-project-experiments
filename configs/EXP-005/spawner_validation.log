@@ -1,0 +1,24 @@
+[INFO] [launch]: All log files can be found below /home/misys/.ros/log/2026-10-21-15-43-41-917499-byeongsu-ubuntu-92637
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [obstacle_spawner-1]: process started with pid [92645]
+[INFO] [scorer-2]: process started with pid [92647]
+[scorer-2] [INFO] [1792565022.451378173] [scorer]: seed 2026 -> /tmp/exp005_stationary_validation/race_result_20261021_154342.json
+[scorer-2] [WARN] [1792565022.451863023] [scorer]: a collision stops the car for good; reset it with /initialpose to keep going
+[obstacle_spawner-1] [INFO] [1792565022.542000909] [obstacle_spawner]: seed 2026 (reproducible), waypoints md5 a62f311ef652364e02b05f53a6df8236, obstacle_size=0.3, wall_margin=0.15, car_width=0.31, squeeze_clearance=0.05, candidate_spacing=0.5, candidate_d_step=0.1, candidate_thetas=[0.0, 0.39269908169872414, 0.7853981633974483, 1.1780972450961724], exclusion_ahead=5.0, exclusion_behind=1.0, min_severity=0.0, recipes ['spread:1.0 chicane:1:0.10 forced:1:0.20', 'spread:1.0 forced:2:0.20', 'spread:0.5 forced:1:0.30 either:1:0.20', 'chicane:2:0.10'], picking 2 per lap
+[obstacle_spawner-1] [INFO] [1792565022.543356962] [obstacle_spawner]: lap 0: FIXED layout /home/misys/ADP-project-experiments/configs/EXP-005/fixed_layout.json; poses [(-2.8948027749052776, 6.010448599876208, -2.0084989956221486), (-3.5765906407777135, 5.259184622917205, -1.6408205742371786)]
+[obstacle_spawner-1] [INFO] [1792565023.548200214] [obstacle_spawner]: lap 3: FIXED layout /home/misys/ADP-project-experiments/configs/EXP-005/fixed_layout.json; poses [(-2.8948027749052776, 6.010448599876208, -2.0084989956221486), (-3.5765906407777135, 5.259184622917205, -1.6408205742371786)]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [scorer-2]: sending signal 'SIGINT' to process[scorer-2]
+[INFO] [obstacle_spawner-1]: sending signal 'SIGINT' to process[obstacle_spawner-1]
+[scorer-2] 
+[scorer-2] --- seed 2026  ·  hyhall12  ·  0 laps ---
+[scorer-2]   best lap    -
+[scorer-2]   collisions  0   (obstacle 0, wall 0)
+[scorer-2] 
+[scorer-2]   lap      time     hits   obstacle   wall
+[scorer-2] 
+[scorer-2]   log:    /tmp/exp005_stationary_validation/race_result_20261021_154342.json
+[scorer-2]   report: ros2 run race_manager report /tmp/exp005_stationary_validation/race_result_20261021_154342.json
+[scorer-2] 
+[INFO] [scorer-2]: process has finished cleanly [pid 92647]
+[INFO] [obstacle_spawner-1]: process has finished cleanly [pid 92645]

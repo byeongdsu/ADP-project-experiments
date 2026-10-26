@@ -1,72 +1,50 @@
-# 작업 인계 — 2026-10-20
+# 작업 인계 — 2026-10-21 종료
 
-## 종료 체크포인트 / 다음 세션에서 할 일
-사용자가 컨테이너를 종료할 예정이므로 여기서 중단한다. EXP-001·002 정리와 비교 보고서는 실험 저장소 main의 `c427542` 커밋으로 GitHub 업로드를 확인했다. 이번 종료 인계와 AGENTS.md도 후속 커밋으로 저장한다.
+이 문서 상단이 최신 상태다. 오늘은 사용자 요청으로 종료하며 자동 실행하지 않는다.
 
-1. 이 파일과 두 실험의 SUMMARY.md, 비교 REPORT.md, results.csv를 읽는다. 처음부터 실험을 다시 하지 않는다.
-2. EXP-003~004의 구체적인 조건을 사용자와 정한다. PP 튜닝이나 추가 미세 속도 탐색은 현재 계획에 없다.
-3. 실행 전 실제 배율(현재0.80), 고정 출발점, PF 시작 prior·빌드 상태와 GUI 연결을 확인한다. 필요하면 체크포인트 소스 사본과 대조한다.
+## 다음 세션에서 바로 할 일
+1. 이 파일과 아래 분석 README를 읽고 기존 bag을 오프라인으로 분석한다. 실험을 처음부터 반복하지 않는다.
+2. GT 첫 배치에서 회피경로가 두 번째 장애물의 점유 검사에 걸리는 과정과, PF 네 번째 배치에서 회피방향이 급변하는 과정을 기존 토픽만으로 비교한다.
+3. 당장 추가 속도 탐색·seed 변경·새 진단 노드·고정 배치 기능을 추가하지 않는다. 사용자와 다음 검증 조건을 정한 뒤 실행한다. 특히 EXP-005 기능은 사용자 요청으로 원복했으므로 자동 복구/재적용 금지.
+4. results.csv에는 오늘 실행 일부만 반영됐다. EXP-003 R03/R05/R06/R07계열 등의 누락과 run README를 결과JSON·시작로그·bag으로 점검해 보완할 수 있다. 완료하지 않은 분석을 완료라고 표현하지 않는다.
 
-종료 전 확인 시 ROS launch·rosbag·컨트롤러 프로세스는 없었다. 실행을 자동 시작하거나 컨테이너 자체를 종료하지 않았다. 원본bag은 로컬이고 GitHub에는 지표·문서·분석 코드·메타데이터만 있다. 소스 변경은 별도 race_stack 작업 트리에 남아 있으며 이번 인계에 관련 파일 사본도 보관한다.
+재개 메시지 예시: **“ADP-project-experiments의 SESSION_HANDOFF.md 읽고, EXP-006까지의 기존 bag으로 회피 경로 문제 분석부터 이어서 해줘. 코드는 먼저 바꾸지 마.”**
 
-다음 사용자 메시지 예시: **“ADP-project-experiments의 SESSION_HANDOFF.md 읽고 EXP-003부터 이어서 진행해줘.”**
+## 현재 실제 설정과 소스
+- global_limit=0.70, hyhall12, PP(C++), seed2026, 장애물2개. 마지막실행은 GT. pose_source는 launch 인자이며 다음실행에 명시한다.
+- PP 튜닝값은 기존그대로(m_l1=0.575,q_l1=0.04). 고정출발/PF시작prior는 이전세션에서 정상화한것을 유지.
+- EXP-005 고정배치·state_machine진단추가분은 모두 제거. state_machine 소스6개와 설치파일을 변경전 build/lib사본과 바이트대조했고 기존 PP설정도 일치. race_manager/state_machine은 일반설치로 재빌드. 설치에남은 fixed_layout.py도 제거.
+- 확인근거 configs/EXP-005/rollback_verified.json. configs/EXP-005/source_snapshot은 폐기된실험소스의기록이므로 실행용아님. 그 폴더 COMMANDS.md를 사용하지 않는다.
+- race_stack의 git diff에는 기존 사용자·이전세션 변경이남아있다. git reset/일괄복구 금지. 오늘종료시 source상태는 configs/session_close_20261021에별도보존.
+- 원본bag로컬유지. 오늘종료정리는 로컬파일저장이며 GitHub push는 수행하지않았다.
 
-## 사용자 결정과 현재 상태
-EXP-001(GT)과 EXP-002(PF)의 장애물 없는 기본 탐색 및 상호 비교를 마감했다. EXP-003~004를 먼저 관찰한 뒤 문제별 파라미터를 하나씩 검증·보완한다. 지금 미세 속도 최적화나 PP 튜닝을 하지 않는다. 이후 실험 번호별 조건은 아직 확정하지 않았다.
+## 핵심 관찰
+- EXP-001/002는 이전세션에서마감: 장애물없이 GT/PF0.75대표완주,0.85유사코너실패. 다시실행하지않음.
+- EXP-003(GT): 장애물1개0.25는3랩완주(평균25.306초). 장애물2개0.25~0.75는정지관찰. 조건별원본재검토필요. analyses/EXP-003/REPORT.md.
+- EXP-004(PF): 2개,0.25/0.35/0.45/0.55/0.65는첫구간정지. 0.75최초는1랩완료후새배치충돌; 반복은정지(약9초/19.85초관찰). 정확한관찰길이차이를보존.
+- PF0.70 R07/R07-retry1/R07-retry3는각각3랩무충돌후4번째새배치에서장애물충돌. 랩평균12.374/15.116/14.098초(반올림). 목표3랩성공과전체충돌1회를분리. R07-retry2만별도로시작직후벽충돌(계측+0.589초),원인미확정.
+- EXP-006(GT0.70): R01과R01-retry1모두첫배치 O_FREE False→TRAILING,0랩무충돌. R01은18.45초정지, retry1은8.325초후기록종료해15초기준미충족. 네번째배치에는도달하지못했음.
 
-사용자는 결과 정리와 GitHub 업로드를 요청했다. 대상은 ADP-project-experiments 저장소다. race_stack 소스 저장소는 별도이며, 초기화 정비 패치·소스 기준 커밋·해시는 실험 저장소에도 보존한다. 원본 .db3는 기존 .gitignore로 제외하고 로컬에 남긴다.
+## 원인별 증거 / 미확정 구분
+1. 첫배치: 첫장애물회피경로가두번째장애물에가까워져 `_check_ofree`의전방3m/횡차이0.1m기준에걸림. 같은시각O_FREE False와OVERTAKE→TRAILING확인. TRAILING간격제어속도0,FTG는기존코드에서비활성화.
+2. 네번째배치: R07-retry3 충돌0.3→0.2초전 planner right→left. 동일s21.9부근local d -0.541→+0.472m(약1.01m급변),ego d약-0.37m유지. 이후정지명령에도실제속도가남아충돌. 정확한방향변경트리거는아직미확정.
+3. 단기경로보존은존재: 빈planner경로는즉시기존경로를지우지않음, 최근유효경로를TRAILING에서도사용,마지막유효경로부터TTL설정3초(루프카운터)지나면삭제. 이는지난랩학습의근거가아님. 새planner경로자체도좌우변경되므로캐시하나만을충돌원인으로단정하지않음.
+4. PF가GT보다우수하다고일반화금지. 추정편향·난수·입력지연·경로/상태전환변동이있고독립반복수부족.
 
-## 먼저 읽을 자료
-- runs/EXP-001/SUMMARY.md: GT 대표 결과와 예외 처리.
-- runs/EXP-002/SUMMARY.md: PF 결과, 초기 측위 실패, 0.80 추가 탐색.
-- analyses/EXP-001-vs-002/REPORT.md: 같은 배율·경로·GT 기준 비교.
-- findings.md: 확인한 사실, 원인 가설, 보류한 검증.
-- results.csv: 실행별 요약과 원본 경로.
+## 우선 읽을 분석
+- runs/EXP-004/R07-retry3/README.md 및 path_switch_timeline.json
+- runs/EXP-004/R07/README.md, R07-retry1/README.md
+- runs/EXP-004/R06/README.md 및 collision_trajectory.png
+- runs/EXP-006/R01/README.md 및 R01-retry1/README.md
+- analyses/EXP-003/REPORT.md
+- scripts/analyze_obstacle_collision.py, scripts/analyze_pf_run.py
 
-## EXP-002 최종 관찰
-알려진 초기 위치를 제공한 PF 조건에서 0.25/0.35/0.45/0.55/0.65/0.75는 각각 3랩 무충돌 완주했다. 평균 랩타임은 24.957/17.820/13.883/11.397/9.721/8.550초다.
-- R07, 0.85: 0랩, 계측 +7.699초 벽 충돌 (11.437, 0.240).
-- R08, 0.80: 계측상 1랩 8.120초 통과 직후 +8.129초 벽 충돌 (11.533, 0.258). 목표 3랩 실패다.
-- EXP-002/R08은 0.80, EXP-001/R08은 0.95이므로 혼동하지 않는다.
+분석은bag수신시각최근이전표본결합이며내부콜백시각과차이가있다. waypoint점거리와polyline거리구분,글로벌레이스라인거리와회피경로거리구분. 장애물개수뿐아니라실제XY/yaw·크기·랩별변경확인. PF start_check.json 없는실행은통과주장금지. 영상촬영통보만있고영상파일은미전달.
 
-초기화 정비 이후 각 bag에서 초기 GT pose·방향·속도0과 출발 전 정상 PF 오차를 확인했다. start_check.json은 각 주행 폴더에서 발견되지 않아 검사 명령 통과를 주장하지 않는다.
+## 실행·사용자 선호
+- 사용자가속도변경을요청하면파일적용후새run경로와터미널4bag명령도함께알려준다. 터미널3 log_dir는직접절대경로표기를선호.
+- 실행1→3→4→2,종료1→2→3→4. 각터미널race로환경적용. 배율변경후base_system재시작필요. PF는출발전check_pf_start.py && PP로검사결과저장. GT는GT입력명시.
+- RViz는호스트X접근권한문제발생이력있음. 컨테이너DISPLAY=:0,XAUTHORITY=/dev/null이었음. 설치오류와X권한오류를혼동하지않는다.
+- 소스변경후실행오류로사용자불편이컸음. 다음은읽기전용분석부터,불필요한수정/재설치/동작정상확신을피한다.
 
-## GT/PF 비교
-0.75와0.85의 네 실행에서 초기 GT pose·속도0과 글로벌 경로 형상이 같았다. 첫 주행의 공통 s0.5~41.5m를 0.5m 간격 82개 구간으로 정렬했다. 공간 평균 GT 실제 추종 거리는 GT0.75=15.81cm / PF0.75=11.94cm / GT0.85=27.40cm / PF0.85=22.69cm다.
-
-해당 실행의 PF 값이 작았어도 PF가 GT보다 우수하다고 일반화하지 않는다. 추정 편향·난수·비동기 입력·실행 변동이 혼입될 수 있고 독립 반복이 충분하지 않다. GT/PF 0.85 충돌점은 약6.4cm 차이의 유사 코너다. PF만의 실패로 단정하지 않는다.
-
-## 현재 설정 — 다음 실험에 자동 승계 금지
-- /home/misys/forza_ws/race_stack/stack_master/maps/hyhall12/speed_scaling.yaml: global_limit=0.80.
-- PP 튜닝은 기존 값 유지: m_l1=0.575, q_l1=0.04 등.
-- 고정 pose: x10.832046001482436, y-0.5021100154908403, yaw0.3652437316241457.
-- base_system 재시작 시 맵의 start_pose.yaml이 적용된다. RViz에서 다시 위치를 찍지 않는다.
-- 소스 맵 YAML을 직접 읽으므로 배율 변경에는 빌드가 필요 없지만 base_system 재시작은 필요하다.
-
-## 초기화 정비와 과거 예외
-EXP-002 최초 R01은 주행 전 PF 위치 오차3.909m·방향 오차179.702도인 상태에서 첫 명령 +0.805초에 충돌했다. 시뮬레이터만 고정 pose를 적용하고 PF에는 시작 prior가 전달되지 않았던 문제다. 잘못된 해로 수렴한 세부 원인은 미확정이며 실패 원본을 보존한다.
-
-시뮬레이션에서만 start_pose.yaml을 PF 시작 prior로 한 번 전달하도록 정비했다. 기존 지역 입자 분산을 유지했고 주행 중 GT로 보정하지 않는다. 실차/localize 기본값은 전역 초기화다. 관련 테스트12개 통과, particle_filter·frenet_odom_republisher·stack_master 빌드 완료. 정지 검증 오차는 약1.6cm/0.07도다. configs/pf_initialization_validation에 패치·테스트·해시·검증 로그를 보존했다.
-
-EXP-001 최초 R06은 목표0.75였지만 시작 로그는0.65였다. 유효0.75 결과에서 제외하고 원본은 보존했다. 수동 출발 차이, 초기 조건 이상, 종료 조작 중 충돌 등은 각 실행 기록에 구분했다. 고정 출발0.75는 두 별도 실행에서 각각3랩 완주했다.
-
-## 실행과 기록 원칙
-터미널마다 race로 폴더 이동과 ROS underlay/overlay를 적용한다. 시작 순서는1→3→4→2, 종료는1→2→3→4다. 컨트롤러만 먼저 끄면 마지막 명령으로 주행할 수 있다.
-
-PF 조건은 pose_source:=pf, GT 조건은 :=gt를 사용한다. 매번 새 EXPID/RUNID 기록 경로를 선택한다. PF rosbag 토픽은 아래와 같다.
-
-```text
-/drive /car_state/odom_GT /car_state/odom /car_state/frenet/odom
-/global_waypoints /local_waypoints /sim/collision
-/pf/viz/inferred_pose /car_state/pose_GT /scan
-```
-
-PP 시작 전 `python3 /home/misys/ADP-project-experiments/scripts/check_pf_start.py --output <run>/start_check.json && ros2 launch stack_master head_to_head_launch.xml ctrl_algo:=PP`를 사용한다. 실제 GT 토픽은 /car_state/odom_GT다. PF 기준 Frenet d와 GT 실제 추종 거리를 구분하고, 장애물 실험에서는 실제 배치·크기도 보존한다. 3연속 랩과 독립 반복3회는 구분한다.
-
-## 분석 도구와 보류한 가설
-scripts/analyze_pf_run.py는 PF 오차와 GT 실제 polyline 추종을 분리한다. 구간 시각은 각 README와 지표 JSON에 있다. analyses/EXP-001-vs-002/compare.py는 같은 배율의 첫 주행을 공통 경로 구간으로 비교한다. 재실행하려면 원본 bag을 해당 상대 경로에 준비한다.
-
-원인 후보는 속도 비례 lookahead 증가, 제한적인 횡오차·헤딩 감속, 컨트롤러 속도 및 PF 위치 추정 지연이다. 실제 L1/목표점은 미계측이라 일부 해석은 소스와 입력의 재구성이다. l1_distance는 publisher 선언만 있고 publish 호출은 없어 이름만 bag에 추가해도 측정되지 않는다. m_l1=0.50 등 후속 검증은 EXP-003~004 이후로 보류한다.
-
-## 보관과 주의
-race_stack의 기존 사용자 변경을 덮어쓰지 않는다. 소스 변경은 별도 저장소에서 관리하고 초기화 정비 패치를 실험 저장소에도 보관한다. 큰 bag은 Git에 임의 추가하지 않으며 GitHub 인증 비밀을 저장하지 않는다. 촬영 영상은 아직 전달받지 않았다.
+이전상세인계는 analyses/session_history/handoff_before_20261021_close.md에보존했다.

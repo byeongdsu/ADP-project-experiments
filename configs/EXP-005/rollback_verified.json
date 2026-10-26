@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "state_machine/__init__.py": {
+      "source_matches_prechange": true,
+      "installed_matches_prechange": true
+    },
+    "state_machine/transitions.py": {
+      "source_matches_prechange": true,
+      "installed_matches_prechange": true
+    },
+    "state_machine/states.py": {
+      "source_matches_prechange": true,
+      "installed_matches_prechange": true
+    },
+    "state_machine/state_types.py": {
+      "source_matches_prechange": true,
+      "installed_matches_prechange": true
+    },
+    "state_machine/state_machine_params.py": {
+      "source_matches_prechange": true,
+      "installed_matches_prechange": true
+    },
+    "state_machine/state_machine.py": {
+      "source_matches_prechange": true,
+      "installed_matches_prechange": true
+    },
+    "race_manager/obstacle_spawner.py": {
+      "installed_matches_source": true
+    },
+    "race_manager/placement.py": {
+      "installed_matches_source": true
+    },
+    "race_manager/track.py": {
+      "installed_matches_source": true
+    },
+    "PP_parameters_unchanged": true,
+    "speed_matches_successful_R07": true
+  },
+  "removed_orphan_modules": [
+    "/home/misys/forza_ws/race_stack/build/race_manager/build/lib/race_manager/fixed_layout.py",
+    "/home/misys/forza_ws/race_stack/install/race_manager/lib/python3.10/site-packages/race_manager/fixed_layout.py",
+    "/home/misys/forza_ws/race_stack/install/race_manager/lib/python3.10/site-packages/race_manager/__pycache__/fixed_layout.cpython-310.pyc"
+  ],
+  "scope": "pre EXP-005 source and PP parameter parity; no driving validation performed"
+}

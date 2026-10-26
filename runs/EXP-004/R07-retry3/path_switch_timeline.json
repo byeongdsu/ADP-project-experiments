@@ -1,0 +1,103 @@
+[
+  {
+    "relative_s": -0.6,
+    "ego_s": 20.754625239087527,
+    "ego_d": -0.3622930017696735,
+    "local_d_at_s21_9": -0.5223620525012254,
+    "planner_side": "right",
+    "planner_points": 173,
+    "planner_d_at_s21_9": -0.5257356916213342,
+    "perceived_ids": [
+      7,
+      8
+    ]
+  },
+  {
+    "relative_s": -0.4,
+    "ego_s": 21.220013208565003,
+    "ego_d": -0.3806813272794245,
+    "local_d_at_s21_9": -0.6407691332281304,
+    "planner_side": "right",
+    "planner_points": 173,
+    "planner_d_at_s21_9": -0.6407691332281304,
+    "perceived_ids": [
+      7,
+      8
+    ]
+  },
+  {
+    "relative_s": -0.3,
+    "ego_s": 21.415582764428745,
+    "ego_d": -0.3763697462603878,
+    "local_d_at_s21_9": -0.5408696461775292,
+    "planner_side": "right",
+    "planner_points": 173,
+    "planner_d_at_s21_9": -0.5408696461775292,
+    "perceived_ids": [
+      7,
+      8
+    ]
+  },
+  {
+    "relative_s": -0.2,
+    "ego_s": 21.633014356608342,
+    "ego_d": -0.37034392678465655,
+    "local_d_at_s21_9": 0.47223031896455575,
+    "planner_side": "left",
+    "planner_points": 99,
+    "planner_d_at_s21_9": 0.47223031896455575,
+    "perceived_ids": [
+      7,
+      8
+    ]
+  },
+  {
+    "relative_s": -0.15,
+    "ego_s": 21.720103511962066,
+    "ego_d": -0.37912168482353736,
+    "local_d_at_s21_9": 0.47223031896455575,
+    "planner_side": "left",
+    "planner_points": 99,
+    "planner_d_at_s21_9": 0.3971654725114222,
+    "perceived_ids": [
+      7,
+      8
+    ]
+  },
+  {
+    "relative_s": -0.1,
+    "ego_s": 21.86283442418304,
+    "ego_d": -0.3862217576447382,
+    "local_d_at_s21_9": 0.47223031896455575,
+    "planner_side": "left",
+    "planner_points": 99,
+    "planner_d_at_s21_9": 0.3947522063966542,
+    "perceived_ids": [
+      8
+    ]
+  },
+  {
+    "relative_s": -0.05,
+    "ego_s": 21.93240460183045,
+    "ego_d": -0.37696815788737525,
+    "local_d_at_s21_9": 0.47223031896455575,
+    "planner_side": "left",
+    "planner_points": 98,
+    "planner_d_at_s21_9": 0.37530889558930003,
+    "perceived_ids": [
+      8
+    ]
+  },
+  {
+    "relative_s": 0,
+    "ego_s": 21.99115497424557,
+    "ego_d": -0.3604238355608822,
+    "local_d_at_s21_9": 0.502060799912475,
+    "planner_side": "left",
+    "planner_points": 96,
+    "planner_d_at_s21_9": 0.3626581571020541,
+    "perceived_ids": [
+      8
+    ]
+  }
+]

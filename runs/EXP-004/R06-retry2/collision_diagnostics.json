@@ -1,0 +1,48 @@
+{
+  "alignment": "latest preceding bag receive time; asynchronous inputs, not internal controller capture",
+  "collisions": [],
+  "state_changes": [
+    [
+      1792563734.1616714,
+      "StateType.GB_TRACK"
+    ],
+    [
+      1792563738.7618344,
+      "StateType.TRAILING"
+    ],
+    [
+      1792563738.8123157,
+      "StateType.OVERTAKE"
+    ],
+    [
+      1792563738.8620446,
+      "StateType.TRAILING"
+    ],
+    [
+      1792563739.2617838,
+      "StateType.OVERTAKE"
+    ],
+    [
+      1792563739.589095,
+      "StateType.TRAILING"
+    ]
+  ],
+  "layout_changes": [
+    {
+      "time_s": 1792563727.6399493,
+      "xy_yaw": [
+        [
+          -3.8932997836759013,
+          2.7308772520340057,
+          -0.9098783490814282
+        ],
+        [
+          -3.30813859295505,
+          5.125268611851245,
+          -1.6408205742371786
+        ]
+      ]
+    }
+  ],
+  "snapshots": []
+}

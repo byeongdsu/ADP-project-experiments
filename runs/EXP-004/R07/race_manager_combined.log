@@ -1,0 +1,16 @@
+[INFO] [1792563981.003490372] [scorer]: seed 2026 -> /home/misys/ADP-project-experiments/runs/EXP-004/R07/race_result_20261021_152620.json
+[WARN] [1792563981.003952684] [scorer]: a collision stops the car for good; reset it with /initialpose to keep going
+[INFO] [1792563993.330579053] [scorer]: crossed the line — timing started
+[INFO] [1792564006.581105589] [scorer]: lap 1  13.25 s  0 hits (obstacle 0, wall 0)
+[INFO] [1792564018.321847811] [scorer]: lap 2  11.74 s  0 hits (obstacle 0, wall 0)
+[INFO] [1792564030.450960480] [scorer]: lap 3  12.13 s  0 hits (obstacle 0, wall 0)
+[WARN] [1792564037.652952271] [scorer]: obstacle collision #1 at (-3.50, 5.87) on lap 3
+
+[INFO] [1792563983.889860806] [obstacle_spawner]: generated 6801 candidates — either 4417, LEFT 1201, RIGHT 1183
+[INFO] [1792563983.937860833] [obstacle_spawner]: seed 2026 (reproducible), waypoints md5 a62f311ef652364e02b05f53a6df8236, obstacle_size=0.3, wall_margin=0.15, car_width=0.31, squeeze_clearance=0.05, candidate_spacing=0.5, candidate_d_step=0.1, candidate_thetas=[0.0, 0.39269908169872414, 0.7853981633974483, 1.1780972450961724], exclusion_ahead=5.0, exclusion_behind=1.0, min_severity=0.0, recipes ['spread:1.0 chicane:1:0.10 forced:1:0.20', 'spread:1.0 forced:2:0.20', 'spread:0.5 forced:1:0.30 either:1:0.20', 'chicane:2:0.10'], picking 2 per lap
+[WARN] [1792563983.943382066] [obstacle_spawner]: lap 0: recipe relaxed — forced: dropped, no room left in num_obstacles
+[INFO] [1792563983.945499637] [obstacle_spawner]: lap 0 [spread:1.0 chicane:1:0.10 forced:1:0.20]: 2 obstacles — s040d-02t1[either sev 0.15 vis 4.5], s035d+02t1[either sev 0.15 vis 2.7]
+[INFO] [1792564006.592488128] [obstacle_spawner]: lap 1 [spread:1.0 forced:2:0.20]: 2 obstacles — s057d+02t2[LEFT sev 0.57 vis 7.7], s002d+01t1[RIGHT sev 0.25 vis 3.5]
+[INFO] [1792564018.331011409] [obstacle_spawner]: lap 2 [spread:0.5 forced:1:0.30 either:1:0.20]: 2 obstacles — s067d+00t3[LEFT sev 0.35 vis 12.5], s024d-01t1[either sev 0.25 vis 4.4]
+[WARN] [1792564030.465565043] [obstacle_spawner]: lap 3: recipe relaxed — forced: dropped, no room left in num_obstacles
+[INFO] [1792564030.469246953] [obstacle_spawner]: lap 3 [spread:1.0 chicane:1:0.10 forced:1:0.20]: 2 obstacles — s033d+00t1[RIGHT sev 0.35 vis 3.6], s035d-01t1[either sev 0.25 vis 3.1]

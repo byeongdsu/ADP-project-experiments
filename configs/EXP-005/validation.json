@@ -1,0 +1,33 @@
+{
+  "fixed_layout_unchanged_after_lap_update": true,
+  "pose_messages": 7,
+  "diagnostic_messages": 20,
+  "active_path_messages": 19,
+  "last_diagnostic": {
+    "stamp": 1792565027.991506,
+    "previous_state": "StateType.OVERTAKE",
+    "state": "StateType.OVERTAKE",
+    "reason": "valid_avoidance_path",
+    "guards": {
+      "availability": "valid",
+      "ofree": {
+        "free": true
+      }
+    },
+    "ttl_ticks_before_decrement": 120,
+    "loop_rate_hz": 40,
+    "last_planner_input": {
+      "points": 173,
+      "stamp": 1792564037.3793437,
+      "received_at": 1792565027.9813807,
+      "ot_side": "right",
+      "last_switch_time": 1792564035.235145
+    },
+    "cached_path_id": "87f76a40096c8198",
+    "cached_path_points": 173,
+    "cached_path_used": true,
+    "ego_s": 21.454992863874363,
+    "ego_d": -0.39446667366827476
+  },
+  "scope": "isolated domain87, state machine with recorded static inputs; no controller, bridge, or driving"
+}

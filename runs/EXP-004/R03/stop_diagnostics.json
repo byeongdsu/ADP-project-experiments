@@ -1,0 +1,44 @@
+{
+  "final_gt_xy": [
+    -3.5501188807413357,
+    5.69180431263463
+  ],
+  "final_gt_vx": 3.088017212975481e-45,
+  "initial_obstacle_xy": [
+    [
+      -3.8932997836759013,
+      2.7308772520340057
+    ],
+    [
+      -3.30813859295505,
+      5.125268611851245
+    ]
+  ],
+  "final_zero_command_s": 5.575476686,
+  "state_transitions": [
+    {
+      "bag_time_s": 1792562821.4948957,
+      "state": "StateType.GB_TRACK"
+    },
+    {
+      "bag_time_s": 1792562829.094924,
+      "state": "StateType.TRAILING"
+    },
+    {
+      "bag_time_s": 1792562829.120064,
+      "state": "StateType.OVERTAKE"
+    },
+    {
+      "bag_time_s": 1792562829.1702464,
+      "state": "StateType.TRAILING"
+    },
+    {
+      "bag_time_s": 1792562829.5700793,
+      "state": "StateType.OVERTAKE"
+    },
+    {
+      "bag_time_s": 1792562830.9960248,
+      "state": "StateType.TRAILING"
+    }
+  ]
+}

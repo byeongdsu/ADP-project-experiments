@@ -1,0 +1,118 @@
+[INFO] [1792566282.925990257] [spline_planner]: Carstate Node waiting for Odometry messages...
+[INFO] [1792566283.787604437] [spline_planner]: Received State message.
+[INFO] [1792566283.960059204] [spline_planner]: Received Scaled Global Waypoints message.
+[INFO] [1792566284.027601704] [spline_planner]: Received Global Waypoints message.
+[INFO] [1792566284.028272738] [spline_planner]: All required messages received. Continuing...
+[INFO] [1792566291.134683500] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.387657211] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.435478612] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.485047852] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.535204040] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.584454533] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.634498554] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.684376302] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.733930909] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.784838837] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.834479064] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.885000984] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.934337741] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566291.984183354] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.034883227] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.086882322] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.135119258] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.184591959] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.234538100] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.284947787] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.334262536] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.384267455] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.434542257] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.485267557] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.533822804] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.586146895] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.634339077] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.684690729] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.735005402] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.785479398] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.834864248] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.883781950] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.934762911] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566292.984590963] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.034622701] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.084752065] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.135327204] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.184832007] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.234758414] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.287531895] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.334431549] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.384640424] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.435288165] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.484896662] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.534255276] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.583300280] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.635277625] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.686484528] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.734110656] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.786549305] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.834663518] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.887017238] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.934995522] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566293.984117849] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.034729418] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.087007963] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.135323136] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.184328291] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.235464857] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.285453029] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.335224193] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.384914070] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.435258076] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.484904511] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.534021535] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.584390104] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.634209095] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.684450342] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.734436368] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.787024622] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.834588289] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.887268309] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.934718190] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566294.985662446] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.034586906] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.084964994] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.134153279] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.187870958] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.234690139] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.284514601] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.334419661] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.385002253] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.435152751] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.485637377] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.536335065] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.584272317] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.636541162] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.686017009] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.734951329] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.784858703] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.835049206] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.884853667] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.934195884] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566295.984071682] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.033921830] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.084267830] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.134522001] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.183896230] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.236830056] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.284648451] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.336862853] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566296.384987572] [spline_planner]: Can't switch sides, because we are not on the raceline
+[INFO] [1792566297.290458531] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566297.390034025] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566297.444513544] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566297.492906289] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566297.590100847] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566298.239198120] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566298.288760225] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566298.339208024] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566298.590592793] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566298.641749910] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion
+[INFO] [1792566299.189376416] [spline_planner]: Evasion trajectory too close to TRACKBOUNDS, aborting evasion

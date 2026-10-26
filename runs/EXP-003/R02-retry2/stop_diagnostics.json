@@ -1,0 +1,36 @@
+{
+  "state_transitions": [
+    {
+      "after_first_drive_s": -0.068,
+      "state": "StateType.GB_TRACK"
+    },
+    {
+      "after_first_drive_s": 13.056,
+      "state": "StateType.TRAILING"
+    },
+    {
+      "after_first_drive_s": 13.082,
+      "state": "StateType.OVERTAKE"
+    },
+    {
+      "after_first_drive_s": 13.132,
+      "state": "StateType.TRAILING"
+    },
+    {
+      "after_first_drive_s": 13.532,
+      "state": "StateType.OVERTAKE"
+    },
+    {
+      "after_first_drive_s": 16.484,
+      "state": "StateType.TRAILING"
+    }
+  ],
+  "final_zero_command_duration_s": 6.5,
+  "final_gt_xy": [
+    -3.496940339066688,
+    5.836918584234464
+  ],
+  "final_gt_vx": 2.3434206792249064e-56,
+  "gap_data_samples": 0,
+  "conclusion": "OVERTAKE returns to TRAILING, then sustained zero speed command. Exact transition guard not recorded."
+}

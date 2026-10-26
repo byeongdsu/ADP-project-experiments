@@ -1,0 +1,109 @@
+[INFO] [launch]: All log files can be found below /home/misys/.ros/log/2026-10-21-15-43-46-266219-byeongsu-ubuntu-92752
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [state_machine-1]: process started with pid [92753]
+[state_machine-1] [INFO] [1792565027.257358321] [state_machine]: Waiting for global waypoints message
+[state_machine-1] [INFO] [1792565027.267640423] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.268644468] [state_machine]: Waiting for scaled global waypoints message
+[state_machine-1] [INFO] [1792565027.312202059] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.317164678] [state_machine]: Waiting for car state frenet message
+[state_machine-1] [INFO] [1792565027.322558080] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.355950278] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.361455590] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.364188938] [state_machine]: Waiting for car state pose message
+[state_machine-1] [INFO] [1792565027.400091614] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.405983477] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.459035789] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.461940853] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.491113846] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.493879952] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.498411286] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.501265088] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.505581047] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.508371040] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.521939499] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.524958068] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.529520646] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.532213759] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.545509931] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.548487394] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.551372005] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.555914163] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.558837786] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.569309926] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.573784226] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.576557729] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.580918292] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.583707695] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.596384936] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.599352654] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.603889722] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.606662787] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.619125306] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.622078259] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.626534820] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.629311118] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.642632368] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.645559257] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.648312152] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.652771231] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.668877056] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.671787179] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.679481484] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.682479276] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.695176623] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.698058103] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.703345191] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.706220463] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.719191400] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.722189243] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.726744574] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.729623231] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.742216943] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.745240657] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.749706869] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.752586506] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.766557048] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.769522053] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.774038846] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.776931024] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.792506241] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.796902876] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.803676601] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.807808390] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.826022099] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.830550363] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.842870274] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.845581472] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.850105760] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.852921092] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.857210126] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.859973886] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.879959131] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.888240537] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.891129883] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.913107734] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.928595318] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.933519604] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[state_machine-1] [INFO] [1792565027.967593528] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[state_machine-1] [INFO] [1792565027.977920995] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [state_machine-1]: sending signal 'SIGINT' to process[state_machine-1]
+[state_machine-1] Traceback (most recent call last):
+[state_machine-1]   File "/home/misys/forza_ws/race_stack/install/state_machine/lib/state_machine/state_machine", line 33, in <module>
+[state_machine-1]     sys.exit(load_entry_point('state-machine==0.0.0', 'console_scripts', 'state_machine')())
+[state_machine-1]   File "/home/misys/forza_ws/race_stack/install/state_machine/lib/python3.10/site-packages/state_machine/state_machine.py", line 482, in main
+[state_machine-1]     rclpy.spin(state_machine)
+[state_machine-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[state_machine-1]     executor.spin_once()
+[state_machine-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+[state_machine-1]     self._spin_once_impl(timeout_sec)
+[state_machine-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+[state_machine-1]     raise handler.exception()
+[state_machine-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+[state_machine-1]     result = coro.send(None)
+[state_machine-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 478, in handler
+[state_machine-1]     arg = take_from_wait_list(entity)
+[state_machine-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 400, in _take_subscription
+[state_machine-1]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[state_machine-1] RuntimeError: Unable to convert call argument to Python object (compile in debug mode for details)
+[ERROR] [state_machine-1]: process has died [pid 92753, exit code -2, cmd '/home/misys/forza_ws/race_stack/install/state_machine/lib/state_machine/state_machine --ros-args --log-level state_machine:=info --ros-args -r __node:=state_machine --params-file /home/misys/forza_ws/race_stack/install/stack_master/share/stack_master/config/state_machine_params.yaml --params-file /tmp/launch_params_0a_62i8l'].

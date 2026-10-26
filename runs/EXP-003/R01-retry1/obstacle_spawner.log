@@ -1,0 +1,10 @@
+[INFO] [1792559481.532568298] [obstacle_spawner]: generated 6801 candidates — either 4417, LEFT 1201, RIGHT 1183
+[INFO] [1792559481.572205140] [obstacle_spawner]: seed 2026 (reproducible), waypoints md5 a62f311ef652364e02b05f53a6df8236, obstacle_size=0.3, wall_margin=0.15, car_width=0.31, squeeze_clearance=0.05, candidate_spacing=0.5, candidate_d_step=0.1, candidate_thetas=[0.0, 0.39269908169872414, 0.7853981633974483, 1.1780972450961724], exclusion_ahead=5.0, exclusion_behind=1.0, min_severity=0.0, recipes ['spread:1.0 chicane:1:0.10 forced:1:0.20', 'spread:1.0 forced:2:0.20', 'spread:0.5 forced:1:0.30 either:1:0.20', 'chicane:2:0.10'], picking 1 per lap
+[WARN] [1792559481.575063211] [obstacle_spawner]: lap 0: recipe relaxed — chicane: dropped, no room left in num_obstacles
+[INFO] [1792559481.575941032] [obstacle_spawner]: lap 0 [spread:1.0 chicane:1:0.10 forced:1:0.20]: 1 obstacles — s057d-01t0[LEFT sev 0.20 vis 7.8]
+[WARN] [1792559509.875520039] [obstacle_spawner]: lap 1: recipe relaxed — forced: dropped, no room left in num_obstacles
+[INFO] [1792559509.878643750] [obstacle_spawner]: lap 1 [spread:1.0 forced:2:0.20]: 1 obstacles — s057d+02t2[LEFT sev 0.57 vis 7.7]
+[WARN] [1792559535.004820013] [obstacle_spawner]: lap 2: recipe relaxed — either: dropped, no room left in num_obstacles
+[INFO] [1792559535.006238014] [obstacle_spawner]: lap 2 [spread:0.5 forced:1:0.30 either:1:0.20]: 1 obstacles — s067d+00t3[LEFT sev 0.35 vis 12.5]
+[WARN] [1792559560.554548265] [obstacle_spawner]: lap 3: recipe relaxed — chicane: dropped, no room left in num_obstacles
+[INFO] [1792559560.555949397] [obstacle_spawner]: lap 3 [spread:1.0 chicane:1:0.10 forced:1:0.20]: 1 obstacles — s033d+00t1[RIGHT sev 0.35 vis 3.6]

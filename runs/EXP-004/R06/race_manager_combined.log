@@ -1,0 +1,11 @@
+[INFO] [1792563199.692048292] [obstacle_spawner]: generated 6801 candidates — either 4417, LEFT 1201, RIGHT 1183
+[INFO] [1792563199.725527639] [obstacle_spawner]: seed 2026 (reproducible), waypoints md5 a62f311ef652364e02b05f53a6df8236, obstacle_size=0.3, wall_margin=0.15, car_width=0.31, squeeze_clearance=0.05, candidate_spacing=0.5, candidate_d_step=0.1, candidate_thetas=[0.0, 0.39269908169872414, 0.7853981633974483, 1.1780972450961724], exclusion_ahead=5.0, exclusion_behind=1.0, min_severity=0.0, recipes ['spread:1.0 chicane:1:0.10 forced:1:0.20', 'spread:1.0 forced:2:0.20', 'spread:0.5 forced:1:0.30 either:1:0.20', 'chicane:2:0.10'], picking 2 per lap
+[WARN] [1792563199.727945294] [obstacle_spawner]: lap 0: recipe relaxed — forced: dropped, no room left in num_obstacles
+[INFO] [1792563199.728836147] [obstacle_spawner]: lap 0 [spread:1.0 chicane:1:0.10 forced:1:0.20]: 2 obstacles — s040d-02t1[either sev 0.15 vis 4.5], s035d+02t1[either sev 0.15 vis 2.7]
+[INFO] [1792563237.710481968] [obstacle_spawner]: lap 1 [spread:1.0 forced:2:0.20]: 2 obstacles — s057d+02t2[LEFT sev 0.57 vis 7.7], s002d+01t1[RIGHT sev 0.25 vis 3.5]
+
+[INFO] [1792563196.803842727] [scorer]: seed 2026 -> /home/misys/ADP-project-experiments/runs/EXP-004/R06/race_result_20261021_151316.json
+[WARN] [1792563196.804309750] [scorer]: a collision stops the car for good; reset it with /initialpose to keep going
+[INFO] [1792563215.870511833] [scorer]: crossed the line — timing started
+[INFO] [1792563237.700853285] [scorer]: lap 1  21.83 s  0 hits (obstacle 0, wall 0)
+[WARN] [1792563247.261131695] [scorer]: obstacle collision #1 at (2.99, -0.07) on lap 1

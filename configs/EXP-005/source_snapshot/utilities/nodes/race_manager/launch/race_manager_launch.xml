@@ -1,0 +1,33 @@
+<launch>
+  <arg name="map_name" default="hyhall12" />
+  <arg name="seed" default="-1" description="0 이상이면 재현 가능, -1이면 매 실행 랜덤(연습용)" />
+  <arg name="num_obstacles" default="4" />
+  <arg name="log_dir" default="race_result" />
+  <arg name="fixed_layout_file" default="" description="Explicit JSON layout, unchanged across laps" />
+  <arg name="plot" default="true" description="open the live report window; false to run headless" />
+
+  <let name="maps_root" value="$(find-pkg-prefix stack_master)/../../stack_master/maps" />
+  <let name="wpnts" value="$(var maps_root)/$(var map_name)/global_waypoints.json" />
+  <let name="cfg" value="$(find-pkg-share race_manager)/config/race_manager_params.yaml" />
+
+  <node pkg="race_manager" exec="obstacle_spawner" name="obstacle_spawner" output="screen">
+    <param from="$(var cfg)" />
+    <param name="waypoints_file" value="$(var wpnts)" />
+    <param name="fixed_layout_file" value="$(var fixed_layout_file)" type="str" />
+    <param name="num_obstacles" value="$(var num_obstacles)" />
+    <param name="seed" value="$(var seed)" />
+  </node>
+
+  <node pkg="race_manager" exec="scorer" name="scorer" output="screen">
+    <param from="$(var cfg)" />
+    <param name="map_name" value="$(var map_name)" />
+    <param name="waypoints_file" value="$(var wpnts)" />
+    <param name="seed" value="$(var seed)" />
+    <param name="log_dir" value="$(var log_dir)" />
+  </node>
+
+  <node pkg="race_manager" exec="report" args="--watch --log-dir $(var log_dir)" output="screen"
+        if="$(var plot)">
+    <env name="PYTHONUNBUFFERED" value="1" />
+  </node>
+</launch>

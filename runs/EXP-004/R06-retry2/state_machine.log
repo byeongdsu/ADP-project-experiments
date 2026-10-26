@@ -1,0 +1,881 @@
+[INFO] [1792563733.164988591] [state_machine]: Waiting for global waypoints message
+[INFO] [1792563733.228360788] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563733.231304228] [state_machine]: Waiting for scaled global waypoints message
+[INFO] [1792563733.621101565] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563733.627491427] [state_machine]: Waiting for car state frenet message
+[INFO] [1792563733.630331711] [state_machine]: Waiting for car state pose message
+[INFO] [1792563733.727965940] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563734.125075366] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563734.227897983] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563734.623916892] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563734.729029898] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563735.124551065] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563735.229585646] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563735.623993929] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563735.733061375] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563736.124541724] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563736.227751978] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563736.625576279] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563736.729259101] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563737.125918199] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563737.236106706] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563737.624308069] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563737.727654831] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563738.126039059] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563738.228338007] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563738.627947922] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563738.734853230] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563739.135072345] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563739.228391592] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563739.588870475] [state_machine]: O_FREE False, obs dist to ot lane: -0.008093310328656567 m
+[INFO] [1792563739.612517592] [state_machine]: O_FREE False, obs dist to ot lane: -0.01891092636493208 m
+[INFO] [1792563739.626009178] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563739.637847106] [state_machine]: O_FREE False, obs dist to ot lane: -0.017275918059620865 m
+[INFO] [1792563739.662724552] [state_machine]: O_FREE False, obs dist to ot lane: -0.08380624973185952 m
+[INFO] [1792563739.687458964] [state_machine]: O_FREE False, obs dist to ot lane: -0.08222554409387114 m
+[INFO] [1792563739.712376684] [state_machine]: O_FREE False, obs dist to ot lane: -0.06912744327181611 m
+[INFO] [1792563739.729116339] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563739.737357892] [state_machine]: O_FREE False, obs dist to ot lane: -0.06769732764655384 m
+[INFO] [1792563739.762248573] [state_machine]: O_FREE False, obs dist to ot lane: -0.053682869470103756 m
+[INFO] [1792563739.787362811] [state_machine]: O_FREE False, obs dist to ot lane: -0.05250976207614752 m
+[INFO] [1792563739.812455887] [state_machine]: O_FREE False, obs dist to ot lane: -0.043024969444444616 m
+[INFO] [1792563739.837428567] [state_machine]: O_FREE False, obs dist to ot lane: -0.04201085722941422 m
+[INFO] [1792563739.862403017] [state_machine]: O_FREE False, obs dist to ot lane: -0.022413595009854237 m
+[INFO] [1792563739.887214622] [state_machine]: O_FREE False, obs dist to ot lane: -0.021569644464579152 m
+[INFO] [1792563739.912193823] [state_machine]: O_FREE False, obs dist to ot lane: -0.012969972827436171 m
+[INFO] [1792563739.937237178] [state_machine]: O_FREE False, obs dist to ot lane: -0.012212761516139203 m
+[INFO] [1792563739.962367376] [state_machine]: O_FREE False, obs dist to ot lane: -0.00975005234528839 m
+[INFO] [1792563739.987402363] [state_machine]: O_FREE False, obs dist to ot lane: -0.008983870549751416 m
+[INFO] [1792563740.012559415] [state_machine]: O_FREE False, obs dist to ot lane: -0.008265523625688664 m
+[INFO] [1792563740.037427284] [state_machine]: O_FREE False, obs dist to ot lane: -0.007242450986108234 m
+[INFO] [1792563740.062517255] [state_machine]: O_FREE False, obs dist to ot lane: -0.003149006632154616 m
+[INFO] [1792563740.087667892] [state_machine]: O_FREE False, obs dist to ot lane: -0.002544809279391963 m
+[INFO] [1792563740.113320694] [state_machine]: O_FREE False, obs dist to ot lane: -0.0029457118088038192 m
+[INFO] [1792563740.128027022] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563740.137214736] [state_machine]: O_FREE False, obs dist to ot lane: -0.002400875127740232 m
+[INFO] [1792563740.162303621] [state_machine]: O_FREE False, obs dist to ot lane: -0.0028084318979464395 m
+[INFO] [1792563740.188707449] [state_machine]: O_FREE False, obs dist to ot lane: -0.0023139722931783124 m
+[INFO] [1792563740.212284042] [state_machine]: O_FREE False, obs dist to ot lane: -0.0027178600264440023 m
+[INFO] [1792563740.228637265] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563740.237382273] [state_machine]: O_FREE False, obs dist to ot lane: -0.0022669631332582207 m
+[INFO] [1792563740.262450615] [state_machine]: O_FREE False, obs dist to ot lane: -0.00266289484044277 m
+[INFO] [1792563740.287729677] [state_machine]: O_FREE False, obs dist to ot lane: -0.0022499780741027375 m
+[INFO] [1792563740.312284272] [state_machine]: O_FREE False, obs dist to ot lane: -0.002636065922982489 m
+[INFO] [1792563740.337313117] [state_machine]: O_FREE False, obs dist to ot lane: -0.0022565290518873904 m
+[INFO] [1792563740.362492112] [state_machine]: O_FREE False, obs dist to ot lane: -0.0026318982354139042 m
+[INFO] [1792563740.393742140] [state_machine]: O_FREE False, obs dist to ot lane: -0.0026318982354139042 m
+[INFO] [1792563740.412442479] [state_machine]: O_FREE False, obs dist to ot lane: -0.0026460885314834315 m
+[INFO] [1792563740.437557437] [state_machine]: O_FREE False, obs dist to ot lane: -0.0023221930583475214 m
+[INFO] [1792563740.462589600] [state_machine]: O_FREE False, obs dist to ot lane: -0.002675236357658317 m
+[INFO] [1792563740.487838677] [state_machine]: O_FREE False, obs dist to ot lane: -0.00237468289152451 m
+[INFO] [1792563740.512564370] [state_machine]: O_FREE False, obs dist to ot lane: -0.0027165649638551115 m
+[INFO] [1792563740.537347744] [state_machine]: O_FREE False, obs dist to ot lane: -0.0024369146523208485 m
+[INFO] [1792563740.563420094] [state_machine]: O_FREE False, obs dist to ot lane: -0.0027677846805203576 m
+[INFO] [1792563740.587731603] [state_machine]: O_FREE False, obs dist to ot lane: -0.0025069302695275575 m
+[INFO] [1792563740.613303898] [state_machine]: O_FREE False, obs dist to ot lane: -0.0028270462665766216 m
+[INFO] [1792563740.626673281] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563740.637748225] [state_machine]: O_FREE False, obs dist to ot lane: -0.002583154519468056 m
+[INFO] [1792563740.662177402] [state_machine]: O_FREE False, obs dist to ot lane: -0.0028927880550810026 m
+[INFO] [1792563740.687703377] [state_machine]: O_FREE False, obs dist to ot lane: -0.002664256617698174 m
+[INFO] [1792563740.712194751] [state_machine]: O_FREE False, obs dist to ot lane: -0.0029637219671505566 m
+[INFO] [1792563740.732195590] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563740.737456779] [state_machine]: O_FREE False, obs dist to ot lane: -0.0027491441319540677 m
+[INFO] [1792563740.762563826] [state_machine]: O_FREE False, obs dist to ot lane: -0.0030387747157318568 m
+[INFO] [1792563740.787977663] [state_machine]: O_FREE False, obs dist to ot lane: -0.002836910447433033 m
+[INFO] [1792563740.813210672] [state_machine]: O_FREE False, obs dist to ot lane: -0.00311705002990037 m
+[INFO] [1792563740.837503791] [state_machine]: O_FREE False, obs dist to ot lane: -0.002926801991874506 m
+[INFO] [1792563740.862846196] [state_machine]: O_FREE False, obs dist to ot lane: -0.0031977981224650676 m
+[INFO] [1792563740.887395523] [state_machine]: O_FREE False, obs dist to ot lane: -0.0030181917251979884 m
+[INFO] [1792563740.912609268] [state_machine]: O_FREE False, obs dist to ot lane: -0.003280390883642209 m
+[INFO] [1792563740.937774494] [state_machine]: O_FREE False, obs dist to ot lane: -0.0031105575894227744 m
+[INFO] [1792563740.962882198] [state_machine]: O_FREE False, obs dist to ot lane: -0.003364301628904026 m
+[INFO] [1792563740.987502210] [state_machine]: O_FREE False, obs dist to ot lane: -0.0032034649091891854 m
+[INFO] [1792563741.012898513] [state_machine]: O_FREE False, obs dist to ot lane: -0.003449088489609814 m
+[INFO] [1792563741.037509547] [state_machine]: O_FREE False, obs dist to ot lane: -0.003296551956045668 m
+[INFO] [1792563741.062447646] [state_machine]: O_FREE False, obs dist to ot lane: -0.003534380733083986 m
+[INFO] [1792563741.088590082] [state_machine]: O_FREE False, obs dist to ot lane: -0.0033895180595336083 m
+[INFO] [1792563741.112820121] [state_machine]: O_FREE False, obs dist to ot lane: -0.003619867450354808 m
+[INFO] [1792563741.128791802] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563741.137431349] [state_machine]: O_FREE False, obs dist to ot lane: -0.0034821137783768163 m
+[INFO] [1792563741.162204894] [state_machine]: O_FREE False, obs dist to ot lane: -0.0037052881666646276 m
+[INFO] [1792563741.188011246] [state_machine]: O_FREE False, obs dist to ot lane: -0.0035741327457981253 m
+[INFO] [1792563741.212355590] [state_machine]: O_FREE False, obs dist to ot lane: -0.0037904250204469636 m
+[INFO] [1792563741.230279947] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563741.237857469] [state_machine]: O_FREE False, obs dist to ot lane: -0.0036654048811728124 m
+[INFO] [1792563741.262813246] [state_machine]: O_FREE False, obs dist to ot lane: -0.003875096227219238 m
+[INFO] [1792563741.288056501] [state_machine]: O_FREE False, obs dist to ot lane: -0.0037557907214163244 m
+[INFO] [1792563741.312710260] [state_machine]: O_FREE False, obs dist to ot lane: -0.003959150600309325 m
+[INFO] [1792563741.337474533] [state_machine]: O_FREE False, obs dist to ot lane: -0.004153904116984103 m
+[INFO] [1792563741.362200607] [state_machine]: O_FREE False, obs dist to ot lane: -0.004042462944147979 m
+[INFO] [1792563741.387955440] [state_machine]: O_FREE False, obs dist to ot lane: -0.004231552697384844 m
+[INFO] [1792563741.412699011] [state_machine]: O_FREE False, obs dist to ot lane: -0.004124930170579133 m
+[INFO] [1792563741.438672651] [state_machine]: O_FREE False, obs dist to ot lane: -0.004308577807492692 m
+[INFO] [1792563741.462216770] [state_machine]: O_FREE False, obs dist to ot lane: -0.004206468016321657 m
+[INFO] [1792563741.488147440] [state_machine]: O_FREE False, obs dist to ot lane: -0.004384885870913041 m
+[INFO] [1792563741.512329558] [state_machine]: O_FREE False, obs dist to ot lane: -0.00428700826187603 m
+[INFO] [1792563741.537291020] [state_machine]: O_FREE False, obs dist to ot lane: -0.004191148747870743 m
+[INFO] [1792563741.562408994] [state_machine]: O_FREE False, obs dist to ot lane: -0.004366496370000916 m
+[INFO] [1792563741.587493463] [state_machine]: O_FREE False, obs dist to ot lane: -0.00427449020689874 m
+[INFO] [1792563741.612243814] [state_machine]: O_FREE False, obs dist to ot lane: -0.004444889476275193 m
+[INFO] [1792563741.622648295] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563741.638458577] [state_machine]: O_FREE False, obs dist to ot lane: -0.0043565089025704995 m
+[INFO] [1792563741.663412335] [state_machine]: O_FREE False, obs dist to ot lane: -0.004522154675930451 m
+[INFO] [1792563741.687366540] [state_machine]: O_FREE False, obs dist to ot lane: -0.00443718953273442 m
+[INFO] [1792563741.712576637] [state_machine]: O_FREE False, obs dist to ot lane: -0.0045982675606557055 m
+[INFO] [1792563741.730206186] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563741.737693360] [state_machine]: O_FREE False, obs dist to ot lane: -0.004516523623438018 m
+[INFO] [1792563741.762945520] [state_machine]: O_FREE False, obs dist to ot lane: -0.004673210966834845 m
+[INFO] [1792563741.787379988] [state_machine]: O_FREE False, obs dist to ot lane: -0.004594508463359487 m
+[INFO] [1792563741.812348452] [state_machine]: O_FREE False, obs dist to ot lane: -0.004746973903036827 m
+[INFO] [1792563741.837416542] [state_machine]: O_FREE False, obs dist to ot lane: -0.004671146193691134 m
+[INFO] [1792563741.862386997] [state_machine]: O_FREE False, obs dist to ot lane: -0.004819550629819286 m
+[INFO] [1792563741.887567401] [state_machine]: O_FREE False, obs dist to ot lane: -0.004746443029948921 m
+[INFO] [1792563741.912664351] [state_machine]: O_FREE False, obs dist to ot lane: -0.004890939869259148 m
+[INFO] [1792563741.937655563] [state_machine]: O_FREE False, obs dist to ot lane: -0.004820408595996084 m
+[INFO] [1792563741.962650972] [state_machine]: O_FREE False, obs dist to ot lane: -0.004961144125140343 m
+[INFO] [1792563741.987439896] [state_machine]: O_FREE False, obs dist to ot lane: -0.00489305535363635 m
+[INFO] [1792563742.012422880] [state_machine]: O_FREE False, obs dist to ot lane: -0.005030169097785503 m
+[INFO] [1792563742.038558877] [state_machine]: O_FREE False, obs dist to ot lane: -0.0051626794014336674 m
+[INFO] [1792563742.062340241] [state_machine]: O_FREE False, obs dist to ot lane: -0.005098023179905542 m
+[INFO] [1792563742.087339990] [state_machine]: O_FREE False, obs dist to ot lane: -0.005034453617562745 m
+[INFO] [1792563742.112417000] [state_machine]: O_FREE False, obs dist to ot lane: -0.026612292288920897 m
+[INFO] [1792563742.127458015] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563742.137356202] [state_machine]: O_FREE False, obs dist to ot lane: -0.02655081544357535 m
+[INFO] [1792563742.162596272] [state_machine]: O_FREE False, obs dist to ot lane: -0.026701916925079006 m
+[INFO] [1792563742.188587335] [state_machine]: O_FREE False, obs dist to ot lane: -0.026642431133101302 m
+[INFO] [1792563742.212602364] [state_machine]: O_FREE False, obs dist to ot lane: -0.026583904789381302 m
+[INFO] [1792563742.228606464] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563742.238047796] [state_machine]: O_FREE False, obs dist to ot lane: -0.02673216725498906 m
+[INFO] [1792563742.262677382] [state_machine]: O_FREE False, obs dist to ot lane: -0.02687585444933757 m
+[INFO] [1792563742.287075854] [state_machine]: O_FREE False, obs dist to ot lane: -0.026820071185094524 m
+[INFO] [1792563742.312154522] [state_machine]: O_FREE False, obs dist to ot lane: -0.02696024981488998 m
+[INFO] [1792563742.337124610] [state_machine]: O_FREE False, obs dist to ot lane: -0.026906189507573036 m
+[INFO] [1792563742.362162408] [state_machine]: O_FREE False, obs dist to ot lane: -0.02704298389781265 m
+[INFO] [1792563742.387487085] [state_machine]: O_FREE False, obs dist to ot lane: -0.026990567938069976 m
+[INFO] [1792563742.413610665] [state_machine]: O_FREE False, obs dist to ot lane: -0.027124096775427597 m
+[INFO] [1792563742.438545577] [state_machine]: O_FREE False, obs dist to ot lane: -0.027073251264239567 m
+[INFO] [1792563742.462935907] [state_machine]: O_FREE False, obs dist to ot lane: -0.027203627899806043 m
+[INFO] [1792563742.487858495] [state_machine]: O_FREE False, obs dist to ot lane: -0.027154283300888565 m
+[INFO] [1792563742.512565193] [state_machine]: O_FREE False, obs dist to ot lane: -0.02728161603490209 m
+[INFO] [1792563742.537218821] [state_machine]: O_FREE False, obs dist to ot lane: -0.02723370685744303 m
+[INFO] [1792563742.562400499] [state_machine]: O_FREE False, obs dist to ot lane: -0.027358099207100306 m
+[INFO] [1792563742.587660336] [state_machine]: O_FREE False, obs dist to ot lane: -0.02731156371578461 m
+[INFO] [1792563742.612326925] [state_machine]: O_FREE False, obs dist to ot lane: -0.027433114667164055 m
+[INFO] [1792563742.625836417] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563742.637136674] [state_machine]: O_FREE False, obs dist to ot lane: -0.02738789461678831 m
+[INFO] [1792563742.662471991] [state_machine]: O_FREE False, obs dist to ot lane: -0.02750669886186702 m
+[INFO] [1792563742.687959097] [state_machine]: O_FREE False, obs dist to ot lane: -0.02746273925414433 m
+[INFO] [1792563742.712156332] [state_machine]: O_FREE False, obs dist to ot lane: -0.02757888741383352 m
+[INFO] [1792563742.727954905] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563742.737411690] [state_machine]: O_FREE False, obs dist to ot lane: -0.027536136274254136 m
+[INFO] [1792563742.762284312] [state_machine]: O_FREE False, obs dist to ot lane: -0.027649715108327172 m
+[INFO] [1792563742.787792680] [state_machine]: O_FREE False, obs dist to ot lane: -0.027608123281171404 m
+[INFO] [1792563742.813472859] [state_machine]: O_FREE False, obs dist to ot lane: -0.027719215885904702 m
+[INFO] [1792563742.837119152] [state_machine]: O_FREE False, obs dist to ot lane: -0.027678736845708013 m
+[INFO] [1792563742.862131061] [state_machine]: O_FREE False, obs dist to ot lane: -0.02778742284000718 m
+[INFO] [1792563742.887408227] [state_machine]: O_FREE False, obs dist to ot lane: -0.02774801251795786 m
+[INFO] [1792563742.912387881] [state_machine]: O_FREE False, obs dist to ot lane: -0.027854368218693026 m
+[INFO] [1792563742.937283360] [state_machine]: O_FREE False, obs dist to ot lane: -0.02781598484260009 m
+[INFO] [1792563742.962514341] [state_machine]: O_FREE False, obs dist to ot lane: -0.02792008342982813 m
+[INFO] [1792563742.987688642] [state_machine]: O_FREE False, obs dist to ot lane: -0.027882687376438203 m
+[INFO] [1792563743.012364272] [state_machine]: O_FREE False, obs dist to ot lane: -0.027984599049149322 m
+[INFO] [1792563743.037920516] [state_machine]: O_FREE False, obs dist to ot lane: -0.02808392982603558 m
+[INFO] [1792563743.062477674] [state_machine]: O_FREE False, obs dist to ot lane: -0.028047944830695032 m
+[INFO] [1792563743.092093396] [state_machine]: O_FREE False, obs dist to ot lane: -0.02814523791864107 m
+[INFO] [1792563743.112314809] [state_machine]: O_FREE False, obs dist to ot lane: -0.02811014971917497 m
+[INFO] [1792563743.124505134] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563743.137487155] [state_machine]: O_FREE False, obs dist to ot lane: -0.028205466378683958 m
+[INFO] [1792563743.162534225] [state_machine]: O_FREE False, obs dist to ot lane: -0.02817124186390682 m
+[INFO] [1792563743.190327428] [state_machine]: O_FREE False, obs dist to ot lane: -0.028264640965085075 m
+[INFO] [1792563743.212373025] [state_machine]: O_FREE False, obs dist to ot lane: -0.028231248634005585 m
+[INFO] [1792563743.229314787] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563743.237461328] [state_machine]: O_FREE False, obs dist to ot lane: -0.028198261058454327 m
+[INFO] [1792563743.262758304] [state_machine]: O_FREE False, obs dist to ot lane: -0.02829019663455201 m
+[INFO] [1792563743.287386980] [state_machine]: O_FREE False, obs dist to ot lane: -0.02825799680068658 m
+[INFO] [1792563743.312424441] [state_machine]: O_FREE False, obs dist to ot lane: -0.028348111723510844 m
+[INFO] [1792563743.338034026] [state_machine]: O_FREE False, obs dist to ot lane: -0.028436089122985203 m
+[INFO] [1792563743.362830271] [state_machine]: O_FREE False, obs dist to ot lane: -0.02840501902920109 m
+[INFO] [1792563743.388502848] [state_machine]: O_FREE False, obs dist to ot lane: -0.028491292614361785 m
+[INFO] [1792563743.412405765] [state_machine]: O_FREE False, obs dist to ot lane: -0.028460942968148772 m
+[INFO] [1792563743.437783012] [state_machine]: O_FREE False, obs dist to ot lane: -0.028545561232830863 m
+[INFO] [1792563743.462382496] [state_machine]: O_FREE False, obs dist to ot lane: -0.02851590726318043 m
+[INFO] [1792563743.487648525] [state_machine]: O_FREE False, obs dist to ot lane: -0.028486592196040272 m
+[INFO] [1792563743.512779097] [state_machine]: O_FREE False, obs dist to ot lane: -0.028569934961637594 m
+[INFO] [1792563743.537504390] [state_machine]: O_FREE False, obs dist to ot lane: -0.028651380955175443 m
+[INFO] [1792563743.562160194] [state_machine]: O_FREE False, obs dist to ot lane: -0.028623048453606942 m
+[INFO] [1792563743.588652676] [state_machine]: O_FREE False, obs dist to ot lane: -0.028702974139195203 m
+[INFO] [1792563743.612318267] [state_machine]: O_FREE False, obs dist to ot lane: -0.02867526949008231 m
+[INFO] [1792563743.625942551] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563743.638221453] [state_machine]: O_FREE False, obs dist to ot lane: -0.028753716638739657 m
+[INFO] [1792563743.662486279] [state_machine]: O_FREE False, obs dist to ot lane: -0.02872661920098793 m
+[INFO] [1792563743.690198424] [state_machine]: O_FREE False, obs dist to ot lane: -0.02880362808551218 m
+[INFO] [1792563743.713542648] [state_machine]: O_FREE False, obs dist to ot lane: -0.028777118113000377 m
+[INFO] [1792563743.729166765] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563743.737828334] [state_machine]: O_FREE False, obs dist to ot lane: -0.02875089473478601 m
+[INFO] [1792563743.762849520] [state_machine]: O_FREE False, obs dist to ot lane: -0.028826786167120977 m
+[INFO] [1792563743.789495255] [state_machine]: O_FREE False, obs dist to ot lane: -0.028901033673337073 m
+[INFO] [1792563743.812391820] [state_machine]: O_FREE False, obs dist to ot lane: -0.0288756427359603 m
+[INFO] [1792563743.838919221] [state_machine]: O_FREE False, obs dist to ot lane: -0.028948564446168418 m
+[INFO] [1792563743.862291909] [state_machine]: O_FREE False, obs dist to ot lane: -0.02892370664069871 m
+[INFO] [1792563743.888487338] [state_machine]: O_FREE False, obs dist to ot lane: -0.02889910912638574 m
+[INFO] [1792563743.912420570] [state_machine]: O_FREE False, obs dist to ot lane: -0.028970996167700463 m
+[INFO] [1792563743.941289153] [state_machine]: O_FREE False, obs dist to ot lane: -0.02904136979290539 m
+[INFO] [1792563743.962042060] [state_machine]: O_FREE False, obs dist to ot lane: -0.02901752908475899 m
+[INFO] [1792563743.988652996] [state_machine]: O_FREE False, obs dist to ot lane: -0.029086678067592575 m
+[INFO] [1792563744.022205298] [state_machine]: O_FREE False, obs dist to ot lane: -0.029086678067592575 m
+[INFO] [1792563744.037724208] [state_machine]: O_FREE False, obs dist to ot lane: -0.029040204357093174 m
+[INFO] [1792563744.062802872] [state_machine]: O_FREE False, obs dist to ot lane: -0.02910839366214396 m
+[INFO] [1792563744.087672410] [state_machine]: O_FREE False, obs dist to ot lane: -0.029085738878264517 m
+[INFO] [1792563744.112633839] [state_machine]: O_FREE False, obs dist to ot lane: -0.0291527584059825 m
+[INFO] [1792563744.126376465] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563744.137518188] [state_machine]: O_FREE False, obs dist to ot lane: -0.029130553336469633 m
+[INFO] [1792563744.162885528] [state_machine]: O_FREE False, obs dist to ot lane: -0.02919643273662767 m
+[INFO] [1792563744.187959842] [state_machine]: O_FREE False, obs dist to ot lane: -0.029174664122414706 m
+[INFO] [1792563744.212758029] [state_machine]: O_FREE False, obs dist to ot lane: -0.029239432058968173 m
+[INFO] [1792563744.229219984] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563744.237546482] [state_machine]: O_FREE False, obs dist to ot lane: -0.029218087157140887 m
+[INFO] [1792563744.262323547] [state_machine]: O_FREE False, obs dist to ot lane: -0.029281771348472208 m
+[INFO] [1792563744.287340895] [state_machine]: O_FREE False, obs dist to ot lane: -0.02926083790739492 m
+[INFO] [1792563744.312079941] [state_machine]: O_FREE False, obs dist to ot lane: -0.02932346516462589 m
+[INFO] [1792563744.337611985] [state_machine]: O_FREE False, obs dist to ot lane: -0.029302931400492255 m
+[INFO] [1792563744.362680517] [state_machine]: O_FREE False, obs dist to ot lane: -0.029364527663969325 m
+[INFO] [1792563744.388125672] [state_machine]: O_FREE False, obs dist to ot lane: -0.029344382238683436 m
+[INFO] [1792563744.412619989] [state_machine]: O_FREE False, obs dist to ot lane: -0.02940497261273603 m
+[INFO] [1792563744.438382491] [state_machine]: O_FREE False, obs dist to ot lane: -0.02938520461303684 m
+[INFO] [1792563744.462412194] [state_machine]: O_FREE False, obs dist to ot lane: -0.02936562136099835 m
+[INFO] [1792563744.488254735] [state_machine]: O_FREE False, obs dist to ot lane: -0.029425412316849642 m
+[INFO] [1792563744.512547663] [state_machine]: O_FREE False, obs dist to ot lane: -0.02940619087424806 m
+[INFO] [1792563744.537277839] [state_machine]: O_FREE False, obs dist to ot lane: -0.02938714658779948 m
+[INFO] [1792563744.562386856] [state_machine]: O_FREE False, obs dist to ot lane: -0.02952273421785953 m
+[INFO] [1792563744.587620958] [state_machine]: O_FREE False, obs dist to ot lane: -0.029504036974459247 m
+[INFO] [1792563744.613395075] [state_machine]: O_FREE False, obs dist to ot lane: -0.029560839241227793 m
+[INFO] [1792563744.632526092] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563744.637200249] [state_machine]: O_FREE False, obs dist to ot lane: -0.02954247964035539 m
+[INFO] [1792563744.662429699] [state_machine]: O_FREE False, obs dist to ot lane: -0.02959839010603002 m
+[INFO] [1792563744.688648904] [state_machine]: O_FREE False, obs dist to ot lane: -0.029580359083640456 m
+[INFO] [1792563744.712365586] [state_machine]: O_FREE False, obs dist to ot lane: -0.029635398480731434 m
+[INFO] [1792563744.728104273] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563744.738785345] [state_machine]: O_FREE False, obs dist to ot lane: -0.029617687294334255 m
+[INFO] [1792563744.763044049] [state_machine]: O_FREE False, obs dist to ot lane: -0.029671875721457824 m
+[INFO] [1792563744.787890343] [state_machine]: O_FREE False, obs dist to ot lane: -0.02965447593598322 m
+[INFO] [1792563744.812741357] [state_machine]: O_FREE False, obs dist to ot lane: -0.029707832881732676 m
+[INFO] [1792563744.837630328] [state_machine]: O_FREE False, obs dist to ot lane: -0.0296907363561367 m
+[INFO] [1792563744.863074929] [state_machine]: O_FREE False, obs dist to ot lane: -0.02974328072189289 m
+[INFO] [1792563744.887709772] [state_machine]: O_FREE False, obs dist to ot lane: -0.029726479596456856 m
+[INFO] [1792563744.912625603] [state_machine]: O_FREE False, obs dist to ot lane: -0.02977822971819144 m
+[INFO] [1792563744.937881031] [state_machine]: O_FREE False, obs dist to ot lane: -0.029761716402474075 m
+[INFO] [1792563744.962894103] [state_machine]: O_FREE False, obs dist to ot lane: -0.029812690071595427 m
+[INFO] [1792563744.988094661] [state_machine]: O_FREE False, obs dist to ot lane: -0.02979645723299898 m
+[INFO] [1792563745.012503884] [state_machine]: O_FREE False, obs dist to ot lane: -0.029846671716290463 m
+[INFO] [1792563745.037542072] [state_machine]: O_FREE False, obs dist to ot lane: -0.02983071226920439 m
+[INFO] [1792563745.062553465] [state_machine]: O_FREE False, obs dist to ot lane: -0.029880184327899295 m
+[INFO] [1792563745.087828135] [state_machine]: O_FREE False, obs dist to ot lane: -0.0298644914233879 m
+[INFO] [1792563745.112872417] [state_machine]: O_FREE False, obs dist to ot lane: -0.029913237331425035 m
+[INFO] [1792563745.126819786] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563745.137462067] [state_machine]: O_FREE False, obs dist to ot lane: -0.029897804347427476 m
+[INFO] [1792563745.162401672] [state_machine]: O_FREE False, obs dist to ot lane: -0.02994583990892577 m
+[INFO] [1792563745.188021518] [state_machine]: O_FREE False, obs dist to ot lane: -0.029930660440939227 m
+[INFO] [1792563745.212364364] [state_machine]: O_FREE False, obs dist to ot lane: -0.029978001006932736 m
+[INFO] [1792563745.228917720] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563745.237253723] [state_machine]: O_FREE False, obs dist to ot lane: -0.029963068859150566 m
+[INFO] [1792563745.262287392] [state_machine]: O_FREE False, obs dist to ot lane: -0.03000972934361651 m
+[INFO] [1792563745.287346870] [state_machine]: O_FREE False, obs dist to ot lane: -0.02999503852049651 m
+[INFO] [1792563745.312556363] [state_machine]: O_FREE False, obs dist to ot lane: -0.030041033415713375 m
+[INFO] [1792563745.337783843] [state_machine]: O_FREE False, obs dist to ot lane: -0.030026578113951208 m
+[INFO] [1792563745.362630518] [state_machine]: O_FREE False, obs dist to ot lane: -0.03007192150521762 m
+[INFO] [1792563745.387693612] [state_machine]: O_FREE False, obs dist to ot lane: -0.0300576961061034 m
+[INFO] [1792563745.412709041] [state_machine]: O_FREE False, obs dist to ot lane: -0.030102401685848573 m
+[INFO] [1792563745.437978702] [state_machine]: O_FREE False, obs dist to ot lane: -0.03008840074798519 m
+[INFO] [1792563745.462318848] [state_machine]: O_FREE False, obs dist to ot lane: -0.03013248182930023 m
+[INFO] [1792563745.487914091] [state_machine]: O_FREE False, obs dist to ot lane: -0.03011870008166373 m
+[INFO] [1792563745.512765234] [state_machine]: O_FREE False, obs dist to ot lane: -0.03016216961128168 m
+[INFO] [1792563745.537661543] [state_machine]: O_FREE False, obs dist to ot lane: -0.030148601946604847 m
+[INFO] [1792563745.562855556] [state_machine]: O_FREE False, obs dist to ot lane: -0.03019147251735199 m
+[INFO] [1792563745.588009348] [state_machine]: O_FREE False, obs dist to ot lane: -0.030178113985814187 m
+[INFO] [1792563745.613100742] [state_machine]: O_FREE False, obs dist to ot lane: -0.0302203978485637 m
+[INFO] [1792563745.625515031] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563745.637230507] [state_machine]: O_FREE False, obs dist to ot lane: -0.03020724365177005 m
+[INFO] [1792563745.662250227] [state_machine]: O_FREE False, obs dist to ot lane: -0.030248952726913997 m
+[INFO] [1792563745.687261843] [state_machine]: O_FREE False, obs dist to ot lane: -0.0302359982121487 m
+[INFO] [1792563745.712455344] [state_machine]: O_FREE False, obs dist to ot lane: -0.030277144100615355 m
+[INFO] [1792563745.727954530] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563745.737348891] [state_machine]: O_FREE False, obs dist to ot lane: -0.03026438475535495 m
+[INFO] [1792563745.762770495] [state_machine]: O_FREE False, obs dist to ot lane: -0.030304978749190303 m
+[INFO] [1792563745.787448079] [state_machine]: O_FREE False, obs dist to ot lane: -0.03029241019586293 m
+[INFO] [1792563745.812686560] [state_machine]: O_FREE False, obs dist to ot lane: -0.030332463288396838 m
+[INFO] [1792563745.837765602] [state_machine]: O_FREE False, obs dist to ot lane: -0.030320081279374772 m
+[INFO] [1792563745.862581438] [state_machine]: O_FREE False, obs dist to ot lane: -0.030359604174990146 m
+[INFO] [1792563745.887523960] [state_machine]: O_FREE False, obs dist to ot lane: -0.030347404587803883 m
+[INFO] [1792563745.912665923] [state_machine]: O_FREE False, obs dist to ot lane: -0.030386407711326696 m
+[INFO] [1792563745.937475049] [state_machine]: O_FREE False, obs dist to ot lane: -0.030374386544088805 m
+[INFO] [1792563745.962813858] [state_machine]: O_FREE False, obs dist to ot lane: -0.030412880049816793 m
+[INFO] [1792563745.987852688] [state_machine]: O_FREE False, obs dist to ot lane: -0.03040103341684508 m
+[INFO] [1792563746.012237285] [state_machine]: O_FREE False, obs dist to ot lane: -0.030439027197229906 m
+[INFO] [1792563746.037669295] [state_machine]: O_FREE False, obs dist to ot lane: -0.030427351324860102 m
+[INFO] [1792563746.062519061] [state_machine]: O_FREE False, obs dist to ot lane: -0.030464855018858983 m
+[INFO] [1792563746.087841721] [state_machine]: O_FREE False, obs dist to ot lane: -0.030453346241436835 m
+[INFO] [1792563746.112606774] [state_machine]: O_FREE False, obs dist to ot lane: -0.030490369242548165 m
+[INFO] [1792563746.125637650] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563746.137647433] [state_machine]: O_FREE False, obs dist to ot lane: -0.030479023998592675 m
+[INFO] [1792563746.162790514] [state_machine]: O_FREE False, obs dist to ot lane: -0.030515575462589428 m
+[INFO] [1792563746.188621503] [state_machine]: O_FREE False, obs dist to ot lane: -0.0305043902911184 m
+[INFO] [1792563746.212479837] [state_machine]: O_FREE False, obs dist to ot lane: -0.03054047914349181 m
+[INFO] [1792563746.234325426] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563746.237244739] [state_machine]: O_FREE False, obs dist to ot lane: -0.030529450680501724 m
+[INFO] [1792563746.262171985] [state_machine]: O_FREE False, obs dist to ot lane: -0.030565085623629112 m
+[INFO] [1792563746.288311093] [state_machine]: O_FREE False, obs dist to ot lane: -0.030554210598722098 m
+[INFO] [1792563746.312307299] [state_machine]: O_FREE False, obs dist to ot lane: -0.030589400118768817 m
+[INFO] [1792563746.337295427] [state_machine]: O_FREE False, obs dist to ot lane: -0.0305786753519193 m
+[INFO] [1792563746.362658244] [state_machine]: O_FREE False, obs dist to ot lane: -0.030613427725487752 m
+[INFO] [1792563746.387336315] [state_machine]: O_FREE False, obs dist to ot lane: -0.030602850123942343 m
+[INFO] [1792563746.412268307] [state_machine]: O_FREE False, obs dist to ot lane: -0.030637173424477804 m
+[INFO] [1792563746.437348714] [state_machine]: O_FREE False, obs dist to ot lane: -0.030626739979781742 m
+[INFO] [1792563746.462411526] [state_machine]: O_FREE False, obs dist to ot lane: -0.030660642083746414 m
+[INFO] [1792563746.487334647] [state_machine]: O_FREE False, obs dist to ot lane: -0.030650349868890925 m
+[INFO] [1792563746.512087111] [state_machine]: O_FREE False, obs dist to ot lane: -0.030683838461713492 m
+[INFO] [1792563746.537292276] [state_machine]: O_FREE False, obs dist to ot lane: -0.030673684628398173 m
+[INFO] [1792563746.562400626] [state_machine]: O_FREE False, obs dist to ot lane: -0.030706767210211844 m
+[INFO] [1792563746.587382805] [state_machine]: O_FREE False, obs dist to ot lane: -0.03069674898621666 m
+[INFO] [1792563746.612291653] [state_machine]: O_FREE False, obs dist to ot lane: -0.030729432877390328 m
+[INFO] [1792563746.624130368] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563746.637289422] [state_machine]: O_FREE False, obs dist to ot lane: -0.030719547564052374 m
+[INFO] [1792563746.662289484] [state_machine]: O_FREE False, obs dist to ot lane: -0.030751839910527934 m
+[INFO] [1792563746.687530195] [state_machine]: O_FREE False, obs dist to ot lane: -0.030742084880317683 m
+[INFO] [1792563746.712316069] [state_machine]: O_FREE False, obs dist to ot lane: -0.030773992658756605 m
+[INFO] [1792563746.732999536] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563746.737314349] [state_machine]: O_FREE False, obs dist to ot lane: -0.030764365352949685 m
+[INFO] [1792563746.762620727] [state_machine]: O_FREE False, obs dist to ot lane: -0.03079589537570085 m
+[INFO] [1792563746.788293722] [state_machine]: O_FREE False, obs dist to ot lane: -0.03078639330214039 m
+[INFO] [1792563746.812400959] [state_machine]: O_FREE False, obs dist to ot lane: -0.030817552222033834 m
+[INFO] [1792563746.838508223] [state_machine]: O_FREE False, obs dist to ot lane: -0.030808172952979718 m
+[INFO] [1792563746.862497336] [state_machine]: O_FREE False, obs dist to ot lane: -0.030838967267954265 m
+[INFO] [1792563746.888909274] [state_machine]: O_FREE False, obs dist to ot lane: -0.030829708438015274 m
+[INFO] [1792563746.912579072] [state_machine]: O_FREE False, obs dist to ot lane: -0.030860144495587133 m
+[INFO] [1792563746.937346432] [state_machine]: O_FREE False, obs dist to ot lane: -0.030851003799732102 m
+[INFO] [1792563746.963531891] [state_machine]: O_FREE False, obs dist to ot lane: -0.030881087801308382 m
+[INFO] [1792563746.988112692] [state_machine]: O_FREE False, obs dist to ot lane: -0.030872062992953114 m
+[INFO] [1792563747.012905573] [state_machine]: O_FREE False, obs dist to ot lane: -0.030901800998001216 m
+[INFO] [1792563747.037209658] [state_machine]: O_FREE False, obs dist to ot lane: -0.03089288988716765 m
+[INFO] [1792563747.062666858] [state_machine]: O_FREE False, obs dist to ot lane: -0.030922287817239574 m
+[INFO] [1792563747.087326805] [state_machine]: O_FREE False, obs dist to ot lane: -0.03091348826878415 m
+[INFO] [1792563747.112335507] [state_machine]: O_FREE False, obs dist to ot lane: -0.030942551911408656 m
+[INFO] [1792563747.134478078] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563747.138275521] [state_machine]: O_FREE False, obs dist to ot lane: -0.03093386184331659 m
+[INFO] [1792563747.163321509] [state_machine]: O_FREE False, obs dist to ot lane: -0.03096259685575803 m
+[INFO] [1792563747.187364625] [state_machine]: O_FREE False, obs dist to ot lane: -0.030954014237501215 m
+[INFO] [1792563747.212417415] [state_machine]: O_FREE False, obs dist to ot lane: -0.03098242615039412 m
+[INFO] [1792563747.228730524] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563747.237190267] [state_machine]: O_FREE False, obs dist to ot lane: -0.03097394900134931 m
+[INFO] [1792563747.262735994] [state_machine]: O_FREE False, obs dist to ot lane: -0.03096552385935386 m
+[INFO] [1792563747.287280960] [state_machine]: O_FREE False, obs dist to ot lane: -0.03095715024727888 m
+[INFO] [1792563747.312177923] [state_machine]: O_FREE False, obs dist to ot lane: -0.030985347056672996 m
+[INFO] [1792563747.337178582] [state_machine]: O_FREE False, obs dist to ot lane: -0.030977075096238427 m
+[INFO] [1792563747.362355346] [state_machine]: O_FREE False, obs dist to ot lane: -0.031040654050111027 m
+[INFO] [1792563747.387331532] [state_machine]: O_FREE False, obs dist to ot lane: -0.031032481901485026 m
+[INFO] [1792563747.413810389] [state_machine]: O_FREE False, obs dist to ot lane: -0.031059654310513884 m
+[INFO] [1792563747.437225210] [state_machine]: O_FREE False, obs dist to ot lane: -0.031051580177998056 m
+[INFO] [1792563747.462395341] [state_machine]: O_FREE False, obs dist to ot lane: -0.031078455360219942 m
+[INFO] [1792563747.487329075] [state_machine]: O_FREE False, obs dist to ot lane: -0.03107047749093389 m
+[INFO] [1792563747.513205357] [state_machine]: O_FREE False, obs dist to ot lane: -0.03109706028708578 m
+[INFO] [1792563747.537755270] [state_machine]: O_FREE False, obs dist to ot lane: -0.031089176969698318 m
+[INFO] [1792563747.562878496] [state_machine]: O_FREE False, obs dist to ot lane: -0.031115472116195697 m
+[INFO] [1792563747.587795143] [state_machine]: O_FREE False, obs dist to ot lane: -0.031107681679701155 m
+[INFO] [1792563747.612512630] [state_machine]: O_FREE False, obs dist to ot lane: -0.031133693811427637 m
+[INFO] [1792563747.656965823] [state_machine]: O_FREE False, obs dist to ot lane: -0.031133693811427637 m
+[INFO] [1792563747.669195338] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563747.672304142] [state_machine]: O_FREE False, obs dist to ot lane: -0.031159382439945565 m
+[INFO] [1792563747.687260350] [state_machine]: O_FREE False, obs dist to ot lane: -0.031144118744684368 m
+[INFO] [1792563747.712423049] [state_machine]: O_FREE False, obs dist to ot lane: -0.031169578358801853 m
+[INFO] [1792563747.729675712] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563747.737492494] [state_machine]: O_FREE False, obs dist to ot lane: -0.03116205692474036 m
+[INFO] [1792563747.762638773] [state_machine]: O_FREE False, obs dist to ot lane: -0.031187246846114153 m
+[INFO] [1792563747.787653424] [state_machine]: O_FREE False, obs dist to ot lane: -0.03117981198917011 m
+[INFO] [1792563747.812343026] [state_machine]: O_FREE False, obs dist to ot lane: -0.03120473647271141 m
+[INFO] [1792563747.837288445] [state_machine]: O_FREE False, obs dist to ot lane: -0.03119738670659461 m
+[INFO] [1792563747.862784759] [state_machine]: O_FREE False, obs dist to ot lane: -0.03122204991835617 m
+[INFO] [1792563747.887186789] [state_machine]: O_FREE False, obs dist to ot lane: -0.031214783790603468 m
+[INFO] [1792563747.912376819] [state_machine]: O_FREE False, obs dist to ot lane: -0.03123918981008214 m
+[INFO] [1792563747.937987849] [state_machine]: O_FREE False, obs dist to ot lane: -0.031232005901100535 m
+[INFO] [1792563747.962803959] [state_machine]: O_FREE False, obs dist to ot lane: -0.031256158723469124 m
+[INFO] [1792563747.988466965] [state_machine]: O_FREE False, obs dist to ot lane: -0.03124905564561109 m
+[INFO] [1792563748.012219144] [state_machine]: O_FREE False, obs dist to ot lane: -0.03127295918388098 m
+[INFO] [1792563748.037478510] [state_machine]: O_FREE False, obs dist to ot lane: -0.03126593558055099 m
+[INFO] [1792563748.062615179] [state_machine]: O_FREE False, obs dist to ot lane: -0.03128959366766837 m
+[INFO] [1792563748.087473497] [state_machine]: O_FREE False, obs dist to ot lane: -0.03128264821245902 m
+[INFO] [1792563748.112638164] [state_machine]: O_FREE False, obs dist to ot lane: -0.0313060646033389 m
+[INFO] [1792563748.126781181] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563748.137527563] [state_machine]: O_FREE False, obs dist to ot lane: -0.03129919599919595 m
+[INFO] [1792563748.162562421] [state_machine]: O_FREE False, obs dist to ot lane: -0.0313223743726935 m
+[INFO] [1792563748.187242785] [state_machine]: O_FREE False, obs dist to ot lane: -0.031315581351108374 m
+[INFO] [1792563748.212201680] [state_machine]: O_FREE False, obs dist to ot lane: -0.03133852531193013 m
+[INFO] [1792563748.227828098] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563748.237061070] [state_machine]: O_FREE False, obs dist to ot lane: -0.031331806632158815 m
+[INFO] [1792563748.262689302] [state_machine]: O_FREE False, obs dist to ot lane: -0.03135451971271899 m
+[INFO] [1792563748.287621824] [state_machine]: O_FREE False, obs dist to ot lane: -0.03134787416102666 m
+[INFO] [1792563748.312740099] [state_machine]: O_FREE False, obs dist to ot lane: -0.03137035982324615 m
+[INFO] [1792563748.337603549] [state_machine]: O_FREE False, obs dist to ot lane: -0.03136378621217617 m
+[INFO] [1792563748.362126906] [state_machine]: O_FREE False, obs dist to ot lane: -0.03138604784922877 m
+[INFO] [1792563748.387821570] [state_machine]: O_FREE False, obs dist to ot lane: -0.03137954501689527 m
+[INFO] [1792563748.413409139] [state_machine]: O_FREE False, obs dist to ot lane: -0.031401585954902805 m
+[INFO] [1792563748.438149515] [state_machine]: O_FREE False, obs dist to ot lane: -0.03139515276430624 m
+[INFO] [1792563748.463027728] [state_machine]: O_FREE False, obs dist to ot lane: -0.03141697626398304 m
+[INFO] [1792563748.487908782] [state_machine]: O_FREE False, obs dist to ot lane: -0.03141061160234729 m
+[INFO] [1792563748.512980276] [state_machine]: O_FREE False, obs dist to ot lane: -0.031432220860597354 m
+[INFO] [1792563748.539295380] [state_machine]: O_FREE False, obs dist to ot lane: -0.03145358569343068 m
+[INFO] [1792563748.563049125] [state_machine]: O_FREE False, obs dist to ot lane: -0.031447321790195604 m
+[INFO] [1792563748.588221370] [state_machine]: O_FREE False, obs dist to ot lane: -0.031441090941858874 m
+[INFO] [1792563748.613411025] [state_machine]: O_FREE False, obs dist to ot lane: -0.03146228106043372 m
+[INFO] [1792563748.627418673] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563748.637373102] [state_machine]: O_FREE False, obs dist to ot lane: -0.03145611554175423 m
+[INFO] [1792563748.662403491] [state_machine]: O_FREE False, obs dist to ot lane: -0.031477100642033795 m
+[INFO] [1792563748.687466979] [state_machine]: O_FREE False, obs dist to ot lane: -0.03147099943091178 m
+[INFO] [1792563748.712499254] [state_machine]: O_FREE False, obs dist to ot lane: -0.031491782469621143 m
+[INFO] [1792563748.728525656] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563748.737402766] [state_machine]: O_FREE False, obs dist to ot lane: -0.03148574456516756 m
+[INFO] [1792563748.762306391] [state_machine]: O_FREE False, obs dist to ot lane: -0.03150632844253998 m
+[INFO] [1792563748.786915628] [state_machine]: O_FREE False, obs dist to ot lane: -0.031500352864529124 m
+[INFO] [1792563748.812012445] [state_machine]: O_FREE False, obs dist to ot lane: -0.031520740425645316 m
+[INFO] [1792563748.837404413] [state_machine]: O_FREE False, obs dist to ot lane: -0.0315148262139843 m
+[INFO] [1792563748.862154366] [state_machine]: O_FREE False, obs dist to ot lane: -0.031535020250075624 m
+[INFO] [1792563748.888162279] [state_machine]: O_FREE False, obs dist to ot lane: -0.03155499363353609 m
+[INFO] [1792563748.912168786] [state_machine]: O_FREE False, obs dist to ot lane: -0.03154916971400468 m
+[INFO] [1792563748.937403877] [state_machine]: O_FREE False, obs dist to ot lane: -0.03156895545204161 m
+[INFO] [1792563748.962218311] [state_machine]: O_FREE False, obs dist to ot lane: -0.031563190583372785 m
+[INFO] [1792563748.988695435] [state_machine]: O_FREE False, obs dist to ot lane: -0.03155745490391243 m
+[INFO] [1792563749.012314591] [state_machine]: O_FREE False, obs dist to ot lane: -0.03157708459259953 m
+[INFO] [1792563749.037491966] [state_machine]: O_FREE False, obs dist to ot lane: -0.031571406630392956 m
+[INFO] [1792563749.062453701] [state_machine]: O_FREE False, obs dist to ot lane: -0.031590853445278316 m
+[INFO] [1792563749.089994606] [state_machine]: O_FREE False, obs dist to ot lane: -0.03161009182108246 m
+[INFO] [1792563749.112513194] [state_machine]: O_FREE False, obs dist to ot lane: -0.03160449881485178 m
+[INFO] [1792563749.126920989] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563749.137277726] [state_machine]: O_FREE False, obs dist to ot lane: -0.031598933703914006 m
+[INFO] [1792563749.162362539] [state_machine]: O_FREE False, obs dist to ot lane: -0.03161802234527045 m
+[INFO] [1792563749.188286144] [state_machine]: O_FREE False, obs dist to ot lane: -0.031612512402463294 m
+[INFO] [1792563749.213540648] [state_machine]: O_FREE False, obs dist to ot lane: -0.0316314256516341 m
+[INFO] [1792563749.239757872] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563749.243183753] [state_machine]: O_FREE False, obs dist to ot lane: -0.0316314256516341 m
+[INFO] [1792563749.261983510] [state_machine]: O_FREE False, obs dist to ot lane: -0.03164471032081642 m
+[INFO] [1792563749.287437143] [state_machine]: O_FREE False, obs dist to ot lane: -0.031639308281417144 m
+[INFO] [1792563749.312307584] [state_machine]: O_FREE False, obs dist to ot lane: -0.031657877912074445 m
+[INFO] [1792563749.338635507] [state_machine]: O_FREE False, obs dist to ot lane: -0.0316525286396116 m
+[INFO] [1792563749.362352166] [state_machine]: O_FREE False, obs dist to ot lane: -0.03167092995764162 m
+[INFO] [1792563749.387985927] [state_machine]: O_FREE False, obs dist to ot lane: -0.03166563268273559 m
+[INFO] [1792563749.412289475] [state_machine]: O_FREE False, obs dist to ot lane: -0.031683867963305995 m
+[INFO] [1792563749.437473688] [state_machine]: O_FREE False, obs dist to ot lane: -0.031678621931462175 m
+[INFO] [1792563749.462435861] [state_machine]: O_FREE False, obs dist to ot lane: -0.03167340124276735 m
+[INFO] [1792563749.487532506] [state_machine]: O_FREE False, obs dist to ot lane: -0.03171457829946622 m
+[INFO] [1792563749.512456260] [state_machine]: O_FREE False, obs dist to ot lane: -0.031709407749220514 m
+[INFO] [1792563749.537887849] [state_machine]: O_FREE False, obs dist to ot lane: -0.031727133544446035 m
+[INFO] [1792563749.562582008] [state_machine]: O_FREE False, obs dist to ot lane: -0.031722012413822775 m
+[INFO] [1792563749.587292099] [state_machine]: O_FREE False, obs dist to ot lane: -0.031716915727737105 m
+[INFO] [1792563749.612393391] [state_machine]: O_FREE False, obs dist to ot lane: -0.03173450880828424 m
+[INFO] [1792563749.626586937] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563749.637554885] [state_machine]: O_FREE False, obs dist to ot lane: -0.03172946048912115 m
+[INFO] [1792563749.662339895] [state_machine]: O_FREE False, obs dist to ot lane: -0.0317468983143431 m
+[INFO] [1792563749.687583650] [state_machine]: O_FREE False, obs dist to ot lane: -0.031764159340038345 m
+[INFO] [1792563749.712134123] [state_machine]: O_FREE False, obs dist to ot lane: -0.0317591822904687 m
+[INFO] [1792563749.728957447] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563749.737127030] [state_machine]: O_FREE False, obs dist to ot lane: -0.03175422866230876 m
+[INFO] [1792563749.762105251] [state_machine]: O_FREE False, obs dist to ot lane: -0.03177136207234629 m
+[INFO] [1792563749.787279646] [state_machine]: O_FREE False, obs dist to ot lane: -0.03176645479373244 m
+[INFO] [1792563749.812046143] [state_machine]: O_FREE False, obs dist to ot lane: -0.03178343897334862 m
+[INFO] [1792563749.837125378] [state_machine]: O_FREE False, obs dist to ot lane: -0.03177857739679363 m
+[INFO] [1792563749.862209247] [state_machine]: O_FREE False, obs dist to ot lane: -0.03179541428499724 m
+[INFO] [1792563749.886968684] [state_machine]: O_FREE False, obs dist to ot lane: -0.03179059777501819 m
+[INFO] [1792563749.912297744] [state_machine]: O_FREE False, obs dist to ot lane: -0.03180728927741183 m
+[INFO] [1792563749.937155996] [state_machine]: O_FREE False, obs dist to ot lane: -0.03180251721025326 m
+[INFO] [1792563749.962160242] [state_machine]: O_FREE False, obs dist to ot lane: -0.03181906519974806 m
+[INFO] [1792563749.987107143] [state_machine]: O_FREE False, obs dist to ot lane: -0.03181433696311256 m
+[INFO] [1792563750.012076990] [state_machine]: O_FREE False, obs dist to ot lane: -0.031830743280626295 m
+[INFO] [1792563750.037281182] [state_machine]: O_FREE False, obs dist to ot lane: -0.03182605827341273 m
+[INFO] [1792563750.062267456] [state_machine]: O_FREE False, obs dist to ot lane: -0.03184232472854878 m
+[INFO] [1792563750.087480779] [state_machine]: O_FREE False, obs dist to ot lane: -0.031837682360597475 m
+[INFO] [1792563750.114321878] [state_machine]: O_FREE False, obs dist to ot lane: -0.03185381073230659 m
+[INFO] [1792563750.131845686] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563750.138312366] [state_machine]: O_FREE False, obs dist to ot lane: -0.03186978195365875 m
+[INFO] [1792563750.162689958] [state_machine]: O_FREE False, obs dist to ot lane: -0.03186520246137764 m
+[INFO] [1792563750.187483369] [state_machine]: O_FREE False, obs dist to ot lane: -0.03186064364400526 m
+[INFO] [1792563750.212493449] [state_machine]: O_FREE False, obs dist to ot lane: -0.03187650106631504 m
+[INFO] [1792563750.227744496] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563750.237334991] [state_machine]: O_FREE False, obs dist to ot lane: -0.03187198318092979 m
+[INFO] [1792563750.262659963] [state_machine]: O_FREE False, obs dist to ot lane: -0.03188770767912555 m
+[INFO] [1792563750.286977162] [state_machine]: O_FREE False, obs dist to ot lane: -0.03190328092699446 m
+[INFO] [1792563750.312372612] [state_machine]: O_FREE False, obs dist to ot lane: -0.03189882341363948 m
+[INFO] [1792563750.337304913] [state_machine]: O_FREE False, obs dist to ot lane: -0.03189438575557782 m
+[INFO] [1792563750.362362329] [state_machine]: O_FREE False, obs dist to ot lane: -0.031909849365871906 m
+[INFO] [1792563750.388046319] [state_machine]: O_FREE False, obs dist to ot lane: -0.03190545102246509 m
+[INFO] [1792563750.412131235] [state_machine]: O_FREE False, obs dist to ot lane: -0.031920786614375446 m
+[INFO] [1792563750.438237657] [state_machine]: O_FREE False, obs dist to ot lane: -0.03193597656442215 m
+[INFO] [1792563750.462162017] [state_machine]: O_FREE False, obs dist to ot lane: -0.03193163622058412 m
+[INFO] [1792563750.487074830] [state_machine]: O_FREE False, obs dist to ot lane: -0.03192731495518053 m
+[INFO] [1792563750.512455940] [state_machine]: O_FREE False, obs dist to ot lane: -0.03194239922915018 m
+[INFO] [1792563750.537124431] [state_machine]: O_FREE False, obs dist to ot lane: -0.03193811574516606 m
+[INFO] [1792563750.562830886] [state_machine]: O_FREE False, obs dist to ot lane: -0.03195307666827213 m
+[INFO] [1792563750.587151118] [state_machine]: O_FREE False, obs dist to ot lane: -0.031948830472372486 m
+[INFO] [1792563750.612381374] [state_machine]: O_FREE False, obs dist to ot lane: -0.031963669550015505 m
+[INFO] [1792563750.630036736] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563750.637346404] [state_machine]: O_FREE False, obs dist to ot lane: -0.0319594601574171 m
+[INFO] [1792563750.662620102] [state_machine]: O_FREE False, obs dist to ot lane: -0.03197417887062659 m
+[INFO] [1792563750.687350411] [state_machine]: O_FREE False, obs dist to ot lane: -0.03197000580491352 m
+[INFO] [1792563750.713538904] [state_machine]: O_FREE False, obs dist to ot lane: -0.031984605610838046 m
+[INFO] [1792563750.738761615] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563750.740626392] [state_machine]: O_FREE False, obs dist to ot lane: -0.031980468403781964 m
+[INFO] [1792563750.763588737] [state_machine]: O_FREE False, obs dist to ot lane: -0.03199495073616851 m
+[INFO] [1792563750.789315786] [state_machine]: O_FREE False, obs dist to ot lane: -0.03200929947673306 m
+[INFO] [1792563750.812000541] [state_machine]: O_FREE False, obs dist to ot lane: -0.03200521519721469 m
+[INFO] [1792563750.838592888] [state_machine]: O_FREE False, obs dist to ot lane: -0.032019449486686724 m
+[INFO] [1792563750.863501120] [state_machine]: O_FREE False, obs dist to ot lane: -0.032015399929936655 m
+[INFO] [1792563750.890006894] [state_machine]: O_FREE False, obs dist to ot lane: -0.03202952113084112 m
+[INFO] [1792563750.912782686] [state_machine]: O_FREE False, obs dist to ot lane: -0.0320255058559373 m
+[INFO] [1792563750.937668567] [state_machine]: O_FREE False, obs dist to ot lane: -0.03202150755894004 m
+[INFO] [1792563750.962390020] [state_machine]: O_FREE False, obs dist to ot lane: -0.03203553388273506 m
+[INFO] [1792563750.987903785] [state_machine]: O_FREE False, obs dist to ot lane: -0.03203156922009054 m
+[INFO] [1792563751.012560343] [state_machine]: O_FREE False, obs dist to ot lane: -0.032045484904030475 m
+[INFO] [1792563751.037898469] [state_machine]: O_FREE False, obs dist to ot lane: -0.03204155345310991 m
+[INFO] [1792563751.063087606] [state_machine]: O_FREE False, obs dist to ot lane: -0.032055359799966765 m
+[INFO] [1792563751.088538669] [state_machine]: O_FREE False, obs dist to ot lane: -0.03205146114519253 m
+[INFO] [1792563751.112486049] [state_machine]: O_FREE False, obs dist to ot lane: -0.032065159437384694 m
+[INFO] [1792563751.127988352] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563751.137235078] [state_machine]: O_FREE False, obs dist to ot lane: -0.032061293170083854 m
+[INFO] [1792563751.162542521] [state_machine]: O_FREE False, obs dist to ot lane: -0.03207488467007147 m
+[INFO] [1792563751.187400122] [state_machine]: O_FREE False, obs dist to ot lane: -0.03207105038833294 m
+[INFO] [1792563751.212729918] [state_machine]: O_FREE False, obs dist to ot lane: -0.03208453633900449 m
+[INFO] [1792563751.232874274] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563751.237285334] [state_machine]: O_FREE False, obs dist to ot lane: -0.03208073364753983 m
+[INFO] [1792563751.261851848] [state_machine]: O_FREE False, obs dist to ot lane: -0.03209411527258957 m
+[INFO] [1792563751.288500692] [state_machine]: O_FREE False, obs dist to ot lane: -0.03209034378259701 m
+[INFO] [1792563751.312385867] [state_machine]: O_FREE False, obs dist to ot lane: -0.03210362228689348 m
+[INFO] [1792563751.338646648] [state_machine]: O_FREE False, obs dist to ot lane: -0.03209988161592556 m
+[INFO] [1792563751.362613136] [state_machine]: O_FREE False, obs dist to ot lane: -0.03211305818587207 m
+[INFO] [1792563751.387881489] [state_machine]: O_FREE False, obs dist to ot lane: -0.03210934795770626 m
+[INFO] [1792563751.412622265] [state_machine]: O_FREE False, obs dist to ot lane: -0.03212242376159313 m
+[INFO] [1792563751.437728918] [state_machine]: O_FREE False, obs dist to ot lane: -0.03211874360610564 m
+[INFO] [1792563751.462831253] [state_machine]: O_FREE False, obs dist to ot lane: -0.0321317197944532 m
+[INFO] [1792563751.487703869] [state_machine]: O_FREE False, obs dist to ot lane: -0.0321280693474961 m
+[INFO] [1792563751.513779548] [state_machine]: O_FREE False, obs dist to ot lane: -0.0321409470533926 m
+[INFO] [1792563751.538017296] [state_machine]: O_FREE False, obs dist to ot lane: -0.03213732595667351 m
+[INFO] [1792563751.563334951] [state_machine]: O_FREE False, obs dist to ot lane: -0.03215010629610193 m
+[INFO] [1792563751.588368339] [state_machine]: O_FREE False, obs dist to ot lane: -0.03214651419706682 m
+[INFO] [1792563751.613508414] [state_machine]: O_FREE False, obs dist to ot lane: -0.032159198269227585 m
+[INFO] [1792563751.636717340] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563751.639398755] [state_machine]: O_FREE False, obs dist to ot lane: -0.032155634820946494 m
+[INFO] [1792563751.662536170] [state_machine]: O_FREE False, obs dist to ot lane: -0.03216822370857045 m
+[INFO] [1792563751.688055683] [state_machine]: O_FREE False, obs dist to ot lane: -0.032164688569625566 m
+[INFO] [1792563751.712460189] [state_machine]: O_FREE False, obs dist to ot lane: -0.03216116745900982 m
+[INFO] [1792563751.730048233] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563751.737983460] [state_machine]: O_FREE False, obs dist to ot lane: -0.032181638700145565 m
+[INFO] [1792563751.762764286] [state_machine]: O_FREE False, obs dist to ot lane: -0.03217814539683708 m
+[INFO] [1792563751.787668301] [state_machine]: O_FREE False, obs dist to ot lane: -0.03217466587381779 m
+[INFO] [1792563751.813019292] [state_machine]: O_FREE False, obs dist to ot lane: -0.032194908023308044 m
+[INFO] [1792563751.837812652] [state_machine]: O_FREE False, obs dist to ot lane: -0.032191455817367653 m
+[INFO] [1792563751.862786925] [state_machine]: O_FREE False, obs dist to ot lane: -0.032203674475375366 m
+[INFO] [1792563751.887690521] [state_machine]: O_FREE False, obs dist to ot lane: -0.03220024926608017 m
+[INFO] [1792563751.912847510] [state_machine]: O_FREE False, obs dist to ot lane: -0.03221237791667886 m
+[INFO] [1792563751.937603437] [state_machine]: O_FREE False, obs dist to ot lane: -0.0322089793885873 m
+[INFO] [1792563751.962699100] [state_machine]: O_FREE False, obs dist to ot lane: -0.03222101902190702 m
+[INFO] [1792563751.987759729] [state_machine]: O_FREE False, obs dist to ot lane: -0.03221764686447279 m
+[INFO] [1792563752.012524325] [state_machine]: O_FREE False, obs dist to ot lane: -0.032229598456185865 m
+[INFO] [1792563752.037699196] [state_machine]: O_FREE False, obs dist to ot lane: -0.03222625236366333 m
+[INFO] [1792563752.062802016] [state_machine]: O_FREE False, obs dist to ot lane: -0.03223811687524766 m
+[INFO] [1792563752.088002334] [state_machine]: O_FREE False, obs dist to ot lane: -0.032234796546599526 m
+[INFO] [1792563752.112667523] [state_machine]: O_FREE False, obs dist to ot lane: -0.032246574925594074 m
+[INFO] [1792563752.126438343] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563752.137478859] [state_machine]: O_FREE False, obs dist to ot lane: -0.03224328006440105 m
+[INFO] [1792563752.162569327] [state_machine]: O_FREE False, obs dist to ot lane: -0.032254973244659035 m
+[INFO] [1792563752.188203280] [state_machine]: O_FREE False, obs dist to ot lane: -0.032251703559031564 m
+[INFO] [1792563752.212700020] [state_machine]: O_FREE False, obs dist to ot lane: -0.03226331246096564 m
+[INFO] [1792563752.229641746] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563752.237706044] [state_machine]: O_FREE False, obs dist to ot lane: -0.032260067663457764 m
+[INFO] [1792563752.263101821] [state_machine]: O_FREE False, obs dist to ot lane: -0.03227159319428047 m
+[INFO] [1792563752.287348195] [state_machine]: O_FREE False, obs dist to ot lane: -0.0322683730018056 m
+[INFO] [1792563752.312050293] [state_machine]: O_FREE False, obs dist to ot lane: -0.03227981605576527 m
+[INFO] [1792563752.337058745] [state_machine]: O_FREE False, obs dist to ot lane: -0.032276620189513855 m
+[INFO] [1792563752.362564142] [state_machine]: O_FREE False, obs dist to ot lane: -0.03228798164812549 m
+[INFO] [1792563752.387309286] [state_machine]: O_FREE False, obs dist to ot lane: -0.032299250456280765 m
+[INFO] [1792563752.413366739] [state_machine]: O_FREE False, obs dist to ot lane: -0.03229609056575494 m
+[INFO] [1792563752.438410937] [state_machine]: O_FREE False, obs dist to ot lane: -0.032292942532229224 m
+[INFO] [1792563752.462742568] [state_machine]: O_FREE False, obs dist to ot lane: -0.032304143394878165 m
+[INFO] [1792563752.487798883] [state_machine]: O_FREE False, obs dist to ot lane: -0.03230101887601361 m
+[INFO] [1792563752.512691043] [state_machine]: O_FREE False, obs dist to ot lane: -0.03231214071369007 m
+[INFO] [1792563752.537705812] [state_machine]: O_FREE False, obs dist to ot lane: -0.03230903944699834 m
+[INFO] [1792563752.562544174] [state_machine]: O_FREE False, obs dist to ot lane: -0.032320083092491625 m
+[INFO] [1792563752.587201891] [state_machine]: O_FREE False, obs dist to ot lane: -0.03231700481937669 m
+[INFO] [1792563752.613537902] [state_machine]: O_FREE False, obs dist to ot lane: -0.03232797109382496 m
+[INFO] [1792563752.629340414] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563752.637243273] [state_machine]: O_FREE False, obs dist to ot lane: -0.0323249155595112 m
+[INFO] [1792563752.662125057] [state_machine]: O_FREE False, obs dist to ot lane: -0.03233580527260302 m
+[INFO] [1792563752.687787248] [state_machine]: O_FREE False, obs dist to ot lane: -0.03233277222606501 m
+[INFO] [1792563752.712316480] [state_machine]: O_FREE False, obs dist to ot lane: -0.03234358617623845 m
+[INFO] [1792563752.729044613] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563752.737237118] [state_machine]: O_FREE False, obs dist to ot lane: -0.032340575370132074 m
+[INFO] [1792563752.762281745] [state_machine]: O_FREE False, obs dist to ot lane: -0.032351314344769844 m
+[INFO] [1792563752.787591415] [state_machine]: O_FREE False, obs dist to ot lane: -0.032361968212325704 m
+[INFO] [1792563752.812216754] [state_machine]: O_FREE False, obs dist to ot lane: -0.032358990310984576 m
+[INFO] [1792563752.837281478] [state_machine]: O_FREE False, obs dist to ot lane: -0.032356023258100025 m
+[INFO] [1792563752.862373071] [state_machine]: O_FREE False, obs dist to ot lane: -0.03236661460053958 m
+[INFO] [1792563752.887515282] [state_machine]: O_FREE False, obs dist to ot lane: -0.032363669067477646 m
+[INFO] [1792563752.912244981] [state_machine]: O_FREE False, obs dist to ot lane: -0.03237418773208031 m
+[INFO] [1792563752.937391135] [state_machine]: O_FREE False, obs dist to ot lane: -0.032371263485564544 m
+[INFO] [1792563752.962523252] [state_machine]: O_FREE False, obs dist to ot lane: -0.0323817102173565 m
+[INFO] [1792563752.987485655] [state_machine]: O_FREE False, obs dist to ot lane: -0.03237880702746995 m
+[INFO] [1792563753.012343593] [state_machine]: O_FREE False, obs dist to ot lane: -0.03238918256133577 m
+[INFO] [1792563753.037306575] [state_machine]: O_FREE False, obs dist to ot lane: -0.032386300201460744 m
+[INFO] [1792563753.062416418] [state_machine]: O_FREE False, obs dist to ot lane: -0.032396605262316164 m
+[INFO] [1792563753.087349935] [state_machine]: O_FREE False, obs dist to ot lane: -0.03239374350907523 m
+[INFO] [1792563753.112374366] [state_machine]: O_FREE False, obs dist to ot lane: -0.032403978812033746 m
+[INFO] [1792563753.125335853] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563753.137245893] [state_machine]: O_FREE False, obs dist to ot lane: -0.03240113744523204 m
+[INFO] [1792563753.162551047] [state_machine]: O_FREE False, obs dist to ot lane: -0.03241130369577222 m
+[INFO] [1792563753.187148871] [state_machine]: O_FREE False, obs dist to ot lane: -0.032408482498341024 m
+[INFO] [1792563753.212217712] [state_machine]: O_FREE False, obs dist to ot lane: -0.03241858039246598 m
+[INFO] [1792563753.228750896] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563753.237259642] [state_machine]: O_FREE False, obs dist to ot lane: -0.0324157791504073 m
+[INFO] [1792563753.262298151] [state_machine]: O_FREE False, obs dist to ot lane: -0.03242580937480427 m
+[INFO] [1792563753.287321528] [state_machine]: O_FREE False, obs dist to ot lane: -0.032423027877136856 m
+[INFO] [1792563753.312527188] [state_machine]: O_FREE False, obs dist to ot lane: -0.032432991109332426 m
+[INFO] [1792563753.337515152] [state_machine]: O_FREE False, obs dist to ot lane: -0.03243022914803878 m
+[INFO] [1792563753.362825749] [state_machine]: O_FREE False, obs dist to ot lane: -0.032440126056550805 m
+[INFO] [1792563753.387744168] [state_machine]: O_FREE False, obs dist to ot lane: -0.032437383426525246 m
+[INFO] [1792563753.412497731] [state_machine]: O_FREE False, obs dist to ot lane: -0.03244721467101169 m
+[INFO] [1792563753.438090516] [state_machine]: O_FREE False, obs dist to ot lane: -0.032444491170009665 m
+[INFO] [1792563753.462512664] [state_machine]: O_FREE False, obs dist to ot lane: -0.03245425740141519 m
+[INFO] [1792563753.488064834] [state_machine]: O_FREE False, obs dist to ot lane: -0.03245155283000353 m
+[INFO] [1792563753.513182242] [state_machine]: O_FREE False, obs dist to ot lane: -0.03246125469070288 m
+[INFO] [1792563753.537925706] [state_machine]: O_FREE False, obs dist to ot lane: -0.0324585688522111 m
+[INFO] [1792563753.562430176] [state_machine]: O_FREE False, obs dist to ot lane: -0.03246820697614902 m
+[INFO] [1792563753.588622189] [state_machine]: O_FREE False, obs dist to ot lane: -0.03246553967662169 m
+[INFO] [1792563753.613154545] [state_machine]: O_FREE False, obs dist to ot lane: -0.032475114689451495 m
+[INFO] [1792563753.633135810] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563753.637271658] [state_machine]: O_FREE False, obs dist to ot lane: -0.03247246573760146 m
+[INFO] [1792563753.662376476] [state_machine]: O_FREE False, obs dist to ot lane: -0.03248197825681898 m
+[INFO] [1792563753.687499501] [state_machine]: O_FREE False, obs dist to ot lane: -0.03247934746398179 m
+[INFO] [1792563753.712450741] [state_machine]: O_FREE False, obs dist to ot lane: -0.032488798099059024 m
+[INFO] [1792563753.728561049] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563753.737853264] [state_machine]: O_FREE False, obs dist to ot lane: -0.032486185279147956 m
+[INFO] [1792563753.762644360] [state_machine]: O_FREE False, obs dist to ot lane: -0.032495574631661944 m
+[INFO] [1792563753.788457041] [state_machine]: O_FREE False, obs dist to ot lane: -0.03249297960112424 m
+[INFO] [1792563753.812395055] [state_machine]: O_FREE False, obs dist to ot lane: -0.03250230826488468 m
+[INFO] [1792563753.837349877] [state_machine]: O_FREE False, obs dist to ot lane: -0.03249973084265856 m
+[INFO] [1792563753.862349260] [state_machine]: O_FREE False, obs dist to ot lane: -0.03250899940383281 m
+[INFO] [1792563753.887606942] [state_machine]: O_FREE False, obs dist to ot lane: -0.03250643941130529 m
+[INFO] [1792563753.912584573] [state_machine]: O_FREE False, obs dist to ot lane: -0.03251564844854091 m
+[INFO] [1792563753.938057203] [state_machine]: O_FREE False, obs dist to ot lane: -0.032513105709506634 m
+[INFO] [1792563753.962414041] [state_machine]: O_FREE False, obs dist to ot lane: -0.03252225579405127 m
+[INFO] [1792563753.988090056] [state_machine]: O_FREE False, obs dist to ot lane: -0.03251973013467199 m
+[INFO] [1792563754.012295565] [state_machine]: O_FREE False, obs dist to ot lane: -0.032528821830491106 m
+[INFO] [1792563754.037243679] [state_machine]: O_FREE False, obs dist to ot lane: -0.03252631307925613 m
+[INFO] [1792563754.062482615] [state_machine]: O_FREE False, obs dist to ot lane: -0.03253534694314919 m
+[INFO] [1792563754.087350248] [state_machine]: O_FREE False, obs dist to ot lane: -0.03253285493083655 m
+[INFO] [1792563754.112329881] [state_machine]: O_FREE False, obs dist to ot lane: -0.03254183151254969 m
+[INFO] [1792563754.124608034] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563754.137173357] [state_machine]: O_FREE False, obs dist to ot lane: -0.032539356072188025 m
+[INFO] [1792563754.162498649] [state_machine]: O_FREE False, obs dist to ot lane: -0.03254827591452583 m
+[INFO] [1792563754.187549266] [state_machine]: O_FREE False, obs dist to ot lane: -0.03254581688135719 m
+[INFO] [1792563754.212373558] [state_machine]: O_FREE False, obs dist to ot lane: -0.03255468052029162 m
+[INFO] [1792563754.228249640] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563754.237099024] [state_machine]: O_FREE False, obs dist to ot lane: -0.03255223773173485 m
+[INFO] [1792563754.262296930] [state_machine]: O_FREE False, obs dist to ot lane: -0.03256104569651255 m
+[INFO] [1792563754.287131423] [state_machine]: O_FREE False, obs dist to ot lane: -0.032558618992127475 m
+[INFO] [1792563754.312093835] [state_machine]: O_FREE False, obs dist to ot lane: -0.032556200270322605 m
+[INFO] [1792563754.337394050] [state_machine]: O_FREE False, obs dist to ot lane: -0.03256496102682649 m
+[INFO] [1792563754.362308251] [state_machine]: O_FREE False, obs dist to ot lane: -0.03256255815247072 m
+[INFO] [1792563754.387807142] [state_machine]: O_FREE False, obs dist to ot lane: -0.03256016314349747 m
+[INFO] [1792563754.412202090] [state_machine]: O_FREE False, obs dist to ot lane: -0.03257990824777415 m
+[INFO] [1792563754.438039043] [state_machine]: O_FREE False, obs dist to ot lane: -0.032588490927049435 m
+[INFO] [1792563754.462239013] [state_machine]: O_FREE False, obs dist to ot lane: -0.03258611928389324 m
+[INFO] [1792563754.487246807] [state_machine]: O_FREE False, obs dist to ot lane: -0.03258375535339769 m
+[INFO] [1792563754.512356083] [state_machine]: O_FREE False, obs dist to ot lane: -0.03259229265794478 m
+[INFO] [1792563754.537227212] [state_machine]: O_FREE False, obs dist to ot lane: -0.03258994404032914 m
+[INFO] [1792563754.562422286] [state_machine]: O_FREE False, obs dist to ot lane: -0.03259842871071389 m
+[INFO] [1792563754.587557874] [state_machine]: O_FREE False, obs dist to ot lane: -0.03259609525766974 m
+[INFO] [1792563754.612186700] [state_machine]: O_FREE False, obs dist to ot lane: -0.03260452777889564 m
+[INFO] [1792563754.624499918] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563754.637224147] [state_machine]: O_FREE False, obs dist to ot lane: -0.032602209344023636 m
+[INFO] [1792563754.662225801] [state_machine]: O_FREE False, obs dist to ot lane: -0.03261059019515744 m
+[INFO] [1792563754.687911490] [state_machine]: O_FREE False, obs dist to ot lane: -0.03260828663393667 m
+[INFO] [1792563754.712206139] [state_machine]: O_FREE False, obs dist to ot lane: -0.032616616288198175 m
+[INFO] [1792563754.727627974] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563754.737189072] [state_machine]: O_FREE False, obs dist to ot lane: -0.03261432745795609 m
+[INFO] [1792563754.762285227] [state_machine]: O_FREE False, obs dist to ot lane: -0.0326226063828067 m
+[INFO] [1792563754.790141945] [state_machine]: O_FREE False, obs dist to ot lane: -0.032630827797234696 m
+[INFO] [1792563754.812348778] [state_machine]: O_FREE False, obs dist to ot lane: -0.032628560799920575 m
+[INFO] [1792563754.837261817] [state_machine]: O_FREE False, obs dist to ot lane: -0.032626301010865 m
+[INFO] [1792563754.862482789] [state_machine]: O_FREE False, obs dist to ot lane: -0.032634479856682275 m
+[INFO] [1792563754.913539231] [state_machine]: O_FREE False, obs dist to ot lane: -0.032634479856682275 m
+[INFO] [1792563754.937278030] [state_machine]: O_FREE False, obs dist to ot lane: -0.03263813256939033 m
+[INFO] [1792563754.962332799] [state_machine]: O_FREE False, obs dist to ot lane: -0.03264621313907723 m
+[INFO] [1792563754.988129312] [state_machine]: O_FREE False, obs dist to ot lane: -0.0326439958863029 m
+[INFO] [1792563755.012371114] [state_machine]: O_FREE False, obs dist to ot lane: -0.03265202798051778 m
+[INFO] [1792563755.037782155] [state_machine]: O_FREE False, obs dist to ot lane: -0.03264982463989197 m
+[INFO] [1792563755.062421521] [state_machine]: O_FREE False, obs dist to ot lane: -0.03265780869332699 m
+[INFO] [1792563755.087291021] [state_machine]: O_FREE False, obs dist to ot lane: -0.032655619134321634 m
+[INFO] [1792563755.112598746] [state_machine]: O_FREE False, obs dist to ot lane: -0.032663555576490005 m
+[INFO] [1792563755.127941090] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563755.138205942] [state_machine]: O_FREE False, obs dist to ot lane: -0.032661379670204854 m
+[INFO] [1792563755.162563583] [state_machine]: O_FREE False, obs dist to ot lane: -0.03266926892551736 m
+[INFO] [1792563755.187773841] [state_machine]: O_FREE False, obs dist to ot lane: -0.032667106544654656 m
+[INFO] [1792563755.212674760] [state_machine]: O_FREE False, obs dist to ot lane: -0.03267494903249493 m
+[INFO] [1792563755.227578511] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563755.237230196] [state_machine]: O_FREE False, obs dist to ot lane: -0.032672800051334494 m
+[INFO] [1792563755.262578526] [state_machine]: O_FREE False, obs dist to ot lane: -0.03268059618613384 m
+[INFO] [1792563755.287551876] [state_machine]: O_FREE False, obs dist to ot lane: -0.032678460480508875 m
+[INFO] [1792563755.312376777] [state_machine]: O_FREE False, obs dist to ot lane: -0.03268621067181904 m
+[INFO] [1792563755.337757363] [state_machine]: O_FREE False, obs dist to ot lane: -0.0326840881190921 m
+[INFO] [1792563755.362644427] [state_machine]: O_FREE False, obs dist to ot lane: -0.03269179277165579 m
+[INFO] [1792563755.387898547] [state_machine]: O_FREE False, obs dist to ot lane: -0.03268968325069535 m
+[INFO] [1792563755.412599191] [state_machine]: O_FREE False, obs dist to ot lane: -0.03269734276451827 m
+[INFO] [1792563755.437396812] [state_machine]: O_FREE False, obs dist to ot lane: -0.03269524615567562 m
+[INFO] [1792563755.462909344] [state_machine]: O_FREE False, obs dist to ot lane: -0.03270286092609384 m
+[INFO] [1792563755.487524503] [state_machine]: O_FREE False, obs dist to ot lane: -0.03270077711118052 m
+[INFO] [1792563755.512658503] [state_machine]: O_FREE False, obs dist to ot lane: -0.0327083475289299 m
+[INFO] [1792563755.537176449] [state_machine]: O_FREE False, obs dist to ot lane: -0.0327062763911955 m
+[INFO] [1792563755.562629805] [state_machine]: O_FREE False, obs dist to ot lane: -0.03271380284247702 m
+[INFO] [1792563755.587801641] [state_machine]: O_FREE False, obs dist to ot lane: -0.03271174426658738 m
+[INFO] [1792563755.612352518] [state_machine]: O_FREE False, obs dist to ot lane: -0.032719227133133605 m
+[INFO] [1792563755.624074298] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563755.637462042] [state_machine]: O_FREE False, obs dist to ot lane: -0.03271718100514934 m
+[INFO] [1792563755.662434871] [state_machine]: O_FREE False, obs dist to ot lane: -0.032724620664288856 m
+[INFO] [1792563755.687615806] [state_machine]: O_FREE False, obs dist to ot lane: -0.032722586871644366 m
+[INFO] [1792563755.712269446] [state_machine]: O_FREE False, obs dist to ot lane: -0.03272998369636421 m
+[INFO] [1792563755.728639245] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563755.737034143] [state_machine]: O_FREE False, obs dist to ot lane: -0.03272796212784709 m
+[INFO] [1792563755.762225738] [state_machine]: O_FREE False, obs dist to ot lane: -0.03273531648685596 m
+[INFO] [1792563755.787232332] [state_machine]: O_FREE False, obs dist to ot lane: -0.03273330703258667 m
+[INFO] [1792563755.812305495] [state_machine]: O_FREE False, obs dist to ot lane: -0.03274061929037547 m
+[INFO] [1792563755.837314074] [state_machine]: O_FREE False, obs dist to ot lane: -0.03273862184178741 m
+[INFO] [1792563755.862278468] [state_machine]: O_FREE False, obs dist to ot lane: -0.03274589235868969 m
+[INFO] [1792563755.887061933] [state_machine]: O_FREE False, obs dist to ot lane: -0.03274390680850972 m
+[INFO] [1792563755.912282853] [state_machine]: O_FREE False, obs dist to ot lane: -0.03275113594076051 m
+[INFO] [1792563755.937320101] [state_machine]: O_FREE False, obs dist to ot lane: -0.03274916218298965 m
+[INFO] [1792563755.962413531] [state_machine]: O_FREE False, obs dist to ot lane: -0.03275635028278337 m
+[INFO] [1792563755.987818423] [state_machine]: O_FREE False, obs dist to ot lane: -0.03275438821267804 m
+[INFO] [1792563756.012778069] [state_machine]: O_FREE False, obs dist to ot lane: -0.03276153562822651 m
+[INFO] [1792563756.037380750] [state_machine]: O_FREE False, obs dist to ot lane: -0.032759585142279946 m
+[INFO] [1792563756.062260493] [state_machine]: O_FREE False, obs dist to ot lane: -0.03276669221786732 m
+[INFO] [1792563756.087639918] [state_machine]: O_FREE False, obs dist to ot lane: -0.03276475321379135 m
+[INFO] [1792563756.112204743] [state_machine]: O_FREE False, obs dist to ot lane: -0.032771820289829945 m
+[INFO] [1792563756.124756396] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563756.140120215] [state_machine]: O_FREE False, obs dist to ot lane: -0.03277884205006018 m
+[INFO] [1792563756.162131114] [state_machine]: O_FREE False, obs dist to ot lane: -0.03277692007962166 m
+[INFO] [1792563756.188088710] [state_machine]: O_FREE False, obs dist to ot lane: -0.03277500373720785 m
+[INFO] [1792563756.212658025] [state_machine]: O_FREE False, obs dist to ot lane: -0.032781991820168804 m
+[INFO] [1792563756.228525620] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563756.237470956] [state_machine]: O_FREE False, obs dist to ot lane: -0.03278008665989557 m
+[INFO] [1792563756.262413826] [state_machine]: O_FREE False, obs dist to ot lane: -0.032787035741851045 m
+[INFO] [1792563756.287005160] [state_machine]: O_FREE False, obs dist to ot lane: -0.03278514166612903 m
+[INFO] [1792563756.312432105] [state_machine]: O_FREE False, obs dist to ot lane: -0.03279205207253755 m
+[INFO] [1792563756.337332964] [state_machine]: O_FREE False, obs dist to ot lane: -0.03279016898490966 m
+[INFO] [1792563756.362310755] [state_machine]: O_FREE False, obs dist to ot lane: -0.03279704103761927 m
+[INFO] [1792563756.387458314] [state_machine]: O_FREE False, obs dist to ot lane: -0.03279516884274433 m
+[INFO] [1792563756.412623124] [state_machine]: O_FREE False, obs dist to ot lane: -0.03280200286004409 m
+[INFO] [1792563756.437569092] [state_machine]: O_FREE False, obs dist to ot lane: -0.032800141463680765 m
+[INFO] [1792563756.462469124] [state_machine]: O_FREE False, obs dist to ot lane: -0.03280693776034896 m
+[INFO] [1792563756.487495398] [state_machine]: O_FREE False, obs dist to ot lane: -0.03280508706933988 m
+[INFO] [1792563756.512272507] [state_machine]: O_FREE False, obs dist to ot lane: -0.032803241696408414 m
+[INFO] [1792563756.537348507] [state_machine]: O_FREE False, obs dist to ot lane: -0.03281000587894811 m
+[INFO] [1792563756.562579184] [state_machine]: O_FREE False, obs dist to ot lane: -0.03280817107363346 m
+[INFO] [1792563756.587545255] [state_machine]: O_FREE False, obs dist to ot lane: -0.0328063415181194 m
+[INFO] [1792563756.612371819] [state_machine]: O_FREE False, obs dist to ot lane: -0.03282158309842506 m
+[INFO] [1792563756.624802589] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563756.637357515] [state_machine]: O_FREE False, obs dist to ot lane: -0.03281976397514319 m
+[INFO] [1792563756.662333401] [state_machine]: O_FREE False, obs dist to ot lane: -0.03282641246852469 m
+[INFO] [1792563756.687144743] [state_machine]: O_FREE False, obs dist to ot lane: -0.0328246036885009 m
+[INFO] [1792563756.712514884] [state_machine]: O_FREE False, obs dist to ot lane: -0.03283121598414285 m
+[INFO] [1792563756.728130913] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563756.737654813] [state_machine]: O_FREE False, obs dist to ot lane: -0.03282941745941198 m
+[INFO] [1792563756.762280753] [state_machine]: O_FREE False, obs dist to ot lane: -0.03283599385201419 m
+[INFO] [1792563756.787921231] [state_machine]: O_FREE False, obs dist to ot lane: -0.032834205495605756 m
+[INFO] [1792563756.812303619] [state_machine]: O_FREE False, obs dist to ot lane: -0.03284074627667952 m
+[INFO] [1792563756.837363502] [state_machine]: O_FREE False, obs dist to ot lane: -0.032838968002603636 m
+[INFO] [1792563756.862445619] [state_machine]: O_FREE False, obs dist to ot lane: -0.032845473460514085 m
+[INFO] [1792563756.887632699] [state_machine]: O_FREE False, obs dist to ot lane: -0.03284370518374774 m
+[INFO] [1792563756.912379300] [state_machine]: O_FREE False, obs dist to ot lane: -0.03285017560375608 m
+[INFO] [1792563756.937441821] [state_machine]: O_FREE False, obs dist to ot lane: -0.03284841724022958 m
+[INFO] [1792563756.962358483] [state_machine]: O_FREE False, obs dist to ot lane: -0.03285485290453491 m
+[INFO] [1792563756.987409335] [state_machine]: O_FREE False, obs dist to ot lane: -0.03285310437111849 m
+[INFO] [1792563757.012341835] [state_machine]: O_FREE False, obs dist to ot lane: -0.03285950555889877 m
+[INFO] [1792563757.037865948] [state_machine]: O_FREE False, obs dist to ot lane: -0.03285776677338961 m
+[INFO] [1792563757.062455858] [state_machine]: O_FREE False, obs dist to ot lane: -0.0328641337608421 m
+[INFO] [1792563757.087525170] [state_machine]: O_FREE False, obs dist to ot lane: -0.03286240464195131 m
+[INFO] [1792563757.112280797] [state_machine]: O_FREE False, obs dist to ot lane: -0.03286873770233181 m
+[INFO] [1792563757.125949405] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563757.137846242] [state_machine]: O_FREE False, obs dist to ot lane: -0.032867018169671885 m
+[INFO] [1792563757.162420839] [state_machine]: O_FREE False, obs dist to ot lane: -0.032873317573334365 m
+[INFO] [1792563757.187355919] [state_machine]: O_FREE False, obs dist to ot lane: -0.032879578863939996 m
+[INFO] [1792563757.212298647] [state_machine]: O_FREE False, obs dist to ot lane: -0.032877873561840826 m
+[INFO] [1792563757.229325151] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563757.237214444] [state_machine]: O_FREE False, obs dist to ot lane: -0.032876172964023315 m
+[INFO] [1792563757.262300805] [state_machine]: O_FREE False, obs dist to ot lane: -0.03288240585389346 m
+[INFO] [1792563757.287499412] [state_machine]: O_FREE False, obs dist to ot lane: -0.03288071460642866 m
+[INFO] [1792563757.312280488] [state_machine]: O_FREE False, obs dist to ot lane: -0.032886914633610154 m
+[INFO] [1792563757.337343432] [state_machine]: O_FREE False, obs dist to ot lane: -0.03288523265959334 m
+[INFO] [1792563757.362376217] [state_machine]: O_FREE False, obs dist to ot lane: -0.032891400083209316 m
+[INFO] [1792563757.387306628] [state_machine]: O_FREE False, obs dist to ot lane: -0.0328897273065768 m
+[INFO] [1792563757.412600153] [state_machine]: O_FREE False, obs dist to ot lane: -0.03289586238303449 m
+[INFO] [1792563757.437345320] [state_machine]: O_FREE False, obs dist to ot lane: -0.032894198728552176 m
+[INFO] [1792563757.462284796] [state_machine]: O_FREE False, obs dist to ot lane: -0.03290030171157782 m
+[INFO] [1792563757.487731717] [state_machine]: O_FREE False, obs dist to ot lane: -0.032898647104829926 m
+[INFO] [1792563757.512455595] [state_machine]: O_FREE False, obs dist to ot lane: -0.032904718245504394 m
+[INFO] [1792563757.537823528] [state_machine]: O_FREE False, obs dist to ot lane: -0.03290307261288239 m
+[INFO] [1792563757.562571627] [state_machine]: O_FREE False, obs dist to ot lane: -0.03290911215967551 m
+[INFO] [1792563757.587781728] [state_machine]: O_FREE False, obs dist to ot lane: -0.03290747542836714 m
+[INFO] [1792563757.613012475] [state_machine]: O_FREE False, obs dist to ot lane: -0.03291348362717092 m
+[INFO] [1792563757.629494636] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563757.637228864] [state_machine]: O_FREE False, obs dist to ot lane: -0.032911855725149514 m
+[INFO] [1792563757.662283596] [state_machine]: O_FREE False, obs dist to ot lane: -0.03291783281931171 m
+[INFO] [1792563757.687545178] [state_machine]: O_FREE False, obs dist to ot lane: -0.03291621367532557 m
+[INFO] [1792563757.712169056] [state_machine]: O_FREE False, obs dist to ot lane: -0.032922159905683035 m
+[INFO] [1792563757.728349529] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563757.737264513] [state_machine]: O_FREE False, obs dist to ot lane: -0.03292054944924511 m
+[INFO] [1792563757.762423349] [state_machine]: O_FREE False, obs dist to ot lane: -0.03292646505415525 m
+[INFO] [1792563757.787258472] [state_machine]: O_FREE False, obs dist to ot lane: -0.03292486321553281 m
+[INFO] [1792563757.813029751] [state_machine]: O_FREE False, obs dist to ot lane: -0.032930748430906404 m
+[INFO] [1792563757.837588252] [state_machine]: O_FREE False, obs dist to ot lane: -0.032929155141111055 m
+[INFO] [1792563757.862528809] [state_machine]: O_FREE False, obs dist to ot lane: -0.0329350102004424 m
+[INFO] [1792563757.887766264] [state_machine]: O_FREE False, obs dist to ot lane: -0.032933425391220184 m
+[INFO] [1792563757.912488341] [state_machine]: O_FREE False, obs dist to ot lane: -0.032939250525618496 m
+[INFO] [1792563757.937295792] [state_machine]: O_FREE False, obs dist to ot lane: -0.03293767412944007 m
+[INFO] [1792563757.962427949] [state_machine]: O_FREE False, obs dist to ot lane: -0.032943469567660366 m
+[INFO] [1792563757.988552094] [state_machine]: O_FREE False, obs dist to ot lane: -0.03294190151771145 m
+[INFO] [1792563758.013278879] [state_machine]: O_FREE False, obs dist to ot lane: -0.032947667486183524 m
+[INFO] [1792563758.037678623] [state_machine]: O_FREE False, obs dist to ot lane: -0.032946107716355505 m
+[INFO] [1792563758.063278449] [state_machine]: O_FREE False, obs dist to ot lane: -0.03295184443921398 m
+[INFO] [1792563758.088094678] [state_machine]: O_FREE False, obs dist to ot lane: -0.03295029288409457 m
+[INFO] [1792563758.112920594] [state_machine]: O_FREE False, obs dist to ot lane: -0.032956000583207634 m
+[INFO] [1792563758.129551080] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563758.137503110] [state_machine]: O_FREE False, obs dist to ot lane: -0.03295445717807169 m
+[INFO] [1792563758.162508869] [state_machine]: O_FREE False, obs dist to ot lane: -0.03296013607306977 m
+[INFO] [1792563758.188060664] [state_machine]: O_FREE False, obs dist to ot lane: -0.032958600753870415 m
+[INFO] [1792563758.213113633] [state_machine]: O_FREE False, obs dist to ot lane: -0.032964251062174266 m
+[INFO] [1792563758.231551645] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563758.237436952] [state_machine]: O_FREE False, obs dist to ot lane: -0.03296272376553391 m
+[INFO] [1792563758.263017790] [state_machine]: O_FREE False, obs dist to ot lane: -0.03296834570238247 m
+[INFO] [1792563758.287661356] [state_machine]: O_FREE False, obs dist to ot lane: -0.03296682636558415 m
+[INFO] [1792563758.312917409] [state_machine]: O_FREE False, obs dist to ot lane: -0.03297242014406135 m
+[INFO] [1792563758.337401060] [state_machine]: O_FREE False, obs dist to ot lane: -0.03297090870504013 m
+[INFO] [1792563758.362490934] [state_machine]: O_FREE False, obs dist to ot lane: -0.032976474536102446 m
+[INFO] [1792563758.387596577] [state_machine]: O_FREE False, obs dist to ot lane: -0.03297497093343696 m
+[INFO] [1792563758.412475012] [state_machine]: O_FREE False, obs dist to ot lane: -0.032980509025939575 m
+[INFO] [1792563758.437573931] [state_machine]: O_FREE False, obs dist to ot lane: -0.03297901319884369 m
+[INFO] [1792563758.462264019] [state_machine]: O_FREE False, obs dist to ot lane: -0.032984523759566314 m
+[INFO] [1792563758.487907243] [state_machine]: O_FREE False, obs dist to ot lane: -0.03298303564788105 m
+[INFO] [1792563758.512424300] [state_machine]: O_FREE False, obs dist to ot lane: -0.032988518881554324 m
+[INFO] [1792563758.547413123] [state_machine]: O_FREE False, obs dist to ot lane: -0.032988518881554324 m
+[INFO] [1792563758.562236731] [state_machine]: O_FREE False, obs dist to ot lane: -0.0329924945350695 m
+[INFO] [1792563758.587700696] [state_machine]: O_FREE False, obs dist to ot lane: -0.0329910216761963 m
+[INFO] [1792563758.612403274] [state_machine]: O_FREE False, obs dist to ot lane: -0.032996450861889876 m
+[INFO] [1792563758.627899233] [state_machine]: [WAYPOINTS] track_length=41.905 wpnt_dist=0.0998 gb_max_idx=420
+[INFO] [1792563758.637694392] [state_machine]: O_FREE False, obs dist to ot lane: -0.032994985541632466 m
+[INFO] [1792563758.662523494] [state_machine]: O_FREE False, obs dist to ot lane: -0.033000388002422165 m
+[INFO] [1792563758.687540102] [state_machine]: O_FREE False, obs dist to ot lane: -0.032998930163050305 m
+[INFO] [1792563758.713072040] [state_machine]: O_FREE False, obs dist to ot lane: -0.033004306095717945 m
+[INFO] [1792563758.729955680] [state_machine]: [WAYPOINTS] max_speed (from global) = 10.470 m/s
+[INFO] [1792563758.737563205] [state_machine]: O_FREE False, obs dist to ot lane: -0.03300285568008943 m
+[INFO] [1792563758.762468361] [state_machine]: O_FREE False, obs dist to ot lane: -0.03300140895508591 m
+[INFO] [1792563758.788490522] [state_machine]: O_FREE False, obs dist to ot lane: -0.033013525076017236 m
+[INFO] [1792563758.812365540] [state_machine]: O_FREE False, obs dist to ot lane: -0.03301208569012978 m
+[INFO] [1792563758.837412698] [state_machine]: O_FREE False, obs dist to ot lane: -0.033010649952875754 m
+[INFO] [1792563758.862273194] [state_machine]: O_FREE False, obs dist to ot lane: -0.03301594746272002 m
+[INFO] [1792563758.887388489] [state_machine]: O_FREE False, obs dist to ot lane: -0.033014518981236224 m
+[INFO] [1792563758.912677780] [state_machine]: O_FREE False, obs dist to ot lane: -0.0330197907310536 m
+[INFO] [1792563758.937790962] [state_machine]: O_FREE False, obs dist to ot lane: -0.03301836945047
