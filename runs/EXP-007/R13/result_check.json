@@ -1,0 +1,25 @@
+{
+  "scope": "result JSON and bag storage inspection; no trajectory or runtime parameter verification yet",
+  "laps_completed": 5,
+  "mean_lap_s": 16.284,
+  "best_lap_s": 16.09,
+  "collisions": {
+    "obstacle": 1,
+    "wall": 0,
+    "total": 1
+  },
+  "collision_events": [
+    {
+      "t": 83.349,
+      "lap": 5,
+      "kind": "obstacle",
+      "x": 12.51,
+      "y": 4.359
+    }
+  ],
+  "baseline_R12_mean_s": 17.4175,
+  "mean_lap_reduction_percent": 6.507822592220476,
+  "R13_first_four_mean_s": 16.2125,
+  "matched_first_four_reduction_percent": 6.918329266542281,
+  "limitation": "R12 observed only four completed laps; R13 collision after five completed laps, so late-layout safety cannot be directly compared."
+}

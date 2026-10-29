@@ -1,0 +1,18 @@
+{
+  "baseline": "EXP-007/R05",
+  "changes": {
+    "curve_speed_weight": {
+      "before": 0.65,
+      "after": 0.8
+    }
+  },
+  "backup_sha256": {
+    "tln_params_before.yaml": "a08464cfc967844e2d47b684e8d183d78030c0c394eba022cf395d16ef34225c",
+    "inference_node.py": "cb032616445051e40cfc35a78294ccbb88a17204c292b48cb2e4c8d064e102da"
+  },
+  "source_modified": false,
+  "status": "executed; 1 clean lap followed by wall collision; runtime key parameters verified in parameter_events",
+  "speed_ratio": 0.75,
+  "num_obstacles": 1,
+  "seed": 2026
+}

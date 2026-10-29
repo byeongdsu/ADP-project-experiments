@@ -1,0 +1,16 @@
+{
+  "baseline": "R09-retry1",
+  "speed_ratio": 0.625,
+  "changes": {
+    "v_min": {
+      "before": 1.5,
+      "after": 1.875
+    },
+    "v_max": {
+      "before": 3.25,
+      "after": 4.0625
+    }
+  },
+  "status": "executed; 4 clean laps then obstacle collision on fifth layout",
+  "source_modified": false
+}

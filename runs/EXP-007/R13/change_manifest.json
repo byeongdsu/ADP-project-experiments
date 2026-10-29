@@ -1,0 +1,18 @@
+{
+  "baseline": "R12",
+  "status": "prepared; not executed",
+  "changes": {
+    "v_min": [
+      1.5,
+      1.65
+    ],
+    "v_max": [
+      3.25,
+      3.575
+    ]
+  },
+  "num_obstacles": 2,
+  "seed": 2026,
+  "source_modified": false,
+  "baseline_sha256": "490a7992af59ec8d71ca114b1af204ada2b28bbe04c6ee34a5943335bfde7de5"
+}

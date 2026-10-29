@@ -1,0 +1,11 @@
+{
+  "runtime_parameters": {
+    "ema_alpha": 0.5,
+    "curve_speed_weight": 0.65,
+    "v_min": 1.5,
+    "v_max": 3.25
+  },
+  "recorded_layout_count": 6,
+  "first_five_layouts_match_r09": true,
+  "result": "5 clean laps; stopped before 7 lap observation target"
+}

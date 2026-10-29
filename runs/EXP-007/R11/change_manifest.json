@@ -1,0 +1,16 @@
+{
+  "baseline": "R10-retry1",
+  "speed_ratio": 0.5625,
+  "changes": {
+    "v_min": {
+      "before": 1.875,
+      "after": 1.6875
+    },
+    "v_max": {
+      "before": 4.0625,
+      "after": 3.65625
+    }
+  },
+  "status": "prepared; not executed",
+  "source_modified": false
+}

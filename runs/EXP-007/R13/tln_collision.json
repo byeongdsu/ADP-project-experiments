@@ -1,0 +1,461 @@
+{
+  "alignment": "latest preceding bag receipt timestamps; asynchronous, not internal callback times",
+  "layouts": [
+    {
+      "time": 1793298054.1734817,
+      "poses": [
+        [
+          -3.8932997836759013,
+          2.7308772520340057,
+          -0.9098783490814282
+        ],
+        [
+          -3.30813859295505,
+          5.125268611851245,
+          -1.6408205742371786
+        ]
+      ]
+    },
+    {
+      "time": 1793298079.445628,
+      "poses": [
+        [
+          3.52445553377751,
+          -0.3114761512984918,
+          0.7015310997661219
+        ],
+        [
+          11.691843474448643,
+          5.009361038295255,
+          3.052278559677063
+        ]
+      ]
+    },
+    {
+      "time": 1793298095.6649776,
+      "poses": [
+        [
+          8.481106310895932,
+          -0.8820859294715139,
+          1.1817519523346849
+        ],
+        [
+          1.3227298631181943,
+          5.80715408380809,
+          3.010188477311805
+        ]
+      ]
+    },
+    {
+      "time": 1793298111.757562,
+      "poses": [
+        [
+          -2.8948027749052776,
+          6.010448599876208,
+          -2.0084989956221486
+        ],
+        [
+          -3.5765906407777135,
+          5.259184622917205,
+          -1.6408205742371786
+        ]
+      ]
+    },
+    {
+      "time": 1793298127.9753838,
+      "poses": [
+        [
+          3.409765898522259,
+          4.37157472129145,
+          -2.692817865828109
+        ],
+        [
+          2.53796435852693,
+          -0.13070208989579168,
+          0.7030037701899088
+        ]
+      ]
+    },
+    {
+      "time": 1793298144.5482063,
+      "poses": [
+        [
+          2.0072199943095126,
+          -0.4864620225570399,
+          0.30222015420963805
+        ],
+        [
+          12.281302522705356,
+          4.97684805863907,
+          2.4480828863064743
+        ]
+      ]
+    }
+  ],
+  "runtime_parameter_events": [
+    {
+      "time": 1793298061.8997602,
+      "node": "/tln_inference",
+      "values": {
+        "use_sim_time": {
+          "type": 1,
+          "double": 0.0,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298061.9071515,
+      "node": "/tln_inference",
+      "values": {
+        "model": {
+          "type": 4,
+          "double": 0.0,
+          "integer": 0,
+          "string": "TLN_aug.keras",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3134375,
+      "node": "/tln_inference",
+      "values": {
+        "drive_publish_enabled": {
+          "type": 1,
+          "double": 0.0,
+          "integer": 0,
+          "string": "",
+          "bool": true
+        }
+      }
+    },
+    {
+      "time": 1793298062.3136396,
+      "node": "/tln_inference",
+      "values": {
+        "scan_topic": {
+          "type": 4,
+          "double": 0.0,
+          "integer": 0,
+          "string": "/scan",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.313739,
+      "node": "/tln_inference",
+      "values": {
+        "drive_topic": {
+          "type": 4,
+          "double": 0.0,
+          "integer": 0,
+          "string": "/drive",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3138497,
+      "node": "/tln_inference",
+      "values": {
+        "down_sample": {
+          "type": 2,
+          "double": 0.0,
+          "integer": 2,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.313956,
+      "node": "/tln_inference",
+      "values": {
+        "ema_alpha": {
+          "type": 3,
+          "double": 0.5,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3140595,
+      "node": "/tln_inference",
+      "values": {
+        "steering_deadzone_rad": {
+          "type": 3,
+          "double": 0.0,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3141646,
+      "node": "/tln_inference",
+      "values": {
+        "reverse_direction": {
+          "type": 1,
+          "double": 0.0,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3142674,
+      "node": "/tln_inference",
+      "values": {
+        "curve_speed_weight": {
+          "type": 3,
+          "double": 0.65,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3143673,
+      "node": "/tln_inference",
+      "values": {
+        "v_min": {
+          "type": 3,
+          "double": 1.65,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3144767,
+      "node": "/tln_inference",
+      "values": {
+        "v_max": {
+          "type": 3,
+          "double": 3.575,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.3145726,
+      "node": "/tln_inference",
+      "values": {
+        "steer_abs_max": {
+          "type": 3,
+          "double": 0.36,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.314675,
+      "node": "/tln_inference",
+      "values": {
+        "mapping": {
+          "type": 1,
+          "double": 0.0,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    },
+    {
+      "time": 1793298062.31478,
+      "node": "/tln_inference",
+      "values": {
+        "clamp_range_max_m": {
+          "type": 3,
+          "double": 10.0,
+          "integer": 0,
+          "string": "",
+          "bool": false
+        }
+      }
+    }
+  ],
+  "collisions": [
+    [
+      1793298146.4665341,
+      "obstacle"
+    ]
+  ],
+  "snapshots": [
+    {
+      "dt": -3,
+      "xy": [
+        9.100560459362244,
+        -0.6035468965052865
+      ],
+      "yaw_deg": -3.308404297825065,
+      "actual_vx": 2.347260077941236,
+      "command_speed": 2.564258337020874,
+      "steer": 0.1253175288438797,
+      "obstacle_center_distances": [
+        7.558900571217641,
+        6.57960863530928
+      ],
+      "front_scan_min": 4.425843715667725,
+      "sample_ages": {
+        "/drive": 0.0031795501708984375,
+        "/car_state/odom_GT": 0.009855985641479492,
+        "/sim/obstacles": 0.29060864448547363,
+        "/sim/collision": 3.9577484130859375e-05,
+        "/scan": 0.00012445449829101562
+      }
+    },
+    {
+      "dt": -2,
+      "xy": [
+        11.488729789978045,
+        -0.011353787394600877
+      ],
+      "yaw_deg": 34.27635864565069,
+      "actual_vx": 2.1974806492739924,
+      "command_speed": 2.1373629570007324,
+      "steer": 0.17644564807415009,
+      "obstacle_center_distances": [
+        9.191284995673856,
+        8.95156108319494
+      ],
+      "front_scan_min": 2.661809206008911,
+      "sample_ages": {
+        "/drive": 0.0034813880920410156,
+        "/car_state/odom_GT": 0.009171724319458008,
+        "/sim/obstacles": 0.2911264896392822,
+        "/sim/collision": 0.009408712387084961,
+        "/scan": 0.009455442428588867
+      }
+    },
+    {
+      "dt": -1,
+      "xy": [
+        12.608093395614029,
+        2.0661954750536125
+      ],
+      "yaw_deg": 76.17337737200197,
+      "actual_vx": 2.851340085026053,
+      "command_speed": 2.9078264236450195,
+      "steer": 0.0588260181248188,
+      "obstacle_center_distances": [
+        10.903878996512821,
+        2.92894020713109
+      ],
+      "front_scan_min": 4.057497501373291,
+      "sample_ages": {
+        "/drive": 0.005936861038208008,
+        "/car_state/odom_GT": 0.009236812591552734,
+        "/sim/obstacles": 0.29113149642944336,
+        "/sim/collision": 0.00017762184143066406,
+        "/scan": 0.00021839141845703125
+      }
+    },
+    {
+      "dt": -0.5,
+      "xy": [
+        12.786133054193986,
+        3.4460811450326014
+      ],
+      "yaw_deg": 89.9732718548039,
+      "actual_vx": 2.622747715037675,
+      "command_speed": 2.4475419521331787,
+      "steer": 0.11110568046569824,
+      "obstacle_center_distances": [
+        11.473877396830769,
+        1.6118626521249773
+      ],
+      "front_scan_min": 2.7099852561950684,
+      "sample_ages": {
+        "/drive": 0.01019740104675293,
+        "/car_state/odom_GT": 0.00926828384399414,
+        "/sim/obstacles": 0.7911314964294434,
+        "/sim/collision": 0.009588241577148438,
+        "/scan": 0.00961160659790039
+      }
+    },
+    {
+      "dt": -0.2,
+      "xy": [
+        12.685485132266171,
+        4.077490080577494
+      ],
+      "yaw_deg": 108.99447072107466,
+      "actual_vx": 1.6746616281281939,
+      "command_speed": 1.649999976158142,
+      "steer": 0.24834613502025604,
+      "obstacle_center_distances": [
+        11.61270877772308,
+        0.9860062649772546
+      ],
+      "front_scan_min": 0.5261746048927307,
+      "sample_ages": {
+        "/drive": 0.004156351089477539,
+        "/car_state/odom_GT": 0.008847713470458984,
+        "/sim/obstacles": 0.09083724021911621,
+        "/sim/collision": 0.00940847396850586,
+        "/scan": 1.8835067749023438e-05
+      }
+    },
+    {
+      "dt": -0.05,
+      "xy": [
+        12.560665504336226,
+        4.2937100424612815
+      ],
+      "yaw_deg": 120.0230847116641,
+      "actual_vx": 1.6548409729917528,
+      "command_speed": 1.649999976158142,
+      "steer": 0.30841612815856934,
+      "obstacle_center_distances": [
+        11.585562442293622,
+        0.7380523183711396
+      ],
+      "front_scan_min": 0.2688652276992798,
+      "sample_ages": {
+        "/drive": 0.003950834274291992,
+        "/car_state/odom_GT": 0.009633302688598633,
+        "/sim/obstacles": 0.24083733558654785,
+        "/sim/collision": 0.00989079475402832,
+        "/scan": 0.009934425354003906
+      }
+    },
+    {
+      "dt": 0,
+      "xy": [
+        12.50962521807453,
+        4.358688132380166
+      ],
+      "yaw_deg": 124.2042236159398,
+      "actual_vx": 1.6516858445210416,
+      "command_speed": 1.649999976158142,
+      "steer": 0.30772337317466736,
+      "obstacle_center_distances": [
+        11.566157335435776,
+        0.6589787156297675
+      ],
+      "front_scan_min": 0.2646515965461731,
+      "sample_ages": {
+        "/drive": 0.0013043880462646484,
+        "/car_state/odom_GT": 0.010063648223876953,
+        "/sim/obstacles": 0.29083728790283203,
+        "/sim/collision": 0.0,
+        "/scan": 3.0040740966796875e-05
+      }
+    }
+  ]
+}

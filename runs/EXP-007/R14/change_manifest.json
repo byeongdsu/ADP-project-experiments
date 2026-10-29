@@ -1,0 +1,17 @@
+{
+  "baseline": "R13",
+  "changes": {
+    "v_min": [
+      1.65,
+      1.7325
+    ],
+    "v_max": [
+      3.575,
+      3.75375
+    ]
+  },
+  "num_obstacles": 2,
+  "seed": 2026,
+  "status": "prepared; not executed",
+  "source_modified": false
+}

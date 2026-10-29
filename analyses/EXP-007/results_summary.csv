@@ -1,0 +1,19 @@
+run,started_at,num_obstacles,v_min,v_max,ema_alpha,curve_speed_weight,config_evidence,completed_laps,mean_lap_s,best_lap_s,obstacle_collisions,wall_collisions,result_file
+R01,2026-10-30T01:16:10,2,,,,,"no saved YAML; defaults described in report, runtime not verified",0,,,1,0,runs/EXP-007/R01/race_result_20261030_011610.json
+R03,2026-10-30T02:13:17,1,0.75,1.625,0.7,0.65,saved YAML,0,,,0,1,runs/EXP-007/R03/race_result_20261030_021317.json
+R04,2026-10-30T02:18:40,1,1.5,3.25,0.7,0.65,saved YAML,4,17.29725,17.09,0,1,runs/EXP-007/R04/race_result_20261030_021840.json
+R05,2026-10-30T02:25:34,1,2.25,4.875,0.7,0.65,saved YAML,3,12.113333,12.0,1,0,runs/EXP-007/R05/race_result_20261030_022534.json
+R05-retry1,2026-10-30T02:39:24,1,2.25,4.875,0.7,0.65,saved YAML,3,12.232667,12.069,1,0,runs/EXP-007/R05-retry1/race_result_20261030_023924.json
+R06,2026-10-30T02:29:50,1,3.0,6.5,0.7,0.65,saved YAML,3,9.693667,9.45,1,0,runs/EXP-007/R06/race_result_20261030_022950.json
+R06-retry1,2026-10-30T02:31:44,1,3.0,6.5,0.7,0.65,saved YAML,3,9.833333,9.63,1,0,runs/EXP-007/R06-retry1/race_result_20261030_023144.json
+R07,2026-10-30T02:36:13,1,2.25,4.875,0.7,0.8,saved YAML,1,12.531,12.531,0,1,runs/EXP-007/R07/race_result_20261030_023613.json
+R08,2026-10-30T02:43:54,1,2.25,4.875,0.5,0.65,saved YAML,4,12.22475,12.07,0,1,runs/EXP-007/R08/race_result_20261030_024354.json
+R08-retry1,2026-10-30T02:47:58,1,2.25,4.875,0.5,0.65,saved YAML,3,12.173,12.069,1,0,runs/EXP-007/R08-retry1/race_result_20261030_024758.json
+R09,2026-10-30T02:53:49,1,1.5,3.25,0.5,0.65,saved YAML,7,17.290143,17.16,0,0,runs/EXP-007/R09/race_result_20261030_025349.json
+R09-retry1,2026-10-30T02:59:48,1,1.5,3.25,0.5,0.65,saved YAML,5,17.42,17.27,0,0,runs/EXP-007/R09-retry1/race_result_20261030_025948.json
+R10,2026-10-30T03:02:39,1,1.875,4.0625,0.5,0.65,saved YAML,4,14.1725,14.099,1,0,runs/EXP-007/R10/race_result_20261030_030239.json
+R10-retry1,2026-10-30T03:05:30,1,1.875,4.0625,0.5,0.65,saved YAML,6,14.275167,14.1,1,0,runs/EXP-007/R10-retry1/race_result_20261030_030530.json
+R11,2026-10-30T03:12:57,1,1.6875,3.65625,0.5,0.65,saved YAML,2,15.705,15.69,0,1,runs/EXP-007/R11/race_result_20261030_031257.json
+R12,2026-10-30T03:18:16,2,1.5,3.25,0.5,0.65,saved YAML,4,17.4175,17.18,0,0,runs/EXP-007/R12/race_result_20261030_031816.json
+R13,2026-10-30T03:20:51,2,1.65,3.575,0.5,0.65,saved YAML,5,16.284,16.09,1,0,runs/EXP-007/R13/race_result_20261030_032051.json
+R14,2026-10-30T03:25:58,2,1.7325,3.75375,0.5,0.65,saved YAML,5,15.3902,15.25,1,0,runs/EXP-007/R14/race_result_20261030_032558.json

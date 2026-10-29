@@ -1,0 +1,15 @@
+{
+  "baseline": "R08-retry1",
+  "changes": {
+    "v_min": {
+      "before": 2.25,
+      "after": 1.5
+    },
+    "v_max": {
+      "before": 4.875,
+      "after": 3.25
+    }
+  },
+  "status": "executed; 7 clean laps; key runtime parameters verified",
+  "source_modified": false
+}

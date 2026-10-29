@@ -1,0 +1,15 @@
+{
+  "baseline": "R05-retry1",
+  "changes": {
+    "ema_alpha": {
+      "before": 0.7,
+      "after": 0.5
+    }
+  },
+  "backup_sha256": {
+    "tln_params_before.yaml": "a08464cfc967844e2d47b684e8d183d78030c0c394eba022cf395d16ef34225c",
+    "inference_node.py": "cb032616445051e40cfc35a78294ccbb88a17204c292b48cb2e4c8d064e102da"
+  },
+  "status": "executed; 4 clean laps then wall collision; key runtime parameters verified",
+  "source_modified": false
+}

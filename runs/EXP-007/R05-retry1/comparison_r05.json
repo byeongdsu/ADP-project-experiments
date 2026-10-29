@@ -1,0 +1,25 @@
+{
+  "R05": {
+    "initial_xy": [
+      10.832046001482436,
+      -0.5021100154908403
+    ],
+    "initial_yaw": 0.3652437316241457,
+    "first_wall_or_obstacle": "obstacle",
+    "positive_saturation_samples_last_second": 0,
+    "drive_samples_last_second": 96
+  },
+  "R05-retry1": {
+    "initial_xy": [
+      10.832046001482436,
+      -0.5021100154908403
+    ],
+    "initial_yaw": 0.3652437316241457,
+    "first_wall_or_obstacle": "obstacle",
+    "positive_saturation_samples_last_second": 1,
+    "drive_samples_last_second": 87
+  },
+  "parameter_files_identical": true,
+  "layouts_identical": true,
+  "collision_point_distance_m": 0.07027406969340194
+}

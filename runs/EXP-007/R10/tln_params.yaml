@@ -1,0 +1,14 @@
+tln_inference:
+  ros__parameters:
+    model: TLN_aug.keras
+    drive_publish_enabled: true
+    mapping: false
+    v_min: 1.875
+    v_max: 4.0625
+    curve_speed_weight: 0.65
+    ema_alpha: 0.5
+    steer_abs_max: 0.36
+    clamp_range_max_m: 10.0
+    down_sample: 2
+    reverse_direction: false
+    steering_deadzone_rad: 0.0

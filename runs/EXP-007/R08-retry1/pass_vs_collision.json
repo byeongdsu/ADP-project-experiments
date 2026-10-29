@@ -1,0 +1,102 @@
+{
+  "R08": {
+    "samples_at_same_x": [
+      {
+        "x": -0.9969306352176014,
+        "y": 6.285518492944818,
+        "yaw_deg": 150.02765494445995,
+        "actual_speed": 2.9119227159510435,
+        "command_speed": 2.2834432125091553,
+        "steering": 0.2540496289730072,
+        "estimated_rectangle_gap_m": 1.4203940524063141,
+        "time_since_x_minus1": 0.0
+      },
+      {
+        "x": -1.5122216304993579,
+        "y": 6.433829342246769,
+        "yaw_deg": 172.76331765845023,
+        "actual_speed": 2.630895017457957,
+        "command_speed": 4.079537868499756,
+        "steering": 0.02132449671626091,
+        "estimated_rectangle_gap_m": 0.9280931347369965,
+        "time_since_x_minus1": 0.21992945671081543
+      },
+      {
+        "x": -1.9977817293222788,
+        "y": 6.484124867864064,
+        "yaw_deg": 173.67932756698826,
+        "actual_speed": 3.217566228252907,
+        "command_speed": 2.6652233600616455,
+        "steering": 0.1970740556716919,
+        "estimated_rectangle_gap_m": 0.5186346472685626,
+        "time_since_x_minus1": 0.3794231414794922
+      },
+      {
+        "x": -2.3081940783642136,
+        "y": 6.491183436989994,
+        "yaw_deg": -176.84621172466487,
+        "actual_speed": 2.6677601007441933,
+        "command_speed": 2.3792240619659424,
+        "steering": 0.22827669978141785,
+        "estimated_rectangle_gap_m": 0.3073576228861368,
+        "time_since_x_minus1": 0.48953866958618164
+      }
+    ],
+    "min_estimated_rectangle_gap_m": 0.02389874186123741,
+    "min_gap_xy": [
+      -3.0413410308027045,
+      6.318329314990943
+    ],
+    "geometry_note": "0.58x0.2032 vehicle rectangle,0.30m rotated square; approximate geometry only, simulator uses lidar iTTC threshold, not this polygon gap"
+  },
+  "R08-retry1": {
+    "samples_at_same_x": [
+      {
+        "x": -1.0052346847529972,
+        "y": 6.298673752461623,
+        "yaw_deg": 155.01852825840817,
+        "actual_speed": 3.4852280759266505,
+        "command_speed": 3.501558303833008,
+        "steering": -0.09171508997678757,
+        "estimated_rectangle_gap_m": 1.4060969114125972,
+        "time_since_x_minus1": 0.0
+      },
+      {
+        "x": -1.4946648588785876,
+        "y": 6.528134558032316,
+        "yaw_deg": 159.40557007685356,
+        "actual_speed": 2.516397849249438,
+        "command_speed": 2.25,
+        "steering": 0.36000001430511475,
+        "estimated_rectangle_gap_m": 1.00145585656278,
+        "time_since_x_minus1": 0.16985845565795898
+      },
+      {
+        "x": -1.9943793010827073,
+        "y": 6.527607986832884,
+        "yaw_deg": -167.89297803342433,
+        "actual_speed": 2.278626024325136,
+        "command_speed": 2.6616923809051514,
+        "steering": 0.19620080292224884,
+        "estimated_rectangle_gap_m": 0.5230294451329183,
+        "time_since_x_minus1": 0.3818626403808594
+      },
+      {
+        "x": -2.2884983598349664,
+        "y": 6.4129615188340825,
+        "yaw_deg": -157.0987499687308,
+        "actual_speed": 2.568996859061987,
+        "command_speed": 2.796203136444092,
+        "steering": 0.1608569473028183,
+        "estimated_rectangle_gap_m": 0.21785011869691578,
+        "time_since_x_minus1": 0.5211410522460938
+      }
+    ],
+    "min_estimated_rectangle_gap_m": 0.16788752529779066,
+    "min_gap_xy": [
+      -2.3352184260775535,
+      6.391033796136665
+    ],
+    "geometry_note": "0.58x0.2032 vehicle rectangle,0.30m rotated square; approximate geometry only, simulator uses lidar iTTC threshold, not this polygon gap"
+  }
+}

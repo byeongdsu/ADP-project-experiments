@@ -1,0 +1,6 @@
+{
+  "ema_alpha": 0.5,
+  "curve_speed_weight": 0.65,
+  "v_min": 2.25,
+  "v_max": 4.875
+}

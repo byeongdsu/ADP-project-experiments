@@ -1,0 +1,15 @@
+{
+  "baseline": "R09 and R09-retry1",
+  "changes": {
+    "num_obstacles": {
+      "before": 1,
+      "after": 2
+    }
+  },
+  "map": "hyhall12",
+  "seed": 2026,
+  "pose_source": "pf",
+  "status": "prepared; not executed",
+  "source_modified": false,
+  "tln_params_sha256": "490a7992af59ec8d71ca114b1af204ada2b28bbe04c6ee34a5943335bfde7de5"
+}

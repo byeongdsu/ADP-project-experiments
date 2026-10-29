@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "position_limit_m": 0.3,
+  "heading_limit_deg": 15.0,
+  "stationary_speed_limit_mps": 0.05,
+  "stable_seconds_required": 2.0,
+  "scope": "simulation initialization check only; no pose correction published",
+  "position_error_m": 0.01885368658405848,
+  "heading_error_deg": 0.11675345088534558,
+  "gt_speed_mps": 0.0
+}

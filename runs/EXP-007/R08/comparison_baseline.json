@@ -1,0 +1,41 @@
+{
+  "R05": {
+    "fourth_layout_nearest_center_distance_m": 0.5367961059702524,
+    "fourth_layout_nearest_xy": [
+      -2.5085513163966553,
+      6.383221815392832
+    ],
+    "fourth_layout_nearest_actual_speed": 3.070058392591611,
+    "straight_first_three_laps_resampled_abs_steering_rate_mean": 0.872533146420084,
+    "straight_first_three_laps_resampled_abs_steering_rate_p95": 2.3569421842457214,
+    "straight_duration_s": 6.0
+  },
+  "R05-retry1": {
+    "fourth_layout_nearest_center_distance_m": 0.5915104172147169,
+    "fourth_layout_nearest_xy": [
+      -2.438362155771171,
+      6.386675306664445
+    ],
+    "fourth_layout_nearest_actual_speed": 2.9713463922546572,
+    "straight_first_three_laps_resampled_abs_steering_rate_mean": 0.9423272025968609,
+    "straight_first_three_laps_resampled_abs_steering_rate_p95": 3.2500803042105937,
+    "straight_duration_s": 6.12
+  },
+  "R08": {
+    "fourth_layout_nearest_center_distance_m": 0.3377025508793748,
+    "fourth_layout_nearest_xy": [
+      -2.9839875171148833,
+      6.336161809067976
+    ],
+    "fourth_layout_nearest_actual_speed": 3.049404658464446,
+    "straight_first_three_laps_resampled_abs_steering_rate_mean": 0.9184445045529048,
+    "straight_first_three_laps_resampled_abs_steering_rate_p95": 2.615334084829231,
+    "straight_duration_s": 6.140000000000001,
+    "runtime_parameters": {
+      "ema_alpha": 0.5,
+      "curve_speed_weight": 0.65,
+      "v_min": 2.25,
+      "v_max": 4.875
+    }
+  }
+}
