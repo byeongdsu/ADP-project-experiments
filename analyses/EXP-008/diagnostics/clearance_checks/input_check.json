@@ -1,0 +1,11 @@
+{
+  "recorded_scan_test": "R18 one second before collision",
+  "binary_collision_layer_unchanged": true,
+  "additional_margin_cells": 4838,
+  "clearance_cost_range": [
+    0.0,
+    5.0
+  ],
+  "soft_margin_m": 0.3,
+  "peak_soft_cost": 5.0
+}

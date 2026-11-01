@@ -1,0 +1,31 @@
+{
+  "baseline": "manual_runs/20261101T144830_10236_forward_mppi_R20_obstacles4_repeat3",
+  "config_unchanged": true,
+  "simulator_unchanged": true,
+  "change": "Separate ws_clearance: extra soft clearance layer and stage/terminal penalty; collision layer unchanged. Not upstream vanilla.",
+  "clearance_margin_m": 0.3,
+  "clearance_peak_cost": 5.0,
+  "formula": "5*max(0,1-distance_to_existing_inflated_obstacle/0.30)^2 per predicted state",
+  "no_heading_or_rate_cost_change": true,
+  "source_sha256": {
+    "ws_clearance/src/svg_mppi_ros2/CMakeLists.txt": "76a3b196fffd10f8c7d8bc82b75b8b57044b42672aded1da8176dac816e97da9",
+    "ws_clearance/src/svg_mppi_ros2/LICENSE": "6b9542385acc1cf5776653e18109f22d1e9aa9ed2994503580bb180e0ae830d8",
+    "ws_clearance/src/svg_mppi_ros2/package.xml": "bf42ff2b6a1f98e69091125bafd57616c70938994829994d959c7797a827092f",
+    "ws_clearance/src/svg_mppi_ros2/scripts/sim_inputs.py": "3448d95af9d21ae6efe0c11e0d39b429f0f8d487d0b3659542a9bf40cdf970ef",
+    "ws_clearance/src/svg_mppi_ros2/include/mppi_controller/mpc_template.hpp": "405c12f3249aab96cea480c4f03dfd2ec35bd83cacdd09025939377991d810a2",
+    "ws_clearance/src/svg_mppi_ros2/include/mppi_controller/mpc_base.hpp": "f9717ece87e7ccedfbe88cf628fe7c00f29d083006d3d39b78c60bfd01d76a2e",
+    "ws_clearance/src/svg_mppi_ros2/include/mppi_controller/forward_mppi.hpp": "188dfdd501afc645b7f2962c9c83d2610391ae0be61d09df5991e737c56d6c23",
+    "ws_clearance/src/svg_mppi_ros2/include/mppi_controller/stein_variational_guided_mppi.hpp": "be0521e1b6de8b681506a3c15c0ff6f65ca1818196b8def855d12f9bb73b37a6",
+    "ws_clearance/src/svg_mppi_ros2/include/mppi_controller/common.hpp": "5066163137c5b570b5ad6bb2c262550b3b50b61255b94bc24bb819f3bb96a787",
+    "ws_clearance/src/svg_mppi_ros2/include/mppi_controller/prior_samples_with_costs.hpp": "1e11ed723694a9f89d17d208c205fb29fc6894277ab9a3bb9bee3dab4117749a",
+    "ws_clearance/src/svg_mppi_ros2/src/stein_variational_guided_mppi.cpp": "ebe2a67f39c9584c1df0aa4793603fa8546c5f56729038699b8a147068aa016a",
+    "ws_clearance/src/svg_mppi_ros2/src/forward_mppi.cpp": "56434ba5fa0608feb5cccbfd1969b13a9cba7a7bcf772ad28e89bfede2eb51d8",
+    "ws_clearance/src/svg_mppi_ros2/src/load_params.inc": "9c71f6f795fafc2b671ed846214821469e56e34e6e286d971956305228abe7d5",
+    "ws_clearance/src/svg_mppi_ros2/src/mppi_sim_node.cpp": "3f529c73d09db06c02c68d4aa78d1725dfa2277ac2f54b45e7ea38a1e091eae7",
+    "ws_clearance/src/svg_mppi_ros2/src/prior_samples_with_costs.cpp": "5b36dcb699e20029fd55393f212de7ca1afc2501d960e78fb720ee5cb1154f5f",
+    "ws_clearance/src/svg_mppi_ros2/src/mpc_base.cpp": "3b8e5d7b76b692bb3805dc6c0bfe3c0e57341c1ff91fd2cdb9f10b8a6262f6f5",
+    "ws_clearance/src/svg_mppi_ros2/config/svg_mppi.yaml": "a614deb618e93ec57127a016fcc665dd7908535c9df22f5f4325beaab18e5b44",
+    "ws_clearance/src/svg_mppi_ros2/config/forward_mppi.yaml": "33e80a45c9929a9d822609627cd0aae542ed3aa642699cce1229b7b394863118"
+  },
+  "status": "prepared, not driven"
+}

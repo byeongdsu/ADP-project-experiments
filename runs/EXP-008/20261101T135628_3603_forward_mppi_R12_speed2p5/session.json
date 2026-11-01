@@ -1,0 +1,15 @@
+{
+  "solver_version": "speed_v1",
+  "solver_workspace": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_speed",
+  "controller_executable": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_speed/install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node",
+  "controller_binary_sha256": "2623030dcce00622ad21a89b9d09f5342b81c236d57f4b7bb1d178fc5d36f94b",
+  "mode": "forward_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/tuning/R12_h45_speed2p5.yaml",
+  "config_sha256": "20cbd233db8a42e237cfea9e294b84f4f415e4862ea03ba46ab4f20484b92b17",
+  "obstacles": 2,
+  "seed": 2026,
+  "laps": 3,
+  "duration": 240.0,
+  "domain": 76,
+  "reference_speed": 2.5
+}

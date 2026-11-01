@@ -1,0 +1,62 @@
+{
+  "original_solver_unchanged": true,
+  "diagnostic_candidate_only": true,
+  "original_sampling_test": {
+    "configuration": {
+      "samples": 1000,
+      "prediction_states": 30,
+      "seed": 42,
+      "variance": 0.1,
+      "trials": 10,
+      "sampling_calls_per_trial": 5
+    },
+    "tests": [
+      {
+        "threads": 1,
+        "mismatched_trials": 0,
+        "mismatched_sampling_calls": 0,
+        "max_abs_noise_difference": 0,
+        "first_digest": "bb5cbb824d969ad8",
+        "nonfinite_sequences": 0
+      },
+      {
+        "threads": 4,
+        "mismatched_trials": 10,
+        "mismatched_sampling_calls": 50,
+        "max_abs_noise_difference": 2.333389613865682,
+        "first_digest": "8a121d49b9a9fc3d",
+        "nonfinite_sequences": 0
+      }
+    ]
+  },
+  "candidate_sampling_test": {
+    "configuration": {
+      "samples": 1000,
+      "prediction_states": 30,
+      "seed": 42,
+      "variance": 0.1,
+      "trials": 10,
+      "sampling_calls_per_trial": 5
+    },
+    "tests": [
+      {
+        "threads": 1,
+        "mismatched_trials": 0,
+        "mismatched_sampling_calls": 0,
+        "max_abs_noise_difference": 0,
+        "first_digest": "bb5cbb824d969ad8",
+        "nonfinite_sequences": 0
+      },
+      {
+        "threads": 4,
+        "mismatched_trials": 0,
+        "mismatched_sampling_calls": 0,
+        "max_abs_noise_difference": 0,
+        "first_digest": "5ea05651509f2cad",
+        "nonfinite_sequences": 0
+      }
+    ]
+  },
+  "simulation_test_performed": false,
+  "scope": "fixed-input sampler only; not proof of the cause of a particular vehicle collision; candidate not installed"
+}

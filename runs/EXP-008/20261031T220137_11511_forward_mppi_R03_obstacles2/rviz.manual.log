@@ -1,0 +1,9 @@
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-misys'
+[INFO] [1793451770.434018974] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793451770.434135911] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1793451770.465049380] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793451770.698952749] [rviz2]: Trying to create a map of size 437 x 267 using 1 swatches
+[ERROR] [1793451770.715531507] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1793451771.644598787] [rviz2]: Trying to create a map of size 200 x 200 using 1 swatches
+[INFO] [1793451823.533745887] [rclcpp]: signal_handler(SIGINT/SIGTERM)

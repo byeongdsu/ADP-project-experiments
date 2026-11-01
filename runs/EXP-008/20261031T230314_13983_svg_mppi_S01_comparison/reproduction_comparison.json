@@ -1,0 +1,169 @@
+{
+  "runs": [
+    {
+      "run": "20261031T220416_12187_forward_mppi_R03_retry1",
+      "outcome": "first_collision",
+      "third_layout_start_receipt": 1793451975.1073513,
+      "closest_obstacle_center_time": 1793452014.9520886,
+      "elapsed_from_third_layout_s": 39.84473729133606,
+      "closest_center_distance_m": 0.46109410526905603,
+      "closest_xy": [
+        8.232072024153762,
+        -1.2701448141020428
+      ],
+      "closest_yaw_rad": -0.5138609620851142,
+      "calculations_recorded_before_third_layout": 3544,
+      "GT_pose_at_third_layout_start": [
+        11.817459909073534,
+        -0.1376874088902774,
+        0.5313697645207187
+      ],
+      "snapshots": [
+        {
+          "relative_to_closest_s": -2,
+          "xy": [
+            6.3126905174712915,
+            -0.7557982486678191
+          ],
+          "yaw": -0.08138203212051323,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": 0.015538008883595467,
+          "sample_collision_fraction": 0.006000000052154064
+        },
+        {
+          "relative_to_closest_s": -1,
+          "xy": [
+            7.296794363750879,
+            -0.9516710926900273
+          ],
+          "yaw": -0.295012894451401,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": 0.08730998635292053,
+          "sample_collision_fraction": 0.9079999923706055
+        },
+        {
+          "relative_to_closest_s": -0.5,
+          "xy": [
+            7.780628816002009,
+            -1.0750129771051498
+          ],
+          "yaw": -0.22289653525349287,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": -0.05105753242969513,
+          "sample_collision_fraction": 0.9929999709129333
+        },
+        {
+          "relative_to_closest_s": 0,
+          "xy": [
+            8.232072024153762,
+            -1.2701448141020428
+          ],
+          "yaw": -0.5138609620851142,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": 0.4082569479942322,
+          "sample_collision_fraction": 1.0
+        }
+      ],
+      "at_previous_collision_x": {
+        "target_x_m": 8.232072024153762,
+        "xy": [
+          8.232072024153762,
+          -1.2701448141020428
+        ],
+        "yaw_rad": -0.5138609620851142,
+        "vx": 0.9999999999999989
+      }
+    },
+    {
+      "run": "20261031T230314_13983_svg_mppi_S01_comparison",
+      "outcome": "first_collision",
+      "third_layout_start_receipt": 1793455529.2826824,
+      "closest_obstacle_center_time": 1793455567.6646783,
+      "elapsed_from_third_layout_s": 38.38199591636658,
+      "closest_center_distance_m": 0.3820713200092508,
+      "closest_xy": [
+        8.313209268362177,
+        -1.2252900621418972
+      ],
+      "closest_yaw_rad": -0.28496068818844505,
+      "calculations_recorded_before_third_layout": 3488,
+      "GT_pose_at_third_layout_start": [
+        11.727093085060792,
+        -0.028189231608210814,
+        0.5169171556184561
+      ],
+      "snapshots": [
+        {
+          "relative_to_closest_s": -2,
+          "xy": [
+            6.38322021684361,
+            -0.7333880341982323
+          ],
+          "yaw": -0.06899196351072348,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": -0.09214617311954498,
+          "sample_collision_fraction": 0.004999999888241291
+        },
+        {
+          "relative_to_closest_s": -1,
+          "xy": [
+            7.354976951962922,
+            -0.9455059355151525
+          ],
+          "yaw": -0.234210073131097,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": -0.0066377753391861916,
+          "sample_collision_fraction": 0.9490000009536743
+        },
+        {
+          "relative_to_closest_s": -0.5,
+          "xy": [
+            7.82370162075132,
+            -1.0863654230461932
+          ],
+          "yaw": -0.3106286467052232,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": 0.18611444532871246,
+          "sample_collision_fraction": 1.0
+        },
+        {
+          "relative_to_closest_s": 0,
+          "xy": [
+            8.313209268362177,
+            -1.2252900621418972
+          ],
+          "yaw": -0.28496068818844505,
+          "vx": 0.9999999999999989,
+          "speed_cmd": 1.0,
+          "steer_cmd": -0.3653319478034973,
+          "sample_collision_fraction": 0.9710000157356262
+        }
+      ],
+      "at_previous_collision_x": {
+        "target_x_m": 8.232072024153762,
+        "xy": [
+          8.228006938553666,
+          -1.1966677275511732
+        ],
+        "yaw_rad": -0.2379886471726114,
+        "vx": 0.9999999999999989
+      }
+    }
+  ],
+  "actual_first_three_layouts_identical": [
+    true,
+    true,
+    true
+  ],
+  "controller_yaml_identical": false,
+  "simulator_yaml_identical": true,
+  "alignment": "latest preceding receipt samples; plots aligned by each run closest center approach, not a shared physical timestamp",
+  "clearance_note": "center distance is not body surface clearance"
+}

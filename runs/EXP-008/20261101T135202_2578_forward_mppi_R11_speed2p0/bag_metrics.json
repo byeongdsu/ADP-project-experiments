@@ -1,0 +1,19 @@
+{
+  "steering": {
+    "n": 2486,
+    "max_abs_rad": 0.4189000129699707,
+    "near_limit_fraction": 0.00925181013676589,
+    "total_variation_rad_per_receipt_s": 1.1131520145060367
+  },
+  "predicted_sample_collision_fraction": {
+    "mean": 0.49568760083109475,
+    "fraction_at_least_0_9": 0.028985507246376812
+  },
+  "collision_topic_values": {
+    "none": 9024
+  },
+  "predicted_path_pose_counts": [
+    45
+  ],
+  "note": "Steering variation uses bag receipt time. Candidate collision fraction is predicted cost, not actual collisions."
+}

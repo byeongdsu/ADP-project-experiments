@@ -1,0 +1,58 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T214852_10447_forward_mppi_R02_horizon30
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=0 calculations=1199 collisions=0
+45.0s status=running laps=1 calculations=1799 collisions=0
+60.0s status=running laps=1 calculations=2399 collisions=0
+75.0s status=running laps=1 calculations=2999 collisions=0
+90.0s status=running laps=2 calculations=3599 collisions=0
+105.0s status=running laps=2 calculations=4199 collisions=0
+120.0s status=running laps=2 calculations=4799 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 0,
+  "topic_counts": {
+    "/car_state/odom_GT": 13163,
+    "/scan": 13163,
+    "/sim/collision": 13163,
+    "/mppi/reference_sdf": 132,
+    "/mppi/reference_path": 132,
+    "/mppi/local_costmap": 2637,
+    "/mppi/status": 4,
+    "/mppi_sim/drive": 5259,
+    "/mppi/calculation_time": 5255,
+    "/mppi/cycle_time": 5255,
+    "/mppi/collision_rate": 5255,
+    "/sim/lap_count": 4
+  },
+  "collisions": [],
+  "laps_completed": 3,
+  "distance_m": 131.19650725326514,
+  "observed_wall_s": 131.40431480900043,
+  "max_speed_m_s": 0.9999999999999989,
+  "stopped_wall_s": 0.06044452199967054,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.13708923615675853,
+    "max": 0.3575918959300329
+  },
+  "solver_ms": {
+    "n": 5255,
+    "mean": 9.11988904247048,
+    "median": 8.392417907714844,
+    "p95": 13.535503768920899,
+    "max": 16.632461547851562,
+    "over_25ms_fraction": 0.0
+  },
+  "cycle_ms": {
+    "n": 5255,
+    "mean": 9.34507678727895,
+    "median": 8.601272583007812,
+    "p95": 13.871969509124757,
+    "max": 16.879562377929688,
+    "over_25ms_fraction": 0.0
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T214852_10447_forward_mppi_R02_horizon30

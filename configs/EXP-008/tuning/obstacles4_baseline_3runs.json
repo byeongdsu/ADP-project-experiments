@@ -1,0 +1,44 @@
+{
+  "condition": "2.5m/s GT obstacle4 seed2026 horizon2.2s",
+  "runs": [
+    {
+      "run": "20261101T143721_8710_forward_mppi_R18_obstacles4",
+      "laps_completed": 4,
+      "collisions": 1,
+      "mean_completed_lap_s": 16.705,
+      "same_controller_yaml": true,
+      "same_binary": true,
+      "same_first5_actual_layouts": true
+    },
+    {
+      "run": "20261101T144444_9530_forward_mppi_R19_obstacles4_repeat",
+      "laps_completed": 7,
+      "collisions": 0,
+      "mean_completed_lap_s": 16.696142857142856,
+      "same_controller_yaml": true,
+      "same_binary": true,
+      "same_first5_actual_layouts": true
+    },
+    {
+      "run": "20261101T144830_10236_forward_mppi_R20_obstacles4_repeat3",
+      "laps_completed": 7,
+      "collisions": 0,
+      "mean_completed_lap_s": 16.714142857142857,
+      "same_controller_yaml": true,
+      "same_binary": true,
+      "same_first5_actual_layouts": true,
+      "lap5_at_previous_collision_x": [
+        2.0328397012828723,
+        0.4800203286729834
+      ],
+      "/mppi/collision_rate": 0.4779999852180481,
+      "/mppi_sim/drive": {
+        "speed": 2.5,
+        "steer": -0.16701294481754303
+      }
+    }
+  ],
+  "seven_lap_completions": 2,
+  "trials": 3,
+  "note": "Observed 2/3 completions in one map/seed, not a general success probability. No parameter changes."
+}

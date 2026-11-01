@@ -1,0 +1,16 @@
+{
+  "reference_run": "manual_runs/20261101T140052_4317_forward_mppi_R13_speed2p5_laps7",
+  "checks": {
+    "controller_binary_sha256": true,
+    "config_sha256": true,
+    "reference_speed": true,
+    "obstacles": true,
+    "seed": true,
+    "laps": true,
+    "duration": true,
+    "domain": true,
+    "solver_version": true,
+    "simulator_yaml_equal": true
+  },
+  "status": "prepared; not executed"
+}

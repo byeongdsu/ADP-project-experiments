@@ -1,0 +1,20 @@
+{
+  "mean_lap_s": 14.265714285714285,
+  "same_controller_yaml": true,
+  "same_simulator_yaml": true,
+  "same_binary": true,
+  "same_first2_layouts": true,
+  "lap2_near_previous_collision_y": {
+    "xy": [
+      -3.3100604428518645,
+      2.1409435767162894
+    ],
+    "yaw_rad": -1.3698083968131027
+  },
+  "bag_last_gt_speed": 3.2590728185970203e-40,
+  "/mppi/collision_rate": 0.859000027179718,
+  "/mppi_sim/drive": {
+    "speed": 3.0,
+    "steer": 0.24802429974079132
+  }
+}

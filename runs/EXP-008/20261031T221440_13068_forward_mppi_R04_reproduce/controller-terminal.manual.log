@@ -1,0 +1,59 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T221440_13068_forward_mppi_R04_reproduce
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=0 calculations=1199 collisions=0
+45.0s status=running laps=0 calculations=1799 collisions=0
+60.0s status=running laps=1 calculations=2399 collisions=0
+75.0s status=running laps=1 calculations=2999 collisions=0
+90.0s status=running laps=2 calculations=3599 collisions=0
+105.0s status=running laps=2 calculations=4199 collisions=0
+120.0s status=running laps=2 calculations=4799 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/car_state/odom_GT": 13390,
+    "/scan": 13390,
+    "/sim/collision": 13389,
+    "/mppi/local_costmap": 2684,
+    "/mppi/reference_sdf": 135,
+    "/mppi/reference_path": 135,
+    "/sim/obstacles": 136,
+    "/mppi/status": 2,
+    "/mppi_sim/drive": 5289,
+    "/mppi/calculation_time": 5287,
+    "/mppi/cycle_time": 5287,
+    "/mppi/collision_rate": 5287,
+    "/sim/lap_count": 4
+  },
+  "collisions": [],
+  "laps_completed": 3,
+  "distance_m": 132.04647211020313,
+  "observed_wall_s": 132.1863371139998,
+  "max_speed_m_s": 0.9999999999999989,
+  "stopped_wall_s": 0.08096267000018997,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.1669948819042804,
+    "max": 0.7225736877981264
+  },
+  "solver_ms": {
+    "n": 5287,
+    "mean": 9.26306175035679,
+    "median": 8.531359672546387,
+    "p95": 13.536560440063477,
+    "max": 16.464738845825195,
+    "over_25ms_fraction": 0.0
+  },
+  "cycle_ms": {
+    "n": 5287,
+    "mean": 9.489782022126619,
+    "median": 8.743391990661621,
+    "p95": 13.855594635009766,
+    "max": 16.6535587310791,
+    "over_25ms_fraction": 0.0
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T221440_13068_forward_mppi_R04_reproduce

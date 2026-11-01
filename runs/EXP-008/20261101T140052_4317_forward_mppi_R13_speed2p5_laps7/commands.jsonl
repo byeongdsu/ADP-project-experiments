@@ -1,0 +1,1 @@
+{"label": "controller", "argv": ["/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_speed/install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node", "--ros-args", "-p", "config_file:=/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T140052_4317_forward_mppi_R13_speed2p5_laps7/controller.yaml"]}

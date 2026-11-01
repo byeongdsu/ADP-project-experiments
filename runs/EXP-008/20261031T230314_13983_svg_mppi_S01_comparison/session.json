@@ -1,0 +1,11 @@
+{
+  "mode": "svg_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/tuning/S01_horizon30.yaml",
+  "config_sha256": "225126787415c0d3a2b408ac2f1740b93c34f5d666957f30e205e8dbd7294452",
+  "obstacles": 2,
+  "seed": 2026,
+  "laps": 3,
+  "duration": 240.0,
+  "domain": 76,
+  "reference_speed": 1.0
+}

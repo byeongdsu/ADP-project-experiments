@@ -1,0 +1,59 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T234808_19249_forward_mppi_R09_horizon45
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=600 collisions=0
+30.0s status=running laps=0 calculations=1201 collisions=0
+45.0s status=running laps=1 calculations=1801 collisions=0
+60.0s status=running laps=1 calculations=2402 collisions=0
+75.0s status=running laps=1 calculations=3002 collisions=0
+90.0s status=running laps=2 calculations=3602 collisions=0
+105.0s status=running laps=2 calculations=4202 collisions=0
+120.0s status=running laps=2 calculations=4802 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/scan": 12707,
+    "/car_state/odom_GT": 12706,
+    "/sim/collision": 12706,
+    "/mppi/reference_sdf": 129,
+    "/mppi/reference_path": 129,
+    "/mppi/local_costmap": 2543,
+    "/sim/obstacles": 130,
+    "/mppi/status": 2,
+    "/mppi_sim/drive": 5066,
+    "/mppi/calculation_time": 5064,
+    "/mppi/cycle_time": 5064,
+    "/mppi/collision_rate": 5064,
+    "/sim/lap_count": 4
+  },
+  "collisions": [],
+  "laps_completed": 3,
+  "distance_m": 126.21653053162362,
+  "observed_wall_s": 126.52640634899996,
+  "max_speed_m_s": 0.9999999999999989,
+  "stopped_wall_s": 0.05082775499994341,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.10523787361804396,
+    "max": 0.6799246693223221
+  },
+  "solver_ms": {
+    "n": 5064,
+    "mean": 6.793234054322868,
+    "median": 6.776517152786255,
+    "p95": 11.469686937332149,
+    "max": 18.432289123535156,
+    "over_25ms_fraction": 0.0
+  },
+  "cycle_ms": {
+    "n": 5064,
+    "mean": 6.9298831268697745,
+    "median": 6.902446508407593,
+    "p95": 11.633639430999754,
+    "max": 18.848772048950195,
+    "over_25ms_fraction": 0.0
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T234808_19249_forward_mppi_R09_horizon45

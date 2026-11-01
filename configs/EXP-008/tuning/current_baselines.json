@@ -1,0 +1,47 @@
+[
+  {
+    "run": "20261031T214852_10447_forward_mppi_R02_horizon30",
+    "laps": 3,
+    "collisions": 0,
+    "nearest_waypoint_mean_m": 0.13708923615675853,
+    "nearest_waypoint_p95_m": 0.3019014378164475,
+    "nearest_waypoint_max_m": 0.3575918959300329,
+    "callback_p95_ms": 13.871969509124757,
+    "callback_over25_fraction": 0.0
+  },
+  {
+    "run": "20261031T220416_12187_forward_mppi_R03_retry1",
+    "laps": 2,
+    "collisions": 1,
+    "nearest_waypoint_mean_m": 0.1618832447565951,
+    "nearest_waypoint_p95_m": 0.35368182734556974,
+    "nearest_waypoint_max_m": 0.7028208152316961,
+    "callback_p95_ms": 13.947164678573609,
+    "callback_over25_fraction": 0.0
+  },
+  {
+    "run": "20261031T221440_13068_forward_mppi_R04_reproduce",
+    "laps": 3,
+    "collisions": 0,
+    "nearest_waypoint_mean_m": 0.1669948819042804,
+    "nearest_waypoint_p95_m": 0.36683849638093774,
+    "nearest_waypoint_max_m": 0.7225736877981264,
+    "callback_p95_ms": 13.855594635009766,
+    "callback_over25_fraction": 0.0
+  },
+  {
+    "run": "20261031T233309_16976_forward_mppi_R06_repro_obstacles2",
+    "solver_version": "repro_v1",
+    "laps": 3,
+    "collisions": 0,
+    "nearest_waypoint_mean_m": 0.16514374425743947,
+    "nearest_waypoint_p95_m": 0.36752618081022914,
+    "nearest_waypoint_max_m": 0.70917674259192,
+    "callback_p95_ms": 13.898371696472166,
+    "callback_over25_fraction": 0.0,
+    "steering_saturation_sample_fraction": 0.0026561432799575018,
+    "odom_samples_with_latest_candidate_collision_fraction_ge_0_9": 0.013887834863777794,
+    "actual_first_three_layouts_equal_to_R03": true,
+    "independent_obstacle_runs_completed_for_repro_v1": 1
+  }
+]

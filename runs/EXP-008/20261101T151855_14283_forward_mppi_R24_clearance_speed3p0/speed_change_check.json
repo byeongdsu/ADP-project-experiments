@@ -1,0 +1,11 @@
+{
+  "baseline": "manual_runs/20261101T151320_13516_forward_mppi_R23_clearance_repeat3",
+  "only_config_change": "reference_speed 2.5 -> 3.0 m/s",
+  "same_binary": true,
+  "same_simulator_yaml": true,
+  "prediction_time_s": 2.2,
+  "nominal_prediction_distance_m": 6.6,
+  "clearance_margin_m": 0.3,
+  "clearance_peak_cost": 5.0,
+  "status": "prepared; not driven"
+}

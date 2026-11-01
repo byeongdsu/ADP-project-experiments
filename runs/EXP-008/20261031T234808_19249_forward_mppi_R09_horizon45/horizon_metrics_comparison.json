@@ -1,0 +1,61 @@
+{
+  "runs": [
+    {
+      "run": "20261031T233309_16976_forward_mppi_R06_repro_obstacles2",
+      "laps": 3,
+      "collisions": 0,
+      "mean_lap_s": 43.656666666666666,
+      "distance_mean_m": 0.16514374425743947,
+      "distance_p95_m": 0.36752618081022914,
+      "distance_max_m": 0.70917674259192,
+      "solver_mean_ms": 9.612272443336808,
+      "callback_p95_ms": 13.898371696472166,
+      "candidate_risk_ge_0_9_sample_fraction": 0.013887834863777794,
+      "steering_95percent_saturation_sample_fraction": 0.0026561432799575018
+    },
+    {
+      "run": "20261031T234039_17876_forward_mppi_R07_repeat2",
+      "laps": 3,
+      "collisions": 0,
+      "mean_lap_s": 43.67666666666667,
+      "distance_mean_m": 0.16540624832302941,
+      "distance_p95_m": 0.36703064599345975,
+      "distance_max_m": 0.7149190721632345,
+      "solver_mean_ms": 9.563164389261878,
+      "callback_p95_ms": 13.881991863250732,
+      "candidate_risk_ge_0_9_sample_fraction": 0.012961418934283332,
+      "steering_95percent_saturation_sample_fraction": 0.0023497309179110132
+    },
+    {
+      "run": "20261031T234040_17902_forward_mppi_R08_repeat3",
+      "laps": 3,
+      "collisions": 0,
+      "mean_lap_s": 43.65266666666667,
+      "distance_mean_m": 0.16278109256286258,
+      "distance_p95_m": 0.35918143755656134,
+      "distance_max_m": 0.700815382808869,
+      "solver_mean_ms": 9.491536546222381,
+      "callback_p95_ms": 13.782718944549561,
+      "candidate_risk_ge_0_9_sample_fraction": 0.01092813235182515,
+      "steering_95percent_saturation_sample_fraction": 0.00015177961599757153
+    },
+    {
+      "run": "20261031T234808_19249_forward_mppi_R09_horizon45",
+      "laps": 3,
+      "collisions": 0,
+      "mean_lap_s": 41.760333333333335,
+      "distance_mean_m": 0.10523787361804396,
+      "distance_p95_m": 0.3094639401501721,
+      "distance_max_m": 0.6799246693223221,
+      "solver_mean_ms": 6.793234054322868,
+      "callback_p95_ms": 11.633639430999754,
+      "candidate_risk_ge_0_9_sample_fraction": 0.02150877747904476,
+      "steering_95percent_saturation_sample_fraction": 0.005614423533133007
+    }
+  ],
+  "actual_first_three_layouts_identical": [
+    true,
+    true,
+    true
+  ]
+}

@@ -1,0 +1,8 @@
+[INFO] [1793510722.918908642] [mppi_manual_recorder]: Press SPACE for pausing/resuming
+[INFO] [1793510722.920385779] [rosbag2_storage]: Opened database '/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T142325_6649_forward_mppi_R16_validation2/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1793510722.920934773] [mppi_manual_recorder]: Listening for topics...
+[INFO] [1793510722.921049495] [mppi_manual_recorder]: Recording...
+[INFO] [1793510722.921086517] [mppi_manual_recorder]: Event publisher thread: Starting
+[INFO] [1793510725.326471859] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1793510725.327706103] [mppi_manual_recorder]: Event publisher thread: Exiting
+[INFO] [1793510725.327823903] [mppi_manual_recorder]: Recording stopped

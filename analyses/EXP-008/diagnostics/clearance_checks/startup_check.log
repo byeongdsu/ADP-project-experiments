@@ -1,0 +1,3 @@
+[INFO] [1793512465.964352128] [mppi_sim_controller]: Simulation-only forward_mppi, GT pose from odom, 2.50 m/s; waiting for /mppi/enable
+[INFO] [1793512465.989441428] [mppi_sim_controller]: waiting_or_stale_inputs
+[INFO] [1793512467.832860899] [rclcpp]: signal_handler(SIGINT/SIGTERM)

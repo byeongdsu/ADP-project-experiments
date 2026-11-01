@@ -1,0 +1,58 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T144444_9530_forward_mppi_R19_obstacles4_repeat
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=1 calculations=1199 collisions=0
+45.0s status=running laps=2 calculations=1799 collisions=0
+60.0s status=running laps=3 calculations=2399 collisions=0
+75.0s status=running laps=4 calculations=2999 collisions=0
+90.0s status=running laps=5 calculations=3598 collisions=0
+105.0s status=running laps=6 calculations=4198 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 4,
+  "topic_counts": {
+    "/car_state/odom_GT": 11814,
+    "/scan": 11814,
+    "/sim/collision": 11813,
+    "/mppi/reference_sdf": 120,
+    "/mppi/local_costmap": 2372,
+    "/mppi/reference_path": 120,
+    "/sim/obstacles": 125,
+    "/mppi/status": 2,
+    "/mppi_sim/drive": 4700,
+    "/mppi/calculation_time": 4698,
+    "/mppi/cycle_time": 4698,
+    "/mppi/collision_rate": 4698,
+    "/sim/lap_count": 8
+  },
+  "collisions": [],
+  "laps_completed": 7,
+  "distance_m": 292.97600615985186,
+  "observed_wall_s": 117.54526848400019,
+  "max_speed_m_s": 2.4999999999999956,
+  "stopped_wall_s": 0.07161089800047193,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.1937953205475616,
+    "max": 0.9636355850636178
+  },
+  "solver_ms": {
+    "n": 4698,
+    "mean": 12.852971152073781,
+    "median": 11.561304092407227,
+    "p95": 21.9259105682373,
+    "max": 66.22004699707031,
+    "over_25ms_fraction": 0.013409961685823755
+  },
+  "cycle_ms": {
+    "n": 4698,
+    "mean": 13.113436412587983,
+    "median": 11.807684898376465,
+    "p95": 22.286734867095927,
+    "max": 66.5512466430664,
+    "over_25ms_fraction": 0.018518518518518517
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T144444_9530_forward_mppi_R19_obstacles4_repeat

@@ -1,0 +1,64 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T220416_12187_forward_mppi_R03_retry1
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=0 calculations=1199 collisions=0
+45.0s status=running laps=0 calculations=1799 collisions=0
+60.0s status=running laps=1 calculations=2399 collisions=0
+75.0s status=running laps=1 calculations=2999 collisions=0
+90.0s status=running laps=2 calculations=3599 collisions=0
+105.0s status=running laps=2 calculations=4199 collisions=0
+120.0s status=running laps=2 calculations=4799 collisions=0
+{
+  "reason": "first_collision",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/car_state/odom_GT": 12948,
+    "/scan": 12949,
+    "/mppi/local_costmap": 2601,
+    "/sim/collision": 12947,
+    "/mppi/reference_sdf": 131,
+    "/mppi/reference_path": 131,
+    "/sim/obstacles": 132,
+    "/mppi/status": 3,
+    "/mppi_sim/drive": 5141,
+    "/mppi/calculation_time": 5138,
+    "/mppi/cycle_time": 5138,
+    "/mppi/collision_rate": 5138,
+    "/sim/lap_count": 3
+  },
+  "collisions": [
+    {
+      "wall_s": 128.4647142189997,
+      "kind": "wall"
+    }
+  ],
+  "laps_completed": 2,
+  "distance_m": 128.27621105209838,
+  "observed_wall_s": 128.47372586999973,
+  "max_speed_m_s": 0.9999999999999989,
+  "stopped_wall_s": 0.06759975000022678,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.1618832447565951,
+    "max": 0.7028208152316961
+  },
+  "solver_ms": {
+    "n": 5138,
+    "mean": 9.439214170373521,
+    "median": 8.653461456298828,
+    "p95": 13.630252027511597,
+    "max": 15.757314682006836,
+    "over_25ms_fraction": 0.0
+  },
+  "cycle_ms": {
+    "n": 5138,
+    "mean": 9.668084420690095,
+    "median": 8.867952346801758,
+    "p95": 13.947164678573609,
+    "max": 15.9884033203125,
+    "over_25ms_fraction": 0.0
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T220416_12187_forward_mppi_R03_retry1

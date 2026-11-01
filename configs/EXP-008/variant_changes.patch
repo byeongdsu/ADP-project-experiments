@@ -1,0 +1,105 @@
+--- configs/EXP-008/reproduction/ws/src/svg_mppi_ros2/src/prior_samples_with_costs.cpp
++++ configs/EXP-008/reproduction/ws_repro/src/svg_mppi_ros2/src/prior_samples_with_costs.cpp
+@@ -56,12 +56,16 @@
+             }
+         }
+ 
+-#pragma omp parallel for num_threads(thread_num_)
++#pragma omp parallel num_threads(thread_num_)
++        {
++        // Diagnostic candidate: each worker owns the mutable normal distribution cache.
++        auto thread_distributions = *normal_dists_ptr_;
++#pragma omp for schedule(static)
+         for (size_t i = 0; i < num_samples_; i++) {
+             // generate noise sequence
+             for (size_t j = 0; j < prediction_horizon_ - 1; j++) {
+                 for (size_t k = 0; k < CONTROL_SPACE::dim; k++) {
+-                    noise_seq_samples_[i](j, k) = (*normal_dists_ptr_)[j][k](rngs_[omp_get_thread_num()]);
++                    noise_seq_samples_[i](j, k) = thread_distributions[j][k](rngs_[omp_get_thread_num()]);
+                 }
+             }
+ 
+@@ -82,6 +86,7 @@
+                 }
+             }
+         }
++        } // parallel region
+     }
+ 
+     std::vector<int> PriorSamplesWithCosts::random_sample_choice(const size_t& num_samples, const std::vector<double>& probabilities) {
+--- configs/EXP-008/reproduction/ws_repro/src/svg_mppi_ros2/src/mppi_sim_node.cpp
++++ configs/EXP-008/reproduction/ws_speed/src/svg_mppi_ros2/src/mppi_sim_node.cpp
+@@ -32,7 +32,7 @@
+     speed_=params.common.reference_speed; period_=read<double>(cfg,"control_sampling_time",.025);
+     steer_tau_=std::max(params.common.steer_1st_delay,params.common.prediction_interval);
+     min_steer_=params.common.min_steer_angle; max_steer_=params.common.max_steer_angle;
+-    if(speed_<=0 || speed_>2.) throw std::runtime_error("Initial simulation adapter supports low speed (0,2] m/s");
++    if(speed_<=0 || speed_>3.) throw std::runtime_error("Initial simulation adapter supports simulation speed (0,3] m/s");
+     if(mode_=="forward_mppi") solver_=std::make_unique<mppi::cpu::ForwardMPPI>(params.common,params.forward_mppi);
+     else if(mode_=="svg_mppi") solver_=std::make_unique<mppi::cpu::SVGuidedMPPI>(params.common,params.svg_mppi);
+     else throw std::runtime_error("Unsupported mode");
+--- configs/EXP-008/reproduction/ws_speed/src/svg_mppi_ros2/src/mpc_base.cpp
++++ configs/EXP-008/reproduction/ws_clearance/src/svg_mppi_ros2/src/mpc_base.cpp
+@@ -368,6 +368,12 @@
+         double sum_ref_cost = 0.0;
+         double sum_collision_cost = 0.0;
+         const double max_diff_ref_path = ref_path_map.getLength().x();
++        // Kept separate from collision costs so collision_rate retains its meaning.
++        const auto clearance_cost = [&](const State& state) {
++            const grid_map::Position pos(state(STATE_SPACE::x), state(STATE_SPACE::y));
++            return local_obstacle_map.exists("clearance_cost") && local_obstacle_map.isInside(pos)
++                ? static_cast<double>(local_obstacle_map.atPosition("clearance_cost", pos)) : 0.0;
++        };
+         for (size_t i = 0; i < prediction_step_size_ - 1; i++) {
+             // state cost
+             const State global_state = global_state_seq.row(i);
+@@ -386,6 +392,7 @@
+             // cost += q_speed_ * diff_speed * diff_speed;
+             sum_ref_cost += q_dist_ * diff_ref_path * diff_ref_path;
+             sum_ref_cost += q_angle_ * diff_angle * diff_angle;
++            sum_ref_cost += clearance_cost(local_state);
+ 
+             // collision cost
+             // check inside of gridmap
+@@ -415,6 +422,7 @@
+         // cost += q_terminal_speed_ * diff_terminal_speed * diff_terminal_speed;
+         sum_ref_cost += q_terminal_dist_ * diff_terminal_ref_path * diff_terminal_ref_path;
+         sum_ref_cost += q_terminal_angle_ * diff_terminal_angle * diff_terminal_angle;
++        sum_ref_cost += clearance_cost(local_terminal_state);
+ 
+         double collision_cost = 10.0;
+         if (local_obstacle_map.isInside(grid_map::Position(local_terminal_state(STATE_SPACE::x), local_terminal_state(STATE_SPACE::y)))) {
+--- configs/EXP-008/reproduction/ws_speed/src/svg_mppi_ros2/src/mppi_sim_node.cpp
++++ configs/EXP-008/reproduction/ws_clearance/src/svg_mppi_ros2/src/mppi_sim_node.cpp
+@@ -53,7 +53,7 @@
+     cost_=create_subscription<grid_map_msgs::msg::GridMap>("/mppi/local_costmap",rclcpp::QoS(1).best_effort(),[this](grid_map_msgs::msg::GridMap::ConstSharedPtr msg) {
+       cost_ok_=false;
+       if(msg->header.frame_id!="car_state/base_link") return;
+-      cost_ok_=grid_map::GridMapRosConverter::fromMessage(*msg,costmap_) && costmap_.exists("collision_layer") && costmap_["collision_layer"].allFinite();
++      cost_ok_=grid_map::GridMapRosConverter::fromMessage(*msg,costmap_) && costmap_.exists("collision_layer") && costmap_["collision_layer"].allFinite() && costmap_.exists("clearance_cost") && costmap_["clearance_cost"].allFinite();
+       cost_time_=Clock::now();
+     });
+     reference_=create_subscription<grid_map_msgs::msg::GridMap>("/mppi/reference_sdf",rclcpp::QoS(1).transient_local(),[this](grid_map_msgs::msg::GridMap::ConstSharedPtr msg) {
+--- configs/EXP-008/reproduction/ws_speed/src/svg_mppi_ros2/scripts/sim_inputs.py
++++ configs/EXP-008/reproduction/ws_clearance/src/svg_mppi_ros2/scripts/sim_inputs.py
+@@ -5,7 +5,7 @@
+ import json
+ from pathlib import Path
+ import numpy as np
+-from scipy.ndimage import binary_dilation
++from scipy.ndimage import binary_dilation, distance_transform_edt
+ from scipy.spatial import cKDTree
+ import rclpy
+ from rclpy.node import Node
+@@ -77,7 +77,10 @@
+         inside=(ix>=0)&(ix<self.n)&(iy>=0)&(iy<self.n)
+         occupied=np.zeros((self.n,self.n),dtype=bool);occupied[ix[inside],iy[inside]]=True
+         inflated=binary_dilation(occupied,structure=self.inflation)
+-        msg=make_grid({'collision_layer':inflated.astype(np.float32)*100},self.res,self.center,'car_state/base_link',scan.header.stamp)
++        # Additional soft margin outside the existing inflated collision region.
++        distance=distance_transform_edt(~inflated)*self.res if inflated.any() else np.full(inflated.shape,np.inf)
++        clearance=5.0*np.maximum(0.,1.-distance/.30)**2
++        msg=make_grid({'collision_layer':inflated.astype(np.float32)*100,'clearance_cost':clearance},self.res,self.center,'car_state/base_link',scan.header.stamp)
+         self.cost_pub.publish(msg)
+         if not self.seen:
+             self.get_logger().info(f'First costmap: {len(r)} scan beams, {int(occupied.sum())} occupied, {int(inflated.sum())} inflated cells');self.seen=True

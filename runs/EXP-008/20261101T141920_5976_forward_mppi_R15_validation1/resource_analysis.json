@@ -1,0 +1,46 @@
+{
+  "resource_samples": 118,
+  "cpu_package_temp_C": {
+    "min": 56.0,
+    "max": 73.0
+  },
+  "loadavg_1m_range": [
+    1.17,
+    7.28
+  ],
+  "cgroup_first": "usage_usec 2661303474\nuser_usec 2467410116\nsystem_usec 193893357\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+  "cgroup_last": "usage_usec 3367675958\nuser_usec 3152372381\nsystem_usec 215303576\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+  "mean_lap_s": 16.607285714285712,
+  "same_first_7_actual_layouts": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "same_controller_yaml": true,
+  "bag_topic_counts": {
+    "/car_state/odom_GT": 16477,
+    "/mppi/best_path": 4675,
+    "/mppi/calculation_time": 4675,
+    "/mppi/collision_rate": 4675,
+    "/mppi/costmap_view": 3304,
+    "/mppi/cycle_time": 4675,
+    "/mppi/gt_trail": 1652,
+    "/mppi/local_costmap": 3304,
+    "/mppi/map": 166,
+    "/mppi/reference_path": 166,
+    "/mppi/reference_sdf": 166,
+    "/mppi/status": 3,
+    "/mppi/vehicle": 1652,
+    "/mppi_sim/drive": 4678,
+    "/scan": 16478,
+    "/sim/collision": 16478,
+    "/sim/lap_count": 8,
+    "/sim/obstacles": 171,
+    "/sim/obstacles/markers": 171,
+    "/tf": 65909
+  }
+}

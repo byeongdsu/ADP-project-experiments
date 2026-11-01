@@ -1,0 +1,72 @@
+# Derived from /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T221440_13068_forward_mppi_R04_reproduce/controller.yaml
+control_sampling_time: 0.025
+reference_speed: 1.0
+steer_1st_delay: 0.1
+mpc_mode: svg_mppi
+common:
+  thread_num: 4
+  prediction_step_size: 30
+  prediction_interval: 0.05
+  steer_delay: 0.025
+  max_steer_angle: 0.4189
+  min_steer_angle: -0.4189
+  speed_prediction_mode: reference
+  max_accel: 5.0
+  min_accel: -3.0
+  lr: 0.17145
+  lf: 0.15875
+  collision_weight: 1.0
+  q_dist: 1.0
+  q_angle: 0.01
+  q_terminal_dist: 1.0
+  q_terminal_angle: 0.01
+forward_mppi:
+  sample_batch_num: 1000
+  lambda: 3.0
+  alpha: 0.1
+  non_biased_sampling_rate: 0.1
+  steer_cov: 0.1
+  num_itr_for_grad_estimation: 0
+  step_size_for_grad_estimation: 0.001
+  sample_num_for_grad_estimation: 5
+  steer_cov_for_grad_estimation: 0.001
+reverse_mppi:
+  sample_batch_num: 200
+  negative_ratio: 1.0
+  is_sample_rejection: true
+  sample_inflation_ratio: 2.0
+  iteration_num: 50
+  step_size: 0.05
+  warm_start_ratio: 0.5
+  lambda: 3.0
+  alpha: 0.1
+  non_biased_sampling_rate: 0.1
+  steer_cov: 0.1
+stein_variational_mpc:
+  sample_batch_num: 500
+  lambda: 3.0
+  alpha: 0.1
+  non_biased_sampling_rate: 0.1
+  steer_cov: 0.1
+  num_svgd_iteration: 3
+  sample_num_for_grad_estimation: 10
+  steer_cov_for_grad_estimation: 0.01
+  svgd_step_size: 0.5
+  is_max_posterior_estimation: false
+svg_mppi:
+  sample_batch_num: 1000
+  lambda: 3.0
+  non_biased_sampling_rate: 0.1
+  alpha: 0.1
+  steer_cov: 0.01
+  guide_sample_num: 1
+  grad_lambda: 3.0
+  sample_num_for_grad_estimation: 100
+  steer_cov_for_grad_estimation: 0.01
+  svgd_step_size: 0.005
+  num_svgd_iteration: 10
+  is_use_nominal_solution: true
+  is_covariance_adaptation: true
+  gaussian_fitting_lambda: 0.1
+  min_steer_cov: 0.001
+  max_steer_cov: 0.1

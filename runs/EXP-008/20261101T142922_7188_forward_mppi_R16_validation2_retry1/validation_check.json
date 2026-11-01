@@ -1,0 +1,15 @@
+{
+  "previous_run": "manual_runs/20261101T141920_5976_forward_mppi_R15_validation1",
+  "checks": {
+    "controller_binary_sha256": true,
+    "config_sha256": true,
+    "reference_speed": true,
+    "seed": true,
+    "obstacles": true,
+    "laps": true,
+    "duration": true,
+    "first7_actual_layouts_equal": true,
+    "simulator_yaml_equal": true
+  },
+  "mean_lap_s": 16.634714285714285
+}

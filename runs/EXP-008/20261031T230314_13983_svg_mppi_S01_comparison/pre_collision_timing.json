@@ -1,0 +1,14 @@
+{
+  "/mppi/calculation_time": {
+    "n": 120,
+    "mean_ms": 15.256589261690776,
+    "max_ms": 28.593740463256836,
+    "over25_count": 7
+  },
+  "/mppi/cycle_time": {
+    "n": 120,
+    "mean_ms": 15.454842487970987,
+    "max_ms": 28.879657745361328,
+    "over25_count": 7
+  }
+}

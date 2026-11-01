@@ -1,0 +1,47 @@
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/car_state/odom_GT": 13291,
+    "/scan": 13291,
+    "/mppi/local_costmap": 2668,
+    "/sim/collision": 13290,
+    "/mppi/reference_sdf": 135,
+    "/mppi/reference_path": 135,
+    "/sim/obstacles": 136,
+    "/mppi_sim/drive": 5292,
+    "/mppi/status": 4,
+    "/mppi/calculation_time": 5288,
+    "/mppi/cycle_time": 5288,
+    "/mppi/collision_rate": 5288,
+    "/sim/lap_count": 4
+  },
+  "collisions": [],
+  "laps_completed": 3,
+  "distance_m": 131.9659985519042,
+  "observed_wall_s": 132.2365294659994,
+  "max_speed_m_s": 0.9999999999999989,
+  "stopped_wall_s": 0.0588198219993501,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.16278109256286258,
+    "max": 0.700815382808869
+  },
+  "solver_ms": {
+    "n": 5288,
+    "mean": 9.491536546222381,
+    "median": 8.716260433197021,
+    "p95": 13.457221794128417,
+    "max": 15.576866149902344,
+    "over_25ms_fraction": 0.0
+  },
+  "cycle_ms": {
+    "n": 5288,
+    "mean": 9.711867128035305,
+    "median": 8.932411670684814,
+    "p95": 13.782718944549561,
+    "max": 15.891939163208008,
+    "over_25ms_fraction": 0.0
+  }
+}

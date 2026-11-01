@@ -1,0 +1,17 @@
+{
+  "reason": "error",
+  "error": "TimeoutError(\"Input readiness timeout; status=, counts={'/car_state/odom_GT': 3004, '/scan': 3005, '/sim/collision': 3004, '/mppi/reference_sdf': 31, '/mppi/reference_path': 31, '/mppi/local_costmap': 600}\")",
+  "mode": "forward_mppi",
+  "obstacles": 0,
+  "topic_counts": {
+    "/car_state/odom_GT": 3004,
+    "/scan": 3005,
+    "/sim/collision": 3004,
+    "/mppi/reference_sdf": 31,
+    "/mppi/reference_path": 31,
+    "/mppi/local_costmap": 600
+  },
+  "collisions": [],
+  "laps_completed": 0,
+  "distance_m": 0.0
+}

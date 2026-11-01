@@ -1,0 +1,12 @@
+{
+  "reference_run": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T234808_19249_forward_mppi_R09_horizon45",
+  "only_controller_change": "reference_speed: 1.0 -> 1.5 m/s",
+  "prediction_states": 45,
+  "prediction_interval_s": 0.05,
+  "approximate_prediction_time_s": 2.2,
+  "approximate_nominal_prediction_distance_m": 3.3,
+  "solver_binary_equal": true,
+  "simulator_yaml_equal": true,
+  "reference_field_speed_source": "manual_session.py passes session reference_speed to sim_inputs.py",
+  "status": "prepared, not started"
+}

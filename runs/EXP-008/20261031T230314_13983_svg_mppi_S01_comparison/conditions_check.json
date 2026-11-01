@@ -1,0 +1,9 @@
+{
+  "all_yaml_values_except_mode_identical": true,
+  "simulator_yaml_identical": true,
+  "actual_first_three_layouts_identical": [
+    true,
+    true,
+    true
+  ]
+}

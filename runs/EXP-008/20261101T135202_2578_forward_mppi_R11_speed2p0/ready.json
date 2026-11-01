@@ -1,0 +1,23 @@
+{
+  "scan_beams": 1080,
+  "scan_frame": "car_state/laser",
+  "odom_frame": "map",
+  "initial_pose": [
+    10.832046001482436,
+    -0.5021100154908403
+  ],
+  "reference_layers": [
+    "distance_field",
+    "angle_field",
+    "speed_field"
+  ],
+  "costmap_layers": [
+    "collision_layer"
+  ],
+  "publishers": [
+    {
+      "node": "mppi_sim_controller",
+      "type": "ackermann_msgs/msg/AckermannDriveStamped"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "solver_version": "repro_v1",
+  "solver_workspace": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_repro",
+  "controller_executable": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_repro/install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node",
+  "controller_binary_sha256": "b48fc16d23f9de44736f0679f4c1d4d3f6275d0871a14545494f0d97020e80a9",
+  "mode": "forward_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T233309_16976_forward_mppi_R06_repro_obstacles2/controller.yaml",
+  "config_sha256": "9919e0959cab168e05fd84dca465f1b1325e31d90532d741916353b42f8d6c08",
+  "obstacles": 2,
+  "seed": 2026,
+  "laps": 3,
+  "duration": 240.0,
+  "domain": 76,
+  "reference_speed": 1.0
+}

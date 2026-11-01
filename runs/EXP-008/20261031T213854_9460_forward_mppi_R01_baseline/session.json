@@ -1,0 +1,11 @@
+{
+  "mode": "forward_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/tuning/R01_baseline.yaml",
+  "config_sha256": "10ad90e6fa166f592f20950c5cd55048694d148661272edda47c6bb3961e5434",
+  "obstacles": 0,
+  "seed": 2026,
+  "laps": 3,
+  "duration": 240.0,
+  "domain": 76,
+  "reference_speed": 1.0
+}

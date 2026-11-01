@@ -1,0 +1,58 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T150845_12784_forward_mppi_R22_clearance_repeat2
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=1 calculations=1199 collisions=0
+45.0s status=running laps=2 calculations=1793 collisions=0
+60.0s status=running laps=3 calculations=2389 collisions=0
+75.0s status=running laps=4 calculations=2989 collisions=0
+90.0s status=running laps=5 calculations=3587 collisions=0
+105.0s status=running laps=6 calculations=4184 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 4,
+  "topic_counts": {
+    "/car_state/odom_GT": 11994,
+    "/mppi/local_costmap": 2417,
+    "/scan": 11994,
+    "/sim/collision": 11992,
+    "/mppi/reference_sdf": 122,
+    "/mppi/reference_path": 122,
+    "/sim/obstacles": 128,
+    "/mppi/status": 3,
+    "/mppi_sim/drive": 4785,
+    "/mppi/calculation_time": 4783,
+    "/mppi/cycle_time": 4783,
+    "/mppi/collision_rate": 4783,
+    "/sim/lap_count": 8
+  },
+  "collisions": [],
+  "laps_completed": 7,
+  "distance_m": 298.05076119160026,
+  "observed_wall_s": 119.99606297400078,
+  "max_speed_m_s": 2.4999999999999956,
+  "stopped_wall_s": 0.05949278000025515,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.18770029649222836,
+    "max": 1.0223371290810164
+  },
+  "solver_ms": {
+    "n": 4783,
+    "mean": 13.841532719975207,
+    "median": 12.41357707977295,
+    "p95": 24.875428581237788,
+    "max": 63.97506332397461,
+    "over_25ms_fraction": 0.04808697470206983
+  },
+  "cycle_ms": {
+    "n": 4783,
+    "mean": 14.135164257873432,
+    "median": 12.713120460510254,
+    "p95": 25.312824058532712,
+    "max": 64.61615753173828,
+    "over_25ms_fraction": 0.0539410411875392
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T150845_12784_forward_mppi_R22_clearance_repeat2

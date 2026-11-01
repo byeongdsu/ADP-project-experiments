@@ -1,0 +1,9 @@
+{
+  "build": "passed",
+  "sampler_fixed_input_4_threads": "50/50 paired calls matched",
+  "solver_synthetic_fixture_4_threads": "15/15 paired solves matched",
+  "upstream_source_unchanged": true,
+  "driving_simulation": "not performed",
+  "new_session": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T232547_15474_forward_mppi_R05_repro_v1_baseline",
+  "variant_selection": "session selects the new absolute executable; original sessions retain original binary"
+}

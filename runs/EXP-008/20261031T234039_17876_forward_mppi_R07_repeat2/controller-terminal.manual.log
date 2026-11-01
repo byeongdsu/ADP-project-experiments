@@ -1,0 +1,59 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T234039_17876_forward_mppi_R07_repeat2
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=600 collisions=0
+30.0s status=running laps=0 calculations=1199 collisions=0
+45.0s status=running laps=0 calculations=1799 collisions=0
+60.0s status=running laps=1 calculations=2399 collisions=0
+75.0s status=running laps=1 calculations=2999 collisions=0
+90.0s status=running laps=2 calculations=3600 collisions=0
+105.0s status=running laps=2 calculations=4199 collisions=0
+120.0s status=running laps=2 calculations=4800 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/scan": 13226,
+    "/car_state/odom_GT": 13225,
+    "/sim/collision": 13225,
+    "/mppi/reference_sdf": 133,
+    "/mppi/reference_path": 133,
+    "/mppi/local_costmap": 2652,
+    "/sim/obstacles": 136,
+    "/mppi_sim/drive": 5294,
+    "/mppi/status": 3,
+    "/mppi/calculation_time": 5291,
+    "/mppi/cycle_time": 5291,
+    "/mppi/collision_rate": 5291,
+    "/sim/lap_count": 4
+  },
+  "collisions": [],
+  "laps_completed": 3,
+  "distance_m": 132.02599562959475,
+  "observed_wall_s": 132.3105876790014,
+  "max_speed_m_s": 0.9999999999999989,
+  "stopped_wall_s": 0.060578605998671264,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.16540624832302941,
+    "max": 0.7149190721632345
+  },
+  "solver_ms": {
+    "n": 5291,
+    "mean": 9.563164389261878,
+    "median": 8.75547981262207,
+    "p95": 13.556892395019531,
+    "max": 17.17572021484375,
+    "over_25ms_fraction": 0.0
+  },
+  "cycle_ms": {
+    "n": 5291,
+    "mean": 9.78200451229588,
+    "median": 8.959531784057617,
+    "p95": 13.881991863250732,
+    "max": 17.681568145751953,
+    "over_25ms_fraction": 0.0
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T234039_17876_forward_mppi_R07_repeat2

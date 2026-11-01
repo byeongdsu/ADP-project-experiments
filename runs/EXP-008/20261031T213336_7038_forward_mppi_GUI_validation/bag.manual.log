@@ -1,0 +1,20 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1793450020.972599354] [mppi_manual_recorder]: Press SPACE for pausing/resuming
+[INFO] [1793450020.975651136] [rosbag2_storage]: Opened database '/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T213336_7038_forward_mppi_GUI_validation/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1793450020.977493684] [mppi_manual_recorder]: Listening for topics...
+[INFO] [1793450020.977694901] [mppi_manual_recorder]: Event publisher thread: Starting
+[INFO] [1793450020.987495628] [mppi_manual_recorder]: Subscribed to topic '/tf'
+[INFO] [1793450020.989124410] [mppi_manual_recorder]: Subscribed to topic '/sim/collision'
+[INFO] [1793450020.991374981] [mppi_manual_recorder]: Subscribed to topic '/scan'
+[INFO] [1793450020.994030569] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_sdf'
+[INFO] [1793450020.995832717] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_path'
+[INFO] [1793450020.997004625] [mppi_manual_recorder]: Subscribed to topic '/mppi/map'
+[INFO] [1793450020.997894322] [mppi_manual_recorder]: Subscribed to topic '/mppi/local_costmap'
+[INFO] [1793450020.998746704] [mppi_manual_recorder]: Subscribed to topic '/mppi/gt_trail'
+[INFO] [1793450020.999568279] [mppi_manual_recorder]: Subscribed to topic '/mppi/costmap_view'
+[INFO] [1793450021.001809076] [mppi_manual_recorder]: Subscribed to topic '/mppi/vehicle'
+[INFO] [1793450021.002967572] [mppi_manual_recorder]: Subscribed to topic '/car_state/odom_GT'
+[INFO] [1793450021.003112512] [mppi_manual_recorder]: Recording...
+[INFO] [1793450021.112391047] [mppi_manual_recorder]: Subscribed to topic '/sim/lap_count'
+[INFO] [1793450027.114188680] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1793450027.116365001] [mppi_manual_recorder]: Event publisher thread: Exiting
+[INFO] [1793450027.116560381] [mppi_manual_recorder]: Recording stopped

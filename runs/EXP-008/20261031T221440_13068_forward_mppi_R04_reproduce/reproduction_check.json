@@ -1,0 +1,17 @@
+{
+  "previous_run": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T220416_12187_forward_mppi_R03_retry1",
+  "identical_session_fields": [
+    "mode",
+    "config_sha256",
+    "obstacles",
+    "seed",
+    "laps",
+    "duration",
+    "domain",
+    "reference_speed"
+  ],
+  "controller_yaml_byte_identical": true,
+  "simulator_yaml_byte_identical": true,
+  "actual_obstacle_layouts": "compare after recording; not yet observed",
+  "status": "prepared, not started"
+}

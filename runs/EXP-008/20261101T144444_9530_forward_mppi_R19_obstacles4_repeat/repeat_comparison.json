@@ -1,0 +1,51 @@
+{
+  "same_first5_actual_layouts": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "same_controller_yaml": true,
+  "same_simulator_yaml": true,
+  "same_binary": true,
+  "20261101T143721_8710_forward_mppi_R18_obstacles4": {
+    "lap5_at_previous_collision_x": {
+      "xy": [
+        2.0307792851946584,
+        -0.3865304794009109
+      ],
+      "yaw_rad": -0.044104212975059086
+    },
+    "/mppi_sim/drive": {
+      "speed": 2.5,
+      "steer": -0.3919335603713989
+    },
+    "/mppi/collision_rate": 1.0,
+    "closest_obstacle_center_m": 0.5473395234178496,
+    "closest_xy": [
+      2.055614520016817,
+      -0.38938952138928973
+    ]
+  },
+  "20261101T144444_9530_forward_mppi_R19_obstacles4_repeat": {
+    "lap5_at_previous_collision_x": {
+      "xy": [
+        2.0395405275748946,
+        0.4889339071428075
+      ],
+      "yaw_rad": 0.36740115134559054
+    },
+    "/mppi_sim/drive": {
+      "speed": 2.5,
+      "steer": -0.342252254486084
+    },
+    "/mppi/collision_rate": 0.4320000112056732,
+    "closest_obstacle_center_m": 0.6499227490071476,
+    "closest_xy": [
+      2.7040484886770906,
+      0.4976414796384548
+    ]
+  },
+  "R19_mean_lap_s": 16.696142857142856
+}

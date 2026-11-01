@@ -1,0 +1,38 @@
+{
+  "20261101T135628_3603_forward_mppi_R12_speed2p5": {
+    "xy_at_x3p224_lap2": [
+      3.2121041434462163,
+      0.1404112977510086
+    ],
+    "yaw_qz": 0.022537567557300842,
+    "/mppi_sim/drive": {
+      "speed": 2.5,
+      "steer": 0.09857640415430069
+    },
+    "/mppi/collision_rate": 0.5139999985694885
+  },
+  "20261101T140052_4317_forward_mppi_R13_speed2p5_laps7": {
+    "xy_at_x3p224_lap2": [
+      3.2243135957708726,
+      -0.7046583898482397
+    ],
+    "yaw_qz": 0.42823345167029053,
+    "/mppi_sim/drive": {
+      "speed": 2.5,
+      "steer": 0.4095378518104553
+    },
+    "/mppi/collision_rate": 1.0,
+    "last3s_cycle_ms": {
+      "n": 120,
+      "max": 22.19305419921875,
+      "p95": 20.824103450775144
+    }
+  },
+  "same_controller_yaml": true,
+  "same_sim_yaml": true,
+  "same_binary_hash": true,
+  "first_two_layouts_equal": [
+    true,
+    true
+  ]
+}

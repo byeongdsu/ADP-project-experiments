@@ -1,0 +1,59 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T140552_5164_forward_mppi_R14_speed2p5_laps7_repeat
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=1 calculations=1141 collisions=0
+45.0s status=running laps=2 calculations=1655 collisions=0
+60.0s status=running laps=3 calculations=2178 collisions=0
+75.0s status=running laps=4 calculations=2774 collisions=0
+90.0s status=running laps=5 calculations=3284 collisions=0
+105.0s status=running laps=6 calculations=3838 collisions=0
+120.0s status=running laps=6 calculations=4404 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/scan": 11513,
+    "/car_state/odom_GT": 11513,
+    "/sim/collision": 11508,
+    "/mppi/local_costmap": 2395,
+    "/mppi/reference_sdf": 123,
+    "/mppi/reference_path": 123,
+    "/sim/obstacles": 129,
+    "/mppi/status": 3,
+    "/mppi_sim/drive": 4464,
+    "/mppi/calculation_time": 4461,
+    "/mppi/cycle_time": 4461,
+    "/mppi/collision_rate": 4461,
+    "/sim/lap_count": 8
+  },
+  "collisions": [],
+  "laps_completed": 7,
+  "distance_m": 292.15117666276865,
+  "observed_wall_s": 121.42750385699992,
+  "max_speed_m_s": 2.4999999999999956,
+  "stopped_wall_s": 0.05022465599995485,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.17423265004410532,
+    "max": 1.0339482797220272
+  },
+  "solver_ms": {
+    "n": 4461,
+    "mean": 14.963456180164616,
+    "median": 10.432135581970215,
+    "p95": 34.39766311645508,
+    "max": 64.9349365234375,
+    "over_25ms_fraction": 0.20219681685720692
+  },
+  "cycle_ms": {
+    "n": 4461,
+    "mean": 15.259532659744847,
+    "median": 10.669389724731445,
+    "p95": 35.007240295410156,
+    "max": 66.31698608398438,
+    "over_25ms_fraction": 0.20466263169692894
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T140552_5164_forward_mppi_R14_speed2p5_laps7_repeat

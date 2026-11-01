@@ -1,0 +1,17 @@
+{
+  "reference_run": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T233309_16976_forward_mppi_R06_repro_obstacles2",
+  "identical_fields": [
+    "solver_version",
+    "controller_binary_sha256",
+    "config_sha256",
+    "mode",
+    "obstacles",
+    "seed",
+    "laps",
+    "duration",
+    "reference_speed"
+  ],
+  "controller_and_simulator_yaml_identical": true,
+  "status": "prepared, not started",
+  "actual_layouts": "verify after recording"
+}

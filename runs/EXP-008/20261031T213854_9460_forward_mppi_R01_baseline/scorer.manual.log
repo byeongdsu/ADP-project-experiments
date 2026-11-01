@@ -1,0 +1,19 @@
+[INFO] [1793450668.532394463] [scorer]: seed 2026 -> /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T213854_9460_forward_mppi_R01_baseline/race_result_20261031_214428.json
+[WARN] [1793450668.532956165] [scorer]: a collision stops the car for good; reset it with /initialpose to keep going
+[INFO] [1793450688.288658370] [scorer]: crossed the line — timing started
+[INFO] [1793450737.953139819] [scorer]: lap 1  49.66 s  0 hits (obstacle 0, wall 0)
+[INFO] [1793450787.820206896] [scorer]: lap 2  49.87 s  0 hits (obstacle 0, wall 0)
+[INFO] [1793450837.719505653] [scorer]: lap 3  49.90 s  0 hits (obstacle 0, wall 0)
+
+--- seed 2026  ·  hyhall12  ·  3 laps ---
+  best lap    49.66 s
+  collisions  0   (obstacle 0, wall 0)
+
+  lap      time     hits   obstacle   wall
+    1 *   49.66 s      0          0      0
+    2     49.87 s      0          0      0
+    3     49.90 s      0          0      0
+
+  log:    /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T213854_9460_forward_mppi_R01_baseline/race_result_20261031_214428.json
+  report: ros2 run race_manager report /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T213854_9460_forward_mppi_R01_baseline/race_result_20261031_214428.json
+

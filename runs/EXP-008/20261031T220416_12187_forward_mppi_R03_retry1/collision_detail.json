@@ -1,0 +1,259 @@
+{
+  "alignment": "latest preceding bag receipt samples; asynchronous, not internal callback alignment",
+  "collision_receipt_time": 1793452014.9625864,
+  "simulator_collision_kind": "wall",
+  "snapshots": [
+    {
+      "dt_s": -3,
+      "xy": [
+        5.336593931232673,
+        -0.6687810211719551
+      ],
+      "yaw_rad": -0.08987844153478199,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": 0.0008553745574317873,
+      "predicted_collision_fraction": 0.012000000104308128,
+      "solver_ms": 13.408520698547363,
+      "forward_scan_min_0_15rad_m": 2.6935875415802,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        3.1517387407207744,
+        7.6189789500439895
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.0008296966552734375,
+        "/mppi_sim/drive": 0.0016660690307617188,
+        "/mppi/best_path": 0.0016720294952392578,
+        "/mppi/collision_rate": 0.0016226768493652344,
+        "/mppi/calculation_time": 0.0016987323760986328,
+        "/mppi/local_costmap": 0.022225618362426758,
+        "/scan": 0.001062154769897461,
+        "/sim/obstacles": 0.1261897087097168
+      }
+    },
+    {
+      "dt_s": -2,
+      "xy": [
+        6.332636515351779,
+        -0.7572667992970971
+      ],
+      "yaw_rad": -0.0804213459379011,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": 0.001402365043759346,
+      "predicted_collision_fraction": 0.006000000052154064,
+      "solver_ms": 7.9103522300720215,
+      "forward_scan_min_0_15rad_m": 1.6941428184509277,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        2.1520925346329864,
+        8.257771260736265
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.0012555122375488281,
+        "/mppi_sim/drive": 0.007405996322631836,
+        "/mppi/best_path": 0.007424831390380859,
+        "/mppi/collision_rate": 0.007464408874511719,
+        "/mppi/calculation_time": 0.0074465274810791016,
+        "/mppi/local_costmap": 0.023360490798950195,
+        "/scan": 0.0015444755554199219,
+        "/sim/obstacles": 0.1262812614440918
+      }
+    },
+    {
+      "dt_s": -1,
+      "xy": [
+        7.30648776886216,
+        -0.9541281819272681
+      ],
+      "yaw_rad": -0.29179136063314665,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": 0.1409645974636078,
+      "predicted_collision_fraction": 0.9210000038146973,
+      "solver_ms": 7.960899829864502,
+      "forward_scan_min_0_15rad_m": 1.3051639795303345,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        1.176825732820472,
+        9.0288590946753
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.0010175704956054688,
+        "/mppi_sim/drive": 0.0075800418853759766,
+        "/mppi/best_path": 0.007500171661376953,
+        "/mppi/collision_rate": 0.0074694156646728516,
+        "/mppi/calculation_time": 0.007508754730224609,
+        "/mppi/local_costmap": 0.027922630310058594,
+        "/scan": 0.0012853145599365234,
+        "/sim/obstacles": 0.12616777420043945
+      }
+    },
+    {
+      "dt_s": -0.5,
+      "xy": [
+        7.780628816002009,
+        -1.0750129771051498
+      ],
+      "yaw_rad": -0.22289653525349287,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": -0.3472490608692169,
+      "predicted_collision_fraction": 0.9229999780654907,
+      "solver_ms": 8.260919570922852,
+      "forward_scan_min_0_15rad_m": 1.3937277793884277,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        0.7265600915006938,
+        9.43762058677806
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.010591745376586914,
+        "/mppi_sim/drive": 0.007266998291015625,
+        "/mppi/best_path": 0.007202863693237305,
+        "/mppi/collision_rate": 0.007165431976318359,
+        "/mppi/calculation_time": 0.007214069366455078,
+        "/mppi/local_costmap": 0.02119612693786621,
+        "/scan": 0.010845184326171875,
+        "/sim/obstacles": 0.6261677742004395
+      }
+    },
+    {
+      "dt_s": -0.2,
+      "xy": [
+        8.073435228114777,
+        -1.1656724538608487
+      ],
+      "yaw_rad": -0.36571171468493024,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": -0.17166303098201752,
+      "predicted_collision_fraction": 1.0,
+      "solver_ms": 13.738664627075195,
+      "forward_scan_min_0_15rad_m": 0.7840642929077148,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        0.496605505961404,
+        9.70527345567418
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.007880687713623047,
+        "/mppi_sim/drive": 0.0016956329345703125,
+        "/mppi/best_path": 0.001544952392578125,
+        "/mppi/collision_rate": 0.0013704299926757812,
+        "/mppi/calculation_time": 0.0013494491577148438,
+        "/mppi/local_costmap": 0.02881002426147461,
+        "/scan": 0.00039505958557128906,
+        "/sim/obstacles": 0.9261677265167236
+      }
+    },
+    {
+      "dt_s": -0.05,
+      "xy": [
+        8.198177587110177,
+        -1.248911573842918
+      ],
+      "yaw_rad": -0.503967359873472,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": 0.4172215163707733,
+      "predicted_collision_fraction": 1.0,
+      "solver_ms": 9.280049324035645,
+      "forward_scan_min_0_15rad_m": 0.3359435200691223,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        0.4632598796696427,
+        9.851895450644433
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.0012164115905761719,
+        "/mppi_sim/drive": 0.00607609748840332,
+        "/mppi/best_path": 0.00608515739440918,
+        "/mppi/collision_rate": 0.006103992462158203,
+        "/mppi/calculation_time": 0.006095170974731445,
+        "/mppi/local_costmap": 0.025394916534423828,
+        "/scan": 0.0012240409851074219,
+        "/sim/obstacles": 0.07276606559753418
+      }
+    },
+    {
+      "dt_s": 0,
+      "xy": [
+        8.232072024153762,
+        -1.2701448141020428
+      ],
+      "yaw_rad": -0.5138609620851142,
+      "actual_vx": 0.9999999999999989,
+      "speed_command": 1.0,
+      "steering_command_rad": 0.4189000129699707,
+      "predicted_collision_fraction": 1.0,
+      "solver_ms": 8.58759593963623,
+      "forward_scan_min_0_15rad_m": 0.27400004863739014,
+      "costmap_at_robot_origin": 0.0,
+      "obstacle_center_distances_m": [
+        0.46109410526905603,
+        9.89076179010614
+      ],
+      "sample_age_s": {
+        "/car_state/odom_GT": 0.010497808456420898,
+        "/mppi_sim/drive": 0.006963014602661133,
+        "/mppi/best_path": 0.0069005489349365234,
+        "/mppi/collision_rate": 0.006862163543701172,
+        "/mppi/calculation_time": 0.006911754608154297,
+        "/mppi/local_costmap": 0.028644323348999023,
+        "/scan": 0.010793447494506836,
+        "/sim/obstacles": 0.12276601791381836
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "receipt_time": 1793451883.8869607,
+      "poses": [
+        {
+          "x": -3.8932997836759013,
+          "y": 2.7308772520340057,
+          "yaw": -0.9098783490814282
+        },
+        {
+          "x": -3.30813859295505,
+          "y": 5.125268611851245,
+          "yaw": -1.6408205742371786
+        }
+      ]
+    },
+    {
+      "receipt_time": 1793451931.604233,
+      "poses": [
+        {
+          "x": 3.52445553377751,
+          "y": -0.3114761512984918,
+          "yaw": 0.7015310997661219
+        },
+        {
+          "x": 11.691843474448643,
+          "y": 5.009361038295255,
+          "yaw": 3.052278559677063
+        }
+      ]
+    },
+    {
+      "receipt_time": 1793451975.1073513,
+      "poses": [
+        {
+          "x": 8.481106310895932,
+          "y": -0.8820859294715139,
+          "yaw": 1.1817519523346849
+        },
+        {
+          "x": 1.3227298631181943,
+          "y": 5.80715408380809,
+          "yaw": 3.010188477311805
+        }
+      ]
+    }
+  ],
+  "nearest_layout_age_at_collision_s": 39.85523509979248,
+  "interpretation": "Collision classification is the simulator LiDAR iTTC trigger beam label, not a direct rectangle intersection test."
+}

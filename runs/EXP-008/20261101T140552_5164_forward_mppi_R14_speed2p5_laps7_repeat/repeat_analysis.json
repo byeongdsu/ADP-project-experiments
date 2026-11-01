@@ -1,0 +1,101 @@
+{
+  "20261101T140052_4317_forward_mppi_R13_speed2p5_laps7": {
+    "lap2_at_previous_collision_x": {
+      "xy": [
+        3.2243135957708726,
+        -0.7046583898482397
+      ],
+      "yaw_rad": -0.8850740107296959
+    },
+    "steer_near_limit_fraction": 0.02287581699346405,
+    "sample_collision_fraction_ge0p9": 0.059689288634505316,
+    "lap2_encounter": {
+      "drive": {
+        "speed": 2.5,
+        "steer": 0.4095378518104553
+      },
+      "risk": 1.0
+    },
+    "lap2_near_encounter_cycle": {
+      "n": 120,
+      "p95_ms": 20.824103450775144,
+      "max_ms": 22.19305419921875,
+      "over25_fraction": 0.0
+    },
+    "per_lap_cycle": [
+      {
+        "lap": 1,
+        "p95_ms": 10.925812721252441,
+        "over25_fraction": 0.0
+      }
+    ]
+  },
+  "20261101T140552_5164_forward_mppi_R14_speed2p5_laps7_repeat": {
+    "lap2_at_previous_collision_x": {
+      "xy": [
+        3.238449663316033,
+        0.46224878602561514
+      ],
+      "yaw_rad": 0.41800438832197384
+    },
+    "steer_near_limit_fraction": 0.004034969737726967,
+    "sample_collision_fraction_ge0p9": 0.022650818569185917,
+    "lap2_encounter": {
+      "drive": {
+        "speed": 2.5,
+        "steer": -0.39137864112854004
+      },
+      "risk": 0.4729999899864197
+    },
+    "lap2_near_encounter_cycle": {
+      "n": 81,
+      "p95_ms": 42.43548583984375,
+      "max_ms": 43.912803649902344,
+      "over25_fraction": 0.9876543209876543
+    },
+    "per_lap_cycle": [
+      {
+        "lap": 1,
+        "p95_ms": 11.500469207763672,
+        "over25_fraction": 0.0
+      },
+      {
+        "lap": 2,
+        "p95_ms": 37.21051540374756,
+        "over25_fraction": 0.43197278911564624
+      },
+      {
+        "lap": 3,
+        "p95_ms": 34.198886871337876,
+        "over25_fraction": 0.09419152276295134
+      },
+      {
+        "lap": 4,
+        "p95_ms": 36.15857353210449,
+        "over25_fraction": 0.2990506329113924
+      },
+      {
+        "lap": 5,
+        "p95_ms": 36.32158870697021,
+        "over25_fraction": 0.3305921052631579
+      },
+      {
+        "lap": 6,
+        "p95_ms": 31.603316211700438,
+        "over25_fraction": 0.13149847094801223
+      },
+      {
+        "lap": 7,
+        "p95_ms": 34.48729991912842,
+        "over25_fraction": 0.19040247678018576
+      }
+    ]
+  },
+  "same_controller_config": true,
+  "same_sim_config": true,
+  "same_first_two_layouts": [
+    true,
+    true
+  ],
+  "same_binary": true
+}

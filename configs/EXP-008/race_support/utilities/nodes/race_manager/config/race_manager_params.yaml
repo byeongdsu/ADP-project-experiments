@@ -1,0 +1,36 @@
+# 후보 목록은 파일이 아니라 이 파라미터들로 정의된다. waypoints + 아래 값들 + seed 가
+# 같으면 배치가 같다. 값을 바꾸면 모든 seed 의 배치가 바뀌므로 배포 전에 확정할 것.
+obstacle_spawner:
+  ros__parameters:
+    obstacle_size: 0.30            # 한 변 30 cm — 7 m 거리에서 약 10점, min_obs_size 6점을 넘김
+    car_width: 0.31
+    wall_margin: 0.15              # 벽에서 띄우기 (붙으면 클러스터가 벽과 병합됨)
+    squeeze_clearance: 0.05        # 차가 빠듯하게라도 지나갈 수 있는 최소 여유 (양옆).
+                                   # 통과 가능 폭 = car_width + 2*이 값 = 0.41 m.
+                                   # 이 값이 "한쪽 강제"의 기준이다 — 막힌 쪽이 0.41 m 미만일 때만 강제로 친다
+    exclusion_ahead: 5.0           # reaction distance at the re-draw; 3.0 put a cube 0.4 m ahead of the grid
+    exclusion_behind: 1.0          # car has already passed at the re-draw, so this only clears the parked car
+    min_obstacle_gap: 0.50         # 장애물 간 최소 표면 거리. 원 요구사항 그대로.
+                                   # 이보다 가까워도 draw()가 합동 통과성을 따로 검사한다
+
+    # ---- 후보 격자 ----
+    candidate_spacing: 0.5         # s 간격
+    candidate_d_step: 0.10         # 레이스라인 기준 가로 간격
+    candidate_thetas: [0.0, 0.39269908169872414, 0.7853981633974483, 1.1780972450961724]
+                                   # rotations 0/22.5/45/67.5 deg; at 45 the effective width is 0.30 -> 0.424 m
+    min_severity: 0.0              # any floor here clamps obstacles to a ribbon on the raceline
+
+    # ---- 매 lap 구성 ----
+    num_obstacles: 4
+    chicane_span: 2.5              # 시케인 한 쌍이 떨어져 있어도 되는 최대 s 간격
+    recipes:                       # one drawn per lap; slots are kind:count[:min_severity[:max_visibility]]
+      - 'spread:1.0 chicane:1:0.10 forced:1:0.20'   # chicane pair + one forced + one free
+      - 'spread:1.0 forced:2:0.20'                  # two forced sides + two free
+      - 'spread:0.5 forced:1:0.30 either:1:0.20'    # one hard forced + one two-way + two free
+      - 'chicane:2:0.10'                            # no spread: the deliberately clustered lap
+                                   # 남는 자리는 조건 없이 채운다. 못 채우면 조건을 풀고 경고를 남김
+
+scorer:
+  ros__parameters:
+    teleport_m: 1.5                # 이보다 크게 순간이동하면 운영자가 차를 옮긴 것으로 보고 그 랩을 무효 처리
+    odom_topic: /car_state/odom_GT

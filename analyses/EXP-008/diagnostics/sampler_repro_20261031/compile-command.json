@@ -1,0 +1,16 @@
+[
+  "g++",
+  "-std=c++17",
+  "-O3",
+  "-DNDEBUG",
+  "-fopenmp",
+  "-I/home/misys/shared_dir/svg_mppi_ros2_20261031/ws/src/svg_mppi_ros2/include",
+  "-I/usr/include/eigen3",
+  "-I/opt/ros/humble/include/grid_map_core",
+  "-DEIGEN_DENSEBASE_PLUGIN=\"grid_map_core/eigen_plugins/DenseBasePlugin.hpp\"",
+  "-DEIGEN_FUNCTORS_PLUGIN=\"grid_map_core/eigen_plugins/FunctorsPlugin.hpp\"",
+  "/home/misys/shared_dir/svg_mppi_ros2_20261031/diagnostics/sampler_repro_20261031/probe.cpp",
+  "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws/build/svg_mppi_ros2/libsvg_mppi_core.a",
+  "-o",
+  "/home/misys/shared_dir/svg_mppi_ros2_20261031/diagnostics/sampler_repro_20261031/probe_upstream"
+]

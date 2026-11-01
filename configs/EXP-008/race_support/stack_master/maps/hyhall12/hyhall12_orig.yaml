@@ -1,0 +1,7 @@
+image: hyhall12_orig.png
+mode: trinary
+resolution: 0.05
+origin: [-7.28, -4.08, 0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25

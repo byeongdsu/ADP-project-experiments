@@ -1,0 +1,34 @@
+[
+  {
+    "run": "20261031T233309_16976_forward_mppi_R06_repro_obstacles2",
+    "active_commands": 5287,
+    "steering_total_variation_rad_per_s": 0.4138726663234532,
+    "steering_step_abs_p95_rad": 0.02362930402159691,
+    "command_steering_rate_abs_p95_rad_s": 0.9713616722965634,
+    "note": "Command target changes, not actual wheel steering rate; header timestamps."
+  },
+  {
+    "run": "20261031T234039_17876_forward_mppi_R07_repeat2",
+    "active_commands": 5289,
+    "steering_total_variation_rad_per_s": 0.42976687601918456,
+    "steering_step_abs_p95_rad": 0.024094954691827288,
+    "command_steering_rate_abs_p95_rad_s": 0.9824094486557395,
+    "note": "Command target changes, not actual wheel steering rate; header timestamps."
+  },
+  {
+    "run": "20261031T234040_17902_forward_mppi_R08_repeat3",
+    "active_commands": 5288,
+    "steering_total_variation_rad_per_s": 0.4126174836458482,
+    "steering_step_abs_p95_rad": 0.02397554190829396,
+    "command_steering_rate_abs_p95_rad_s": 0.9601968342397613,
+    "note": "Command target changes, not actual wheel steering rate; header timestamps."
+  },
+  {
+    "run": "20261031T234808_19249_forward_mppi_R09_horizon45",
+    "active_commands": 5064,
+    "steering_total_variation_rad_per_s": 0.499151915037871,
+    "steering_step_abs_p95_rad": 0.028646606579422945,
+    "command_steering_rate_abs_p95_rad_s": 1.152485215023081,
+    "note": "Command target changes, not actual wheel steering rate; header timestamps."
+  }
+]

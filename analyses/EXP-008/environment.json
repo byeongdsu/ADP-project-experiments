@@ -1,0 +1,16 @@
+{
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+  "os_release": "PRETTY_NAME=\"Ubuntu 22.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.4 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+  "cpu_affinity_count": 22,
+  "cpu_max": "max 100000\n",
+  "meminfo": [
+    "MemTotal:       32522716 kB",
+    "MemFree:         4720516 kB",
+    "MemAvailable:   27210276 kB"
+  ],
+  "container_marker": true,
+  "source_root": "/home/misys/shared_dir/svg_mppi_ros2_20261031",
+  "upstream_commit": "f4fb7b74f12d4568790213aab26dd6f0538d1925",
+  "ros": "Humble / native ROS2 adapter; official upstream is ROS1 Noetic",
+  "source_snapshots_are_current": "Per-run conditions/config/binary hashes retained; current source variants are separate."
+}

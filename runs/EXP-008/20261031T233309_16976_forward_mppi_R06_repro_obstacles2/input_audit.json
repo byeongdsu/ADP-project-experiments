@@ -1,0 +1,15 @@
+{
+  "topic_counts": {
+    "/mppi/reference_sdf": 149,
+    "/mppi/local_costmap": 2952,
+    "/scan": 14731,
+    "/car_state/odom_GT": 14731,
+    "/sim/obstacles": 150
+  },
+  "subsampled_scan_frames": 1452,
+  "frames_with_return_within_0_25m_of_obstacle_center": 447,
+  "minimum_return_distance_to_obstacle_center_m": 0.12529645670622766,
+  "costmap_obstacle_center_samples_within_3m": 66,
+  "costmap_samples_with_positive_cost_at_obstacle_center": 46,
+  "note": "Geometric scan consistency; obstacle size 0.30 m. Samples joined to most recent bag odom, not exact callback synchronization."
+}

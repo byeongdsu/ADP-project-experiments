@@ -1,0 +1,32 @@
+{
+  "condition": "GT, 1m/s, 2 obstacles, seed2026, repro_v1, 30 prediction states",
+  "independent_runs": 3,
+  "consecutive_laps_each": 3,
+  "training_repeatability_gate": "passed",
+  "actual_first_three_layouts_identical": true,
+  "generalization_or_final_tuning_complete": false,
+  "runs": [
+    {
+      "run": "20261031T233309_16976_forward_mppi_R06_repro_obstacles2",
+      "laps": 3,
+      "collisions": 0,
+      "solver_mean_ms": 9.612272443336808,
+      "callback_p95_ms": 13.898371696472166
+    },
+    {
+      "run": "20261031T234039_17876_forward_mppi_R07_repeat2",
+      "laps": 3,
+      "collisions": 0,
+      "solver_mean_ms": 9.563164389261878,
+      "callback_p95_ms": 13.881991863250732
+    },
+    {
+      "run": "20261031T234040_17902_forward_mppi_R08_repeat3",
+      "laps": 3,
+      "collisions": 0,
+      "solver_mean_ms": 9.491536546222381,
+      "callback_p95_ms": 13.782718944549561
+    }
+  ],
+  "next_change": "prediction_step_size only: 30 -> 45; approximate prediction time 1.45 -> 2.20 seconds"
+}

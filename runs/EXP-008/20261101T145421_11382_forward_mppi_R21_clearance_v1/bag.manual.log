@@ -1,0 +1,22 @@
+[INFO] [1793512502.041305437] [mppi_manual_recorder]: Press SPACE for pausing/resuming
+[INFO] [1793512502.043727007] [rosbag2_storage]: Opened database '/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T145421_11382_forward_mppi_R21_clearance_v1/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1793512502.044734578] [mppi_manual_recorder]: Listening for topics...
+[INFO] [1793512502.044748252] [mppi_manual_recorder]: Event publisher thread: Starting
+[INFO] [1793512502.049735268] [mppi_manual_recorder]: Subscribed to topic '/tf'
+[INFO] [1793512502.050590338] [mppi_manual_recorder]: Subscribed to topic '/sim/collision'
+[INFO] [1793512502.051286636] [mppi_manual_recorder]: Subscribed to topic '/sim/lap_count'
+[INFO] [1793512502.052420284] [mppi_manual_recorder]: Subscribed to topic '/scan'
+[INFO] [1793512502.053622104] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_sdf'
+[INFO] [1793512502.055282185] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_path'
+[INFO] [1793512502.056090627] [mppi_manual_recorder]: Subscribed to topic '/mppi/map'
+[INFO] [1793512502.056791339] [mppi_manual_recorder]: Subscribed to topic '/mppi/local_costmap'
+[INFO] [1793512502.057491905] [mppi_manual_recorder]: Subscribed to topic '/mppi/gt_trail'
+[INFO] [1793512502.058128700] [mppi_manual_recorder]: Subscribed to topic '/mppi/costmap_view'
+[INFO] [1793512502.059562353] [mppi_manual_recorder]: Subscribed to topic '/mppi/vehicle'
+[INFO] [1793512502.060390027] [mppi_manual_recorder]: Subscribed to topic '/car_state/odom_GT'
+[INFO] [1793512502.060484605] [mppi_manual_recorder]: Recording...
+[INFO] [1793512505.305688543] [mppi_manual_recorder]: Subscribed to topic '/sim/obstacles/markers'
+[INFO] [1793512505.307508392] [mppi_manual_recorder]: Subscribed to topic '/sim/obstacles'
+[INFO] [1793512903.726829722] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1793512903.729428001] [mppi_manual_recorder]: Event publisher thread: Exiting
+[INFO] [1793512903.729521327] [mppi_manual_recorder]: Recording stopped

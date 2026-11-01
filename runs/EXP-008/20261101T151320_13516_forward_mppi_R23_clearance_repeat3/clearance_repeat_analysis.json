@@ -1,0 +1,14 @@
+{
+  "mean_lap_s": 16.981571428571428,
+  "median_encounter_min_center_distance_m": 0.5951457943697798,
+  "minimum_center_distance_m": 0.4503691601190675,
+  "steering_TV_rad_per_s": 1.750052076197357,
+  "same_first7_layouts": true,
+  "same_controller_yaml": true,
+  "shutdown_stop": {
+    "wall": 1793513763.8652272,
+    "stop_messages": 20,
+    "controller_exited_before_stop": true,
+    "last_received_gt_speed": 0.0002533198700548741
+  }
+}

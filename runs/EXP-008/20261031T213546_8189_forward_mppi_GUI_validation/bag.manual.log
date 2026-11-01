@@ -1,0 +1,26 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1793450150.911017280] [mppi_manual_recorder]: Press SPACE for pausing/resuming
+[INFO] [1793450150.912572756] [rosbag2_storage]: Opened database '/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T213546_8189_forward_mppi_GUI_validation/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1793450150.913231728] [mppi_manual_recorder]: Listening for topics...
+[INFO] [1793450150.913249725] [mppi_manual_recorder]: Event publisher thread: Starting
+[INFO] [1793450150.917412216] [mppi_manual_recorder]: Subscribed to topic '/tf'
+[INFO] [1793450150.918242568] [mppi_manual_recorder]: Subscribed to topic '/sim/collision'
+[INFO] [1793450150.919310080] [mppi_manual_recorder]: Subscribed to topic '/scan'
+[INFO] [1793450150.920533992] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_sdf'
+[INFO] [1793450150.921640256] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_path'
+[INFO] [1793450150.922331703] [mppi_manual_recorder]: Subscribed to topic '/mppi/map'
+[INFO] [1793450150.922922062] [mppi_manual_recorder]: Subscribed to topic '/mppi/local_costmap'
+[INFO] [1793450150.923546776] [mppi_manual_recorder]: Subscribed to topic '/mppi/gt_trail'
+[INFO] [1793450150.924347833] [mppi_manual_recorder]: Subscribed to topic '/mppi/costmap_view'
+[INFO] [1793450150.926200819] [mppi_manual_recorder]: Subscribed to topic '/mppi/vehicle'
+[INFO] [1793450150.927108675] [mppi_manual_recorder]: Subscribed to topic '/car_state/odom_GT'
+[INFO] [1793450150.927201574] [mppi_manual_recorder]: Recording...
+[INFO] [1793450151.351092730] [mppi_manual_recorder]: Subscribed to topic '/sim/lap_count'
+[INFO] [1793450156.603494401] [mppi_manual_recorder]: Subscribed to topic '/mppi/cycle_time'
+[INFO] [1793450156.604646815] [mppi_manual_recorder]: Subscribed to topic '/mppi/collision_rate'
+[INFO] [1793450156.606132028] [mppi_manual_recorder]: Subscribed to topic '/mppi/calculation_time'
+[INFO] [1793450156.607017155] [mppi_manual_recorder]: Subscribed to topic '/mppi/best_path'
+[INFO] [1793450156.607921730] [mppi_manual_recorder]: Subscribed to topic '/mppi/status'
+[INFO] [1793450156.609250285] [mppi_manual_recorder]: Subscribed to topic '/mppi_sim/drive'
+[INFO] [1793450166.884781055] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1793450166.890075843] [mppi_manual_recorder]: Event publisher thread: Exiting
+[INFO] [1793450166.890220929] [mppi_manual_recorder]: Recording stopped

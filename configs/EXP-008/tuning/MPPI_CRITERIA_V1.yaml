@@ -1,0 +1,60 @@
+version: MPPI_TUNING_V1
+status: working engineering targets, not a safety guarantee
+mode: forward_mppi
+conditions:
+  pose: GT
+  speed_m_s: 1.0
+  map: hyhall12_orig
+  samples: 1000
+  threads: 4
+  control_period_ms: 25
+  prediction_interval_s: 0.05
+  initial_prediction_states: 30
+  training_obstacle_seed: 2026
+  held_out_obstacle_seeds:
+  - 2027
+  - 2028
+acceptance:
+  sampling_reproducibility:
+    same_seed_and_inputs: true
+    mismatched_calls_allowed: 0
+    calls_per_test: 50
+    threads: 4
+  tracking_no_obstacles:
+    independent_runs: 3
+    consecutive_laps_per_run: 3
+    collisions_allowed: 0
+    nearest_waypoint_mean_m_max: 0.15
+    nearest_waypoint_p95_m_max: 0.3
+    nearest_waypoint_max_m_max: 0.4
+  avoidance_training:
+    obstacles: 2
+    independent_runs: 3
+    consecutive_laps_per_run: 3
+    collisions_allowed: 0
+    sustained_stop_failure_s: 15
+  timing_each_run:
+    controller_callback_p95_ms_max: 20
+    controller_callback_over_25ms_fraction_max: 0.01
+  held_out_validation:
+    independent_runs_per_seed: 1
+    consecutive_laps_per_run: 3
+    collisions_allowed: 0
+tuning_order:
+- sampler reproducibility and new baseline version
+- 'prediction_step_size: 30 vs 45'
+- 'q_dist: one change at a time'
+- 'q_angle: one change at a time'
+- 'steer_cov: one change at a time'
+constraints:
+- No automatic driving runs; user uses the four-terminal workflow
+- Do not add braking during steering-only tuning; evaluate stopping policy separately
+- Do not interpret obstacle avoidance offset as no-obstacle tracking error
+- Do not mix original-sampler and repaired-sampler runs into a parameter-only comparison
+- No PP/PF/SVG runs in this tuning stage
+agreed_stage_order:
+- GT 1m/s repro_v1 baseline
+- GT 1m/s MPPI parameter tuning and independent repeats
+- speed progression 1.0 to 1.5 to 2.0 m/s
+- matched-condition PP-based system comparison
+- SVG-MPPI comparison after MPPI configuration freeze

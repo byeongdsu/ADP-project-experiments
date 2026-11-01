@@ -1,0 +1,58 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T150220_12046_forward_mppi_R21_clearance_retry1
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=1 calculations=1199 collisions=0
+45.0s status=running laps=2 calculations=1800 collisions=0
+60.0s status=running laps=3 calculations=2399 collisions=0
+75.0s status=running laps=4 calculations=2999 collisions=0
+90.0s status=running laps=5 calculations=3599 collisions=0
+105.0s status=running laps=6 calculations=4199 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 4,
+  "topic_counts": {
+    "/car_state/odom_GT": 12022,
+    "/scan": 12022,
+    "/sim/collision": 12021,
+    "/mppi/reference_sdf": 121,
+    "/mppi/reference_path": 121,
+    "/mppi/local_costmap": 2411,
+    "/sim/obstacles": 127,
+    "/mppi/status": 4,
+    "/mppi_sim/drive": 4789,
+    "/mppi/calculation_time": 4785,
+    "/mppi/cycle_time": 4785,
+    "/mppi/collision_rate": 4785,
+    "/sim/lap_count": 8
+  },
+  "collisions": [],
+  "laps_completed": 7,
+  "distance_m": 298.27573493274906,
+  "observed_wall_s": 119.63840596400041,
+  "max_speed_m_s": 2.4999999999999956,
+  "stopped_wall_s": 0.07086758500008727,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.18389809337210294,
+    "max": 1.154710230854577
+  },
+  "solver_ms": {
+    "n": 4785,
+    "mean": 12.793810692152384,
+    "median": 11.957332611083984,
+    "p95": 22.735220336914065,
+    "max": 33.381309509277344,
+    "over_25ms_fraction": 0.030721003134796237
+  },
+  "cycle_ms": {
+    "n": 4785,
+    "mean": 13.070230003883099,
+    "median": 12.211343765258789,
+    "p95": 23.11385345458985,
+    "max": 33.678199768066406,
+    "over_25ms_fraction": 0.03364681295715778
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T150220_12046_forward_mppi_R21_clearance_retry1

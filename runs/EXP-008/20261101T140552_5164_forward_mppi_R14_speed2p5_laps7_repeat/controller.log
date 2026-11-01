@@ -1,0 +1,6 @@
+[INFO] [1793509603.728900341] [mppi_sim_controller]: Simulation-only forward_mppi, GT pose from odom, 2.50 m/s; waiting for /mppi/enable
+[INFO] [1793509603.754602034] [mppi_sim_controller]: Input alignment checked: distance=0.0447 m heading_error=0.0211 rad ref_speed=2.50 self_cost=0.0
+[INFO] [1793509603.754683054] [mppi_sim_controller]: ready_disabled
+[INFO] [1793509603.788427564] [mppi_sim_controller]: running
+[INFO] [1793509725.187718337] [mppi_sim_controller]: ready_disabled
+[INFO] [1793509725.191562852] [rclcpp]: signal_handler(SIGINT/SIGTERM)

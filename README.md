@@ -2,6 +2,10 @@
 
 ForzaETH 참조 스택에서 Pure Pursuit(PP)와 TinyLidarNet(TLN)의 문제를 관찰하고, 파라미터 변경을 통해 원인과 개선 방향을 검증한다.
 
+## MPPI 실험과 SVG-MPPI 후속 계획 — 2026-11-01
+
+[EXP-008 통합 보고서](analyses/EXP-008/REPORT.md)에 PP 플래너·상태 전환 문제, MPPI 적용과 반복 결과, 여유 거리 비용의 효과·부작용, 3.0m/s의 성공·충돌 비교를 정리했다. [35개 세션 결과표](analyses/EXP-008/results_summary.csv)에는 중단·미실행도 포함하며 유효 실험과 구분한다. 3m/s는 3회 중1회만7랩완료. SVG는 가이드 기반 탐색의 회피 안정성 개선을 검증할 후속 계획이며 성능 향상·연산 단축을 입증한 결과가 아니다. [재현 자료](configs/EXP-008/REPRODUCE.ko.md), [실행별 로그·설정](runs/EXP-008/). 원본 bag은 로컬 보존한다. 아래 기존 PP/TLN 진행 상태는 과거 기록이다.
+
 ## TLN 튜닝 최종 정리 — 2026-10-30
 
 [EXP-007 최종 보고서](analyses/EXP-007/REPORT.md)에서 속도·EMA·코너 감속 튜닝과 남은 회피 한계를 정리했다. 장애물 2개 조건의 R13·R14는 속도가 달라도 같은 장애물 부근에서 충돌했다. [실행별 결과표](analyses/EXP-007/results_summary.csv)는 결과 JSON과 실행 YAML 기준이다. 아래 PP 중심 진행 상태와 10월 21일 인계는 과거 기록이다.

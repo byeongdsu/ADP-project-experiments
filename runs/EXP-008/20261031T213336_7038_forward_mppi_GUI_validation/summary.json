@@ -1,0 +1,17 @@
+{
+  "reason": "error",
+  "error": "AssertionError(\"Unexpected nodes in manual domain: {'transform_listener_impl_650beb41c480', 'rviz'}\")",
+  "mode": "forward_mppi",
+  "obstacles": 0,
+  "topic_counts": {
+    "/car_state/odom_GT": 4,
+    "/scan": 4,
+    "/mppi/local_costmap": 1,
+    "/sim/collision": 3,
+    "/mppi/reference_sdf": 2,
+    "/mppi/reference_path": 1
+  },
+  "collisions": [],
+  "laps_completed": 0,
+  "distance_m": 0.0
+}

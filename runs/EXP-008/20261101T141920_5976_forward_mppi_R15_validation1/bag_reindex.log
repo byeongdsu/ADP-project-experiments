@@ -1,0 +1,7 @@
+
+closing.
+
+closing.
+[INFO] [1793510613.248973862] [rosbag2_cpp]: Beginning reindexing bag in directory: manual_runs/20261101T141920_5976_forward_mppi_R15_validation1/bag
+[INFO] [1793510613.251809167] [rosbag2_storage]: Opened database 'manual_runs/20261101T141920_5976_forward_mppi_R15_validation1/bag/bag_0.db3' for READ_ONLY.
+[INFO] [1793510613.463663006] [rosbag2_cpp]: Reindexing complete.

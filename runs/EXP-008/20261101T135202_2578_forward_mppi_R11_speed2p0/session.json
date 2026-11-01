@@ -1,0 +1,15 @@
+{
+  "solver_version": "repro_v1",
+  "solver_workspace": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_repro",
+  "controller_executable": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_repro/install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node",
+  "controller_binary_sha256": "b48fc16d23f9de44736f0679f4c1d4d3f6275d0871a14545494f0d97020e80a9",
+  "mode": "forward_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/tuning/R11_h45_speed2p0.yaml",
+  "config_sha256": "81a1311b92f39ff24336671ae396fa3109fa98ef22eb2512fda59faf48dd9df0",
+  "obstacles": 2,
+  "seed": 2026,
+  "laps": 3,
+  "duration": 240.0,
+  "domain": 76,
+  "reference_speed": 2.0
+}

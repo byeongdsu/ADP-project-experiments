@@ -1,0 +1,58 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T142922_7188_forward_mppi_R16_validation2_retry1
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=600 collisions=0
+30.0s status=running laps=1 calculations=1199 collisions=0
+45.0s status=running laps=2 calculations=1799 collisions=0
+60.0s status=running laps=3 calculations=2399 collisions=0
+75.0s status=running laps=4 calculations=2999 collisions=0
+90.0s status=running laps=5 calculations=3599 collisions=0
+105.0s status=running laps=6 calculations=4199 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 2,
+  "topic_counts": {
+    "/scan": 11762,
+    "/car_state/odom_GT": 11762,
+    "/sim/collision": 11762,
+    "/mppi/local_costmap": 2366,
+    "/mppi/reference_sdf": 120,
+    "/mppi/reference_path": 120,
+    "/sim/obstacles": 124,
+    "/mppi/status": 3,
+    "/mppi_sim/drive": 4687,
+    "/mppi/calculation_time": 4684,
+    "/mppi/cycle_time": 4684,
+    "/mppi/collision_rate": 4684,
+    "/sim/lap_count": 8
+  },
+  "collisions": [],
+  "laps_completed": 7,
+  "distance_m": 292.1760724580325,
+  "observed_wall_s": 117.11752103300023,
+  "max_speed_m_s": 2.4999999999999956,
+  "stopped_wall_s": 0.07186417200000506,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.16223377731100055,
+    "max": 0.7861064272370594
+  },
+  "solver_ms": {
+    "n": 4684,
+    "mean": 14.040025834544513,
+    "median": 12.447072982788086,
+    "p95": 23.939421367645256,
+    "max": 35.705867767333984,
+    "over_25ms_fraction": 0.030529461998292057
+  },
+  "cycle_ms": {
+    "n": 4684,
+    "mean": 14.313998170127022,
+    "median": 12.689949035644531,
+    "p95": 24.323058319091796,
+    "max": 35.96726989746094,
+    "over_25ms_fraction": 0.03992314261315115
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261101T142922_7188_forward_mppi_R16_validation2_retry1

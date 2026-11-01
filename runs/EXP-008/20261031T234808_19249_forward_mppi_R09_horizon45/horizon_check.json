@@ -1,0 +1,12 @@
+{
+  "config_changes": [
+    [
+      "common.prediction_step_size",
+      30,
+      45
+    ]
+  ],
+  "binary_equal_to_R06": true,
+  "simulator_yaml_equal": true,
+  "actual_recorded_prediction_poses": 45
+}

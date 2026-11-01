@@ -1,0 +1,1 @@
+{"label": "controller", "argv": ["ros2", "run", "svg_mppi_ros2", "mppi_sim_node", "--ros-args", "-p", "config_file:=/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261031T230314_13983_svg_mppi_S01_comparison/controller.yaml"]}

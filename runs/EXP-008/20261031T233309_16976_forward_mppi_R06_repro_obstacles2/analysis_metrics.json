@@ -1,0 +1,15 @@
+{
+  "run": "20261031T233309_16976_forward_mppi_R06_repro_obstacles2",
+  "solver_version": "repro_v1",
+  "laps": 3,
+  "collisions": 0,
+  "nearest_waypoint_mean_m": 0.16514374425743947,
+  "nearest_waypoint_p95_m": 0.36752618081022914,
+  "nearest_waypoint_max_m": 0.70917674259192,
+  "callback_p95_ms": 13.898371696472166,
+  "callback_over25_fraction": 0.0,
+  "steering_saturation_sample_fraction": 0.0026561432799575018,
+  "odom_samples_with_latest_candidate_collision_fraction_ge_0_9": 0.013887834863777794,
+  "actual_first_three_layouts_equal_to_R03": true,
+  "independent_obstacle_runs_completed_for_repro_v1": 1
+}

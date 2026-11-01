@@ -1,0 +1,11 @@
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-misys'
+[INFO] [1793457054.158385126] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793457054.158498126] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1793457054.195981978] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1793457054.463154492] [rviz2]: Trying to create a map of size 437 x 267 using 1 swatches
+[ERROR] [1793457054.496636688] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1793457055.742779838] [rviz]: Message Filter dropping message: frame 'car_state/base_link' at time 1793457055.196 for reason 'discarding message because the queue is full'
+[INFO] [1793457056.099429542] [rviz2]: Trying to create a map of size 200 x 200 using 1 swatches
+[INFO] [1793457065.607195819] [rviz]: Message Filter dropping message: frame 'car_state/base_link' at time 1793457055.596 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1793457099.211640019] [rclcpp]: signal_handler(SIGINT/SIGTERM)
