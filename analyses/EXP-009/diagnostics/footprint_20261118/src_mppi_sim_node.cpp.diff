@@ -1,0 +1,11 @@
+--- ws_svg_repro/src/mppi_sim_node.cpp
++++ ws_footprint/src/mppi_sim_node.cpp
+@@ -53,7 +53,7 @@
+     cost_=create_subscription<grid_map_msgs::msg::GridMap>("/mppi/local_costmap",rclcpp::QoS(1).best_effort(),[this](grid_map_msgs::msg::GridMap::ConstSharedPtr msg) {
+       cost_ok_=false;
+       if(msg->header.frame_id!="car_state/base_link") return;
+-      cost_ok_=grid_map::GridMapRosConverter::fromMessage(*msg,costmap_) && costmap_.exists("collision_layer") && costmap_["collision_layer"].allFinite() && costmap_.exists("clearance_cost") && costmap_["clearance_cost"].allFinite();
++      cost_ok_=grid_map::GridMapRosConverter::fromMessage(*msg,costmap_) && costmap_.exists("raw_occupancy") && costmap_["raw_occupancy"].allFinite() && costmap_.exists("collision_layer") && costmap_["collision_layer"].allFinite() && costmap_.exists("clearance_cost") && costmap_["clearance_cost"].allFinite();
+       cost_time_=Clock::now();
+     });
+     reference_=create_subscription<grid_map_msgs::msg::GridMap>("/mppi/reference_sdf",rclcpp::QoS(1).transient_local(),[this](grid_map_msgs::msg::GridMap::ConstSharedPtr msg) {

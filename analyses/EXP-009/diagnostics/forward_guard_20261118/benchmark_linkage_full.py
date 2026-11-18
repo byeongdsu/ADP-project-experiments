@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,subprocess,time
+r=Path('/home/misys/shared_dir/svg_mppi_ros2_20261031');o=r/'diagnostics/forward_guard_20261118';s=(o/'probe_svg.cpp').read_text();s='#include "mppi_controller/forward_guard.hpp"\n'+s;s=s.replace(' auto state=mppi::cpu::State::Zero().eval();',' mppi::cpu::OrientedFootprint f;f.reset({},.05,-2,8,-5,5);if(f.cost(0.,0.,0.).collision>0.)return 5;\n auto state=mppi::cpu::State::Zero().eval();');s=s.replace(' auto state=mppi::cpu::State::Zero().eval();',' mppi::cpu::StateSeq dummy=mppi::cpu::StateSeq::Zero(2,mppi::STATE_SPACE::dim);dummy(1,0)=.1;\n if(!mppi::cpu::check_forward(dummy,ref).valid)return 4;\n auto state=mppi::cpu::State::Zero().eval();');p=o/'linkage_bench.cpp';p.write_text(s);template=json.loads((o/'compile_svg.json').read_text());results=[]
+for opt in ['-O0','-O3']:
+ cmd=[str(p) if x==str(o/'probe_svg.cpp') else str(o/('linkage'+opt)) if x==str(o/'probe_svg') else opt if x=='-O3' else x for x in template];subprocess.run(cmd,check=True,stdout=(o/('linkage'+opt+'.compile.log')).open('w'),stderr=subprocess.STDOUT)
+ start=time.monotonic();res=subprocess.run([str(o/('linkage'+opt)),str(r/'manual_runs/20261118T140922_71360_svg_mppi_B06_berlin_footprint_svg_speed1p5/controller.yaml')],text=True,capture_output=True,check=True);elapsed=time.monotonic()-start;results.append({'main_translation_unit':opt,'same_O3_core_library':True,'wall_seconds':elapsed,'output':res.stdout});print(opt,elapsed,flush=True)
+(o/'linkage_full_benchmark.json').write_text(json.dumps(results,indent=2))

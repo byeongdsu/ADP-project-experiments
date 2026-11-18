@@ -1,0 +1,453 @@
+{
+  "alignment": "Latest preceding receipt samples, nearest waypoint direction; not exact internal callback synchronization. Nearest-reference progress approximate off path.",
+  "first_opposite_heading": {
+    "time_after_first_nonzero_drive_s": 17.66634202003479,
+    "xy": [
+      -1.3290000406833842,
+      -3.29828650825734
+    ],
+    "waypoint_index": 246,
+    "distance_to_nearest_waypoint_m": 0.6983114256805135,
+    "actual_heading_deg": 77.29156664923508,
+    "reference_heading_deg": 167.99776679230476,
+    "heading_error_deg": -90.70620014306968,
+    "gt_vx_m_s": 1.4999999999999978,
+    "speed_command_m_s": 1.5,
+    "steering_command_rad": -0.4189000129699707,
+    "candidate_collision_fraction": 0.996999979019165,
+    "nearest_reference_progress_m": 24.991451365244323
+  },
+  "maximum_forward_progress": {
+    "time_after_first_nonzero_drive_s": 17.364712953567505,
+    "xy": [
+      -1.3748836712260328,
+      -3.7399615296455586
+    ],
+    "waypoint_index": 246,
+    "distance_to_nearest_waypoint_m": 0.26255929904340247,
+    "actual_heading_deg": 107.75796243269555,
+    "reference_heading_deg": 167.99776679230476,
+    "heading_error_deg": -60.239804359609195,
+    "gt_vx_m_s": 1.4999999999999978,
+    "speed_command_m_s": 1.5,
+    "steering_command_rad": -0.4188999533653259,
+    "candidate_collision_fraction": 0.9980000257492065,
+    "nearest_reference_progress_m": 24.991451365244323
+  },
+  "last": {
+    "time_after_first_nonzero_drive_s": 30.645009756088257,
+    "xy": [
+      4.945885690128153,
+      -17.893485015396326
+    ],
+    "waypoint_index": 71,
+    "distance_to_nearest_waypoint_m": 0.09649491916593443,
+    "actual_heading_deg": 45.16339165459317,
+    "reference_heading_deg": -137.7202899593236,
+    "heading_error_deg": -177.11631838608326,
+    "gt_vx_m_s": 1.4999999999999978,
+    "speed_command_m_s": 1.5,
+    "steering_command_rad": 0.2435380518436432,
+    "candidate_collision_fraction": 0.5189999938011169,
+    "nearest_reference_progress_m": 7.497699712887041
+  },
+  "progress_change_after_peak_m": -17.493751652357282,
+  "opposite_heading_duration_approx_s": 12.978667736053467,
+  "drive_speed_min_m_s": 0.0,
+  "drive_speed_max_m_s": 1.5,
+  "negative_drive_count": 0,
+  "negative_gt_velocity_count": 0,
+  "samples": [
+    {
+      "time_after_first_nonzero_drive_s": 0.007990598678588867,
+      "xy": [
+        6.06922668619913,
+        -10.634633548537787
+      ],
+      "waypoint_index": 484,
+      "distance_to_nearest_waypoint_m": 0.0,
+      "actual_heading_deg": -98.97983683930596,
+      "reference_heading_deg": -98.97983683930595,
+      "heading_error_deg": -1.2722218725854067e-14,
+      "gt_vx_m_s": 0.0,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.17399942874908447,
+      "candidate_collision_fraction": 0.1720000058412552,
+      "nearest_reference_progress_m": 0.0
+    },
+    {
+      "time_after_first_nonzero_drive_s": 1.9959564208984375,
+      "xy": [
+        5.558951335738772,
+        -13.247963258165354
+      ],
+      "waypoint_index": 22,
+      "distance_to_nearest_waypoint_m": 0.2648709606142073,
+      "actual_heading_deg": -105.52833500567463,
+      "reference_heading_deg": -90.01087048822296,
+      "heading_error_deg": -15.51746451745168,
+      "gt_vx_m_s": 1.4999039064562232,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.0161401629447937,
+      "candidate_collision_fraction": 0.0010000000474974513,
+      "nearest_reference_progress_m": 2.5992224048794412
+    },
+    {
+      "time_after_first_nonzero_drive_s": 3.9954495429992676,
+      "xy": [
+        5.31968879193598,
+        -16.227448437203005
+      ],
+      "waypoint_index": 53,
+      "distance_to_nearest_waypoint_m": 0.38259487755949434,
+      "actual_heading_deg": -95.32393399684125,
+      "reference_heading_deg": -103.17662476781041,
+      "heading_error_deg": 7.8526907709691605,
+      "gt_vx_m_s": 1.4999999943619173,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.12200253456830978,
+      "candidate_collision_fraction": 0.07699999958276749,
+      "nearest_reference_progress_m": 5.698334007705135
+    },
+    {
+      "time_after_first_nonzero_drive_s": 5.995077848434448,
+      "xy": [
+        3.6847674865660265,
+        -18.633727824882953
+      ],
+      "waypoint_index": 84,
+      "distance_to_nearest_waypoint_m": 0.32683639474147747,
+      "actual_heading_deg": -147.58017794417773,
+      "reference_heading_deg": 175.12845628238148,
+      "heading_error_deg": 37.291365773440845,
+      "gt_vx_m_s": 1.499999999999669,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.051595766097307205,
+      "candidate_collision_fraction": 0.746999979019165,
+      "nearest_reference_progress_m": 8.797085689978616
+    },
+    {
+      "time_after_first_nonzero_drive_s": 8.00080680847168,
+      "xy": [
+        1.5164624856424653,
+        -17.291011568309617
+      ],
+      "waypoint_index": 106,
+      "distance_to_nearest_waypoint_m": 0.4665540778836234,
+      "actual_heading_deg": 115.40742524966997,
+      "reference_heading_deg": 121.99789692131695,
+      "heading_error_deg": -6.590471671646971,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.057039208710193634,
+      "candidate_collision_fraction": 0.6570000052452087,
+      "nearest_reference_progress_m": 10.996255604325391
+    },
+    {
+      "time_after_first_nonzero_drive_s": 9.996115922927856,
+      "xy": [
+        1.2318374709700919,
+        -14.336574288811509
+      ],
+      "waypoint_index": 135,
+      "distance_to_nearest_waypoint_m": 0.06846344596292096,
+      "actual_heading_deg": 101.83950865830435,
+      "reference_heading_deg": 95.15885615421931,
+      "heading_error_deg": 6.680652504085043,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.025363726541399956,
+      "candidate_collision_fraction": 0.05999999865889549,
+      "nearest_reference_progress_m": 13.895420112528726
+    },
+    {
+      "time_after_first_nonzero_drive_s": 11.995370149612427,
+      "xy": [
+        0.7932191257990363,
+        -11.376146227012423
+      ],
+      "waypoint_index": 165,
+      "distance_to_nearest_waypoint_m": 0.029664538658069003,
+      "actual_heading_deg": 108.46490031887684,
+      "reference_heading_deg": 106.07239486445457,
+      "heading_error_deg": 2.392505454422283,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.08564706891775131,
+      "candidate_collision_fraction": 0.07999999821186066,
+      "nearest_reference_progress_m": 16.894504721862127
+    },
+    {
+      "time_after_first_nonzero_drive_s": 13.995898962020874,
+      "xy": [
+        -0.33540797532885913,
+        -8.599009590124266
+      ],
+      "waypoint_index": 195,
+      "distance_to_nearest_waypoint_m": 0.029131080826808355,
+      "actual_heading_deg": 109.22849664269069,
+      "reference_heading_deg": 110.36408034036481,
+      "heading_error_deg": -1.1355836976741298,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.019134672358632088,
+      "candidate_collision_fraction": 0.1289999932050705,
+      "nearest_reference_progress_m": 19.893660837582594
+    },
+    {
+      "time_after_first_nonzero_drive_s": 16.00449800491333,
+      "xy": [
+        -0.715403610855157,
+        -5.628924493253118
+      ],
+      "waypoint_index": 225,
+      "distance_to_nearest_waypoint_m": 0.15878992187563692,
+      "actual_heading_deg": 89.06203649988335,
+      "reference_heading_deg": 85.21602065520197,
+      "heading_error_deg": 3.846015844681365,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.038629911839962006,
+      "candidate_collision_fraction": 0.8109999895095825,
+      "nearest_reference_progress_m": 22.89274800879739
+    },
+    {
+      "time_after_first_nonzero_drive_s": 17.99512004852295,
+      "xy": [
+        -1.0236512948059366,
+        -2.9177220064333884
+      ],
+      "waypoint_index": 245,
+      "distance_to_nearest_waypoint_m": 1.144118287126119,
+      "actual_heading_deg": 43.461408413143054,
+      "reference_heading_deg": 164.5082844037237,
+      "heading_error_deg": -121.04687599058066,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.41851040720939636,
+      "candidate_collision_fraction": 0.9710000157356262,
+      "nearest_reference_progress_m": 24.8920940323298
+    },
+    {
+      "time_after_first_nonzero_drive_s": 19.996857166290283,
+      "xy": [
+        -0.06632517570221243,
+        -4.71656128626114
+      ],
+      "waypoint_index": 233,
+      "distance_to_nearest_waypoint_m": 0.5463225565048716,
+      "actual_heading_deg": -113.42045477896751,
+      "reference_heading_deg": 104.28378844256194,
+      "heading_error_deg": 142.29575677847058,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.006349228788167238,
+      "candidate_collision_fraction": 0.11800000071525574,
+      "nearest_reference_progress_m": 23.69246531156505
+    },
+    {
+      "time_after_first_nonzero_drive_s": 22.004688024520874,
+      "xy": [
+        -0.6013645079386498,
+        -7.622953023152769
+      ],
+      "waypoint_index": 205,
+      "distance_to_nearest_waypoint_m": 0.022052124203339064,
+      "actual_heading_deg": -79.44081869102723,
+      "reference_heading_deg": 100.42449800576512,
+      "heading_error_deg": -179.86531669679235,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.1378517746925354,
+      "candidate_collision_fraction": 0.0,
+      "nearest_reference_progress_m": 20.89334890366873
+    },
+    {
+      "time_after_first_nonzero_drive_s": 23.99568271636963,
+      "xy": [
+        0.5072443681430115,
+        -10.392298739509801
+      ],
+      "waypoint_index": 175,
+      "distance_to_nearest_waypoint_m": 0.06549055421512479,
+      "actual_heading_deg": -68.86574136448442,
+      "reference_heading_deg": 112.65719865145277,
+      "heading_error_deg": 178.47705998406283,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.02936002053320408,
+      "candidate_collision_fraction": 0.27399998903274536,
+      "nearest_reference_progress_m": 17.89422091205926
+    },
+    {
+      "time_after_first_nonzero_drive_s": 25.99664282798767,
+      "xy": [
+        1.2857279964678907,
+        -13.283331048986193
+      ],
+      "waypoint_index": 145,
+      "distance_to_nearest_waypoint_m": 0.20025792856420924,
+      "actual_heading_deg": -77.02724841685118,
+      "reference_heading_deg": 94.4313181754015,
+      "heading_error_deg": -171.45856659225265,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.11089321225881577,
+      "candidate_collision_fraction": 0.6079999804496765,
+      "nearest_reference_progress_m": 14.895129556148824
+    },
+    {
+      "time_after_first_nonzero_drive_s": 28.004772186279297,
+      "xy": [
+        2.293838239536982,
+        -16.108350929691042
+      ],
+      "waypoint_index": 114,
+      "distance_to_nearest_waypoint_m": 0.7577647967887297,
+      "actual_heading_deg": -71.47445236719777,
+      "reference_heading_deg": 110.95427906717826,
+      "heading_error_deg": 177.571268565624,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.2699833810329437,
+      "candidate_collision_fraction": 0.6690000295639038,
+      "nearest_reference_progress_m": 11.796017248210426
+    },
+    {
+      "time_after_first_nonzero_drive_s": 30.005027055740356,
+      "xy": [
+        4.117535190328555,
+        -18.30635375039397
+      ],
+      "waypoint_index": 80,
+      "distance_to_nearest_waypoint_m": 0.05338486328184544,
+      "actual_heading_deg": -9.969834435203907,
+      "reference_heading_deg": -168.27812567758284,
+      "heading_error_deg": 158.3082912423789,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.37042000889778137,
+      "candidate_collision_fraction": 0.6079999804496765,
+      "nearest_reference_progress_m": 8.39745259396529
+    },
+    {
+      "time_after_first_nonzero_drive_s": 14.665084838867188,
+      "xy": [
+        -0.5778158949802442,
+        -7.628674658230976
+      ],
+      "waypoint_index": 205,
+      "distance_to_nearest_waypoint_m": 0.045785535180255396,
+      "actual_heading_deg": 97.68807983581684,
+      "reference_heading_deg": 100.42449800576512,
+      "heading_error_deg": -2.7364181699482746,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.018200471997261047,
+      "candidate_collision_fraction": 0.4009999930858612,
+      "nearest_reference_progress_m": 20.89334890366873
+    },
+    {
+      "time_after_first_nonzero_drive_s": 15.665313720703125,
+      "xy": [
+        -0.7219197284973389,
+        -6.138876427234459
+      ],
+      "waypoint_index": 220,
+      "distance_to_nearest_waypoint_m": 0.10782001091846301,
+      "actual_heading_deg": 90.22067517478838,
+      "reference_heading_deg": 82.28997755060065,
+      "heading_error_deg": 7.930697624187735,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.0297236368060112,
+      "candidate_collision_fraction": 0.23800000548362732,
+      "nearest_reference_progress_m": 22.392864915221956
+    },
+    {
+      "time_after_first_nonzero_drive_s": 16.664934158325195,
+      "xy": [
+        -0.895788366517143,
+        -4.65996395521956
+      ],
+      "waypoint_index": 236,
+      "distance_to_nearest_waypoint_m": 0.22181733369614284,
+      "actual_heading_deg": 104.8618254058721,
+      "reference_heading_deg": 116.71259274780071,
+      "heading_error_deg": -11.850767341928602,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.1435796469449997,
+      "candidate_collision_fraction": 0.9940000176429749,
+      "nearest_reference_progress_m": 23.992269589124554
+    },
+    {
+      "time_after_first_nonzero_drive_s": 17.66634202003479,
+      "xy": [
+        -1.3290000406833842,
+        -3.29828650825734
+      ],
+      "waypoint_index": 246,
+      "distance_to_nearest_waypoint_m": 0.6983114256805135,
+      "actual_heading_deg": 77.29156664923508,
+      "reference_heading_deg": 167.99776679230476,
+      "heading_error_deg": -90.70620014306968,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.4189000129699707,
+      "candidate_collision_fraction": 0.996999979019165,
+      "nearest_reference_progress_m": 24.991451365244323
+    },
+    {
+      "time_after_first_nonzero_drive_s": 18.666771173477173,
+      "xy": [
+        -0.07864394006626635,
+        -2.9109587015742107
+      ],
+      "waypoint_index": 241,
+      "distance_to_nearest_waypoint_m": 1.5742023333482293,
+      "actual_heading_deg": -25.14541567533414,
+      "reference_heading_deg": 144.78474775190134,
+      "heading_error_deg": -169.9301634272355,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.41413623094558716,
+      "candidate_collision_fraction": 0.8289999961853027,
+      "nearest_reference_progress_m": 24.491837871369164
+    },
+    {
+      "time_after_first_nonzero_drive_s": 19.664679527282715,
+      "xy": [
+        0.12710867272102225,
+        -4.260995036424349
+      ],
+      "waypoint_index": 235,
+      "distance_to_nearest_waypoint_m": 0.8758884328801302,
+      "actual_heading_deg": -109.5048660490538,
+      "reference_heading_deg": 112.19374525007063,
+      "heading_error_deg": 138.3013887008756,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.1121038943529129,
+      "candidate_collision_fraction": 0.12600000202655792,
+      "nearest_reference_progress_m": 23.892281837870947
+    },
+    {
+      "time_after_first_nonzero_drive_s": 21.666232585906982,
+      "xy": [
+        -0.6730119230813302,
+        -7.1186170437632565
+      ],
+      "waypoint_index": 210,
+      "distance_to_nearest_waypoint_m": 0.00654381386420067,
+      "actual_heading_deg": -88.43393541826245,
+      "reference_heading_deg": 92.91020767677969,
+      "heading_error_deg": 178.6558569049579,
+      "gt_vx_m_s": 1.4999999999999978,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": 0.08492089062929153,
+      "candidate_collision_fraction": 0.0,
+      "nearest_reference_progress_m": 21.3931743893828
+    }
+  ]
+}

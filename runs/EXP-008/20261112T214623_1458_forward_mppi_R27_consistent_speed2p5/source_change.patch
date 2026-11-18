@@ -1,0 +1,11 @@
+--- ws_clearance/src/svg_mppi_ros2/src/mpc_base.cpp
++++ ws_consistent/src/svg_mppi_ros2/src/mpc_base.cpp
+@@ -227,6 +227,8 @@
+         // // observed state
+         local_state_seq->row(0) = State::Zero(STATE_SPACE::dim);
+         local_state_seq->row(0)(STATE_SPACE::vel) = global_init_state(STATE_SPACE::vel);
++        // Steering is frame-invariant, like speed; keep both rollouts consistent.
++        local_state_seq->row(0)(STATE_SPACE::steer) = global_init_state(STATE_SPACE::steer);
+ 
+         // This is for linear prediction mode of speed
+         const double init_x = global_init_state(STATE_SPACE::x);

@@ -1,0 +1,14 @@
+{
+  "first_heading_error_over90deg": {
+    "elapsed_from_drive_s": 26.781119108200073,
+    "xy": [
+      -0.7807715582544099,
+      -3.217755230713337
+    ],
+    "heading_error_deg": -90.42789021522177,
+    "waypoint": 243
+  },
+  "same_first_actual_layout": true,
+  "speed_min": 0.0,
+  "speed_max": 1.0
+}

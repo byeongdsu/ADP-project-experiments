@@ -1,0 +1,14 @@
+[
+  {
+    "main_translation_unit": "-O0",
+    "same_O3_core_library": true,
+    "wall_seconds": 1.5681936609998957,
+    "output": "{\"blocked_case_rejected\":true}\n{\"trace_hash\":\"9011133942326563038\"}\n{\"fixture\":\"fixed state, straight reference and a local rectangular cost obstacle\",\"threads\":4,\"pairs\":15,\"mismatched_pairs\":0,\"max_control_difference\":0,\"nonfinite_pairs\":0,\"first_steering\":-0.02714042493002318}\n"
+  },
+  {
+    "main_translation_unit": "-O3",
+    "same_O3_core_library": true,
+    "wall_seconds": 0.6849119269991206,
+    "output": "{\"blocked_case_rejected\":true}\n{\"trace_hash\":\"9011133942326563038\"}\n{\"fixture\":\"fixed state, straight reference and a local rectangular cost obstacle\",\"threads\":4,\"pairs\":15,\"mismatched_pairs\":0,\"max_control_difference\":0,\"nonfinite_pairs\":0,\"first_steering\":-0.02714042493002318}\n"
+  }
+]

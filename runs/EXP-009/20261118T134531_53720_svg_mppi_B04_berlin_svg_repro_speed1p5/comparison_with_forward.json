@@ -1,0 +1,25 @@
+{
+  "20261118T130823_42578_forward_mppi_B03_berlin_speed1p5": {
+    "first_opposite_heading": null,
+    "last2s_sample_collision_fraction_mean": 0.9976250030100345,
+    "last2s_fraction_risk_at_least_0p99": 0.9375,
+    "last2s_steering_near_limit_fraction": 0.4875
+  },
+  "20261118T134531_53720_svg_mppi_B04_berlin_svg_repro_speed1p5": {
+    "first_opposite_heading": {
+      "after_first_drive_s": 17.844522953033447,
+      "xy": [
+        -0.9384570358507679,
+        -3.514786573714052
+      ],
+      "heading_error_deg": -90.32654210262702,
+      "waypoint": 243
+    },
+    "last2s_sample_collision_fraction_mean": 0.9958918924267227,
+    "last2s_fraction_risk_at_least_0p99": 0.8783783783783784,
+    "last2s_steering_near_limit_fraction": 0.4189189189189189
+  },
+  "same_actual_first_layout": true,
+  "same_simulator_yaml": true,
+  "finding": "Both zero laps and wall collision in the same bend; no observed avoidance improvement in this one default-SVG trial. Shared geometry/cost limitations remain hypotheses, not a complete causal proof."
+}

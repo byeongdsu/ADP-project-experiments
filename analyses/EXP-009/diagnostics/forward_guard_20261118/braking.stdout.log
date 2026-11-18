@@ -1,0 +1,36 @@
+/home/misys/.local/lib/python3.10/site-packages/gymnasium/envs/registration.py:481: UserWarning: [33mWARN: The environment creator metadata doesn't include `render_modes`, contains: ['render.modes'][0m
+  logger.warn(
+/home/misys/forza_ws/race_stack/base_system/f110_simulator/f1tenth_gym/gym/f110_gym/envs/base_classes.py:96: UserWarning: Chosen integrator is RK4. This is different from previous versions of the gym.
+  warnings.warn(f"Chosen integrator is RK4. This is different from previous versions of the gym.")
+[
+  {
+    "held_steering_rad": 0.0,
+    "initial_speed_target_m_s": 1.5,
+    "stop_below_0_05": {
+      "t_s": 0.22,
+      "distance_m": 0.12605875455342735
+    },
+    "final_speed_m_s": 2.1618161737558768e-18,
+    "total_distance_after_stop_request_m": 0.12815269991088893
+  },
+  {
+    "held_steering_rad": -0.4189,
+    "initial_speed_target_m_s": 1.5,
+    "stop_below_0_05": {
+      "t_s": 0.22,
+      "distance_m": 0.12604406537823645
+    },
+    "final_speed_m_s": 2.1618161737558768e-18,
+    "total_distance_after_stop_request_m": 0.12813801072559258
+  },
+  {
+    "held_steering_rad": 0.4189,
+    "initial_speed_target_m_s": 1.5,
+    "stop_below_0_05": {
+      "t_s": 0.22,
+      "distance_m": 0.12604406537823606
+    },
+    "final_speed_m_s": 2.1618161737558768e-18,
+    "total_distance_after_stop_request_m": 0.12813801072557954
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "guard_s_after_first_nonzero_command": 6.966930627822876,
+  "guard_xy": [
+    2.6793380521591574,
+    -18.605355466890114
+  ],
+  "guard_nearest_preceding_gt_speed": 1.4999999999999971,
+  "guard_preceding_gt_receipt_age_s": 0.0002014636993408203,
+  "below_0_05_speed_s_after_guard": 0.23140287399291992,
+  "approx_motion_distance_from_guard_to_below_0_05_m": 0.12733521365901057,
+  "final_xy": [
+    2.535553560441828,
+    -18.61240577815478
+  ],
+  "collision_events": [],
+  "raw_bag_metadata_present": true,
+  "alignment": "bag receipt times, asynchronous latest preceding sample; callback-time braking distance not measured"
+}

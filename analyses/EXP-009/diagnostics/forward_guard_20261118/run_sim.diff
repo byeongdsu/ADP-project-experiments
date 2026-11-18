@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -124,6 +124,7 @@
+   if node.collisions:reason='first_collision';break
+   if args.laps>0 and node.laps>=args.laps:reason='lap_target';break
+   if elapsed>=args.duration:reason='duration';break
++  if node.status.startswith('guard_stop:') and node.stop_since is not None and elapsed-node.stop_since>=1.:reason='guard_stop';break
+   if node.stop_since is not None and elapsed-node.stop_since>=15:reason='stopped_15_wall_s';break
+   if elapsed>10 and len(node.calc)<2:raise RuntimeError('No solver output')
+   if node.status.startswith('solver_error'):raise RuntimeError(node.status)
+@@ -153,7 +154,7 @@
+  for h in logs:h.close()
+  with (out/'trajectory.csv').open('w',newline='') as f:
+   w=csv.writer(f);w.writerow(['wall_s','x','y','vx','command_speed','command_steer','predicted_collision_rate']);w.writerows(node.rows)
+- summary={'reason':reason,'error':error,'mode':args.mode,'obstacles':args.obstacles,'topic_counts':node.counts,'collisions':node.collisions,'laps_completed':node.laps,'distance_m':0.}
++ summary={'reason':reason,'error':error,'final_controller_status':node.status,'mode':args.mode,'obstacles':args.obstacles,'topic_counts':node.counts,'collisions':node.collisions,'laps_completed':node.laps,'distance_m':0.}
+  if len(node.rows)>1:
+   a=np.asarray(node.rows);distance=np.linalg.norm(np.diff(a[:,1:3],axis=0),axis=1).sum();summary.update(distance_m=float(distance),observed_wall_s=float(a[-1,0]),max_speed_m_s=float(a[:,3].max()),stopped_wall_s=float(np.diff(a[:,0])[np.abs(a[:-1,3])<.05].sum()))
+   points=json.loads(wp.read_text())['global_traj_wpnts_iqp']['wpnts'];dist=cKDTree([(p['x_m'],p['y_m']) for p in points]).query(a[:,1:3])[0];summary['gt_nearest_waypoint_distance_m']={'mean':float(dist.mean()),'max':float(dist.max())}

@@ -1,0 +1,3 @@
+{"blocked_case_rejected":true}
+{"trace_hash":"15495520299369496644"}
+{"fixture":"fixed state, straight reference and a local rectangular cost obstacle","threads":4,"pairs":15,"mismatched_pairs":0,"max_control_difference":0,"nonfinite_pairs":0,"first_steering":-0.10015387581597521}

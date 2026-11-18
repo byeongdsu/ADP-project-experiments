@@ -1,0 +1,43 @@
+--- 
++++ 
+@@ -6,7 +6,7 @@
+ from map_context import resolve_map, session_map, asset_hashes, simulator_config
+ root=Path(__file__).resolve().parents[1];race=Path('/home/misys/forza_ws/race_stack')
+ p=argparse.ArgumentParser();sub=p.add_subparsers(dest='phase',required=True)
+-prep=sub.add_parser('prepare');prep.add_argument('mode',choices=['forward_mppi','svg_mppi']);prep.add_argument('--config',type=Path);prep.add_argument('--obstacles',type=int,default=2);prep.add_argument('--seed',type=int,default=2026);prep.add_argument('--laps',type=int,default=3);prep.add_argument('--duration',type=float,default=240);prep.add_argument('--domain',type=int,default=76);prep.add_argument('--label',default='manual');prep.add_argument('--solver-version',choices=['upstream','repro_v1','speed_v1','clearance_v1','consistent_v1','svg_repro_v1','footprint_v1'],default='upstream')
++prep=sub.add_parser('prepare');prep.add_argument('mode',choices=['forward_mppi','svg_mppi']);prep.add_argument('--config',type=Path);prep.add_argument('--obstacles',type=int,default=2);prep.add_argument('--seed',type=int,default=2026);prep.add_argument('--laps',type=int,default=3);prep.add_argument('--duration',type=float,default=240);prep.add_argument('--domain',type=int,default=76);prep.add_argument('--label',default='manual');prep.add_argument('--solver-version',choices=['upstream','repro_v1','speed_v1','clearance_v1','consistent_v1','svg_repro_v1','footprint_v1','forward_guard_v1'],default='upstream')
+ prep.add_argument('--map-name',default='hyhall12')
+ for phase in ['sim','scenario','record','controller','rviz']:
+  a=sub.add_parser(phase);a.add_argument('session',type=Path)
+@@ -15,11 +15,11 @@
+ if args.phase=='prepare':
+  context=resolve_map(args.map_name)
+  assert 0<=args.domain<=232 and args.obstacles>=0 and args.laps>=0 and args.duration>0
+- solver_workspace=root/({'upstream':'ws','repro_v1':'ws_repro','speed_v1':'ws_speed','clearance_v1':'ws_clearance','consistent_v1':'ws_consistent','svg_repro_v1':'ws_svg_repro','footprint_v1':'ws_footprint'}[args.solver_version])
++ solver_workspace=root/({'upstream':'ws','repro_v1':'ws_repro','speed_v1':'ws_speed','clearance_v1':'ws_clearance','consistent_v1':'ws_consistent','svg_repro_v1':'ws_svg_repro','footprint_v1':'ws_footprint','forward_guard_v1':'ws_forward_guard'}[args.solver_version])
+  controller_executable=solver_workspace/'install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node'
+  assert controller_executable.is_file(),'Build the selected solver version first'
+  original=(args.config or root/'ws/src/svg_mppi_ros2/config'/f'{args.mode}.yaml').resolve();cfg=yaml.safe_load(original.read_text());assert cfg['mpc_mode']==args.mode,'Config mpc_mode must match requested mode'
+- assert 0<float(cfg['reference_speed'])<=(3. if args.solver_version in ['speed_v1','clearance_v1','consistent_v1','svg_repro_v1','footprint_v1'] else 2.),'Selected simulation adapter speed limit exceeded'
++ assert 0<float(cfg['reference_speed'])<=(3. if args.solver_version in ['speed_v1','clearance_v1','consistent_v1','svg_repro_v1','footprint_v1','forward_guard_v1'] else 2.),'Selected simulation adapter speed limit exceeded'
+  assert cfg['common']['prediction_step_size']>=3 and cfg['common']['prediction_interval']>0
+  assert cfg['common']['lf']==.15875 and cfg['common']['lr']==.17145,'Keep existing simulator geometry'
+  assert 1<=cfg['common']['thread_num']<=22
+@@ -28,7 +28,7 @@
+  sim=simulator_config(context)
+  (out/'simulator.yaml').write_text(yaml.safe_dump(sim))
+  session={'solver_version':args.solver_version,'solver_workspace':str(solver_workspace),'controller_executable':str(controller_executable),'controller_binary_sha256':hashlib.sha256(controller_executable.read_bytes()).hexdigest(),'mode':args.mode,'original_config':str(original),'config_sha256':hashlib.sha256((out/'controller.yaml').read_bytes()).hexdigest(),'obstacles':args.obstacles,'seed':args.seed,'laps':args.laps,'duration':args.duration,'domain':args.domain,'reference_speed':float(cfg['reference_speed'])}
+- session.update(context);session['map_asset_sha256']=asset_hashes(context);session['speed_policy']='fixed_reference_speed; speed_scaling file recorded, not applied to drive'
++ session.update(context);session['map_asset_sha256']=asset_hashes(context);session['speed_policy']=('fixed_reference_speed_when_valid; latched_zero_target_on_guard_stop; speed_scaling recorded only' if args.solver_version=='forward_guard_v1' else 'fixed_reference_speed; speed_scaling file recorded, not applied to drive')
+  (out/'session.json').write_text(json.dumps(session,indent=2));cmds={1:f'bash manual.sh sim {out}',3:f'bash manual.sh scenario {out}',4:f'bash manual.sh record {out}',2:f'bash manual.sh controller {out}'}
+  (out/'TERMINALS.txt').write_text('\n\n'.join(f'Terminal {i}:\ncd {root}\n{cmd}' for i,cmd in cmds.items())+'\n')
+  print('SESSION',out);print((out/'TERMINALS.txt').read_text());sys.exit(0)
+@@ -62,7 +62,7 @@
+ commands=[]
+ if args.phase=='sim':
+  commands=[('simulator',['ros2','run','f1tenth_gym_ros','gym_bridge','--ros-args','-r','__node:=bridge','--params-file',str(out/'simulator.yaml')]),('inputs',['ros2','run','svg_mppi_ros2','sim_inputs.py','--ros-args','-p','waypoints_file:='+str(wp),'-p','reference_speed:='+str(session['reference_speed'])]),('visuals',['python3',str(root/'tools/visuals.py'),'--ros-args','-p','map_yaml:='+context['map_yaml']])]
+- if session.get('solver_version') in ['clearance_v1','consistent_v1','svg_repro_v1','footprint_v1']:
++ if session.get('solver_version') in ['clearance_v1','consistent_v1','svg_repro_v1','footprint_v1','forward_guard_v1']:
+   commands[1][1][:4]=['python3',str(Path(session['solver_workspace'])/'install/svg_mppi_ros2/lib/svg_mppi_ros2/sim_inputs.py')]
+  if not args.headless:commands.append(('rviz',['rviz2','-d',str(root/'visual/mppi.rviz')]))
+ elif args.phase=='rviz':commands=[('rviz',['rviz2','-d',str(root/'visual/mppi.rviz')])]

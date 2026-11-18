@@ -1,0 +1,17 @@
+{
+  "baseline": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T130823_42578_forward_mppi_B03_berlin_speed1p5",
+  "new_session": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140204_66033_forward_mppi_B05_berlin_footprint_speed1p5",
+  "checks": {
+    "reference_speed": true,
+    "seed": true,
+    "obstacles": true,
+    "laps": true,
+    "duration": true,
+    "map_asset_sha256": true,
+    "controller.yaml": true,
+    "simulator.yaml": true
+  },
+  "binary_sha256": "4689f532c9abe955d7188df971a1a5d6a4e263e143dba7327ae01ec54db8569d",
+  "driving_status": "not executed",
+  "stationary_check_passed": true
+}

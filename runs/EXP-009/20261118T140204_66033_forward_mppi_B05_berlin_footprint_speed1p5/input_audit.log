@@ -1,0 +1,16 @@
+[INFO] [1794978422.772725922] [rosbag2_storage]: Opened database '/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140204_66033_forward_mppi_B05_berlin_footprint_speed1p5/bag/bag_0.db3' for READ_ONLY.
+{
+  "topic_counts": {
+    "/scan": 11945,
+    "/car_state/odom_GT": 11945,
+    "/mppi/reference_sdf": 120,
+    "/mppi/local_costmap": 2387,
+    "/sim/obstacles": 118
+  },
+  "subsampled_scan_frames": 1156,
+  "frames_with_return_within_0_25m_of_obstacle_center": 298,
+  "minimum_return_distance_to_obstacle_center_m": 0.012818646839702342,
+  "costmap_obstacle_center_samples_within_3m": 165,
+  "costmap_samples_with_positive_cost_at_obstacle_center": 33,
+  "note": "Geometric scan consistency; obstacle size 0.30 m. Samples joined to most recent bag odom, not exact callback synchronization."
+}

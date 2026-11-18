@@ -1,0 +1,57 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T221359_4900_forward_mppi_R31_consistent_speed3p0_repeat2
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+15.0s status=running laps=0 calculations=599 collisions=0
+30.0s status=running laps=2 calculations=1199 collisions=0
+45.0s status=running laps=3 calculations=1799 collisions=0
+60.0s status=running laps=4 calculations=2399 collisions=0
+75.0s status=running laps=5 calculations=2999 collisions=0
+90.0s status=running laps=6 calculations=3599 collisions=0
+{
+  "reason": "lap_target",
+  "error": null,
+  "mode": "forward_mppi",
+  "obstacles": 4,
+  "topic_counts": {
+    "/mppi/reference_sdf": 105,
+    "/mppi/reference_path": 105,
+    "/mppi/local_costmap": 2060,
+    "/sim/obstacles": 110,
+    "/scan": 10206,
+    "/sim/collision": 10205,
+    "/car_state/odom_GT": 10205,
+    "/mppi/status": 3,
+    "/mppi_sim/drive": 4086,
+    "/mppi/calculation_time": 4080,
+    "/mppi/cycle_time": 4080,
+    "/mppi/collision_rate": 4080,
+    "/sim/lap_count": 8
+  },
+  "collisions": [],
+  "laps_completed": 7,
+  "distance_m": 305.7572006801033,
+  "observed_wall_s": 102.6823025409999,
+  "max_speed_m_s": 2.9999999999999956,
+  "stopped_wall_s": 0.2623689580000246,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.2043608541687184,
+    "max": 1.0074557831018647
+  },
+  "solver_ms": {
+    "n": 4080,
+    "mean": 13.12904417070688,
+    "median": 12.398004531860352,
+    "p95": 22.460843372344968,
+    "max": 31.45014762878418,
+    "over_25ms_fraction": 0.026715686274509803
+  },
+  "cycle_ms": {
+    "n": 4080,
+    "mean": 13.414410390456517,
+    "median": 12.695057392120361,
+    "p95": 22.7467891693115,
+    "max": 31.987943649291992,
+    "over_25ms_fraction": 0.030147058823529412
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T221359_4900_forward_mppi_R31_consistent_speed3p0_repeat2

@@ -1,0 +1,15 @@
+[INFO] [1794975060.739314792] [scorer]: seed 2026 -> /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T130823_42578_forward_mppi_B03_berlin_speed1p5/race_result_20261118_131100.json
+[WARN] [1794975060.739847965] [scorer]: a collision stops the car for good; reset it with /initialpose to keep going
+[INFO] [1794975068.674530898] [scorer]: crossed the line — timing started
+[WARN] [1794975086.867463593] [scorer]: wall collision #1 at (-0.26, -2.63) on lap 0
+
+--- seed 2026  ·  berlin  ·  0 laps ---
+  best lap    -
+  collisions  1   (obstacle 0, wall 1)
+
+  lap      time     hits   obstacle   wall
+    -      (lap not finished)    1          0      1
+
+  log:    /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T130823_42578_forward_mppi_B03_berlin_speed1p5/race_result_20261118_131100.json
+  report: ros2 run race_manager report /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T130823_42578_forward_mppi_B03_berlin_speed1p5/race_result_20261118_131100.json
+

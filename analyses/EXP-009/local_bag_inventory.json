@@ -1,0 +1,276 @@
+{
+  "raw_bags_published": false,
+  "runs": [
+    {
+      "session": "20261112T214623_1458_forward_mppi_R27_consistent_speed2p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T214623_1458_forward_mppi_R27_consistent_speed2p5",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 1314893824
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 1314903993,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T215938_2754_forward_mppi_R28_consistent_speed2p5_repeat2",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T215938_2754_forward_mppi_R28_consistent_speed2p5_repeat2",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 1240666112
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 1240676281,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T220504_3470_forward_mppi_R29_consistent_speed2p5_repeat3",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T220504_3470_forward_mppi_R29_consistent_speed2p5_repeat3",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 1224806400
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 1224816569,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T220909_4186_forward_mppi_R30_consistent_speed3p0",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T220909_4186_forward_mppi_R30_consistent_speed3p0",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 1349828608
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 1349838777,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T221359_4900_forward_mppi_R31_consistent_speed3p0_repeat2",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T221359_4900_forward_mppi_R31_consistent_speed3p0_repeat2",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 1095806976
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 1095817145,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T221741_5612_forward_mppi_R32_consistent_speed3p0_repeat3",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T221741_5612_forward_mppi_R32_consistent_speed3p0_repeat3",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 993251328
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 993261497,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T222302_6331_forward_mppi_R33_consistent_speed3p0_seed2027",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T222302_6331_forward_mppi_R33_consistent_speed3p0_seed2027",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 6947508224
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10000
+        }
+      ],
+      "bytes": 6947518224,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261112T223939_7172_forward_mppi_R34_consistent_speed3p0_seed2028",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T223939_7172_forward_mppi_R34_consistent_speed3p0_seed2028",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 4977926144
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10172
+        }
+      ],
+      "bytes": 4977936316,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T123305_18673_forward_mppi_B01_berlin_speed1p0",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T123305_18673_forward_mppi_B01_berlin_speed1p0",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 361910272
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10153
+        }
+      ],
+      "bytes": 361920425,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T130050_37323_forward_mppi_B02_berlin_unchanged_repeat",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T130050_37323_forward_mppi_B02_berlin_unchanged_repeat",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 663908352
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10155
+        }
+      ],
+      "bytes": 663918507,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T130823_42578_forward_mppi_B03_berlin_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T130823_42578_forward_mppi_B03_berlin_speed1p5",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 278978560
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10148
+        }
+      ],
+      "bytes": 278988708,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T131317_46412_svg_mppi_B04_berlin_svg_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T131317_46412_svg_mppi_B04_berlin_svg_speed1p5",
+      "files_excluded_from_git": [],
+      "bytes": 0,
+      "metadata_complete": false,
+      "status": "not_executed"
+    },
+    {
+      "session": "20261118T134531_53720_svg_mppi_B04_berlin_svg_repro_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T134531_53720_svg_mppi_B04_berlin_svg_repro_speed1p5",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 358703104
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10148
+        }
+      ],
+      "bytes": 358713252,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T140028_64436_forward_mppi_B05_berlin_footprint_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140028_64436_forward_mppi_B05_berlin_footprint_speed1p5",
+      "files_excluded_from_git": [],
+      "bytes": 0,
+      "metadata_complete": false,
+      "status": "not_executed"
+    },
+    {
+      "session": "20261118T140204_66033_forward_mppi_B05_berlin_footprint_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140204_66033_forward_mppi_B05_berlin_footprint_speed1p5",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 1486049280
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10169
+        }
+      ],
+      "bytes": 1486059449,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T140922_71360_svg_mppi_B06_berlin_footprint_svg_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140922_71360_svg_mppi_B06_berlin_footprint_svg_speed1p5",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 503480320
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10153
+        }
+      ],
+      "bytes": 503490473,
+      "metadata_complete": true,
+      "status": "executed"
+    },
+    {
+      "session": "20261118T142140_80314_svg_mppi_B07_berlin_svg_forward_guard_speed1p5",
+      "local_run_directory": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T142140_80314_svg_mppi_B07_berlin_svg_forward_guard_speed1p5",
+      "files_excluded_from_git": [
+        {
+          "file": "bag_0.db3",
+          "bytes": 277274624
+        },
+        {
+          "file": "metadata.yaml",
+          "bytes": 10143
+        }
+      ],
+      "bytes": 277284767,
+      "metadata_complete": true,
+      "status": "executed"
+    }
+  ]
+}

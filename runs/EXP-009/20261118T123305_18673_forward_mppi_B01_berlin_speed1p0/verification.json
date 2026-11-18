@@ -1,0 +1,6 @@
+{
+  "map_source_commit": "a34fb4b04843ad8ebdb77c26e4e1929d4f1eb606",
+  "stationary_check": "/home/misys/shared_dir/svg_mppi_ros2_20261031/diagnostics/berlin_integration_20261118/stationary_check.json",
+  "driving_test_performed": false,
+  "legacy_map_selection": "HYHALL12 preserved"
+}

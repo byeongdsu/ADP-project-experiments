@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-11-18T13:11:00",
+  "map": "berlin",
+  "waypoints_file": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/global_waypoints.json",
+  "seed": 2026,
+  "laps_completed": 0,
+  "best_lap": null,
+  "laps": [],
+  "total_time": 0,
+  "collisions": {
+    "obstacle": 0,
+    "wall": 1,
+    "total": 1
+  },
+  "collision_events": [
+    {
+      "t": 18.192,
+      "lap": 0,
+      "kind": "wall",
+      "x": -0.264,
+      "y": -2.63
+    }
+  ],
+  "teleports": []
+}

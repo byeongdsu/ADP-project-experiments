@@ -1,0 +1,28 @@
+[INFO] [1794489907.970584118] [mppi_manual_recorder]: Press SPACE for pausing/resuming
+[INFO] [1794489907.973360647] [rosbag2_storage]: Opened database '/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261112T222302_6331_forward_mppi_R33_consistent_speed3p0_seed2027/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1794489907.974824289] [mppi_manual_recorder]: Event publisher thread: Starting
+[INFO] [1794489907.975025250] [mppi_manual_recorder]: Listening for topics...
+[INFO] [1794489907.980413418] [mppi_manual_recorder]: Subscribed to topic '/tf'
+[INFO] [1794489907.983382775] [mppi_manual_recorder]: Subscribed to topic '/sim/collision'
+[INFO] [1794489907.985258912] [mppi_manual_recorder]: Subscribed to topic '/scan'
+[INFO] [1794489907.986351203] [mppi_manual_recorder]: Subscribed to topic '/car_state/odom_GT'
+[INFO] [1794489907.986421761] [mppi_manual_recorder]: Recording...
+[INFO] [1794489908.090289170] [mppi_manual_recorder]: Subscribed to topic '/sim/lap_count'
+[INFO] [1794489910.128689858] [mppi_manual_recorder]: Subscribed to topic '/sim/obstacles'
+[INFO] [1794489910.129689041] [mppi_manual_recorder]: Subscribed to topic '/sim/obstacles/markers'
+[INFO] [1794489910.335296084] [mppi_manual_recorder]: Subscribed to topic '/mppi/vehicle'
+[INFO] [1794489910.335849432] [mppi_manual_recorder]: Subscribed to topic '/mppi/costmap_view'
+[INFO] [1794489910.336333228] [mppi_manual_recorder]: Subscribed to topic '/mppi/gt_trail'
+[INFO] [1794489910.336732227] [mppi_manual_recorder]: Subscribed to topic '/mppi/map'
+[INFO] [1794489910.544776825] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_sdf'
+[INFO] [1794489910.545291431] [mppi_manual_recorder]: Subscribed to topic '/mppi/reference_path'
+[INFO] [1794489910.545739561] [mppi_manual_recorder]: Subscribed to topic '/mppi/local_costmap'
+[INFO] [1794489914.266149651] [mppi_manual_recorder]: Subscribed to topic '/mppi/cycle_time'
+[INFO] [1794489914.266715456] [mppi_manual_recorder]: Subscribed to topic '/mppi/collision_rate'
+[INFO] [1794489914.267273418] [mppi_manual_recorder]: Subscribed to topic '/mppi/calculation_time'
+[INFO] [1794489914.267816530] [mppi_manual_recorder]: Subscribed to topic '/mppi/best_path'
+[INFO] [1794489914.268372350] [mppi_manual_recorder]: Subscribed to topic '/mppi/status'
+[INFO] [1794489914.269209654] [mppi_manual_recorder]: Subscribed to topic '/mppi_sim/drive'
+[INFO] [1794489914.269226462] [mppi_manual_recorder]: All requested topics are subscribed. Stopping discovery...
+terminate called after throwing an instance of 'rosbag2_storage_plugins::SqliteException'
+  what():  Error when processing SQL statement. SQLite error (5): database is locked

@@ -1,0 +1,1 @@
+{"passed":true,"checks":13,"includes":["forward curve","reverse heading","backward translation","nonfinite","interpolated collision","masked weights","all invalid stop"]}

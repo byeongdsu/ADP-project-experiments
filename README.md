@@ -1,6 +1,10 @@
 # ADP 프로젝트 실험 기록
 
-ForzaETH 참조 스택에서 Pure Pursuit(PP)와 TinyLidarNet(TLN)의 문제를 관찰하고, 파라미터 변경을 통해 원인과 개선 방향을 검증한다.
+ForzaETH 참조 스택의 PP·TLN 문제를 분석하고, 별도 ROS 2 어댑터의 MPPI·SVG-MPPI를 시뮬레이션에서 검증한 기록이다.
+
+## 최신 상태 — 2026-11-18 Berlin 평가 맵
+
+[EXP-009 현재 상태 보고서](analyses/EXP-009/REPORT.md)에 11/12 HYHALL 반복 검증과 11/18 Berlin 실험을 정리했다. HYHALL의 수정 MPPI는3.0m/s로총35랩을완료했지만, Berlin에서는수정MPPI가1랩33.049초후충돌,SVG가U턴·역주행했다. 최신진행·검증버전은10.26m에서정지했으며계산시간회귀도미해결이다. **SVG 개선·Berlin 안정 완주·PPO 성능을 입증한 상태가 아니다.** [결과표](analyses/EXP-009/results_summary.csv), [재현 자료](configs/EXP-009/REPRODUCE.ko.md), [Berlin 실행 기록](runs/EXP-009/), [최신 인계](SESSION_HANDOFF.md). 원본bag은로컬에보존하고게시하지않았다. 아래11/1및그이전내용은당시기록이다.
 
 ## MPPI 실험과 SVG-MPPI 후속 계획 — 2026-11-01
 

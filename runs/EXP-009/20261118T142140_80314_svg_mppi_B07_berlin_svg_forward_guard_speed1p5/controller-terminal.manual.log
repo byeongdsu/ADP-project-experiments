@@ -1,0 +1,66 @@
+Recording and inputs ready. Starting MPPI; Ctrl+C stops this controller.
+RUN /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T142140_80314_svg_mppi_B07_berlin_svg_forward_guard_speed1p5
+0.0s status=ready_disabled laps=0 calculations=0 collisions=0
+{
+  "reason": "guard_stop",
+  "error": null,
+  "final_controller_status": "guard_stop: no_collision_free_forward_candidate",
+  "mode": "svg_mppi",
+  "obstacles": 4,
+  "topic_counts": {
+    "/car_state/odom_GT": 889,
+    "/scan": 888,
+    "/sim/collision": 887,
+    "/mppi/reference_sdf": 10,
+    "/mppi/reference_path": 10,
+    "/mppi/local_costmap": 174,
+    "/sim/obstacles": 10,
+    "/mppi/status": 4,
+    "/mppi_sim/drive": 109,
+    "/mppi/calculation_time": 50,
+    "/mppi/cycle_time": 51,
+    "/mppi/collision_rate": 50,
+    "/sim/lap_count": 1
+  },
+  "collisions": [],
+  "laps_completed": 0,
+  "distance_m": 10.264024101688678,
+  "observed_wall_s": 9.070700876000046,
+  "max_speed_m_s": 1.4999999999999973,
+  "stopped_wall_s": 1.8980777179986035,
+  "gt_nearest_waypoint_distance_m": {
+    "mean": 0.27535149581284474,
+    "max": 0.667386001407699
+  },
+  "solver_ms": {
+    "n": 50,
+    "mean": 125.69800033569337,
+    "median": 113.66010665893555,
+    "p95": 220.89148864746093,
+    "max": 246.05795288085938,
+    "over_25ms_fraction": 1.0
+  },
+  "cycle_ms": {
+    "n": 51,
+    "mean": 135.03060628853592,
+    "median": 121.27903747558594,
+    "p95": 231.38765716552734,
+    "max": 254.2532196044922,
+    "over_25ms_fraction": 1.0
+  }
+}
+RESULT /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T142140_80314_svg_mppi_B07_berlin_svg_forward_guard_speed1p5
+Traceback (most recent call last):
+  File "/home/misys/shared_dir/svg_mppi_ros2_20261031/tools/run_sim.py", line 168, in <module>
+    if node.rows:subprocess.run(['python3',str(root/'tools/plot_run.py'),str(out)],check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1146, in communicate
+    self.wait()
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

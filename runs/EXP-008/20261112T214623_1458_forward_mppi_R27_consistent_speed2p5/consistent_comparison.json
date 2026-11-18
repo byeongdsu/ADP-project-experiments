@@ -1,0 +1,27 @@
+{
+  "20261101T151320_13516_forward_mppi_R23_clearance_repeat3": {
+    "mean_lap_s": 16.981571428571428,
+    "steering_TV_rad_per_s": 1.750052076197357,
+    "steering_step_p95_rad": 0.15667210458777803,
+    "near_limit_fraction": 0.005857740585774059,
+    "median_encounter_min_center_distance_m": 0.5951457943697798,
+    "minimum_center_distance_m": 0.4503691601190675,
+    "sample_collision_fraction_ge0p9": 0.032426778242677826,
+    "solver_version": "clearance_v1",
+    "current_executable_hash_matches_session": true
+  },
+  "20261112T214623_1458_forward_mppi_R27_consistent_speed2p5": {
+    "mean_lap_s": 17.108714285714285,
+    "steering_TV_rad_per_s": 1.5551019238703605,
+    "steering_step_p95_rad": 0.10757147474214435,
+    "near_limit_fraction": 0.0024911770811708533,
+    "median_encounter_min_center_distance_m": 0.646165086739164,
+    "minimum_center_distance_m": 0.5916791632763924,
+    "sample_collision_fraction_ge0p9": 0.03280049823541623,
+    "solver_version": "consistent_v1",
+    "current_executable_hash_matches_session": true
+  },
+  "same_first7_layouts": true,
+  "same_controller_yaml": true,
+  "same_simulator_yaml": true
+}

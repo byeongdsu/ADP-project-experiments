@@ -1,0 +1,258 @@
+{
+  "vehicle_length_m": 0.58,
+  "vehicle_width_m": 0.2032,
+  "inflation_half_lengths_current_ego_axes_m": [
+    0.35,
+    0.15
+  ],
+  "soft_margin_m": 0.3,
+  "soft_peak": 5.0,
+  "obstacle_center_xy": [
+    -1.9785984195383355,
+    -3.928037781740554
+  ],
+  "reference_waypoint": 251,
+  "cross_section_gap_measurements": {
+    "left": {
+      "obstacle_center_to_wall_ray_m": 1.0090000000000001,
+      "obstacle_surface_exit_ray_m": 0.213,
+      "surface_gap_ray_m": 0.7960000000000002,
+      "gap_minus_vehicle_width_m": 0.5928000000000002
+    },
+    "right": {
+      "obstacle_center_to_wall_ray_m": 0.872,
+      "obstacle_surface_exit_ray_m": 0.213,
+      "surface_gap_ray_m": 0.659,
+      "gap_minus_vehicle_width_m": 0.45580000000000004
+    }
+  },
+  "diagnostic_start_xy": [
+    -0.6511651286369704,
+    -5.19674546901494
+  ],
+  "diagnostic_goal_xy": [
+    -3.628756741434543,
+    -3.6566726626335098
+  ],
+  "global_geometric_tests": {
+    "half_width_necessary_only": {
+      "radius_m": 0.1016,
+      "connected": true,
+      "reason": "4-neighbour centre connectivity"
+    },
+    "circumscribed_body_disk_conservative": {
+      "radius_m": 0.30728254099444047,
+      "connected": true,
+      "reason": "4-neighbour centre connectivity"
+    }
+  },
+  "recorded_costmap_tests": [
+    {
+      "dt_from_hit_s": -3.0,
+      "costmap_sample_age_s": 0.011441230773925781,
+      "odom_to_grid_age_s": 0.008889436721801758,
+      "pose_xy": [
+        -0.6500804573976365,
+        -5.216715862155209
+      ],
+      "yaw_deg": 91.63730650686863,
+      "collision_free_connectivity_with_half_width_map_filter": {
+        "connected": false,
+        "reason": "4-neighbour centre connectivity"
+      },
+      "connectivity_at_maximum_soft_cost": {
+        "0.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.25": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.5": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "1.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "2.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "5.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        }
+      },
+      "inflation_projected_width_on_obstacle_cross_section_m": 0.7154795071254934,
+      "soft_margin_sensitivity": {
+        "0.3": {
+          "minimum_bottleneck_soft_cost": null,
+          "reason": "hard collision layer already disconnected"
+        },
+        "0.15": {
+          "minimum_bottleneck_soft_cost": null,
+          "reason": "hard collision layer already disconnected"
+        }
+      }
+    },
+    {
+      "dt_from_hit_s": -2.5,
+      "costmap_sample_age_s": 0.017040014266967773,
+      "odom_to_grid_age_s": 0.0030059814453125,
+      "pose_xy": [
+        -0.6759221485140732,
+        -4.717437121399226
+      ],
+      "yaw_deg": 92.27289247378168,
+      "collision_free_connectivity_with_half_width_map_filter": {
+        "connected": true,
+        "reason": "4-neighbour centre connectivity"
+      },
+      "connectivity_at_maximum_soft_cost": {
+        "0.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.25": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.5": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "1.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "2.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "5.0": {
+          "connected": true,
+          "reason": "4-neighbour centre connectivity"
+        }
+      },
+      "inflation_projected_width_on_obstacle_cross_section_m": 0.7183300383060961,
+      "soft_margin_sensitivity": {
+        "0.3": {
+          "minimum_bottleneck_soft_cost": 3.472900390625
+        },
+        "0.15": {
+          "minimum_bottleneck_soft_cost": 2.222900390625
+        }
+      }
+    },
+    {
+      "dt_from_hit_s": -2.0,
+      "costmap_sample_age_s": 0.012011051177978516,
+      "odom_to_grid_age_s": 0.008292675018310547,
+      "pose_xy": [
+        -0.7688557793251429,
+        -4.231309773559962
+      ],
+      "yaw_deg": 106.42896489787698,
+      "collision_free_connectivity_with_half_width_map_filter": {
+        "connected": false,
+        "reason": "4-neighbour centre connectivity"
+      },
+      "connectivity_at_maximum_soft_cost": {
+        "0.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.25": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.5": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "1.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "2.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "5.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        }
+      },
+      "inflation_projected_width_on_obstacle_cross_section_m": 0.7583879109745562,
+      "soft_margin_sensitivity": {
+        "0.3": {
+          "minimum_bottleneck_soft_cost": null,
+          "reason": "hard collision layer already disconnected"
+        },
+        "0.15": {
+          "minimum_bottleneck_soft_cost": null,
+          "reason": "hard collision layer already disconnected"
+        }
+      }
+    },
+    {
+      "dt_from_hit_s": -1.5,
+      "costmap_sample_age_s": 0.015964508056640625,
+      "odom_to_grid_age_s": 0.005323648452758789,
+      "pose_xy": [
+        -0.8132710919790739,
+        -3.743359409562646
+      ],
+      "yaw_deg": 86.55378261702617,
+      "collision_free_connectivity_with_half_width_map_filter": {
+        "connected": true,
+        "reason": "4-neighbour centre connectivity"
+      },
+      "connectivity_at_maximum_soft_cost": {
+        "0.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.25": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "0.5": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "1.0": {
+          "connected": false,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "2.0": {
+          "connected": true,
+          "reason": "4-neighbour centre connectivity"
+        },
+        "5.0": {
+          "connected": true,
+          "reason": "4-neighbour centre connectivity"
+        }
+      },
+      "inflation_projected_width_on_obstacle_cross_section_m": 0.7096683055151863,
+      "soft_margin_sensitivity": {
+        "0.3": {
+          "minimum_bottleneck_soft_cost": 1.119384765625
+        },
+        "0.15": {
+          "minimum_bottleneck_soft_cost": 0.001220703125
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Grid connectivity is not a nonholonomic or dynamic path feasibility proof.",
+    "Half-width disk is necessary only; circumscribed disk is a conservative body-fit test, without steering constraints.",
+    "Soft cost thresholds are diagnostic contours, not hard constraints in MPPI.",
+    "Local grids are joined to preceding odom by receipt time; static map filter removes optimistic unknown-space shortcuts.",
+    "Cross-section wall rays at the obstacle do not measure the narrowest gap along a whole manoeuvre."
+  ]
+}

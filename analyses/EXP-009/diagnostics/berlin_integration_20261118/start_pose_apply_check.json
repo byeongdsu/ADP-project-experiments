@@ -1,0 +1,11 @@
+{
+  "installed_launch": "/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch/gym_bridge_launch.py",
+  "resolved_map_yaml": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/berlin.yaml",
+  "start_pose": {
+    "sx": 6.06922668619913,
+    "sy": -10.634633548537787,
+    "stheta": -1.7275240459326664
+  },
+  "installed_launch_test_passed": true,
+  "simulator_started": false
+}

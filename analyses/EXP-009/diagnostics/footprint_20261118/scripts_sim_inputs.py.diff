@@ -1,0 +1,11 @@
+--- ws_svg_repro/scripts/sim_inputs.py
++++ ws_footprint/scripts/sim_inputs.py
+@@ -80,7 +80,7 @@
+         # Additional soft margin outside the existing inflated collision region.
+         distance=distance_transform_edt(~inflated)*self.res if inflated.any() else np.full(inflated.shape,np.inf)
+         clearance=5.0*np.maximum(0.,1.-distance/.30)**2
+-        msg=make_grid({'collision_layer':inflated.astype(np.float32)*100,'clearance_cost':clearance},self.res,self.center,'car_state/base_link',scan.header.stamp)
++        msg=make_grid({'raw_occupancy':occupied.astype(np.float32)*100,'collision_layer':inflated.astype(np.float32)*100,'clearance_cost':clearance},self.res,self.center,'car_state/base_link',scan.header.stamp)
+         self.cost_pub.publish(msg)
+         if not self.seen:
+             self.get_logger().info(f'First costmap: {len(r)} scan beams, {int(occupied.sum())} occupied, {int(inflated.sum())} inflated cells');self.seen=True

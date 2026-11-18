@@ -1,0 +1,76 @@
+#pragma once
+#include <algorithm>
+#include <array>
+#include <cmath>
+#include <stdexcept>
+#include <vector>
+
+namespace mppi { namespace cpu {
+// Scan occupied cells remain axis-aligned in the current ego frame.
+// The padded vehicle rectangle rotates with each predicted local yaw.
+class OrientedFootprint {
+public:
+    struct Point { double x, y; };
+    struct Cost { double collision, clearance; };
+    void reset(const std::vector<Point>& occupied, double resolution,
+               double xmin, double xmax, double ymin, double ymax) {
+        if (!(resolution > 0 && xmax > xmin && ymax > ymin))
+            throw std::invalid_argument("Invalid footprint grid geometry");
+        half_cell_ = resolution / 2.; xmin_=xmin; xmax_=xmax; ymin_=ymin; ymax_=ymax;
+        nx_=static_cast<int>(std::ceil((xmax-xmin)/bin_));
+        ny_=static_cast<int>(std::ceil((ymax-ymin)/bin_));
+        bins_.assign(nx_*ny_, {});
+        for (const auto& p:occupied) {
+            const int ix=static_cast<int>(std::floor((p.x-xmin_)/bin_));
+            const int iy=static_cast<int>(std::floor((p.y-ymin_)/bin_));
+            if(ix>=0 && ix<nx_ && iy>=0 && iy<ny_) bins_[ix*ny_+iy].push_back(p);
+        }
+        ready_=true;
+    }
+    Cost cost(double x, double y, double yaw) const {
+        if (!ready_) throw std::logic_error("raw_occupancy cache not initialized");
+        if (!std::isfinite(x) || !std::isfinite(y) || !std::isfinite(yaw)) return {100.,5.};
+        const double c=std::cos(yaw), s=std::sin(yaw), ac=std::abs(c), as=std::abs(s);
+        const double ex=length_*ac+width_*as, ey=length_*as+width_*ac;
+        // Unknown/outside cells are occupied for the entire padded body.
+        if(x-ex<=xmin_ || x+ex>=xmax_ || y-ey<=ymin_ || y+ey>=ymax_) return {100.,5.};
+        const double radius=std::hypot(length_,width_)+margin_+std::sqrt(2.)*half_cell_;
+        const int xlo=std::max(0,static_cast<int>(std::floor((x-radius-xmin_)/bin_)));
+        const int xhi=std::min(nx_-1,static_cast<int>(std::floor((x+radius-xmin_)/bin_)));
+        const int ylo=std::max(0,static_cast<int>(std::floor((y-radius-ymin_)/bin_)));
+        const int yhi=std::min(ny_-1,static_cast<int>(std::floor((y+radius-ymin_)/bin_)));
+        double minimum=margin_;
+        for(int ix=xlo;ix<=xhi;++ix) for(int iy=ylo;iy<=yhi;++iy) for(const auto& p:bins_[ix*ny_+iy]) {
+            const double dx=p.x-x, dy=p.y-y, h=half_cell_;
+            const double u=c*dx+s*dy, v=-s*dx+c*dy;
+            const double gx=std::abs(dx)-ex-h, gy=std::abs(dy)-ey-h;
+            const double gu=std::abs(u)-length_-h*(ac+as), gv=std::abs(v)-width_-h*(ac+as);
+            // Four separating axes: exact OBB vs occupied square intersection.
+            if(gx<=1e-12 && gy<=1e-12 && gu<=1e-12 && gv<=1e-12) return {100.,5.};
+            if(std::max({gx,gy,gu,gv})>=minimum) continue;
+            // Exact polygon distance: vertex-to-edge distances in both directions.
+            double d2=minimum*minimum;
+            for(int a:{-1,1}) for(int b:{-1,1}) {
+                const double qx=dx+a*h, qy=dy+b*h;
+                const double du=std::max(0.,std::abs(c*qx+s*qy)-length_);
+                const double dv=std::max(0.,std::abs(-s*qx+c*qy)-width_);
+                d2=std::min(d2,du*du+dv*dv);
+                const double vx=a*length_*c-b*width_*s-dx;
+                const double vy=a*length_*s+b*width_*c-dy;
+                const double ax=std::max(0.,std::abs(vx)-h), ay=std::max(0.,std::abs(vy)-h);
+                d2=std::min(d2,ax*ax+ay*ay);
+            }
+            minimum=std::sqrt(d2);
+        }
+        const double fraction=std::max(0.,1.-minimum/margin_);
+        return {0.,5.*fraction*fraction};
+    }
+private:
+    // Existing .58 x .2032 m body plus .06 / .0484 m per-side safety margins.
+    static constexpr double length_=.35, width_=.15, margin_=.30, bin_=.25;
+    bool ready_=false;
+    double half_cell_=0, xmin_=0,xmax_=0,ymin_=0,ymax_=0;
+    int nx_=0,ny_=0;
+    std::vector<std::vector<Point>> bins_;
+};
+}}

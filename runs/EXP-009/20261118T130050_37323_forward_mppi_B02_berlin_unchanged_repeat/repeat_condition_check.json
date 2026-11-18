@@ -1,0 +1,17 @@
+{
+  "baseline": "manual_runs/20261118T123305_18673_forward_mppi_B01_berlin_speed1p0",
+  "checks": {
+    "controller_binary_sha256": true,
+    "config_sha256": true,
+    "reference_speed": true,
+    "map_asset_sha256": true,
+    "obstacles": true,
+    "seed": true,
+    "laps": true,
+    "duration": true,
+    "domain": true,
+    "solver_version": true,
+    "same_simulator_yaml": true
+  },
+  "status": "prepared; not driven"
+}

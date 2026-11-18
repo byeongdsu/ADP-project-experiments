@@ -1,0 +1,38 @@
+{
+  "baseline": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140204_66033_forward_mppi_B05_berlin_footprint_speed1p5",
+  "checks": {
+    "solver_version": true,
+    "solver_workspace": true,
+    "controller_binary_sha256": true,
+    "reference_speed": true,
+    "seed": true,
+    "obstacles": true,
+    "laps": true,
+    "duration": true,
+    "domain": true,
+    "map_asset_sha256": true,
+    "simulator_yaml_identical": true,
+    "only_yaml_value_changed_is_mpc_mode": true,
+    "current_binary_matches": true
+  },
+  "status": "prepared; no driving performed",
+  "comparison_type": "same physical conditions and common implementation, default algorithm-specific parameters; not matched computation budget",
+  "svg_parameters": {
+    "sample_batch_num": 1000,
+    "lambda": 3.0,
+    "non_biased_sampling_rate": 0.1,
+    "alpha": 0.1,
+    "steer_cov": 0.01,
+    "guide_sample_num": 1,
+    "grad_lambda": 3.0,
+    "sample_num_for_grad_estimation": 100,
+    "steer_cov_for_grad_estimation": 0.01,
+    "svgd_step_size": 0.005,
+    "num_svgd_iteration": 10,
+    "is_use_nominal_solution": true,
+    "is_covariance_adaptation": true,
+    "gaussian_fitting_lambda": 0.1,
+    "min_steer_cov": 0.001,
+    "max_steer_cov": 0.1
+  }
+}

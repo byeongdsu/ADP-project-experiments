@@ -1,0 +1,19 @@
+{
+  "mean_lap_s": 14.391714285714286,
+  "steering_TV_rad_per_s": 3.527619641464593,
+  "median_encounter_min_center_distance_m": 0.6738377741242834,
+  "minimum_center_distance_m": 0.45656567114453483,
+  "obstacle_count_each_lap": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "whole_bag_collision_samples": 0,
+  "last_gt_speed_m_s": 1e-323,
+  "same_controller_yaml_as_seed2027": true,
+  "same_binary_as_seed2027": true
+}

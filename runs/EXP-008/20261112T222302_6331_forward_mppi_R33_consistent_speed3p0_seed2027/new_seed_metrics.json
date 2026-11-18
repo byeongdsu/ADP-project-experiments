@@ -1,0 +1,30 @@
+{
+  "mean_lap_s": 14.397428571428572,
+  "steering_TV_rad_per_s": 3.302854040807185,
+  "near_limit_fraction": 0.009723261032161555,
+  "median_encounter_min_center_distance_m": 0.6627236848901221,
+  "minimum_center_distance_m": 0.44063831493375794,
+  "obstacle_count_each_lap": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "first7_layouts_differ_from_seed2026": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "whole_bag_collision_samples": 0,
+  "first_collision": null,
+  "last_gt_speed_m_s": 1e-323,
+  "same_controller_yaml": true,
+  "same_binary": true
+}

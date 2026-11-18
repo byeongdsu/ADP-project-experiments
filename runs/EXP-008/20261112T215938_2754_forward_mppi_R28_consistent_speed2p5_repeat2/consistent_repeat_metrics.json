@@ -1,0 +1,12 @@
+{
+  "mean_lap_s": 17.068714285714286,
+  "steering_TV_rad_per_s": 1.6270040814856008,
+  "steering_step_p95_rad": 0.1241193456575276,
+  "near_limit_fraction": 0.0027049521431543903,
+  "median_encounter_min_center_distance_m": 0.644708817139364,
+  "minimum_center_distance_m": 0.5297764309130686,
+  "same_first7_layouts": true,
+  "same_controller_yaml": true,
+  "same_binary": true,
+  "current_binary_matches_session": true
+}

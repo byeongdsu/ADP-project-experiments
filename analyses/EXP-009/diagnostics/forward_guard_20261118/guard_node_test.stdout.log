@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "forward_mppi",
+    "passed": true,
+    "statuses": [
+      "waiting_or_stale_inputs",
+      "ready_disabled",
+      "guard_stop: no_collision_free_forward_candidate"
+    ],
+    "zero_drive_messages": 34,
+    "nonzero_drive_messages": 0,
+    "latch_survived_clear_map_and_reenable": true
+  },
+  {
+    "mode": "svg_mppi",
+    "passed": true,
+    "statuses": [
+      "waiting_or_stale_inputs",
+      "ready_disabled",
+      "guard_stop: no_collision_free_forward_candidate"
+    ],
+    "zero_drive_messages": 35,
+    "nonzero_drive_messages": 0,
+    "latch_survived_clear_map_and_reenable": true
+  }
+]

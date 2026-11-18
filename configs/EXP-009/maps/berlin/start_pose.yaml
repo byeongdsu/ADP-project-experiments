@@ -1,0 +1,5 @@
+# Derived from Berlin IQP waypoint 484; not an official evaluation start pose.
+# x/y in map metres; heading in radians. Simulator reads this on restart.
+sx: 6.06922668619913
+sy: -10.634633548537787
+stheta: -1.7275240459326664

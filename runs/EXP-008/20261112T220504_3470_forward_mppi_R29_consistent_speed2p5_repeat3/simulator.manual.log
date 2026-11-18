@@ -1,0 +1,20 @@
+[INFO] [1794488737.426218164] [bridge]: Using simulator map: /home/misys/forza_ws/race_stack/stack_master/maps/hyhall12/hyhall12_orig.yaml
+/home/misys/.local/lib/python3.10/site-packages/gymnasium/envs/registration.py:481: UserWarning: [33mWARN: The environment creator metadata doesn't include `render_modes`, contains: ['render.modes'][0m
+  logger.warn(
+/home/misys/forza_ws/race_stack/base_system/f110_simulator/f1tenth_gym/gym/f110_gym/envs/base_classes.py:96: UserWarning: Chosen integrator is RK4. This is different from previous versions of the gym.
+  warnings.warn(f"Chosen integrator is RK4. This is different from previous versions of the gym.")
+[INFO] [1794488872.711165871] [bridge]: Exiting gym_bridge
+Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389
+Traceback (most recent call last):
+  File "/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/lib/f1tenth_gym_ros/gym_bridge", line 33, in <module>
+    sys.exit(load_entry_point('f1tenth-gym-ros==0.0.0', 'console_scripts', 'gym_bridge')())
+  File "/home/misys/forza_ws/race_stack/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros/gym_bridge.py", line 649, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[ros2run]: Process exited with failure 1

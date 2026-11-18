@@ -1,0 +1,49 @@
+{
+  "results": {
+    "before_serial": [
+      {
+        "trace_hash": "2656253446117270209"
+      },
+      {
+        "fixture": "fixed state, straight reference and a local rectangular cost obstacle",
+        "threads": 1,
+        "pairs": 15,
+        "mismatched_pairs": 0,
+        "max_control_difference": 0,
+        "nonfinite_pairs": 0,
+        "first_steering": -0.1706453987053213
+      }
+    ],
+    "after_serial": [
+      {
+        "trace_hash": "2656253446117270209"
+      },
+      {
+        "fixture": "fixed state, straight reference and a local rectangular cost obstacle",
+        "threads": 1,
+        "pairs": 15,
+        "mismatched_pairs": 0,
+        "max_control_difference": 0,
+        "nonfinite_pairs": 0,
+        "first_steering": -0.1706453987053213
+      }
+    ],
+    "after_parallel": [
+      {
+        "trace_hash": "2276521984663957358"
+      },
+      {
+        "fixture": "fixed state, straight reference and a local rectangular cost obstacle",
+        "threads": 4,
+        "pairs": 15,
+        "mismatched_pairs": 0,
+        "max_control_difference": 0,
+        "nonfinite_pairs": 0,
+        "first_steering": -0.17256417612600986
+      }
+    ]
+  },
+  "serial_trace_identical": true,
+  "parallel_fixed_pairs_equal": true,
+  "no_driving_test_yet": true
+}

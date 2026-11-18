@@ -1,0 +1,16 @@
+{
+  "baseline": "manual_runs/20261118T130050_37323_forward_mppi_B02_berlin_unchanged_repeat",
+  "only_config_change": "reference_speed 1.0 -> 1.5 m/s",
+  "prediction_time_s": 2.2,
+  "nominal_prediction_distance_m": 3.3,
+  "checks": {
+    "controller_binary_sha256": true,
+    "map_asset_sha256": true,
+    "obstacles": true,
+    "seed": true,
+    "laps": true,
+    "duration": true,
+    "solver_version": true,
+    "same_simulator_yaml": true
+  }
+}

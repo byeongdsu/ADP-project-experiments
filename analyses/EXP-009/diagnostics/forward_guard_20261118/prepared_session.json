@@ -1,0 +1,21 @@
+{
+  "path": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T142140_80314_svg_mppi_B07_berlin_svg_forward_guard_speed1p5",
+  "baseline": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140922_71360_svg_mppi_B06_berlin_footprint_svg_speed1p5",
+  "checks": {
+    "mode": true,
+    "reference_speed": true,
+    "obstacles": true,
+    "seed": true,
+    "laps": true,
+    "duration": true,
+    "domain": true,
+    "map_asset_sha256": true,
+    "controller.yaml": true,
+    "simulator.yaml": true,
+    "current_binary_matches": true
+  },
+  "implementation_change": "common forward-progress objective, exact infeasible sample weights, mean-to-valid-sample fallback, dense returned-path validation, latched zero-target stop",
+  "driving_status": "not executed",
+  "automatic_recovery": false,
+  "PPO": false
+}

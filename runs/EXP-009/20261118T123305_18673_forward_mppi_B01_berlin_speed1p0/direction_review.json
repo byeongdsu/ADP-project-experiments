@@ -1,0 +1,21 @@
+{
+  "initial_pose_heading_error_deg": -1.2722218725854067e-14,
+  "published_waypoint_heading_vs_ordered_tangent_abs_median_deg": 0.4292172362293051,
+  "published_waypoint_heading_vs_ordered_tangent_abs_max_deg": 3.039343612790485,
+  "first_gt_heading_error_over90deg": [
+    {
+      "elapsed": 26.94156813621521,
+      "x": -0.6448314735082155,
+      "y": -3.417416972041419,
+      "yaw_deg": 60.50088426945462,
+      "wp": 242,
+      "s": 24.19190674923512,
+      "ref_yaw_deg": 150.54360864274048,
+      "error_deg": -90.04272437328586,
+      "dist": 0.8387352169072273,
+      "vx": 0.9999999999999989
+    }
+  ],
+  "drive_speed_commands_nonnegative": true,
+  "root_cause_status": "Observed wrong-direction turn during obstacle avoidance; initial yaw/order consistent. Low heading weight/no progress or reverse-heading constraint are structural contributors to investigate, not isolated causal proof."
+}

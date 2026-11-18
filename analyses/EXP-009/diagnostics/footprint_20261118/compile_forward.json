@@ -1,0 +1,19 @@
+[
+  "g++",
+  "-I/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_footprint/src/svg_mppi_ros2/src",
+  "-std=c++17",
+  "-O3",
+  "-DNDEBUG",
+  "-fopenmp",
+  "-I/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_footprint/src/svg_mppi_ros2/include",
+  "-I/usr/include/eigen3",
+  "-I/opt/ros/humble/include/grid_map_core",
+  "-DEIGEN_DENSEBASE_PLUGIN=\"grid_map_core/eigen_plugins/DenseBasePlugin.hpp\"",
+  "-DEIGEN_FUNCTORS_PLUGIN=\"grid_map_core/eigen_plugins/FunctorsPlugin.hpp\"",
+  "/home/misys/shared_dir/svg_mppi_ros2_20261031/diagnostics/footprint_20261118/probe_forward.cpp",
+  "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_footprint/build/svg_mppi_ros2/libsvg_mppi_core.a",
+  "-o",
+  "/home/misys/shared_dir/svg_mppi_ros2_20261031/diagnostics/footprint_20261118/probe_forward",
+  "/opt/ros/humble/lib/libgrid_map_core.a",
+  "-lyaml-cpp"
+]

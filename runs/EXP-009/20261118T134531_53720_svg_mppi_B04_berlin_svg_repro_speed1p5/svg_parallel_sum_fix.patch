@@ -1,0 +1,23 @@
+--- ws_consistent/src/svg_mppi_ros2/src/stein_variational_guided_mppi.cpp
++++ ws_svg_repro/src/svg_mppi_ros2/src/stein_variational_guided_mppi.cpp
+@@ -176,6 +176,7 @@
+         // sampler->get_zero_control_seq());
+         std::vector<double> exp_costs(sampler->get_num_samples());
+         ControlSeq sum_of_grads = mean_seq * 0.0;
++        ControlSeqBatch sample_grads(sampler->get_num_samples(), mean_seq * 0.0);
+         const ControlSeqCovMatrices sampler_inv_covs = sampler->get_inv_cov_matrices();
+ #pragma omp parallel for num_threads(thread_num_)
+         for (size_t i = 0; i < sampler->get_num_samples(); i++) {
+@@ -196,8 +197,10 @@
+             for (size_t j = 0; j < prediction_step_size_ - 1; j++) {
+                 grad_log_gaussian.row(j) = exp_cost * sampler_inv_covs[j] * (sampler->noised_control_seq_samples_[i] - noised_seq).row(j).transpose();
+             }
+-            sum_of_grads += grad_log_gaussian;
+-        }
++            sample_grads[i] = std::move(grad_log_gaussian);
++        }
++        // Fixed-order reduction; the parallel loop never writes a shared Eigen matrix.
++        for (const auto& grad : sample_grads) sum_of_grads += grad;
+         const double sum_of_costs = std::accumulate(exp_costs.begin(), exp_costs.end(), 0.0);
+         return sum_of_grads / (sum_of_costs + 1e-10);
+     }

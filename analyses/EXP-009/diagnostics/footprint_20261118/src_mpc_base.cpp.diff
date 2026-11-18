@@ -1,0 +1,129 @@
+--- ws_svg_repro/src/mpc_base.cpp
++++ ws_footprint/src/mpc_base.cpp
+@@ -1,3 +1,4 @@
++#include <grid_map_core/iterators/GridMapIterator.hpp>
+ #include "mppi_controller/mpc_base.hpp"
+ 
+ namespace mppi {
+@@ -52,7 +53,22 @@
+             sample_num, Eigen::MatrixXd::Zero(prediction_step_size_, STATE_SPACE::dim));
+     }
+ 
+-    void MPCBase::set_obstacle_map(const grid_map::GridMap& obstacle_map) { obstacle_map_ = obstacle_map; }
++    void MPCBase::set_obstacle_map(const grid_map::GridMap& obstacle_map) {
++        if (!obstacle_map.exists("raw_occupancy") || !obstacle_map["raw_occupancy"].allFinite())
++            throw std::invalid_argument("footprint_v1 requires finite raw_occupancy");
++        obstacle_map_ = obstacle_map;
++        std::vector<OrientedFootprint::Point> occupied;
++        for (grid_map::GridMapIterator it(obstacle_map_); !it.isPastEnd(); ++it) {
++            if (obstacle_map_.at("raw_occupancy", *it) > 0.) {
++                grid_map::Position p; obstacle_map_.getPosition(*it, p);
++                occupied.push_back({p.x(),p.y()});
++            }
++        }
++        const auto center=obstacle_map_.getPosition();
++        const auto half=obstacle_map_.getLength()/2.;
++        footprint_.reset(occupied, obstacle_map_.getResolution(), center.x()-half.x(), center.x()+half.x(),
++                         center.y()-half.y(), center.y()+half.y());
++    }
+ 
+     void MPCBase::set_reference_map(const grid_map::GridMap& reference_map) { reference_map_ = reference_map; }
+ 
+@@ -329,34 +345,14 @@
+ 
+     // calculate state cost using only obstacle map from local state sequence
+     std::pair<double, double> MPCBase::state_cost(const StateSeq& local_state_seq, const grid_map::GridMap& obstacle_map) const {
+-        // calc cost for each state
+-        double sum_collision_cost = 0.0;
+-        for (size_t i = 0; i < prediction_step_size_ - 1; i++) {
+-            // state cost
+-            const State local_state = local_state_seq.row(i);
+-
+-            // collision cost
+-            // check inside of gridmap
+-            double collision_cost = 10.0;
+-            if (obstacle_map.isInside(grid_map::Position(local_state(STATE_SPACE::x), local_state(STATE_SPACE::y)))) {
+-                collision_cost =
+-                    obstacle_map.atPosition(obstacle_layer_name_, grid_map::Position(local_state(STATE_SPACE::x), local_state(STATE_SPACE::y)));
+-            }
+-
+-            sum_collision_cost += collision_cost * collision_weight_;
+-        }
+-
+-        // terminal cost
+-        const State terminal_local_state = local_state_seq.row(prediction_step_size_ - 1);
+-        double collision_cost = 10.0;
+-        if (obstacle_map.isInside(grid_map::Position(terminal_local_state(STATE_SPACE::x), terminal_local_state(STATE_SPACE::y)))) {
+-            collision_cost = obstacle_map.atPosition(obstacle_layer_name_,
+-                                                     grid_map::Position(terminal_local_state(STATE_SPACE::x), terminal_local_state(STATE_SPACE::y)));
+-        }
+-
+-        sum_collision_cost += collision_cost * collision_weight_;
+-
+-        return std::make_pair(sum_collision_cost, sum_collision_cost);
++        (void)obstacle_map;
++        double collision=0., clearance=0.;
++        for(size_t i=0;i<prediction_step_size_;++i) {
++            const auto cost=footprint_.cost(local_state_seq(i,STATE_SPACE::x),local_state_seq(i,STATE_SPACE::y),local_state_seq(i,STATE_SPACE::yaw));
++            collision+=cost.collision*collision_weight_;
++            clearance+=cost.clearance;
++        }
++        return {collision+clearance,collision};
+     }
+ 
+     // calculate state cost using obstacle map and reference map from both global state sequence and local state sequence
+@@ -371,10 +367,9 @@
+         double sum_collision_cost = 0.0;
+         const double max_diff_ref_path = ref_path_map.getLength().x();
+         // Kept separate from collision costs so collision_rate retains its meaning.
+-        const auto clearance_cost = [&](const State& state) {
+-            const grid_map::Position pos(state(STATE_SPACE::x), state(STATE_SPACE::y));
+-            return local_obstacle_map.exists("clearance_cost") && local_obstacle_map.isInside(pos)
+-                ? static_cast<double>(local_obstacle_map.atPosition("clearance_cost", pos)) : 0.0;
++        (void)local_obstacle_map;
++        const auto body_cost = [&](const State& state) {
++            return footprint_.cost(state(STATE_SPACE::x), state(STATE_SPACE::y), state(STATE_SPACE::yaw));
+         };
+         for (size_t i = 0; i < prediction_step_size_ - 1; i++) {
+             // state cost
+@@ -394,17 +389,10 @@
+             // cost += q_speed_ * diff_speed * diff_speed;
+             sum_ref_cost += q_dist_ * diff_ref_path * diff_ref_path;
+             sum_ref_cost += q_angle_ * diff_angle * diff_angle;
+-            sum_ref_cost += clearance_cost(local_state);
+-
+-            // collision cost
+-            // check inside of gridmap
+-            double collision_cost = 100.0;
+-            if (local_obstacle_map.isInside(grid_map::Position(local_state(STATE_SPACE::x), local_state(STATE_SPACE::y)))) {
+-                collision_cost =
+-                    local_obstacle_map.atPosition(obstacle_layer_name_, grid_map::Position(local_state(STATE_SPACE::x), local_state(STATE_SPACE::y)));
+-            }
+-
+-            sum_collision_cost += collision_cost * collision_weight_;
++            const auto footprint_cost = body_cost(local_state);
++            sum_ref_cost += footprint_cost.clearance;
++
++            sum_collision_cost += footprint_cost.collision * collision_weight_;
+         }
+ 
+         // terminal cost
+@@ -424,15 +412,9 @@
+         // cost += q_terminal_speed_ * diff_terminal_speed * diff_terminal_speed;
+         sum_ref_cost += q_terminal_dist_ * diff_terminal_ref_path * diff_terminal_ref_path;
+         sum_ref_cost += q_terminal_angle_ * diff_terminal_angle * diff_terminal_angle;
+-        sum_ref_cost += clearance_cost(local_terminal_state);
+-
+-        double collision_cost = 10.0;
+-        if (local_obstacle_map.isInside(grid_map::Position(local_terminal_state(STATE_SPACE::x), local_terminal_state(STATE_SPACE::y)))) {
+-            collision_cost = local_obstacle_map.atPosition(
+-                obstacle_layer_name_, grid_map::Position(local_terminal_state(STATE_SPACE::x), local_terminal_state(STATE_SPACE::y)));
+-        }
+-
+-        sum_collision_cost += collision_cost * collision_weight_;
++        const auto terminal_cost=body_cost(local_terminal_state);
++        sum_ref_cost += terminal_cost.clearance;
++        sum_collision_cost += terminal_cost.collision * collision_weight_;
+ 
+         return std::make_pair(sum_ref_cost + sum_collision_cost, sum_collision_cost);
+     }

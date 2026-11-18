@@ -1,0 +1,63 @@
+{
+  "stationary_only": true,
+  "controller_enable_published": false,
+  "domain": 78,
+  "session": "/home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T140028_64436_forward_mppi_B05_berlin_footprint_speed1p5",
+  "passed": true,
+  "counts": {
+    "/mppi/status": 2,
+    "/mppi_sim/drive": 151,
+    "/mppi/map": 4,
+    "/mppi/reference_path": 4,
+    "/mppi/reference_sdf": 4,
+    "/mppi/local_costmap": 55,
+    "/scan": 110,
+    "/car_state/odom_GT": 110,
+    "/sim/obstacles": 1
+  },
+  "initial_xy": [
+    6.06922668619913,
+    -10.634633548537787
+  ],
+  "map_shape": [
+    600,
+    600
+  ],
+  "reference_points": 489,
+  "costmap_layers": [
+    "raw_occupancy",
+    "collision_layer",
+    "clearance_cost"
+  ],
+  "obstacles": 4,
+  "controller_status": "ready_disabled",
+  "reference_speed_min": 1.5,
+  "reference_speed_max": 1.5,
+  "nonzero_drive_count": 0,
+  "obstacle_poses": [
+    {
+      "x": 2.912807484104115,
+      "y": -18.289076830802834,
+      "qz": 0.9992772347350143,
+      "qw": 0.0380132626900547
+    },
+    {
+      "x": 1.7890938329677297,
+      "y": -16.602704863948667,
+      "qz": 0.9998088069400074,
+      "qw": -0.01955376089654002
+    },
+    {
+      "x": -1.9785984195383355,
+      "y": -3.928037781740554,
+      "qz": 0.9288875521482117,
+      "qw": -0.3703618709642007
+    },
+    {
+      "x": 2.331951138631236,
+      "y": -1.1193551533804507,
+      "qz": 0.3431446600560431,
+      "qw": 0.9392825678543293
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+--- ws_footprint/include/mppi_controller/forward_guard.hpp
++++ ws_forward_guard/include/mppi_controller/forward_guard.hpp
+@@ -0,0 +1,75 @@
++#pragma once
++#include <algorithm>
++#include <cmath>
++#include <stdexcept>
++#include <vector>
++#include <grid_map_core/GridMap.hpp>
++#include "mppi_controller/common.hpp"
++#include "mppi_controller/oriented_footprint.hpp"
++namespace mppi { namespace cpu {
++constexpr double invalid_forward_cost=1e9;
++struct ForwardCheck { bool valid; double progress; const char* reason; };
++inline ForwardCheck check_forward(const StateSeq& path,const grid_map::GridMap& reference) {
++    if(path.rows()<2 || !path.allFinite()) return {false,0.,"nonfinite_or_empty_path"};
++    double progress=0.;
++    for(int i=0;i<path.rows();++i) {
++        const grid_map::Position p(path(i,STATE_SPACE::x),path(i,STATE_SPACE::y));
++        if(!reference.isInside(p)) return {false,progress,"outside_reference"};
++        const double angle=reference.atPosition("angle_field",p);
++        if(!std::isfinite(angle) || std::cos(path(i,STATE_SPACE::yaw)-angle)<=0.)
++            return {false,progress,"opposite_heading"};
++        if(i+1<path.rows()) {
++            const double step=(path(i+1,STATE_SPACE::x)-p.x())*std::cos(angle)
++                             +(path(i+1,STATE_SPACE::y)-p.y())*std::sin(angle);
++            if(step < -1e-3) return {false,progress,"backward_reference_step"};
++            progress+=step;
++        }
++    }
++    if(path.col(STATE_SPACE::vel).cwiseAbs().maxCoeff()>.05 && progress<=1e-4)
++        return {false,progress,"no_forward_progress"};
++    return {true,progress,"ok"};
++}
++// Use original rollout cost for feasibility, and augmented cost only for weighting.
++inline std::vector<double> forward_weights(const std::vector<double>& augmented,
++                                           const std::vector<double>& rollout,double lambda) {
++    if(augmented.size()!=rollout.size() || lambda<=0.) throw std::runtime_error("invalid_forward_weights");
++    double minimum=INFINITY;
++    for(size_t i=0;i<rollout.size();++i)
++        if(std::isfinite(rollout[i]) && rollout[i]<invalid_forward_cost && std::isfinite(augmented[i]))
++            minimum=std::min(minimum,augmented[i]);
++    if(!std::isfinite(minimum)) throw std::runtime_error("no_collision_free_forward_candidate");
++    std::vector<double> weights(rollout.size(),0.);double sum=0.;
++    for(size_t i=0;i<rollout.size();++i) {
++        if(std::isfinite(rollout[i]) && rollout[i]<invalid_forward_cost && std::isfinite(augmented[i]))
++            weights[i]=std::exp(-(augmented[i]-minimum)/lambda);
++        sum+=weights[i];
++    }
++    for(auto& w:weights) w/=sum;
++    return weights;
++}
++inline const char* validate_forward_path(const StateSeq& path,const grid_map::GridMap& reference,
++                                         const OrientedFootprint& footprint,double ego_x,double ego_y,double ego_yaw) {
++    const auto direction=check_forward(path,reference);
++    if(!direction.valid) return direction.reason;
++    const double c=std::cos(ego_yaw),s=std::sin(ego_yaw);
++    // Validate the returned mean/fallback, not just its constituent samples.
++    // Interpolate at <=.02m or <=2deg between predicted states.
++    for(int i=0;i+1<path.rows();++i) {
++        const double dyaw=std::atan2(std::sin(path(i+1,2)-path(i,2)),std::cos(path(i+1,2)-path(i,2)));
++        const int n=std::max(1,static_cast<int>(std::ceil(std::max(
++            std::hypot(path(i+1,0)-path(i,0),path(i+1,1)-path(i,1))/.02,std::abs(dyaw)/(.03490658503988659)))));
++        for(int j=0;j<=n;++j) {
++            const double f=static_cast<double>(j)/n;
++            const double x=path(i,0)+f*(path(i+1,0)-path(i,0));
++            const double y=path(i,1)+f*(path(i+1,1)-path(i,1));
++            const double yaw=path(i,2)+f*dyaw;
++            const grid_map::Position pos(x,y);
++            if(!reference.isInside(pos)) return "outside_reference";
++            if(std::cos(yaw-reference.atPosition("angle_field",pos))<=0.) return "opposite_heading";
++            const double dx=x-ego_x,dy=y-ego_y;
++            if(footprint.cost(c*dx+s*dy,-s*dx+c*dy,yaw-ego_yaw).collision>0.) return "returned_path_collision_or_grid_exit";
++        }
++    }
++    return "ok";
++}
++}}
+--- ws_footprint/src/forward_mppi.cpp
++++ ws_forward_guard/src/forward_mppi.cpp
+@@ -1,3 +1,4 @@
++#include "mppi_controller/forward_guard.hpp"
+ #include "mppi_controller/forward_mppi.hpp"
+ 
+ namespace mppi {
+@@ -65,6 +66,12 @@
+         }
+ 
+         // update mean control sequence for next iteration
++        // The nonlinear rollout of an average need not inherit sample feasibility.
++        const auto [mean_path,mean_cost,mean_collision]=mpc_base_ptr_->get_predictive_seq(initial_state,updated_control_seq);
++        if(!std::isfinite(mean_cost) || mean_cost>=invalid_forward_cost || mean_collision>0.) {
++            const size_t best=std::distance(weights.begin(),std::max_element(weights.begin(),weights.end()));
++            updated_control_seq=prior_samples_ptr_->noised_control_seq_samples_.at(best);
++        }
+         prev_control_seq_ = updated_control_seq;
+ 
+         const double collision_rate = static_cast<double>(collision_num) / static_cast<double>(prior_samples_ptr_->get_num_samples());
+@@ -106,7 +113,7 @@
+             prior_samples_with_costs.get_costs_with_control_term(lambda_, alpha_, prior_samples_ptr_->get_zero_control_seq());
+ 
+         // softmax weights
+-        return softmax(costs_with_control_term, lambda_, thread_num_);
++        return forward_weights(costs_with_control_term, prior_samples_with_costs.costs_, lambda_);
+     }
+ 
+     std::vector<int> ForwardMPPI::get_top_indices(const std::vector<double>& values, const int& num) const {
+--- ws_footprint/src/mpc_base.cpp
++++ ws_forward_guard/src/mpc_base.cpp
+@@ -1,3 +1,4 @@
++#include "mppi_controller/forward_guard.hpp"
+ #include <grid_map_core/iterators/GridMapIterator.hpp>
+ #include "mppi_controller/mpc_base.hpp"
+ 
+@@ -416,6 +417,12 @@
+         sum_ref_cost += terminal_cost.clearance;
+         sum_collision_cost += terminal_cost.collision * collision_weight_;
+ 
++        const auto forward=check_forward(global_state_seq,ref_path_map);
++        // Exact exclusion is applied in both algorithms' final importance weights.
++        if(!forward.valid || sum_collision_cost>0.)
++            return {invalid_forward_cost+std::abs(sum_ref_cost)+sum_collision_cost,sum_collision_cost};
++        // Signed projection on the local reference tangent; not nearest-index reward.
++        sum_ref_cost -= 2.0 * forward.progress;
+         return std::make_pair(sum_ref_cost + sum_collision_cost, sum_collision_cost);
+     }
+ 
+--- ws_footprint/src/mppi_sim_node.cpp
++++ ws_forward_guard/src/mppi_sim_node.cpp
+@@ -1,3 +1,5 @@
++#include <grid_map_core/iterators/GridMapIterator.hpp>
++#include "mppi_controller/forward_guard.hpp"
+ #include <chrono>
+ #include <cmath>
+ #include <memory>
+@@ -63,7 +65,7 @@
+       for(const auto& layer:{"distance_field","angle_field","speed_field"}) ref_ok_=ref_ok_ && refmap_.exists(layer) && refmap_[layer].allFinite();
+       if(ref_ok_) solver_->set_reference_map(refmap_);
+     });
+-    enable_=create_subscription<std_msgs::msg::Bool>("/mppi/enable",10,[this](std_msgs::msg::Bool::ConstSharedPtr msg){enabled_=msg->data; if(!enabled_) publish_drive(0.,0.);});
++    enable_=create_subscription<std_msgs::msg::Bool>("/mppi/enable",10,[this](std_msgs::msg::Bool::ConstSharedPtr msg){enabled_=msg->data && !guard_latched_; if(!enabled_) publish_drive(0.,last_steer_);});
+     timer_=create_wall_timer(std::chrono::duration<double>(period_),[this]{tick();});
+     RCLCPP_INFO(get_logger(),"Simulation-only %s, GT pose from odom, %.2f m/s; waiting for /mppi/enable",mode_.c_str(),speed_);
+   }
+@@ -77,6 +79,7 @@
+   void status(const std::string& text) {if(text!=last_status_){std_msgs::msg::String msg;msg.data=text;status_->publish(msg);RCLCPP_INFO(get_logger(),"%s",text.c_str());last_status_=text;}}
+   void tick() {
+     const auto begin=Clock::now();
++    if(guard_latched_){publish_drive(0.,last_steer_);return;}
+     const bool fresh=odom_ok_ && cost_ok_ && std::chrono::duration<double>(begin-odom_time_).count()<.5 && std::chrono::duration<double>(begin-cost_time_).count()<.5;
+     if(!fresh || !ref_ok_){status("waiting_or_stale_inputs");publish_drive(0.,0.);return;}
+     if(!refmap_.isInside(grid_map::Position(state_(0),state_(1)))) {status("outside_reference_map");publish_drive(0.,0.);return;}
+@@ -97,19 +100,39 @@
+     const double dt=last_tick_.time_since_epoch().count()?std::clamp(std::chrono::duration<double>(begin-last_tick_).count(),0.,.1):period_;
+     last_tick_=begin; state_(4)+=(last_steer_-state_(4))*(1-std::exp(-dt/steer_tau_));
+     try {
++      // Snapshot is immutable throughout solve and validation (single executor).
++      std::vector<mppi::cpu::OrientedFootprint::Point> occupied;
++      for(grid_map::GridMapIterator it(costmap_);!it.isPastEnd();++it) {
++        if(costmap_.at("raw_occupancy",*it)>0.) {
++          grid_map::Position p;costmap_.getPosition(*it,p);occupied.push_back({p.x(),p.y()});
++        }
++      }
++      const auto center=costmap_.getPosition();const auto half=costmap_.getLength()/2.;
++      footprint_.reset(occupied,costmap_.getResolution(),center.x()-half.x(),center.x()+half.x(),center.y()-half.y(),center.y()+half.y());
+       solver_->set_obstacle_map(costmap_);
+       const auto solve_begin=Clock::now();
+       auto [control,rate]=solver_->solve(state_);
+       const double solve_ms=std::chrono::duration<double,std::milli>(Clock::now()-solve_begin).count();
+       if(!control.allFinite() || !std::isfinite(rate)) throw std::runtime_error("non-finite solver output");
+-      last_steer_=std::clamp(control(0,0),min_steer_,max_steer_);publish_drive(speed_,last_steer_);
++
+       auto [prediction,ref_cost,collision_cost,input_error]=solver_->get_predictive_seq(state_,control);
+       nav_msgs::msg::Path path;path.header.stamp=now();path.header.frame_id="map";
+       for(int i=0;i<prediction.rows();++i){geometry_msgs::msg::PoseStamped p;p.header=path.header;p.pose.position.x=prediction(i,0);p.pose.position.y=prediction(i,1);p.pose.orientation.z=std::sin(prediction(i,2)*.5);p.pose.orientation.w=std::cos(prediction(i,2)*.5);path.poses.push_back(p);}path_->publish(path);
++      const char* verdict=mppi::cpu::validate_forward_path(prediction,refmap_,footprint_,state_(0),state_(1),state_(2));
++      if(std::string(verdict)!="ok") throw std::runtime_error(verdict);
++      if(!std::isfinite(ref_cost) || ref_cost>=mppi::cpu::invalid_forward_cost || collision_cost>0.)
++        throw std::runtime_error("returned_path_invalid_cost");
++      last_steer_=std::clamp(control(0,0),min_steer_,max_steer_);publish_drive(speed_,last_steer_);
+       metric(calc_,solve_ms);metric(collision_,rate);metric(cycle_,std::chrono::duration<double,std::milli>(Clock::now()-begin).count());status("running");
+-    } catch(const std::exception& e){enabled_=false;publish_drive(0.,0.);status(std::string("solver_error: ")+e.what());}
++    } catch(const std::exception& e){
++      guard_latched_=true;enabled_=false;publish_drive(0.,last_steer_);
++      metric(cycle_,std::chrono::duration<double,std::milli>(Clock::now()-begin).count());
++      status(std::string("guard_stop: ")+e.what());
++    }
+   }
+   std::string mode_,last_status_; double speed_,period_,steer_tau_,min_steer_,max_steer_,last_steer_=0.;
++  mppi::cpu::OrientedFootprint footprint_;
++  bool guard_latched_=false;
+   bool odom_ok_=false,cost_ok_=false,ref_ok_=false,enabled_=false,validated_=false;
+   Clock::time_point odom_time_,cost_time_,last_tick_;
+   mppi::cpu::State state_; grid_map::GridMap costmap_,refmap_;
+--- ws_footprint/src/stein_variational_guided_mppi.cpp
++++ ws_forward_guard/src/stein_variational_guided_mppi.cpp
+@@ -1,3 +1,4 @@
++#include "mppi_controller/forward_guard.hpp"
+ #include "mppi_controller/stein_variational_guided_mppi.hpp"
+ 
+ namespace mppi {
+@@ -128,6 +129,12 @@
+         const double collision_rate = static_cast<double>(collision_num) / static_cast<double>(prior_samples_ptr_->get_num_samples());
+ 
+         // update previous control sequence for next time step
++        // The nonlinear rollout of an average need not inherit sample feasibility.
++        const auto [mean_path,mean_cost,mean_collision]=mpc_base_ptr_->get_predictive_seq(initial_state,updated_control_seq);
++        if(!std::isfinite(mean_cost) || mean_cost>=invalid_forward_cost || mean_collision>0.) {
++            const size_t best=std::distance(weights.begin(),std::max_element(weights.begin(),weights.end()));
++            updated_control_seq=prior_samples_ptr_->noised_control_seq_samples_.at(best);
++        }
+         prev_control_seq_ = updated_control_seq;
+ 
+         return std::make_pair(updated_control_seq, collision_rate);
+@@ -277,7 +284,7 @@
+             prior_samples_with_costs.get_costs_with_control_term(lambda_, alpha_, nominal_control_seq);
+ 
+         // softmax weights
+-        return softmax(costs_with_control_term, lambda_, thread_num_);
++        return forward_weights(costs_with_control_term, prior_samples_with_costs.costs_, lambda_);
+     }
+ 
+     // Gao's Algorithm

@@ -1,0 +1,29 @@
+{
+  "solver_version": "consistent_v1",
+  "solver_workspace": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_consistent",
+  "controller_executable": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_consistent/install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node",
+  "controller_binary_sha256": "31d0c7ea74a11a69e07b2c98bc4a901fa4dafd34f956e8d2d00793b973c220e8",
+  "mode": "forward_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/tuning/B03_berlin_h45_speed1p5.yaml",
+  "config_sha256": "9e27e9d7682d0c85766946c915acc8b6b41474055c95c919d4d5970e923856b6",
+  "obstacles": 4,
+  "seed": 2026,
+  "laps": 7,
+  "duration": 600.0,
+  "domain": 76,
+  "reference_speed": 1.5,
+  "map_name": "berlin",
+  "map_yaml": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/berlin.yaml",
+  "map_image": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/berlin.png",
+  "waypoints_file": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/global_waypoints.json",
+  "start_pose_file": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/start_pose.yaml",
+  "speed_scaling_file": "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/speed_scaling.yaml",
+  "map_asset_sha256": {
+    "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/berlin.yaml": "abaac583c0936cfe65ccfb2b59622fee52303bf77bfd142b14168dada3114f98",
+    "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/berlin.png": "602a42492f89f615a07b8cb3e1c53fedafacc891d6ee7579f08591ac1e415996",
+    "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/global_waypoints.json": "54383bafeb40ead8dd615671c55285b1dac8821408734181805dcca76b2122ec",
+    "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/start_pose.yaml": "f9d428e02e3327cd903352df5b1dd12925fb2f90aea4a512e2b7c06b0a8e442f",
+    "/home/misys/forza_ws/race_stack/stack_master/maps/berlin/speed_scaling.yaml": "cbd5d487c49a14b62c7989227e915f1fe4bcb5d9383b058f39cd2de1acf817d8"
+  },
+  "speed_policy": "fixed_reference_speed; speed_scaling file recorded, not applied to drive"
+}

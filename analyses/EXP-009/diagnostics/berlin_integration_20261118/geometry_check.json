@@ -1,0 +1,32 @@
+{
+  "map_shape": [
+    600,
+    600
+  ],
+  "resolution_m": 0.04,
+  "origin": [
+    -9.285232,
+    -21.2166344,
+    0.0
+  ],
+  "waypoint_count": 489,
+  "all_waypoints_in_free_cells": true,
+  "minimum_waypoint_center_to_nonfree_m": 0.44181444068749043,
+  "start_waypoint_index": 484,
+  "start_pose": {
+    "sx": 6.06922668619913,
+    "sy": -10.634633548537787,
+    "stheta": -1.7275240459326664
+  },
+  "start_sampled_footprint_free": true,
+  "reference_speed_raw_range_m_s": [
+    3.371025450083915,
+    10.572636121919126
+  ],
+  "global_limit": 0.5,
+  "scaled_speed_range_m_s": [
+    1.6855127250419575,
+    5.286318060959563
+  ],
+  "track_length_m": 48.783921070650806
+}

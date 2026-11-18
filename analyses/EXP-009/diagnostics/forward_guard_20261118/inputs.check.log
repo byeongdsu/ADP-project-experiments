@@ -1,0 +1,2 @@
+[INFO] [1794979321.675167458] [mppi_sim_inputs]: GT simulation fields: 489 waypoints, (187, 268) reference cells, scan-only local obstacles
+[INFO] [1794979322.284559203] [mppi_sim_inputs]: First costmap: 1080 scan beams, 375 occupied, 3137 inflated cells

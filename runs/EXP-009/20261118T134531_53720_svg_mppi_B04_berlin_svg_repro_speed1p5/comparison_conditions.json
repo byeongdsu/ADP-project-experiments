@@ -1,0 +1,34 @@
+{
+  "baseline": "manual_runs/20261118T130823_42578_forward_mppi_B03_berlin_speed1p5",
+  "only_yaml_change": "mpc_mode forward_mppi -> svg_mppi",
+  "checks": {
+    "reference_speed": true,
+    "obstacles": true,
+    "seed": true,
+    "laps": true,
+    "duration": true,
+    "map_asset_sha256": true,
+    "same_simulator_yaml": true
+  },
+  "svg_implementation_fix": "per-sample gradient matrices followed by fixed-order reduction; common model/costmap/forward_mppi unchanged",
+  "default_svg_parameters": {
+    "sample_batch_num": 1000,
+    "lambda": 3.0,
+    "non_biased_sampling_rate": 0.1,
+    "alpha": 0.1,
+    "steer_cov": 0.01,
+    "guide_sample_num": 1,
+    "grad_lambda": 3.0,
+    "sample_num_for_grad_estimation": 100,
+    "steer_cov_for_grad_estimation": 0.01,
+    "svgd_step_size": 0.005,
+    "num_svgd_iteration": 10,
+    "is_use_nominal_solution": true,
+    "is_covariance_adaptation": true,
+    "gaussian_fitting_lambda": 0.1,
+    "min_steer_cov": 0.001,
+    "max_steer_cov": 0.1
+  },
+  "same_sample_batch_not_same_compute_budget": true,
+  "status": "prepared, startup and fixed-input checks passed, no driving yet"
+}

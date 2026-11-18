@@ -1,0 +1,15 @@
+{
+  "solver_version": "consistent_v1",
+  "solver_workspace": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_consistent",
+  "controller_executable": "/home/misys/shared_dir/svg_mppi_ros2_20261031/ws_consistent/install/svg_mppi_ros2/lib/svg_mppi_ros2/mppi_sim_node",
+  "controller_binary_sha256": "31d0c7ea74a11a69e07b2c98bc4a901fa4dafd34f956e8d2d00793b973c220e8",
+  "mode": "forward_mppi",
+  "original_config": "/home/misys/shared_dir/svg_mppi_ros2_20261031/tuning/R24_h45_speed3p0_clearance.yaml",
+  "config_sha256": "785ed3ca01bb0678922536902d584406e3f801e2a95f2ed32967183bdbd1f848",
+  "obstacles": 4,
+  "seed": 2026,
+  "laps": 7,
+  "duration": 240.0,
+  "domain": 76,
+  "reference_speed": 3.0
+}

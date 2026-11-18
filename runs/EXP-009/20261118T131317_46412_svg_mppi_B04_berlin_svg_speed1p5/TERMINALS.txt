@@ -1,0 +1,15 @@
+Terminal 1:
+cd /home/misys/shared_dir/svg_mppi_ros2_20261031
+bash manual.sh sim /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T131317_46412_svg_mppi_B04_berlin_svg_speed1p5
+
+Terminal 3:
+cd /home/misys/shared_dir/svg_mppi_ros2_20261031
+bash manual.sh scenario /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T131317_46412_svg_mppi_B04_berlin_svg_speed1p5
+
+Terminal 4:
+cd /home/misys/shared_dir/svg_mppi_ros2_20261031
+bash manual.sh record /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T131317_46412_svg_mppi_B04_berlin_svg_speed1p5
+
+Terminal 2:
+cd /home/misys/shared_dir/svg_mppi_ros2_20261031
+bash manual.sh controller /home/misys/shared_dir/svg_mppi_ros2_20261031/manual_runs/20261118T131317_46412_svg_mppi_B04_berlin_svg_speed1p5

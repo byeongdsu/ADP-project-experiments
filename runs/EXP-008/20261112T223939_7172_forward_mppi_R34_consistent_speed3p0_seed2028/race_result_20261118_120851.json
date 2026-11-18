@@ -1,0 +1,74 @@
+{
+  "started_at": "2026-11-18T12:08:51",
+  "map": "hyhall12",
+  "waypoints_file": "/home/misys/forza_ws/race_stack/stack_master/maps/hyhall12/global_waypoints.json",
+  "seed": 2028,
+  "laps_completed": 7,
+  "best_lap": 14.189,
+  "laps": [
+    {
+      "lap": 1,
+      "time": 14.231,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    },
+    {
+      "lap": 2,
+      "time": 14.379,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    },
+    {
+      "lap": 3,
+      "time": 14.189,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    },
+    {
+      "lap": 4,
+      "time": 14.273,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    },
+    {
+      "lap": 5,
+      "time": 14.528,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    },
+    {
+      "lap": 6,
+      "time": 14.779,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    },
+    {
+      "lap": 7,
+      "time": 14.363,
+      "obstacle": 0,
+      "wall": 0,
+      "total": 0,
+      "partial": false
+    }
+  ],
+  "total_time": 100.742,
+  "collisions": {
+    "obstacle": 0,
+    "wall": 0,
+    "total": 0
+  },
+  "collision_events": [],
+  "teleports": []
+}

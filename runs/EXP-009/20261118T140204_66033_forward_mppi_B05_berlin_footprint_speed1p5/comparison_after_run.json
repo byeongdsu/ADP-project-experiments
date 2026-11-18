@@ -1,0 +1,103 @@
+{
+  "last_2s": {
+    "samples": 200,
+    "mean_candidate_collision_fraction": 0.9918600025773049,
+    "fraction_samples_at_least_0_99": 0.825,
+    "speed_command_min": 1.5,
+    "speed_command_max": 1.5
+  },
+  "raw_bag_metadata_present": true,
+  "comparison": [
+    {
+      "run": "20261118T130823_42578_forward_mppi_B03_berlin_speed1p5",
+      "mode": "forward_mppi",
+      "version": "consistent_v1",
+      "laps_completed": 0,
+      "lap_times_s": [],
+      "collision": [
+        {
+          "wall_s": 18.703719773999183,
+          "kind": "wall"
+        }
+      ],
+      "solver_ms": {
+        "n": 748,
+        "mean": 12.484728918356055,
+        "median": 11.62533950805664,
+        "p95": 22.966717529296872,
+        "max": 29.012622833251953,
+        "over_25ms_fraction": 0.026737967914438502
+      },
+      "cycle_ms": {
+        "n": 748,
+        "mean": 12.759844632709727,
+        "median": 11.897367477416992,
+        "p95": 23.364281368255615,
+        "max": 29.53376579284668,
+        "over_25ms_fraction": 0.03074866310160428
+      }
+    },
+    {
+      "run": "20261118T134531_53720_svg_mppi_B04_berlin_svg_repro_speed1p5",
+      "mode": "svg_mppi",
+      "version": "svg_repro_v1",
+      "laps_completed": 0,
+      "lap_times_s": [],
+      "collision": [
+        {
+          "wall_s": 18.98950763600078,
+          "kind": "wall"
+        }
+      ],
+      "solver_ms": {
+        "n": 712,
+        "mean": 22.126284565818445,
+        "median": 21.660898208618164,
+        "p95": 36.9895666122436,
+        "max": 56.69972229003906,
+        "over_25ms_fraction": 0.28792134831460675
+      },
+      "cycle_ms": {
+        "n": 712,
+        "mean": 22.380382598116157,
+        "median": 21.864425659179688,
+        "p95": 37.275229072570745,
+        "max": 57.14936065673828,
+        "over_25ms_fraction": 0.31179775280898875
+      }
+    },
+    {
+      "run": "20261118T140204_66033_forward_mppi_B05_berlin_footprint_speed1p5",
+      "mode": "forward_mppi",
+      "version": "footprint_v1",
+      "laps_completed": 1,
+      "lap_times_s": [
+        33.049
+      ],
+      "collision": [
+        {
+          "wall_s": 51.13459311999941,
+          "kind": "wall"
+        }
+      ],
+      "solver_ms": {
+        "n": 2044,
+        "mean": 13.12519088859894,
+        "median": 12.686220169067383,
+        "p95": 20.33906574249267,
+        "max": 32.61442947387695,
+        "over_25ms_fraction": 0.018101761252446183
+      },
+      "cycle_ms": {
+        "n": 2044,
+        "mean": 14.92217915398734,
+        "median": 14.583041667938232,
+        "p95": 22.30229263305664,
+        "max": 37.055938720703125,
+        "over_25ms_fraction": 0.030821917808219176
+      }
+    }
+  ],
+  "same_initial_obstacles": true,
+  "note": "B05 reached a second lap and a new obstacle layout; overall runtime statistics cover different portions of the course. Single trial per algorithm/version, not a controlled repeated performance proof."
+}

@@ -1,0 +1,114 @@
+{
+  "alignment": "Latest preceding receipt samples, nearest waypoint direction; not exact internal callback synchronization. Nearest-reference progress approximate off path.",
+  "first_opposite_heading": null,
+  "maximum_forward_progress": {
+    "time_after_first_nonzero_drive_s": 6.709029912948608,
+    "xy": [
+      3.0613265770070606,
+      -18.672422119532616
+    ],
+    "waypoint_index": 89,
+    "distance_to_nearest_waypoint_m": 0.4960479886640447,
+    "actual_heading_deg": 158.9835621227158,
+    "reference_heading_deg": 158.77610850569982,
+    "heading_error_deg": 0.20745361701597217,
+    "gt_vx_m_s": 1.4999999999999896,
+    "speed_command_m_s": 1.5,
+    "steering_command_rad": 0.11382777243852615,
+    "candidate_collision_fraction": 0.7319999933242798,
+    "nearest_reference_progress_m": 9.296875944942641
+  },
+  "last": {
+    "time_after_first_nonzero_drive_s": 6.718988418579102,
+    "xy": [
+      3.047191697227492,
+      -18.667401936509208
+    ],
+    "waypoint_index": 89,
+    "distance_to_nearest_waypoint_m": 0.49495513806226693,
+    "actual_heading_deg": 159.20831262108507,
+    "reference_heading_deg": 158.77610850569982,
+    "heading_error_deg": 0.4322041153852427,
+    "gt_vx_m_s": 1.49999999999999,
+    "speed_command_m_s": 1.5,
+    "steering_command_rad": 0.11382777243852615,
+    "candidate_collision_fraction": 0.7319999933242798,
+    "nearest_reference_progress_m": 9.296875944942641
+  },
+  "progress_change_after_peak_m": 0.0,
+  "opposite_heading_duration_approx_s": 0.0,
+  "drive_speed_min_m_s": 0.0,
+  "drive_speed_max_m_s": 1.5,
+  "negative_drive_count": 0,
+  "negative_gt_velocity_count": 0,
+  "samples": [
+    {
+      "time_after_first_nonzero_drive_s": 0.0076618194580078125,
+      "xy": [
+        6.06922668619913,
+        -10.634633548537787
+      ],
+      "waypoint_index": 484,
+      "distance_to_nearest_waypoint_m": 0.0,
+      "actual_heading_deg": -98.97983683930596,
+      "reference_heading_deg": -98.97983683930595,
+      "heading_error_deg": -1.2722218725854067e-14,
+      "gt_vx_m_s": 0.0,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.17399926483631134,
+      "candidate_collision_fraction": 0.1589999943971634,
+      "nearest_reference_progress_m": 0.0
+    },
+    {
+      "time_after_first_nonzero_drive_s": 1.999107837677002,
+      "xy": [
+        5.783322561113554,
+        -13.26492797410171
+      ],
+      "waypoint_index": 22,
+      "distance_to_nearest_waypoint_m": 0.06006212576710806,
+      "actual_heading_deg": -85.64421656489442,
+      "reference_heading_deg": -90.01087048822296,
+      "heading_error_deg": 4.36665392332854,
+      "gt_vx_m_s": 1.4999039064562232,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.005104586482048035,
+      "candidate_collision_fraction": 0.06400000303983688,
+      "nearest_reference_progress_m": 2.5992224048794412
+    },
+    {
+      "time_after_first_nonzero_drive_s": 3.999317169189453,
+      "xy": [
+        5.42628895457496,
+        -16.19755759204719
+      ],
+      "waypoint_index": 53,
+      "distance_to_nearest_waypoint_m": 0.28920933180009,
+      "actual_heading_deg": -114.2949501351209,
+      "reference_heading_deg": -103.17662476781041,
+      "heading_error_deg": -11.118325367310494,
+      "gt_vx_m_s": 1.4999999943619173,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.0805060938000679,
+      "candidate_collision_fraction": 0.020999999716877937,
+      "nearest_reference_progress_m": 5.698334007705135
+    },
+    {
+      "time_after_first_nonzero_drive_s": 5.998815059661865,
+      "xy": [
+        4.087414803159549,
+        -18.78544712361969
+      ],
+      "waypoint_index": 81,
+      "distance_to_nearest_waypoint_m": 0.4968750486387379,
+      "actual_heading_deg": -147.64816252346284,
+      "reference_heading_deg": -172.79923140633187,
+      "heading_error_deg": 25.151068882869016,
+      "gt_vx_m_s": 1.499999999999669,
+      "speed_command_m_s": 1.5,
+      "steering_command_rad": -0.4025920033454895,
+      "candidate_collision_fraction": 0.8240000009536743,
+      "nearest_reference_progress_m": 8.497252229367376
+    }
+  ]
+}

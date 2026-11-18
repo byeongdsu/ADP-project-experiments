@@ -1,0 +1,22 @@
+{
+  "include/mppi_controller/oriented_footprint.hpp": {
+    "new_sha256": "fca79d6c858bc10bcbc143412bd0045b8f1d2aeb8197a7c94f03e3ed355f5965",
+    "base_sha256": null
+  },
+  "include/mppi_controller/mpc_base.hpp": {
+    "new_sha256": "ddb69ac2595ef4cc42c6e4b965d7db5530890990f25c60e43f21de6e0091d7b6",
+    "base_sha256": "f9717ece87e7ccedfbe88cf628fe7c00f29d083006d3d39b78c60bfd01d76a2e"
+  },
+  "src/mpc_base.cpp": {
+    "new_sha256": "aca1db70df8ebab0570fd66eeda05154aeec04c444cecebb2a44069a341d8f4e",
+    "base_sha256": "586cef2eb071434b8db07662849988c0a66d3813e67c8fb747dab19a79f0f104"
+  },
+  "src/mppi_sim_node.cpp": {
+    "new_sha256": "e77474d0cb3b833025b1f19324caaf02ada21b717118dd544507fed7b6c995b3",
+    "base_sha256": "3f529c73d09db06c02c68d4aa78d1725dfa2277ac2f54b45e7ea38a1e091eae7"
+  },
+  "scripts/sim_inputs.py": {
+    "new_sha256": "40513880d417be13ed6df24fcb05a791a131f17d0ab8e87e4d94d32a3622d6bd",
+    "base_sha256": "3448d95af9d21ae6efe0c11e0d39b429f0f8d487d0b3659542a9bf40cdf970ef"
+  }
+}

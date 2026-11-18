@@ -1,0 +1,148 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+  Property Tree Widget:
+    Expanded:
+    - /Global Options1
+    Splitter Ratio: 0.55
+- Class: rviz_common/Views
+  Name: Views
+Visualization Manager:
+  Class: ''
+  Displays:
+  - Class: rviz_default_plugins/Map
+    Name: HYHALL12 map
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /mppi/map
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Transient Local
+      Reliability Policy: Reliable
+    Alpha: 1.0
+    Color Scheme: map
+    Draw Behind: true
+  - Class: rviz_default_plugins/Map
+    Name: Inflated collision costmap
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /mppi/costmap_view
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Volatile
+      Reliability Policy: Best Effort
+    Alpha: 0.35
+    Color Scheme: costmap
+    Draw Behind: false
+  - Class: rviz_default_plugins/Path
+    Name: Reference - yellow
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /mppi/reference_path
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Transient Local
+      Reliability Policy: Reliable
+    Color: 255; 210; 40
+    Line Style: Lines
+    Line Width: 0.035
+    Buffer Length: 1
+  - Class: rviz_default_plugins/Path
+    Name: MPPI prediction - red
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /mppi/best_path
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Volatile
+      Reliability Policy: Reliable
+    Color: 255; 60; 60
+    Line Style: Lines
+    Line Width: 0.06
+    Buffer Length: 1
+  - Class: rviz_default_plugins/Path
+    Name: GT driven trail - cyan
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /mppi/gt_trail
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Volatile
+      Reliability Policy: Reliable
+    Color: 0; 220; 255
+    Line Style: Lines
+    Line Width: 0.045
+    Buffer Length: 1
+  - Class: rviz_default_plugins/LaserScan
+    Name: LiDAR - green
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /scan
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Volatile
+      Reliability Policy: Best Effort
+    Color: 50; 255; 70
+    Color Transformer: FlatColor
+    Style: Points
+    Size (Pixels): 2
+    Size (m): 0.025
+    Decay Time: 0.0
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Vehicle and speed
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /mppi/vehicle
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Volatile
+      Reliability Policy: Reliable
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Actual obstacles
+    Enabled: true
+    Value: true
+    Topic:
+      Value: /sim/obstacles/markers
+      Depth: 5
+      History Policy: Keep Last
+      Durability Policy: Transient Local
+      Reliability Policy: Reliable
+  Enabled: true
+  Global Options:
+    Background Color: 30; 30; 35
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Select
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Target Frame: map
+      Scale: 34.0
+      X: 3.6
+      Y: 2.6
+      Angle: 0.0
+      Near Clip Distance: 0.01
+    Saved: null
+Window Geometry:
+  Width: 1400
+  Height: 850
+  X: 20
+  Y: 20
+  Hide Left Dock: false
+  Hide Right Dock: true

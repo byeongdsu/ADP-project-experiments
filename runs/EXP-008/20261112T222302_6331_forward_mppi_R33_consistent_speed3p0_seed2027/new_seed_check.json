@@ -1,0 +1,23 @@
+{
+  "mean_lap_s": 14.397428571428572,
+  "obstacle_count_each_lap": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "first7_layouts_differ_from_seed2026": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "same_controller_yaml": true,
+  "bag_status": "recorder active, database locked, detailed metrics pending"
+}
